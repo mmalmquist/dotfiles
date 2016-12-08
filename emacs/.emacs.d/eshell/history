@@ -1,0 +1,15 @@
+ls
+ls -la
+~
+cat random.dat 
+ls -la
+ls /usr/lib/
+urxvt
+ls /usr/lib/urxvt/perl/
+cd /usr/lib/urxvt/perl/
+ls
+cat fullscreen 
+ipython
+ipython
+pypy
+xrdb ~/.Xresources 
