@@ -52,7 +52,9 @@ URxvt*color21:                        #eeeeee
 ! Xcursor.size: 16W
 URxvt.urgentOnBell: true
 URxvt.scrollBar: false
-URxvt.font: xft:fixed:size=10
+! URxvt.font: xft:fixed:size=10,xft:PowerlineSymbols:size=10
+URxvt.font: xft:Anonymice Powerline:size=12:antialias=true
+! URxvt.letterSpace: -1
 ! URxvt.depth: 24
 URxvt.url-select.launcher:  chromium
 URxvt.url-select.underline: true
@@ -61,6 +63,6 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 URxvt.matcher.button: 1
 URxvt.perl-ext-common: default,matcher,vtwheel,fullscreen,clipboard,url-select,keyboard-select
-URxvt*keysym.C-F11: per:fullscreen:switch
+URxvt*keysym.C-F11: perl:fullscreen:switch
 URxvt*borderless: true
 URxvt*background.border: false
