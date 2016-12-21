@@ -13,3 +13,8 @@ ipython
 ipython
 pypy
 xrdb ~/.Xresources 
+ls
+ls -la
+./a.out 
+exit
+exit
