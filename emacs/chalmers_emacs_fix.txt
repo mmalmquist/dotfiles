@@ -1,0 +1,1 @@
+M-x byte-recompile-directory RET ~/.emacs.d/elpa/yasnippet-
