@@ -18,3 +18,107 @@ ls -la
 ./a.out 
 exit
 exit
+gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0 -o ex-compile ex-compile.c
+gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0 -o ex-compile ex-compile.c
+gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0 -o ex-compile ex-compile.c
+gcc -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0 -o ex-compile ex-compile.c
+ls
+./ex-compile 
+gcc 'pkg-config --cflags --libs glib-2.0' -o ex-compile ex-compile.c
+gcc 'pkg-config --cflags --libs glib-2.0' -o ex-compile ex-compile.c
+gcc `pkg-config --cflags --libs glib-2.0` -o ex-compile ex-compile.c
+gcc "pkg-config --cflags --libs glib-2.0" -o ex-compile ex-compile.c
+gcc 'pkg-config --cflags --libs glib-2.0' -o ex-compile ex-compile.c
+gcc $(pkg-config --cflags --libs glib-2.0) -o ex-compile ex-compile.c
+pkg-config --cflags --libs glib-2.0
+echo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0
+echo "-I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0"
+echo "hej"
+echo "-I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -lglib-2.0"
+pkg-config --cflags --libs glib-2.0
+gcc $(pkg-config --cflags --libs glib-2.0)
+eco $(gcc $(pkg-config --cflags --libs glib-2.0))
+ls -laeco $(gcc $(pkg-config --cflags --libs glib-2.0))
+echo $(gcc $(pkg-config --cflags --libs glib-2.0))
+echo 'pkg-config --cflags --libs glib-2.0'
+gcc -o ex-compile ex-compile.c 'pkg-config --cflags --libs glib-2.0'
+gcc -o ex-compile ex-compile.c $(pkg-config --cflags --libs glib-2.0)
+gcc -o ex-compile ex-comlspile.c $(pkg-config --cflags --libs glib-2.0)
+ls
+make
+rm main*
+ls
+rm *~
+ls
+rm ooc*
+ls
+make
+rm ooc*make
+make
+make
+ls
+rm ex-compile
+ls
+make
+ls
+./ex-compile 
+./ex-compile 
+make def
+make def
+makefile:11: *** missing separator.  Stop
+make def
+make
+ls
+clean
+make clean
+ls
+make ef
+make def
+ls
+ex-compile.c  makefilels
+ls
+make def
+make clean
+make clean
+ls
+make def
+ls
+ex-compile  ex-compile.c  makefilels
+ls
+./ex-compile 
+make init
+ls
+make init
+man mkdir
+man mkdir
+make init
+make init
+ls
+man rm
+make hellomake
+make hellomake
+make hellomake
+ls
+make hellomake
+make hellomake
+make hellomake
+make hellomake
+make hellomake
+ls
+make hellomake
+make hellomake
+cd ...
+cd ...
+make
+grep -ri "_strcmp" .
+make
+./configure CXXFLAGS="-std=c++11 -fpermissive"
+make
+make install
+sudo make install
+cd ..
+mkdir ~/dev
+ls
+mv codeblocks-16.01.release/ ~/dev/
+ls ~/dev/
+codeblocks &
