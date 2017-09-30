@@ -45,6 +45,13 @@
  '(custom-safe-themes
    (quote
     ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "f5512c02e0a6887e987a816918b7a684d558716262ac7ee2dd0437ab913eaec6" "2997ecd20f07b99259bddba648555335ffb7a7d908d8d3e6660ecbec415f6b95" "9d91458c4ad7c74cf946bd97ad085c0f6a40c370ac0a1cbeb2e3879f15b40553" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "4e753673a37c71b07e3026be75dc6af3efbac5ce335f3707b7d6a110ecb636a3" default)))
+ '(ecb-layout-window-sizes
+   (quote
+    (("left3"
+      (ecb-directories-buffer-name 0.21311475409836064 . 0.2727272727272727)
+      (ecb-sources-buffer-name 0.21311475409836064 . 0.36363636363636365)
+      (ecb-methods-buffer-name 0.21311475409836064 . 0.36363636363636365)))))
+ '(ecb-options-version "2.50")
  '(elpy-company-post-completion-function (quote elpy-company-post-complete-parens))
  '(elpy-rpc-backend "rope")
  '(global-company-mode t)
@@ -60,7 +67,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ecb flymake-php company-php dumb-jump cython-mode sr-speedbar iedit helm smart-mode-line smart-mode-line-powerline-theme powerline company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy)))
+    (flycheck rtags cmake-ide ecb flymake-php company-php dumb-jump cython-mode sr-speedbar iedit helm smart-mode-line smart-mode-line-powerline-theme powerline company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy)))
  '(powerline-default-separator (quote arrow))
  '(powerline-gui-use-vcs-glyph t)
  '(python-check-command "flake8")
