@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("3DEngine.h" include nil nil [603 624])
+            ("testing.h" include nil nil [625 645])
+            ("components/freeLook.h" include nil nil [647 679])
+            ("components/freeMove.h" include nil nil [680 712])
+            ("components/physicsEngineComponent.h" include nil nil [713 759])
+            ("components/physicsObjectComponent.h" include nil nil [760 806])
+            ("physics/boundingSphere.h" include nil nil [807 842])
+            ("TestGame" type
+               (:superclasses 
+                  ( ("Game" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [875 882])
+                    ("TestGame" function (:type "int") (reparse-symbol classsubparts) [885 898])
+                    ("Init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("window" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [921 942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [903 943])
+                    ("protected" label nil (reparse-symbol classsubparts) [944 954])
+                    ("private" label nil (reparse-symbol classsubparts) [955 963])
+                    ("TestGame" function
+                       (:arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TestGame" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [975 997]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [966 1000])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TestGame" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1018 1040]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1003 1043]))                  
+                :type "class")
+                nil [844 1046])
+            ("Init" function
+               (:parent "TestGame"
+                :arguments 
+                  ( ("window" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Window" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1068 1089]))                  
+                :type "void")
+                nil [1048 5650])
+            ("iostream" include (:system-flag t) nil [5652 5671])
+            ("main" function (:type "int") nil [5673 7002]))          
+      :file "main.cpp"
+      :pointmax 7003
+      :fsize 7002
+      :lastmodtime '(23118 39469 272840 229000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "3DEngine.h"
+      :fsize 1186
+      :lastmodtime '(21523 23341 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "testing.h"
+      :fsize 107
+      :lastmodtime '(21523 23341 0 0)))
+  :file "!home!marcus!Programming!C++!3DEngineCpp-master!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

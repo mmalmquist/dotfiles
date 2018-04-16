@@ -1,0 +1,160 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("string" include (:system-flag t) nil [18 35])
+            ("GLEW_STATIC" variable (:constant-flag t) nil [53 64])
+            ("GL/glew.h" include (:system-flag t) nil [65 85])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [95 118])
+            ("learnopengl/shader.h" include (:system-flag t) nil [135 166])
+            ("learnopengl/camera.h" include (:system-flag t) nil [167 198])
+            ("glm/glm.hpp" include (:system-flag t) nil [218 240])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [241 280])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [281 312])
+            ("SOIL.h" include (:system-flag t) nil [328 345])
+            ("screenWidth" variable
+               (:default-value "800"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [361 406])
+            ("screenHeight" variable
+               (:default-value "600"
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [361 406])
+            ("key_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [449 468])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [469 477])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [478 491])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [492 503])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [504 513]))                  
+                :type "void")
+                nil [431 514])
+            ("scroll_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [536 555])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [556 571])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [572 587]))                  
+                :type "void")
+                nil [515 588])
+            ("mouse_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [609 628])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [629 641])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [642 654]))                  
+                :type "void")
+                nil [589 655])
+            ("Do_Movement" function
+               (:prototype-flag t
+                :type "void")
+                nil [656 675])
+            ("loadTexture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [695 715]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [676 716])
+            ("camera" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [742 769]))                  
+                :type ("Camera" type (:type "class") nil nil))
+                nil [728 771])
+            ("keys" variable
+               (:dereference 1
+                :type "bool")
+                nil [772 788])
+            ("lastX" variable
+               (:default-value "400"
+                :type ("GLfloat" type (:type "class") nil nil))
+                nil [789 822])
+            ("lastY" variable
+               (:default-value "300"
+                :type ("GLfloat" type (:type "class") nil nil))
+                nil [789 822])
+            ("firstMouse" variable
+               (:default-value "true"
+                :type "bool")
+                nil [823 846])
+            ("deltaTime" variable
+               (:default-value "0.0f"
+                :type ("GLfloat" type (:type "class") nil nil))
+                nil [848 873])
+            ("lastFrame" variable
+               (:default-value "0.0f"
+                :type ("GLfloat" type (:type "class") nil nil))
+                nil [874 899])
+            ("main" function (:type "int") nil [980 7916])
+            ("loadTexture" function
+               (:arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8201 8221]))                  
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [8182 9048])
+            ("Do_Movement" function (:type "void") nil [9136 9485])
+            ("key_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9562 9581])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [9582 9590])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [9591 9604])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [9605 9616])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [9617 9626]))                  
+                :type "void")
+                nil [9544 9856])
+            ("mouse_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9878 9897])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [9898 9910])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [9911 9923]))                  
+                :type "void")
+                nil [9858 10197])
+            ("scroll_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10221 10240])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [10241 10256])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [10257 10272]))                  
+                :type "void")
+                nil [10200 10316]))          
+      :file "csm.cpp"
+      :pointmax 10336
+      :fsize 10335
+      :lastmodtime '(23142 10559 0 0)
+      :unmatched-syntax '((symbol 10326 . 10335) (symbol 10319 . 10325) (punctuation 10318 . 10319) (string 9065 . 9077) (symbol 9058 . 9064) (symbol 9051 . 9057) (punctuation 9050 . 9051) (semantic-list 751 . 769))
+      :lexical-table 
+        '(("GLEW_STATIC")
+          )
+))
+  :file "!home!marcus!Programming!Cpp!LearnOpenGL!src!5.advanced_lighting!3.3.csm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

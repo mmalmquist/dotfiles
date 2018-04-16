@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("matplotlib.pyplot" include nil nil [1 32])
+            ("numpy" include nil nil [33 51])
+            ("mpl_toolkits.mplot3d.axes3d" include nil nil [52 98])
+            ("f" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [107 108])
+                ("k" variable nil (reparse-symbol function_parameters) [110 111])
+                ("ft" variable nil (reparse-symbol function_parameters) [115 117]))              ) nil [101 339])
+            ("ellips_rot" function nil nil [341 667])
+            ("ellips_rot_trans" function nil nil [669 876])
+            ("fig" variable nil nil [878 896])
+            ("F" code nil nil [954 954])
+            ("plt" code nil nil [954 954])
+            ("_subplot" code nil nil [910 923])
+            ("plt" code nil nil [1009 1019]))          
+      :file "plots.py"
+      :pointmax 1020
+      :fsize 1019
+      :lastmodtime '(23108 56923 535540 461000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("glad/glad.h" include (:system-flag t) nil [1 23])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [24 47])
+            ("stb_image.h" include (:system-flag t) nil [48 70])
+            ("learnopengl/filesystem.h" include (:system-flag t) nil [72 107])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [108 141])
+            ("iostream" include (:system-flag t) nil [143 162])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [195 214])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [215 225])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [226 237]))                  
+                :type "void")
+                nil [164 238])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [257 276]))                  
+                :type "void")
+                nil [239 277])
+            ("SCR_WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type "unsigned int")
+                nil [291 326])
+            ("SCR_HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type "unsigned int")
+                nil [327 363])
+            ("main" function (:type "int") nil [365 7425])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7663 7682]))                  
+                :type "void")
+                nil [7645 7793])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8020 8039])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [8040 8050])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [8051 8062]))                  
+                :type "void")
+                nil [7989 8267]))          
+      :file "textures_combined.cpp"
+      :pointmax 8267
+      :fsize 8266
+      :lastmodtime '(23142 10559 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!Cpp!LearnOpenGL!src!1.getting_started!4.2.textures_combined!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

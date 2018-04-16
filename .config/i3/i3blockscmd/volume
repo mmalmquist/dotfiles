@@ -68,3 +68,7 @@ case $BLOCK_BUTTON in
 esac
 
 volume | format
+
+if [ -n "$BLOCK_BUTTON" ]; then
+    xterm alsamixer > /dev/null;
+fi

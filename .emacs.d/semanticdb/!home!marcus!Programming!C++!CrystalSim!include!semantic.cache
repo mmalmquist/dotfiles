@@ -1,0 +1,230 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRYSTALMODEL_H" variable (:constant-flag t) nil [32 46])
+            ("CrystalModel" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [69 76])
+                    ("CrystalModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bathWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [92 111]))                          
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [79 112])
+                    ("CrystalModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [115 131])
+                    ("CrystallizeIon" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [135 156])
+                    ("GetModelValue" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [177 188])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [195 206]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [159 207])
+                    ("Reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [210 223])
+                    ("IsRecent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [239 250])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [259 270]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [226 271])
+                    ("GetBathWidth" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [274 293])
+                    ("RunSim" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("steps" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [307 322]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [296 323])
+                    ("ToString" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [326 343])
+                    ("private" label nil (reparse-symbol classsubparts) [347 355])
+                    ("bool_array" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [358 374])
+                    ("x_last" variable (:type "unsigned int") (reparse-symbol classsubparts) [377 393])
+                    ("y_last" variable (:type "unsigned int") (reparse-symbol classsubparts) [396 412])
+                    ("x_center" variable (:type "unsigned int") (reparse-symbol classsubparts) [415 433])
+                    ("y_center" variable (:type "unsigned int") (reparse-symbol classsubparts) [436 454])
+                    ("r_start" variable (:type "unsigned int") (reparse-symbol classsubparts) [457 474])
+                    ("r_escape" variable (:type "unsigned int") (reparse-symbol classsubparts) [477 495])
+                    ("bath_width" variable (:type "unsigned int") (reparse-symbol classsubparts) [498 518])
+                    ("SetModelVal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [541 552])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [558 569])
+                            ("val" variable (:type "int") (reparse-symbol arg-sub-list) [575 588]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [524 589])
+                    ("OutsideCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("r_escape" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [610 628])
+                            ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [635 646])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [653 664]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [592 665])
+                    ("AnyNeighbours" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [686 697])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [704 715]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [668 716])
+                    ("DropNewIon" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [735 747])
+                            ("y" variable
+                               (:pointer 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [752 764]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [719 765])
+                    ("SetLast" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [781 792])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [801 812]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [768 813]))                  
+                :type "class")
+                nil [48 816]))          
+      :file "CrystalModel.hpp"
+      :pointmax 843
+      :fsize 842
+      :lastmodtime '(23030 24591 757043 486000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALMODEL_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRYSTALCONTROL_H" variable (:constant-flag t) nil [34 50])
+            ("CrystalModel.hpp" include nil nil [52 79])
+            ("SDL_wtk/SDL_wtk.h" include (:system-flag t) nil [80 108])
+            ("CrystalControl" type
+               (:typedef ("CrystalControl_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [163 211])
+            ("CrystalControl_GetContainer" function
+               (:type ("AppContainer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cc" variable (:type ("CrystalControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1049 1067]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1001 1068])
+            ("CrystalControl_dtor" function
+               (:type "void"
+                :arguments 
+                  ( ("cc" variable (:type ("CrystalControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [765 783]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [733 784])
+            ("CrystalControl_ctor" function
+               (:type ("CrystalControl" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cm" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [564 581]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [522 582]))          
+      :file "CrystalControl.hpp"
+      :pointmax 1131
+      :fsize 1130
+      :lastmodtime '(23038 7153 958026 237000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALCONTROL_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CRYSTALVIEW_H" variable (:constant-flag t) nil [31 44])
+            ("CrystalModel.hpp" include nil nil [46 73])
+            ("SDL_wtk/SDL_wtk.h" include (:system-flag t) nil [74 102])
+            ("CrystalView" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [124 131])
+                    ("CrystalView" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("cm" variable
+                               (:pointer 1
+                                :type ("CrystalModel" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [146 163]))                          
+                        :type ("CrystalView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [134 164])
+                    ("CrystalView" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [167 182])
+                    ("GetComponent" function
+                       (:prototype-flag t
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [188 216])
+                    ("protected" label nil (reparse-symbol classsubparts) [220 230])
+                    ("private" label nil (reparse-symbol classsubparts) [232 240])
+                    ("cm" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [243 261])
+                    ("surface" variable (:type ("AppComponent" type (:type "class") nil nil)) (reparse-symbol classsubparts) [264 286])
+                    ("Paint" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("host" variable (:type ("ComponentHost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [302 321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [290 322]))                  
+                :type "class")
+                nil [104 325]))          
+      :file "CrystalView.hpp"
+      :pointmax 353
+      :fsize 352
+      :lastmodtime '(23038 8504 913058 344000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALVIEW_H")
+          )
+))
+  :file "!home!marcus!Programming!C++!CrystalSim!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

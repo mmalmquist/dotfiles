@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("PROM/PERM Collector applet" section nil nil [21 75])
+            ("[Main menu]" section (:members 
+              ( ("[Main menu]" anchor nil nil [187 190]))              ) nil [75 719]))          
+      :file "ppc.jsp"
+      :pointmax 719
+      :fsize 746
+      :lastmodtime '(22915 26948 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!PROM_PREM_Collector!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,11 +1,16 @@
-;; start package.el with emacs
+;;;; .emacs -- Emacs config file
+;;; Commentary:
+
+;;; Code:
+
+;; start package.el with Emacs
 (require 'package)
 ;; initialize package.el
 (package-initialize)
 ;; helm config
 (require 'helm-config)
 ;; (global-set-key (kbd "C-x c M-x") 'execute-extended-command)
-;; (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 ;; elpy
 (elpy-enable)
@@ -21,7 +26,7 @@
             (auto-fill-mode 1)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
-
+;; PHP mode
 (autoload 'php-mode "php-mode.el" "Php mode." t)
 (setq auto-mode-alist (append '(("/.*\.php[345]?\'" . php-mode)) auto-mode-alist))
 
@@ -32,7 +37,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
+ '(c-initialization-hook nil)
+ '(c-mode-common-hook nil)
  '(company-auto-complete t)
+ '(company-auto-complete-chars (quote (40 41 34 36 60 62 47)))
  '(company-backends
    (quote
     (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
@@ -44,7 +52,8 @@
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "f5512c02e0a6887e987a816918b7a684d558716262ac7ee2dd0437ab913eaec6" "2997ecd20f07b99259bddba648555335ffb7a7d908d8d3e6660ecbec415f6b95" "9d91458c4ad7c74cf946bd97ad085c0f6a40c370ac0a1cbeb2e3879f15b40553" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "4e753673a37c71b07e3026be75dc6af3efbac5ce335f3707b7d6a110ecb636a3" default)))
+    ("e11569fd7e31321a33358ee4b232c2d3cf05caccd90f896e1df6cab228191109" "599f1561d84229e02807c952919cd9b0fbaa97ace123851df84806b067666332" "2022c5a92bbc261e045ec053aa466705999863f14b84c012a43f55a95bf9feb8" "3d5720f488f2ed54dd4e40e9252da2912110948366a16aef503f3e9e7dfe4915" "7bc31a546e510e6bde482ebca992e293a54cb075a0cbfb384bf2bf5357d4dee3" "5e52ce58f51827619d27131be3e3936593c9c7f9f9f9d6b33227be6331bf9881" "2a739405edf418b8581dcd176aaf695d319f99e3488224a3c495cb0f9fd814e3" "cdfc5c44f19211cfff5994221078d7d5549eeb9feda4f595a2fd8ca40467776c" "71c379d39642d7281407e56123ad7043b9874a1c18b20b6685730a86251a002e" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" "f5512c02e0a6887e987a816918b7a684d558716262ac7ee2dd0437ab913eaec6" "2997ecd20f07b99259bddba648555335ffb7a7d908d8d3e6660ecbec415f6b95" "9d91458c4ad7c74cf946bd97ad085c0f6a40c370ac0a1cbeb2e3879f15b40553" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "4e753673a37c71b07e3026be75dc6af3efbac5ce335f3707b7d6a110ecb636a3" default)))
+ '(ecb-layout-name "left15")
  '(ecb-layout-window-sizes
    (quote
     (("left3"
@@ -52,9 +61,14 @@
       (ecb-sources-buffer-name 0.21311475409836064 . 0.36363636363636365)
       (ecb-methods-buffer-name 0.21311475409836064 . 0.36363636363636365)))))
  '(ecb-options-version "2.50")
+ '(ecb-tip-of-the-day nil)
+ '(ecb-use-speedbar-instead-native-tree-buffer (quote dir))
+ '(ecb-windows-width 0.25)
  '(elpy-company-post-completion-function (quote elpy-company-post-complete-parens))
  '(elpy-rpc-backend "rope")
  '(global-company-mode t)
+ '(global-flycheck-mode t)
+ '(global-font-lock-mode t)
  '(global-linum-mode t)
  '(helm-mode t)
  '(inhibit-startup-screen t)
@@ -67,7 +81,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (flycheck rtags cmake-ide ecb flymake-php company-php dumb-jump cython-mode sr-speedbar iedit helm smart-mode-line smart-mode-line-powerline-theme powerline company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy)))
+    (cmake-mode highlight-symbol darcula-theme flycheck-cython flycheck rtags ecb flymake-php company-php dumb-jump cython-mode sr-speedbar iedit helm smart-mode-line smart-mode-line-powerline-theme powerline company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy)))
  '(powerline-default-separator (quote arrow))
  '(powerline-gui-use-vcs-glyph t)
  '(python-check-command "flake8")
@@ -76,6 +90,10 @@
  '(python-skeleton-autoinsert t)
  '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)
+ '(semantic-c-dependency-system-include-path
+   (quote
+    ("/usr/include" "/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include" "/usr/lib/gcc/x86_64-pc-linux-gnu/7.3.0/include-fixed")))
+ '(semantic-mode t)
  '(sml/theme (quote powerline))
  '(speedbar-default-position (quote right))
  '(speedbar-show-unknown-files t)
@@ -85,7 +103,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 135 :width normal :foundry "ibm" :family "Courier"))))
+ '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 145 :width normal :foundry "CTDB" :family "Fira Mono for Powerline"))))
+ '(ecb-default-highlight-face ((t (:background "black"))))
  '(mode-line ((t (:background "gray17" :foreground "#8FB28F" :box (:line-width -1 :style released-button)))))
  '(mode-line-inactive ((t (:background "gray22" :foreground "gray60" :box (:line-width -1 :style pressed-button) :slant italic))))
  '(powerline-active1 ((t (:inherit mode-line :background "#383838"))))
@@ -112,3 +131,6 @@
 ;(sr-speedbar-toggle)  ; if we load it earlier it takes up half of the screen
 ;; smart-mode-line
 (sml/setup)  ; is loaded in the custom-set-variables so needs to be loaded after that
+
+(provide (quote .emacs))
+;;; .emacs ends here

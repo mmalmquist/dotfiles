@@ -1,0 +1,75 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("../src/cgpfigure.h" include nil nil [41 70])
+            ("../src/cgpentry.h" include nil nil [71 99])
+            ("../src/cgpstack.h" include nil nil [100 128])
+            ("../src/cgnuplot.h" include nil nil [129 157])
+            ("CNRM" variable (:constant-flag t) nil [167 171])
+            ("CRED" variable (:constant-flag t) nil [191 195])
+            ("CGRN" variable (:constant-flag t) nil [216 220])
+            ("CYEL" variable (:constant-flag t) nil [241 245])
+            ("CBLU" variable (:constant-flag t) nil [266 270])
+            ("CMAG" variable (:constant-flag t) nil [291 295])
+            ("CCYN" variable (:constant-flag t) nil [316 320])
+            ("CWHT" variable (:constant-flag t) nil [341 345])
+            ("cgpstack_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [377 382]))                  
+                :type "int")
+                nil [359 383])
+            ("cgpplot_test" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [401 406]))                  
+                :type "int")
+                nil [384 407])
+            ("sqr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [419 428]))                  
+                :type "double")
+                nil [408 429])
+            ("main" function (:type "int") nil [431 910])
+            ("cgpstack_test" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [930 935]))                  
+                :type "int")
+                nil [912 1780])
+            ("cgpplot_test" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1799 1804]))                  
+                :type "int")
+                nil [1782 4211])
+            ("sqr" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [4224 4233]))                  
+                :type "double")
+                nil [4213 4253]))          
+      :file "testing.c"
+      :pointmax 4254
+      :fsize 4253
+      :lastmodtime '(22995 58934 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CNRM" . ((string "\"\\x1B[0m\"" 173 . 182)))
+          ("CRED" . ((string "\"\\x1B[31m\"" 197 . 207)))
+          ("CCYN" . ((string "\"\\x1B[36m\"" 322 . 332)))
+          ("CGRN" . ((string "\"\\x1B[32m\"" 222 . 232)))
+          ("CWHT" . ((string "\"\\x1B[37m\"" 347 . 357)))
+          ("CYEL" . ((string "\"\\x1B[33m\"" 247 . 257)))
+          ("CBLU" . ((string "\"\\x1B[34m\"" 272 . 282)))
+          ("CMAG" . ((string "\"\\x1B[35m\"" 297 . 307)))
+          )
+))
+  :file "!home!marcus!Programming!C!cgnuplot!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

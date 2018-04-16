@@ -1,0 +1,624 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDLTEXT_H" variable (:constant-flag t) nil [27 36])
+            ("SDL2/SDL_ttf.h" include (:system-flag t) nil [38 63])
+            ("SDL2/SDL.h" include (:system-flag t) nil [64 85])
+            ("string" include (:system-flag t) nil [86 103])
+            ("iostream" include (:system-flag t) nil [104 123])
+            ("SDLText" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [145 152])
+                    ("SDLText" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("renderer" variable
+                               (:pointer 1
+                                :type ("SDL_Renderer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [169 192])
+                            ("font_path" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"/usr/share/fonts/TTF/DejaVuSans.ttf\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [209 275])
+                            ("font_size" variable
+                               (:default-value "12"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [293 309])
+                            ("message_text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\" \""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [327 362])
+                            ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "{0, 0, 0, 0xff}"
+                                :type ("SDL_Color" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [380 418]))                          
+                        :type ("SDLText" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [161 420])
+                    ("SDLText" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [429 440])
+                    ("display" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [449 464])
+                    ("loadFont" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [473 497])
+                    ("setLocation" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [523 529])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [530 536]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [506 537])
+                    ("setFontSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newSize" variable (:type "int") (reparse-symbol arg-sub-list) [563 575]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [546 576])
+                    ("setFontPath" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("fontPath" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [602 629]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [585 630])
+                    ("setFontColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("color" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [657 673]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [639 674])
+                    ("setText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("newText" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [696 722]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [683 723])
+                    ("reloadFont" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [732 750])
+                    ("setParentBounds" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rect" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SDL_Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [780 801]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [759 802])
+                    ("getX" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [811 822])
+                    ("getY" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [831 842])
+                    ("getWidth" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [851 866])
+                    ("getHeight" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [875 891])
+                    ("protected" label nil (reparse-symbol classsubparts) [897 907])
+                    ("_renderer" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [916 950])
+                    ("private" label nil (reparse-symbol classsubparts) [956 964])
+                    ("_text_texture" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [973 1010])
+                    ("_text_rect" variable
+                       (:typemodifiers ("mutable")
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1019 1047])
+                    ("_parentRect" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "nullptr"
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1056 1094])
+                    ("_hasParent" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1103 1127])
+                    ("_fontPath" variable
+                       (:default-value "NULL"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1136 1165])
+                    ("_fontSize" variable
+                       (:default-value "12"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1174 1193])
+                    ("_messageText" variable
+                       (:default-value "NULL"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1202 1234])
+                    ("_color" variable
+                       (:default-value "{0, 0, 0, 0xff}"
+                        :type ("SDL_Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1243 1278]))                  
+                :type "class")
+                nil [125 1281]))          
+      :file "SDLText.h"
+      :pointmax 1303
+      :fsize 1302
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDLTEXT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDLWINDOW_H" variable (:constant-flag t) nil [29 40])
+            ("string" include (:system-flag t) nil [70 87])
+            ("vector" include (:system-flag t) nil [88 105])
+            ("iostream" include (:system-flag t) nil [106 125])
+            ("SDL2/SDL.h" include (:system-flag t) nil [126 147])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [148 175])
+            ("SDL2/SDL_ttf.h" include (:system-flag t) nil [176 201])
+            ("SDLWindow" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [225 232])
+                    ("SDLWindow" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("title" variable
+                               (:constant-flag t
+                                :default-value "\"Window\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [251 283]))                          
+                        :type ("SDLWindow" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [241 285])
+                    ("SDLWindow" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [294 307])
+                    ("isClosed" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [316 338])
+                    ("pollEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("event" variable
+                               (:reference 1
+                                :type ("SDL_Event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 379]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [347 380])
+                    ("setBackground" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [389 416])
+                    ("reDraw" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [425 445])
+                    ("setBackground" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("red" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [473 485])
+                            ("green" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [486 500])
+                            ("blue" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 541])
+                            ("alpha" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [542 556]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [454 557])
+                    ("getBordersSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("top" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [586 602])
+                            ("left" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [604 621])
+                            ("bottom" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [650 669])
+                            ("right" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [671 689]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [567 691])
+                    ("getBrightness" function
+                       (:prototype-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [700 722])
+                    ("getData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [745 769]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [731 770])
+                    ("getDisplayIndex" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [779 801])
+                    ("getDisplayMode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable
+                               (:pointer 1
+                                :type ("SDL_DisplayMode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [829 851]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [810 852])
+                    ("getFlags" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [861 881])
+                    ("getGammaRamp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("red" variable
+                               (:pointer 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [907 921])
+                            ("green" variable
+                               (:pointer 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [922 938])
+                            ("blue" variable
+                               (:pointer 1
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [939 954]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [890 955])
+                    ("getGrab" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [964 979])
+                    ("getMaximumSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1008 1022])
+                            ("h" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1024 1038]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [988 1040])
+                    ("getMinimumSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1069 1083])
+                            ("h" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1085 1099]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1049 1101])
+                    ("getOpacity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opacity" variable
+                               (:pointer 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1125 1140]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1110 1141])
+                    ("getPixelFormat" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1150 1176])
+                    ("getPosition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1202 1216])
+                            ("y" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1218 1232]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1185 1234])
+                    ("getSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1256 1270])
+                            ("h" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1272 1286]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1243 1288])
+                    ("getSurface" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1297 1323])
+                    ("getTitle" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1332 1355])
+                    ("hide" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1365 1377])
+                    ("isScreenSaverEnabled" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1386 1414])
+                    ("maximize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1423 1439])
+                    ("minimize" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1448 1464])
+                    ("raise" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1473 1486])
+                    ("restore" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1495 1510])
+                    ("setBordered" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bordered" variable (:type "bool") (reparse-symbol arg-sub-list) [1537 1551]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1520 1552])
+                    ("setBrightness" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("brightness" variable (:type "float") (reparse-symbol arg-sub-list) [1579 1596]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1561 1597])
+                    ("setData" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1620 1644])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1645 1660]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1606 1661])
+                    ("setDisplayMode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("SDL_DisplayMode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1689 1717]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1670 1718])
+                    ("setFullscreen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1745 1760]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1727 1761])
+                    ("setGammaRamp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("red" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1787 1807])
+                            ("green" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1833 1855])
+                            ("blue" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uint16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1881 1902]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1770 1903])
+                    ("setGrab" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("grabbed" variable (:type "bool") (reparse-symbol arg-sub-list) [1925 1938]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1912 1939])
+                    ("setHitTest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("callback" variable (:type ("SDL_HitTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1963 1984])
+                            ("callback_data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1985 2005]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1948 2006])
+                    ("setIcon" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("icon" variable
+                               (:pointer 1
+                                :type ("SDL_Surface" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2028 2046]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2015 2047])
+                    ("setInputFocus" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2056 2076])
+                    ("setMaximumSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("max_w" variable (:type "int") (reparse-symbol arg-sub-list) [2105 2115])
+                            ("max_h" variable (:type "int") (reparse-symbol arg-sub-list) [2116 2126]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2085 2127])
+                    ("setMinimumSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("min_w" variable (:type "int") (reparse-symbol arg-sub-list) [2156 2166])
+                            ("min_h" variable (:type "int") (reparse-symbol arg-sub-list) [2167 2177]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2136 2178])
+                    ("setModalFor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("modal_window" variable
+                               (:pointer 1
+                                :type ("SDL_Window" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2203 2228]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2187 2229])
+                    ("setOpacity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("opacity" variable (:type "float") (reparse-symbol arg-sub-list) [2253 2267]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2238 2268])
+                    ("setPosition" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2294 2300])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2301 2307]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2277 2308])
+                    ("setResizable" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("resizable" variable (:type "bool") (reparse-symbol arg-sub-list) [2335 2350]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2317 2351])
+                    ("setSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2373 2383])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2384 2395]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2360 2396])
+                    ("setTitle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("title" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2419 2437]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2405 2438])
+                    ("setBounds" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2462 2468])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2469 2475])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2476 2486])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2487 2498]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2447 2499])
+                    ("renderer" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2508 2541])
+                    ("protected" label nil (reparse-symbol classsubparts) [2547 2557])
+                    ("private" label nil (reparse-symbol classsubparts) [2563 2571])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2580 2592])
+                    ("_title" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2601 2620])
+                    ("_bgAlpha" variable (:type "int") (reparse-symbol classsubparts) [2629 2669])
+                    ("_bgRed" variable (:type "int") (reparse-symbol classsubparts) [2629 2669])
+                    ("_bgGreen" variable (:type "int") (reparse-symbol classsubparts) [2629 2669])
+                    ("_bgBlue" variable (:type "int") (reparse-symbol classsubparts) [2629 2669])
+                    ("_windowBounds" variable (:type ("SDL_Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2678 2701])
+                    ("_closed" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2710 2731])
+                    ("_window" variable
+                       (:pointer 1
+                        :default-value "nullptr"
+                        :type ("SDL_Window" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2740 2770]))                  
+                :type "class")
+                nil [203 2773]))          
+      :file "SDLWindow.h"
+      :pointmax 2797
+      :fsize 2796
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDLWINDOW_H")
+          )
+))
+  :file "!home!marcus!git!SDLG!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

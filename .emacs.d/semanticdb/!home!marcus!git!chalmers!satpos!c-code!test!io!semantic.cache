@@ -1,0 +1,61 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("check.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("../../src/io/file.h" include nil nil [40 70])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83 95]))                  
+                :type "int")
+                nil [72 322])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_read" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [344 354]))                  
+                :type ("END_TEST" type (:type "class") nil nil))
+                nil [323 486])
+            ("file_case" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [521 526]))                  
+                :type ("TCase" type (:type "class") nil nil))
+                nil [497 653]))          
+      :file "file_test.c"
+      :pointmax 654
+      :fsize 653
+      :lastmodtime '(23076 12203 747463 918000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("check.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("stdio.h" include (:system-flag t) nil [40 58])
+            ("../../src/util/str.h" include nil nil [59 90])
+            ("../../src/io/csv_reader.h" include nil nil [91 127])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_read_csv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [141 155]))                  
+                :type "int")
+                nil [130 567])
+            ("csv_reader_case" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [608 613]))                  
+                :type ("TCase" type (:type "class") nil nil))
+                nil [578 714]))          
+      :file "csv_reader_test.c"
+      :pointmax 715
+      :fsize 714
+      :lastmodtime '(23076 13681 458433 593000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!chalmers!satpos!c-code!test!io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

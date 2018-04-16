@@ -1,0 +1,401 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TEXTUREMAPPING_H_" variable (:constant-flag t) nil [152 169])
+            ("SDL/SDL.h" include (:system-flag t) nil [171 191])
+            ("pixels.h" include nil nil [192 211])
+            ("points.h" include nil nil [212 231])
+            ("mapPicture" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [256 277])
+                    ("mapPicture" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [278 302])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [303 320])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [321 339])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [340 357])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [358 376]))                  
+                :type "void")
+                nil [233 377]))          
+      :file "textureMapping.h"
+      :pointmax 408
+      :fsize 407
+      :lastmodtime '(23086 55731 915029 733000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEXTUREMAPPING_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PIXELS_H_" variable (:constant-flag t) nil [100 109])
+            ("SDL/SDL.h" include (:system-flag t) nil [111 131])
+            ("SDL/SDL_image.h" include (:system-flag t) nil [132 158])
+            ("getPixel" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183 204])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [205 211])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [212 218]))                  
+                :type ("Uint32" type (:type "class") nil nil))
+                nil [160 219])
+            ("putPixel" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [242 263])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [264 270])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [271 277])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [278 291]))                  
+                :type "void")
+                nil [220 292]))          
+      :file "pixels.h"
+      :pointmax 315
+      :fsize 314
+      :lastmodtime '(23086 55566 729018 492000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PIXELS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DEFINITIONS_H_" variable (:constant-flag t) nil [306 320])
+            ("SDL/SDL.h" include (:system-flag t) nil [323 343])
+            ("SDL/SDL_image.h" include (:system-flag t) nil [344 370])
+            ("time.h" include (:system-flag t) nil [371 388])
+            ("3d.h" include nil nil [390 405])
+            ("lines.h" include nil nil [406 424])
+            ("myMath.h" include nil nil [425 444])
+            ("pixels.h" include nil nil [445 464])
+            ("points.h" include nil nil [465 484])
+            ("textureMapping.h" include nil nil [485 512])
+            ("square.h" include nil nil [513 532])
+            ("TSPEC_STACK" variable (:constant-flag t) nil [542 553])
+            ("TSPEC_TO_MS" variable (:constant-flag t) nil [620 631])
+            ("realtime_ms" function
+               (:prototype-flag t
+                :type "long int")
+                nil [690 713])
+            ("SCREEN_WIDTH" variable (:constant-flag t) nil [745 757])
+            ("SCREEN_HEIGHT" variable (:constant-flag t) nil [771 784])
+            ("SCREEN_BPP" variable (:constant-flag t) nil [797 807])
+            ("STRETCH_FACTOR" variable (:constant-flag t) nil [819 833]))          
+      :file "definitions.h"
+      :pointmax 863
+      :fsize 862
+      :lastmodtime '(23118 22398 103680 368000)
+      :unmatched-syntax '((LONG 685 . 689) (EXTERN 678 . 684))
+      :lexical-table 
+        '(("TSPEC_TO_MS" (spp-arg-list ("ts" "t") 631 . 638) . 
+              ((DOUBLE "double" 639 . 645) (symbol "t" 646 . 647) (punctuation "=" 647 . 648) (symbol "ts" 648 . 650) (punctuation "." 650 . 651) (symbol "tv_sec" 651 . 657) (punctuation "+" 657 . 658) (semantic-list "(ts.tv_nsec/1.0e9)" 658 . 676)))
+          ("SCREEN_WIDTH" . ((number "1280" 758 . 762)))
+          ("SCREEN_BPP" . ((number "32" 808 . 810)))
+          ("STRETCH_FACTOR" . ((number "6" 834 . 835)))
+          ("DEFINITIONS_H_")
+          ("SCREEN_HEIGHT" . ((number "720" 785 . 788)))
+          ("TSPEC_STACK" (spp-arg-list ("ts") 553 . 557) . 
+              ((STRUCT "struct" 558 . 564) (symbol "timespec" 565 . 573) (symbol "ts" 574 . 576) (punctuation ";" 576 . 577) (symbol "clock_gettime" 577 . 590) (semantic-list "(CLOCK_REALTIME,&ts)" 590 . 610)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("THREED_H_" variable (:constant-flag t) nil [115 124])
+            ("SDL/SDL.h" include (:system-flag t) nil [126 146])
+            ("points.h" include nil nil [147 166])
+            ("mdl_width" variable (:constant-flag t) nil [176 185])
+            ("mdl_height" variable (:constant-flag t) nil [197 207])
+            ("mdl_height" variable (:constant-flag t) nil [197 207])
+            ("maxPoints" variable (:constant-flag t) nil [219 228])
+            ("maxPoints" variable (:constant-flag t) nil [219 228])
+            ("maxPoints" variable (:constant-flag t) nil [219 228])
+            ("maxWalls" variable (:constant-flag t) nil [260 268])
+            ("xOrigin" variable (:constant-flag t) nil [309 316])
+            ("yOrigin" variable (:constant-flag t) nil [340 347])
+            ("zOrigin" variable (:constant-flag t) nil [371 378])
+            ("radius" variable (:constant-flag t) nil [389 395])
+            ("pts" variable
+               (:pointer 1
+                :dereference 1
+                :type ("point" type (:type "class") nil nil))
+                nil [399 421])
+            ("walls" variable
+               (:pointer 1
+                :dereference 1
+                :type ("wall" type (:type "class") nil nil))
+                nil [422 444])
+            ("frontWallOfCube" variable (:constant-flag t) nil [454 469])
+            ("backWallOfCube" variable (:constant-flag t) nil [487 501])
+            ("init3d" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [512 533])
+            ("translateScene" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("xTranslation" variable (:type "double") (reparse-symbol arg-sub-list) [562 582])
+                    ("yTranslation" variable (:type "double") (reparse-symbol arg-sub-list) [583 603])
+                    ("zTranslation" variable (:type "double") (reparse-symbol arg-sub-list) [604 624]))                  
+                :type "void")
+                nil [534 625])
+            ("rotateSceneAlongYAxis" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("degrees" variable (:type "double") (reparse-symbol arg-sub-list) [660 675]))                  
+                :type "void")
+                nil [626 676])
+            ("renderScene" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [701 722])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [723 749]))                  
+                :type "void")
+                nil [677 750])
+            ("project_3d_2d" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pt" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [777 787])
+                    ("targetPoint" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [788 810]))                  
+                :type "void")
+                nil [751 811]))          
+      :file "3d.h"
+      :pointmax 835
+      :fsize 834
+      :lastmodtime '(23118 23497 893871 441000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("mdl_width" . ((number "32" 186 . 188)))
+          ("backWallOfCube" . ((symbol "walls" 502 . 507) (semantic-list "[1]" 507 . 510)))
+          ("frontWallOfCube" . ((symbol "walls" 470 . 475) (semantic-list "[0]" 475 . 478)))
+          ("xOrigin" . ((semantic-list "(-mdl_width/2)" 317 . 331)))
+          ("yOrigin" . ((semantic-list "(-mdl_width/2)" 348 . 362)))
+          ("mdl_height" . ((number "16" 208 . 210)))
+          ("zOrigin" . ((number "0" 379 . 380)))
+          ("radius" . ((number "1" 396 . 397)))
+          ("THREED_H_")
+          ("maxWalls" . ((semantic-list "((mdl_width-1)*(mdl_height-1))" 269 . 299)))
+          ("maxPoints" . ((semantic-list "(mdl_width*mdl_height)" 229 . 251)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LINES_H_" variable (:constant-flag t) nil [92 100])
+            ("SDL/SDL.h" include (:system-flag t) nil [102 122])
+            ("pixels.h" include nil nil [123 142])
+            ("drawLineSetPixels" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [247 268])
+                    ("xstart" variable (:type "int") (reparse-symbol arg-sub-list) [269 280])
+                    ("ystart" variable (:type "int") (reparse-symbol arg-sub-list) [281 292])
+                    ("xend" variable (:type "int") (reparse-symbol arg-sub-list) [293 302])
+                    ("yend" variable (:type "int") (reparse-symbol arg-sub-list) [303 312])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [313 326]))                  
+                :type "void")
+                nil [217 327]))          
+      :file "lines.h"
+      :pointmax 349
+      :fsize 348
+      :lastmodtime '(23086 55536 570016 439000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LINES_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYMATH_H_" variable (:constant-flag t) nil [185 194])
+            ("M_PI" variable (:constant-flag t) nil [205 209])
+            ("sqr" variable (:constant-flag t) nil [251 254])
+            ("sin_d" variable (:constant-flag t) nil [276 281])
+            ("cos_d" variable (:constant-flag t) nil [313 318])
+            ("tan_d" variable (:constant-flag t) nil [350 355])
+            ("asin_d" variable (:constant-flag t) nil [387 393])
+            ("acos_d" variable (:constant-flag t) nil [424 430])
+            ("atan_d" variable (:constant-flag t) nil [461 467]))          
+      :file "myMath.h"
+      :pointmax 512
+      :fsize 511
+      :lastmodtime '(17680 6583 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("tan_d" (spp-arg-list ("x") 355 . 358) . ((semantic-list "(tan((x)*M_PI/180))" 359 . 378)))
+          ("atan_d" (spp-arg-list ("x") 467 . 470) . ((semantic-list "(atan(x)*180/M_PI)" 471 . 489)))
+          ("MYMATH_H_")
+          ("sin_d" (spp-arg-list ("x") 281 . 284) . ((semantic-list "(sin((x)*M_PI/180))" 285 . 304)))
+          ("sqr" (spp-arg-list ("x") 254 . 257) . ((semantic-list "((x)*(x))" 258 . 267)))
+          ("asin_d" (spp-arg-list ("x") 393 . 396) . ((semantic-list "(asin(x)*180/M_PI)" 397 . 415)))
+          ("cos_d" (spp-arg-list ("x") 318 . 321) . ((semantic-list "(cos((x)*M_PI/180))" 322 . 341)))
+          ("M_PI" . ((number "3.14159265358979323846" 220 . 242)))
+          ("acos_d" (spp-arg-list ("x") 430 . 433) . ((semantic-list "(acos(x)*180/M_PI)" 434 . 452)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("POINTS_H_" variable (:constant-flag t) nil [424 433])
+            ("point_t" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [461 470])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [472 481])
+                    ("z" variable (:type "double") (reparse-symbol classsubparts) [483 492])
+                    ("id" variable (:type "int") (reparse-symbol classsubparts) [496 503]))                  
+                :type "struct")
+                nil [435 512])
+            ("point" type
+               (:typedef ("point_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [435 512])
+            ("point_2d_t" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [543 549])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [551 557]))                  
+                :type "struct")
+                nil [514 569])
+            ("point_2d" type
+               (:typedef ("point_2d_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [514 569])
+            ("point_2d_float_t" type
+               (:members 
+                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [606 615])
+                    ("y" variable (:type "double") (reparse-symbol classsubparts) [617 626]))                  
+                :type "struct")
+                nil [571 644])
+            ("point_2d_float" type
+               (:typedef ("point_2d_float_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [571 644])
+            ("wall_t" type
+               (:members 
+                  ( ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [671 688])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [690 707])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [709 727])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [729 747]))                  
+                :type "struct")
+                nil [646 756])
+            ("wall" type
+               (:typedef ("wall_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [646 756]))          
+      :file "points.h"
+      :pointmax 779
+      :fsize 778
+      :lastmodtime '(23093 34351 384809 694000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POINTS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SQUARE_H_" variable (:constant-flag t) nil [98 107])
+            ("points.h" include nil nil [109 128])
+            ("drawSquare" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154 175])
+                    ("p1" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [176 195])
+                    ("p2" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [196 215])
+                    ("p3" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [216 235])
+                    ("p4" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [236 255])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [256 269]))                  
+                :type "void")
+                nil [130 270]))          
+      :file "square.h"
+      :pointmax 294
+      :fsize 293
+      :lastmodtime '(17688 22371 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SQUARE_H_")
+          )
+))
+  :file "!home!marcus!Programming!C!sdl3d!sdl3d_chapter2_2_2d_interpolation!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

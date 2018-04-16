@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("errno.h" include (:system-flag t) nil [41 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("libssh/libssh.h" include (:system-flag t) nil [80 106])
+            ("verify_knownhost" function
+               (:arguments 
+                  ( ("session" variable (:type ("ssh_session" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129 149]))                  
+                :type "int")
+                nil [108 2022])
+            ("show_remote_processes" function
+               (:arguments 
+                  ( ("session" variable (:type ("ssh_session" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2050 2070]))                  
+                :type "int")
+                nil [2024 3046])
+            ("main" function (:type "int") nil [3048 4245]))          
+      :file "sshtest.c"
+      :pointmax 4246
+      :fsize 4245
+      :lastmodtime '(23008 51351 219421 194000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!sshtest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

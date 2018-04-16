@@ -1,0 +1,188 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRYSTALMODEL_H" variable (:constant-flag t) nil [32 46])
+            ("CrystalModel" type
+               (:typedef ("CrystalModel_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [48 92])
+            ("CrystalModel_ctor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bathWidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [132 151]))                  
+                :type ("CrystalModel" type (:type "class") nil nil))
+                nil [94 152])
+            ("CrystalModel_dtor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [183 199]))                  
+                :type "void")
+                nil [153 200])
+            ("CrystalModel_CrystallizeIon" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240 256]))                  
+                :type "int")
+                nil [201 257])
+            ("CrystalModel_GetModelValue" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [296 312])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [323 338])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [349 364]))                  
+                :type "int")
+                nil [258 365])
+            ("CrystalModel_Reset" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [397 413]))                  
+                :type "void")
+                nil [366 414])
+            ("CrystalModel_IsRecent" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [448 464])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [470 485])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [491 506]))                  
+                :type "int")
+                nil [415 507])
+            ("CrystalModel_GetBathWidth" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 561]))                  
+                :type "int")
+                nil [508 562])
+            ("CrystalModel_RunSim" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 610])
+                    ("steps" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [621 640]))                  
+                :type "int")
+                nil [563 641])
+            ("CrystalModel_ToString" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [677 693]))                  
+                :type "char")
+                nil [642 694]))          
+      :file "CrystalModel.h"
+      :pointmax 721
+      :fsize 720
+      :lastmodtime '(23015 9393 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALMODEL_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRYSTALVIEW_H" variable (:constant-flag t) nil [31 44])
+            ("CrystalModel.h" include nil nil [46 71])
+            ("SDL_wtk/SDL_wtk.h" include (:system-flag t) nil [72 100])
+            ("CrystalView" type
+               (:typedef ("CrystalView_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [102 144])
+            ("CrystalView_ctor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182 198]))                  
+                :type ("CrystalView" type (:type "class") nil nil))
+                nil [146 199])
+            ("CrystalView_dtor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cv" variable (:type ("CrystalView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229 244]))                  
+                :type "void")
+                nil [200 245])
+            ("CrystalView_GetComponent" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cv" variable (:type ("CrystalView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [292 307]))                  
+                :type ("AppComponent" type (:type "class") nil nil))
+                nil [246 308]))          
+      :file "CrystalView.h"
+      :pointmax 334
+      :fsize 333
+      :lastmodtime '(23210 58145 598072 940000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALVIEW_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CRYSTALCONTROL_H" variable (:constant-flag t) nil [34 50])
+            ("CrystalModel.h" include nil nil [52 77])
+            ("SDL_wtk/SDL_wtk.h" include (:system-flag t) nil [78 106])
+            ("CrystalControl" type
+               (:typedef ("CrystalControl_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [161 209])
+            ("CrystalControl_ctor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [522 538]))                  
+                :type ("CrystalControl" type (:type "class") nil nil))
+                nil [480 539])
+            ("CrystalControl_dtor" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cc" variable (:type ("CrystalControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [722 740]))                  
+                :type "void")
+                nil [690 741])
+            ("CrystalControl_GetContainer" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("cc" variable (:type ("CrystalControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1007 1025]))                  
+                :type ("AppContainer" type (:type "class") nil nil))
+                nil [958 1026]))          
+      :file "CrystalControl.h"
+      :pointmax 1055
+      :fsize 1054
+      :lastmodtime '(23210 58094 26788 999000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALCONTROL_H")
+          )
+))
+  :file "!home!marcus!git!CrystalSim!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

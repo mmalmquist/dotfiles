@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtkmm-3.0/gtkmm.h" include (:system-flag t) nil [1 29])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [40 49])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50 63]))                  
+                :type "int")
+                nil [31 237]))          
+      :file "Main.cpp"
+      :pointmax 238
+      :fsize 237
+      :lastmodtime '(23230 37099 829263 149000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!Cpp!Gnome!gtkmm-test!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

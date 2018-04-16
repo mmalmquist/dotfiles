@@ -1,0 +1,773 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDLWindow.h" include nil nil [206 228])
+            ("SDLWindow" function
+               (:constructor-flag t
+                :parent "SDLWindow"
+                :arguments 
+                  ( ("title" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [382 406]))                  
+                :type ("SDLWindow" type (:type "class") nil nil))
+                nil [361 551])
+            ("SDLWindow" function
+               (:destructor-flag t
+                :parent "SDLWindow"
+                :type "void")
+                nil [618 760])
+            ("isClosed" function
+               (:methodconst-flag t
+                :parent "SDLWindow"
+                :type "bool")
+                nil [867 923])
+            ("setBackground" function
+               (:methodconst-flag t
+                :parent "SDLWindow"
+                :type "void")
+                nil [1015 1162])
+            ("reDraw" function
+               (:methodconst-flag t
+                :parent "SDLWindow"
+                :type "void")
+                nil [1239 1306])
+            ("init" function
+               (:parent "SDLWindow"
+                :type "bool")
+                nil [1411 2552])
+            ("setBackground" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("red" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2840 2852])
+                    ("green" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2853 2867])
+                    ("blue" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2868 2881])
+                    ("alpha" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2926]))                  
+                :type "void")
+                nil [2810 3012])
+            ("pollEvent" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("event" variable
+                       (:reference 1
+                        :type ("SDL_Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3105 3122]))                  
+                :type "void")
+                nil [3079 3247])
+            ("getBordersSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("top" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3279 3288])
+                    ("left" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3289 3299])
+                    ("bottom" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3330 3342])
+                    ("right" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3343 3354]))                  
+                :type "int")
+                nil [3249 3430])
+            ("getBrightness" function
+               (:parent "SDLWindow"
+                :type "float")
+                nil [3431 3512])
+            ("getData" function
+               (:pointer 1
+                :parent "SDLWindow"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3538 3562]))                  
+                :type "void")
+                nil [3513 3620])
+            ("getDisplayIndex" function
+               (:parent "SDLWindow"
+                :type "int")
+                nil [3621 3704])
+            ("getDisplayMode" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("mode" variable
+                       (:pointer 1
+                        :type ("SDL_DisplayMode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3735 3757]))                  
+                :type "int")
+                nil [3705 3813])
+            ("getFlags" function
+               (:parent "SDLWindow"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [3814 3898])
+            ("getGammaRamp" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("red" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3927 3941])
+                    ("green" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3942 3958])
+                    ("blue" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3959 3974]))                  
+                :type "int")
+                nil [3899 4040])
+            ("getGrab" function
+               (:parent "SDLWindow"
+                :type "bool")
+                nil [4041 4115])
+            ("getMaximumSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4147 4154])
+                    ("h" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4155 4162]))                  
+                :type "void")
+                nil [4116 4218])
+            ("getMinimumSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4250 4257])
+                    ("h" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4258 4265]))                  
+                :type "void")
+                nil [4219 4321])
+            ("getOpacity" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("opacity" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4348 4363]))                  
+                :type "int")
+                nil [4322 4418])
+            ("getPixelFormat" function
+               (:parent "SDLWindow"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [4419 4515])
+            ("getPosition" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4544 4551])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4552 4559]))                  
+                :type "void")
+                nil [4516 4612])
+            ("getSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4637 4644])
+                    ("h" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4645 4652]))                  
+                :type "void")
+                nil [4613 4701])
+            ("getSurface" function
+               (:pointer 1
+                :parent "SDLWindow"
+                :type ("SDL_Surface" type (:type "class") nil nil))
+                nil [4702 4784])
+            ("getTitle" function
+               (:parent "SDLWindow"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [4785 4875])
+            ("hide" function
+               (:parent "SDLWindow"
+                :type "void")
+                nil [4876 4938])
+            ("isScreenSaverEnabled" function
+               (:parent "SDLWindow"
+                :type "bool")
+                nil [4939 5026])
+            ("maximize" function
+               (:parent "SDLWindow"
+                :type "void")
+                nil [5027 5097])
+            ("minimize" function
+               (:parent "SDLWindow"
+                :type "void")
+                nil [5098 5168])
+            ("raise" function
+               (:parent "SDLWindow"
+                :type "void")
+                nil [5169 5233])
+            ("restore" function
+               (:parent "SDLWindow"
+                :type "void")
+                nil [5234 5302])
+            ("setBordered" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("bordered" variable (:type "bool") (reparse-symbol arg-sub-list) [5331 5345]))                  
+                :type "void")
+                nil [5303 5412])
+            ("setBrightness" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("brightness" variable (:type "float") (reparse-symbol arg-sub-list) [5442 5459]))                  
+                :type "int")
+                nil [5413 5520])
+            ("setData" function
+               (:pointer 1
+                :parent "SDLWindow"
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5546 5570])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5571 5586]))                  
+                :type "void")
+                nil [5521 5654])
+            ("setDisplayMode" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_DisplayMode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5685 5713]))                  
+                :type "int")
+                nil [5655 5769])
+            ("setFullscreen" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5799 5814]))                  
+                :type "int")
+                nil [5770 5870])
+            ("setGammaRamp" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("red" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5899 5919])
+                    ("green" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5949 5971])
+                    ("blue" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6001 6022]))                  
+                :type "int")
+                nil [5871 6088])
+            ("setGrab" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("grabbed" variable (:type "bool") (reparse-symbol arg-sub-list) [6113 6126]))                  
+                :type "void")
+                nil [6089 6181])
+            ("setHitTest" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("callback" variable (:type ("SDL_HitTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6208 6229])
+                    ("callback_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6230 6250]))                  
+                :type "int")
+                nil [6182 6321])
+            ("setIcon" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("icon" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6346 6364]))                  
+                :type "void")
+                nil [6322 6413])
+            ("setInputFocus" function
+               (:parent "SDLWindow"
+                :type "int")
+                nil [6414 6493])
+            ("setMaximumSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("max_w" variable (:type "int") (reparse-symbol arg-sub-list) [6525 6535])
+                    ("max_h" variable (:type "int") (reparse-symbol arg-sub-list) [6536 6546]))                  
+                :type "void")
+                nil [6494 6610])
+            ("setMinimumSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("min_w" variable (:type "int") (reparse-symbol arg-sub-list) [6642 6652])
+                    ("min_h" variable (:type "int") (reparse-symbol arg-sub-list) [6653 6663]))                  
+                :type "void")
+                nil [6611 6727])
+            ("setModalFor" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("modal_window" variable
+                       (:pointer 1
+                        :type ("SDL_Window" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6755 6780]))                  
+                :type "int")
+                nil [6728 6841])
+            ("setOpacity" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("opacity" variable (:type "float") (reparse-symbol arg-sub-list) [6868 6882]))                  
+                :type "int")
+                nil [6842 6937])
+            ("setPosition" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6966 6972])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6973 6979]))                  
+                :type "void")
+                nil [6938 7032])
+            ("setResizable" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("resizable" variable (:type "bool") (reparse-symbol arg-sub-list) [7062 7077]))                  
+                :type "void")
+                nil [7033 7146])
+            ("setSize" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7171 7181])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7182 7193]))                  
+                :type "void")
+                nil [7147 7251])
+            ("setTitle" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("title" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7277 7295]))                  
+                :type "void")
+                nil [7252 7354])
+            ("setBounds" function
+               (:parent "SDLWindow"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7671 7677])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7678 7684])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7685 7695])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7696 7707]))                  
+                :type "void")
+                nil [7645 7774]))          
+      :file "SDLWindow.cpp"
+      :pointmax 7775
+      :fsize 7774
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TestPanel.h" include nil nil [374 396])
+            ("TestPanel" function
+               (:constructor-flag t
+                :parent "TestPanel"
+                :arguments 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [419 442]))                  
+                :type ("TestPanel" type (:type "class") nil nil))
+                nil [398 468])
+            ("TestPanel" function
+               (:destructor-flag t
+                :parent "TestPanel"
+                :type "void")
+                nil [470 536])
+            ("addLabel" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("labelName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [907 936])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [937 943])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [944 950]))                  
+                :type "bool")
+                nil [882 1240])
+            ("addSprite" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("labelName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1765 1794])
+                    ("image_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1821 1851])
+                    ("mirrorH" variable (:type "bool") (reparse-symbol arg-sub-list) [1878 1891])
+                    ("mirrorV" variable (:type "bool") (reparse-symbol arg-sub-list) [1892 1905])
+                    ("resizeToFit" variable (:type "bool") (reparse-symbol arg-sub-list) [1906 1923]))                  
+                :type "void")
+                nil [1739 2075])
+            ("draw" function
+               (:parent "TestPanel"
+                :type "void")
+                nil [2167 2506])
+            ("handleMouseState" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("currentMouseStates" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2785 2813]))                  
+                :type "void")
+                nil [2752 3330])
+            ("handleKeyState" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("currentKeyStates" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3596 3628]))                  
+                :type "void")
+                nil [3565 5696])
+            ("pollEvent" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("event" variable
+                       (:reference 1
+                        :type ("SDL_Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5807 5824]))                  
+                :type "void")
+                nil [5781 6354])
+            ("handleMouseWheel" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("mwe" variable (:type ("SDL_MouseWheelEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6480 6504]))                  
+                :type "void")
+                nil [6447 7012])
+            ("handleMouseUp" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("mbe" variable (:type ("SDL_MouseButtonEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7148 7173]))                  
+                :type "void")
+                nil [7118 7240])
+            ("handleMouseDown" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("mbe" variable (:type ("SDL_MouseButtonEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7378 7403]))                  
+                :type "void")
+                nil [7346 7470])
+            ("handleMouseMotion" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("mme" variable (:type ("SDL_MouseMotionEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7601 7626]))                  
+                :type "void")
+                nil [7567 7631])
+            ("handleKeyUp" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("ke" variable (:type ("SDL_KeyboardEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7754 7775]))                  
+                :type "void")
+                nil [7726 7845])
+            ("handleKeyDown" function
+               (:parent "TestPanel"
+                :arguments 
+                  ( ("ke" variable (:type ("SDL_KeyboardEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7969 7990]))                  
+                :type "void")
+                nil [7939 8060])
+            ("getLabel" function
+               (:pointer 1
+                :parent "TestPanel"
+                :arguments 
+                  ( ("labelName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8092 8121]))                  
+                :type ("SDLLabel" type (:type "class") nil nil))
+                nil [8062 8175]))          
+      :file "TestPanel.cpp"
+      :pointmax 8176
+      :fsize 8175
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDLWindow.h" include nil nil [1 23])
+            ("TestPanel.h" include nil nil [24 46])
+            ("SDLText.h" include nil nil [47 67])
+            ("SDLLabel.h" include nil nil [68 89])
+            ("iostream" include (:system-flag t) nil [91 110])
+            ("pollEvents" function
+               (:arguments 
+                  ( ("window" variable
+                       (:reference 1
+                        :type ("SDLWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128 146])
+                    ("panel" variable
+                       (:reference 1
+                        :type ("TestPanel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [147 164]))                  
+                :type "void")
+                nil [112 529])
+            ("main" function (:type "int") nil [531 2704]))          
+      :file "main.cpp"
+      :pointmax 2705
+      :fsize 2704
+      :lastmodtime '(22823 13786 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDLPanel.h" include nil nil [435 456])
+            ("SDLPanel" function
+               (:constructor-flag t
+                :parent "SDLPanel"
+                :arguments 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [612 635]))                  
+                :type ("SDLPanel" type (:type "class") nil nil))
+                nil [593 737])
+            ("SDLPanel" function
+               (:destructor-flag t
+                :parent "SDLPanel"
+                :type "void")
+                nil [791 816])
+            ("draw" function
+               (:parent "SDLPanel"
+                :type "void")
+                nil [908 1148])
+            ("setLocation" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1332 1338])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1339 1345]))                  
+                :type "void")
+                nil [1305 1548])
+            ("setDimension" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1687 1693])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1694 1700]))                  
+                :type "void")
+                nil [1659 1752])
+            ("setBounds" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2012 2018])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2019 2025])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [2026 2032])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [2033 2039]))                  
+                :type "void")
+                nil [1987 2090])
+            ("setBounds" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("rect" variable
+                       (:constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2218 2238]))                  
+                :type "void")
+                nil [2193 2309])
+            ("getX" function
+               (:parent "SDLPanel"
+                :type "int")
+                nil [2416 2548])
+            ("getY" function
+               (:parent "SDLPanel"
+                :type "int")
+                nil [2655 2787])
+            ("getWidth" function
+               (:parent "SDLPanel"
+                :type "int")
+                nil [2864 2919])
+            ("getHeight" function
+               (:parent "SDLPanel"
+                :type "int")
+                nil [2998 3054])
+            ("setBackground" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("r" variable (:type "int") (reparse-symbol arg-sub-list) [3501 3507])
+                    ("g" variable (:type "int") (reparse-symbol arg-sub-list) [3508 3514])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [3515 3521])
+                    ("a" variable (:type "int") (reparse-symbol arg-sub-list) [3522 3528]))                  
+                :type "void")
+                nil [3472 3580])
+            ("getBounds" function
+               (:pointer 1
+                :parent "SDLPanel"
+                :constant-flag t
+                :type ("SDL_Rect" type (:type "class") nil nil))
+                nil [3715 3782])
+            ("setParentBounds" function
+               (:parent "SDLPanel"
+                :arguments 
+                  ( ("rect" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4135 4156]))                  
+                :type "void")
+                nil [4104 4207]))          
+      :file "SDLPanel.cpp"
+      :pointmax 4208
+      :fsize 4207
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDLText.h" include nil nil [287 307])
+            ("SDLText" function
+               (:constructor-flag t
+                :parent "SDLText"
+                :arguments 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [326 349])
+                    ("font_path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [350 379])
+                    ("font_size" variable (:type "int") (reparse-symbol arg-sub-list) [397 411])
+                    ("message_text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [412 444])
+                    ("color" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SDL_Color" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [462 485]))                  
+                :type ("SDLText" type (:type "class") nil nil))
+                nil [309 607])
+            ("SDLText" function
+               (:destructor-flag t
+                :parent "SDLText"
+                :type "void")
+                nil [609 671])
+            ("display" function
+               (:parent "SDLText"
+                :type "void")
+                nil [719 924])
+            ("loadFont" function
+               (:pointer 1
+                :parent "SDLText"
+                :type ("SDL_Texture" type (:type "class") nil nil))
+                nil [1035 1741])
+            ("setLocation" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1923 1929])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1930 1936]))                  
+                :type "void")
+                nil [1897 2131])
+            ("setFontSize" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("newSize" variable (:type "int") (reparse-symbol arg-sub-list) [2222 2234]))                  
+                :type "void")
+                nil [2196 2263])
+            ("setFontPath" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("fontPath" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2391]))                  
+                :type "void")
+                nil [2338 2421])
+            ("setFontColor" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("color" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2541]))                  
+                :type "void")
+                nil [2498 2565])
+            ("setText" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("newText" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2653 2679]))                  
+                :type "void")
+                nil [2631 2711])
+            ("reloadFont" function
+               (:parent "SDLText"
+                :type "void")
+                nil [2811 2979])
+            ("setParentBounds" function
+               (:parent "SDLText"
+                :arguments 
+                  ( ("rect" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3251 3272]))                  
+                :type "void")
+                nil [3221 3323])
+            ("getX" function
+               (:parent "SDLText"
+                :type "int")
+                nil [3430 3557])
+            ("getY" function
+               (:parent "SDLText"
+                :type "int")
+                nil [3664 3791])
+            ("getWidth" function
+               (:parent "SDLText"
+                :type "int")
+                nil [3866 3918])
+            ("getHeight" function
+               (:parent "SDLText"
+                :type "int")
+                nil [3995 4048]))          
+      :file "SDLText.cpp"
+      :pointmax 4049
+      :fsize 4048
+      :lastmodtime '(22689 60985 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!SDLG!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

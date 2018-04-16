@@ -1,0 +1,289 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [19 29])
+            ("tkinter" include nil nil [30 44])
+            ("numpy" include nil nil [45 63])
+            ("matplotlib.figure" include nil nil [64 98])
+            ("matplotlib.backends.backend_tkagg" include nil nil [99 148])
+            ("pi" variable nil nil [149 159])
+            ("cm_to_in" function (:arguments 
+              ( ("l" variable nil (reparse-symbol function_parameters) [175 176]))              ) nil [162 197])
+            ("dpc_to_dpi" function (:arguments 
+              ( ("dpc" variable nil (reparse-symbol function_parameters) [214 217]))              ) nil [199 240])
+            ("SmithChart" type
+               (:members 
+                  ( ("imp_clr" variable nil (reparse-symbol indented_block_body) [266 285])
+                    ("adm_clr" variable nil (reparse-symbol indented_block_body) [290 309])
+                    ("normal_clr" variable nil (reparse-symbol indented_block_body) [314 336])
+                    ("intermediate_imp_style" variable nil (reparse-symbol indented_block_body) [341 370])
+                    ("imp_change_style" variable nil (reparse-symbol indented_block_body) [375 397])
+                    ("final_imp_style" variable nil (reparse-symbol indented_block_body) [402 423])
+                    ("smith_chart_linewidth" variable nil (reparse-symbol indented_block_body) [428 455])
+                    ("imp_real_x" variable nil (reparse-symbol indented_block_body) [460 475])
+                    ("imp_imag_x" variable nil (reparse-symbol indented_block_body) [480 495])
+                    ("imp_real_y" variable nil (reparse-symbol indented_block_body) [500 515])
+                    ("imp_imag_y" variable nil (reparse-symbol indented_block_body) [520 535])
+                    ("plots_list" variable nil (reparse-symbol indented_block_body) [540 555])
+                    ("smith_plots" variable nil (reparse-symbol indented_block_body) [560 575])
+                    ("_max_val" code nil (reparse-symbol indented_block_body) [580 625])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [659 675])
+                            ("self" variable nil (reparse-symbol indented_block_body) [689 702])
+                            ("self" variable nil (reparse-symbol indented_block_body) [716 729])
+                            ("self" variable nil (reparse-symbol indented_block_body) [766 791])
+                            ("self" code nil (reparse-symbol indented_block_body) [820 851])
+                            ("self" variable nil (reparse-symbol indented_block_body) [897 962])
+                            ("self" code nil (reparse-symbol indented_block_body) [971 1004])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1078 1186])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1195 1377])
+                            ("self" code nil (reparse-symbol indented_block_body) [1386 1414])
+                            ("self" code nil (reparse-symbol indented_block_body) [1444 1482])
+                            ("self" code nil (reparse-symbol indented_block_body) [1491 1529])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1538 1656])
+                            ("self" code nil (reparse-symbol indented_block_body) [1665 1684])
+                            ("self" code nil (reparse-symbol indented_block_body) [1693 1738])
+                            ("self" code nil (reparse-symbol indented_block_body) [1772 1798])
+                            ("self" code nil (reparse-symbol indented_block_body) [1886 1909])
+                            ("self" code nil (reparse-symbol indented_block_body) [1918 1941])
+                            ("self" code nil (reparse-symbol indented_block_body) [1950 1968])
+                            ("self" code nil (reparse-symbol indented_block_body) [1978 1999]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [644 648]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [631 2020])
+                    ("add_top_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2043 2047]))                          
+                        :documentation "
+        Creates and places a panel with buttons and labels at the top of the
+        man frame.
+        ")
+                        (reparse-symbol indented_block_body) [2025 3255])
+                    ("add_smith_ctl_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3284 3288]))                          
+                        :documentation "
+        Creates and places the smith chart control panel on the right side of
+        the main frame.
+        ")
+                        (reparse-symbol indented_block_body) [3260 4095])
+                    ("add_z_in_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4119 4123]))                          
+                        :documentation "
+        Displaying current z_in.
+        ")
+                        (reparse-symbol indented_block_body) [4100 4844])
+                    ("add_tl_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4866 4870]))                          
+                        :documentation "
+        Transmission line part
+        ")
+                        (reparse-symbol indented_block_body) [4849 6140])
+                    ("add_lumped_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6166 6170]))                          
+                        :documentation "
+        Lumped in series and parallel
+        ")
+                        (reparse-symbol indented_block_body) [6145 7572])
+                    ("add_stub_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7596 7600]))                          
+                        :documentation "
+        Stub open and short
+        ")
+                        (reparse-symbol indented_block_body) [7577 9324])
+                    ("add_system_prop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9349 9353]))                          
+                        :documentation "
+        System properties
+        ")
+                        (reparse-symbol indented_block_body) [9329 10264])
+                    ("add_clear_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10289 10293]))                          
+                        :documentation "
+        The panel that controls modifying entries written to the chart
+        ")
+                        (reparse-symbol indented_block_body) [10269 10993])
+                    ("add_history_frame" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11020 11024]))                          
+                        :documentation "
+        Previous entries
+        ")
+                        (reparse-symbol indented_block_body) [10998 11847])
+                    ("plot_z_in" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11866 11870]))                          
+                        :documentation "
+        Plot the current input impedance
+        ")
+                        (reparse-symbol indented_block_body) [11852 12290])
+                    ("step_button_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12317 12321])
+                            ("button_id" variable nil (reparse-symbol function_parameters) [12323 12332]))                          
+                        :documentation "
+        Handles events when buttons are pressed in the entries_frame frame.
+        ")
+                        (reparse-symbol indented_block_body) [12295 16034])
+                    ("ctl_button_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16060 16064])
+                            ("button_id" variable nil (reparse-symbol function_parameters) [16066 16075]))                          
+                        :documentation "
+        Handles events when buttons are pressed in the control frame
+        ")
+                        (reparse-symbol indented_block_body) [16039 18369])
+                    ("add_label" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18388 18392])
+                            ("parent_frame" variable nil (reparse-symbol function_parameters) [18394 18406])
+                            ("label_text" variable nil (reparse-symbol function_parameters) [18408 18418])
+                            ("anchr" variable nil (reparse-symbol function_parameters) [18420 18425]))                          
+                        :documentation "
+        A method to simplify the creation of lables
+        ")
+                        (reparse-symbol indented_block_body) [18374 19090])
+                    ("add_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19110 19114])
+                            ("parent_frame" variable nil (reparse-symbol function_parameters) [19116 19128])
+                            ("button_text" variable nil (reparse-symbol function_parameters) [19130 19141])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [19143 19146])
+                            ("anchr" variable nil (reparse-symbol function_parameters) [19148 19153]))                          
+                        :documentation "
+        A method to simplify the creation of buttons
+        ")
+                        (reparse-symbol indented_block_body) [19095 19893])
+                    ("parse_raw_input" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19918 19922])
+                            ("raw_in" variable nil (reparse-symbol function_parameters) [19924 19930]))                          
+                        :documentation "
+        parse_raw_input(self, raw_in)
+
+        raw_in is a string containing theta input. It sould be on the from
+        \"3*pi/2\" or \"pi/3\" or \"2*pi\" or \"1234\" or \"12.34\"
+        return theta numerical value of raw_in.
+        ")
+                        (reparse-symbol indented_block_body) [19898 21564])
+                    ("draw_smith_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21590 21594]))                          
+                        :documentation "
+        Draws the smith chart background which includes impedance
+        and admittance lines.
+        ")
+                        (reparse-symbol indented_block_body) [21569 24173])
+                    ("calc_smith_chart" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24199 24203]))                          
+                        :documentation "
+        Calculate the Layout for impedance and admittance circles
+        ")
+                        (reparse-symbol indented_block_body) [24178 24446])
+                    ("smith_chart_circles_real" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24480 24484]))                          
+                        :documentation "
+        Calculate the circles with constant real impedance
+        ")
+                        (reparse-symbol indented_block_body) [24451 24949])
+                    ("smith_chart_circles_imag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24983 24987]))                          
+                        :documentation "
+        Calculate the circles with constant imaginary impedance
+        ")
+                        (reparse-symbol indented_block_body) [24954 26535]))                  
+                :type "class")
+                nil [242 26535])
+            ("a" variable nil nil [26537 26553])
+            ("\"\"\"
+from Tkinter import *
+def roll(): pass
+def links(): pass
+def create(): pass
+root=Tk()
+root.title(\"CIME\")
+
+rows = 0
+def create_detail_frame():
+    global rows
+    entries_frame = LabelFrame(root,text=\"Enter Details:\")
+    entries_frame.grid(row=rows, columnspan=7, sticky='W',padx=5, pady=5, ipadx=5, ipady=5)
+    Label(entries_frame,text=\"Competitors\",font = \"Arial 8 bold italic\").grid(row=0,sticky='E', padx=5, pady=2)
+    Label(entries_frame,text=\"Keywords\",font = \"Arial 8 bold italic\").grid(row=1,sticky='E', padx=5, pady=2)
+    Label(entries_frame,text=\"Project Name\",font = \"Arial 8 bold italic\").grid(row=2,sticky='E', padx=5, pady=2)
+    e1 = Entry(entries_frame)
+    e2 = Entry(entries_frame)
+    e3 = Entry(entries_frame)
+    e1.grid(row=0,column=1,columnspan=7, sticky=\"WE\", pady=3,padx=5)
+    e2.grid(row=1,column=1,columnspan=7, sticky=\"WE\", pady=3,padx=5)
+    e3.grid(row=2,column=1,columnspan=7, sticky=\"WE\", pady=3,padx=5)
+    Button(entries_frame,text =\"Search Words\",width=10,font = \"Arial 8 bold    italic\",activebackground=\"red\",command=roll).grid(row=3,column=0,sticky=W,pady=4,padx=5)
+    Button(entries_frame,text=\"Google Search\",width=10,font = \"Arial 8 bold italic\",command=links).grid(row=3,column=2,sticky=W,pady=4,padx=5)
+    Button(entries_frame,text=\"Extraxt Text\",width=10,font = \"Arial 8 bold italic\",command = create).grid(row=3,column=4,sticky=W,pady=4,padx=5)
+    rows += 1
+
+    # Reposition text, scroll
+    #self.prev_scr.grid_forget()
+    #self.prev_entr.grid_forget()
+    #self.prev_scr.grid(row=rows, padx=1, column=7, rowspan=15, columnspan=1, sticky=NS)
+    #self.prev_entr.grid(row=rows,column=1)
+
+    # Reposition text, scroll
+    self.prev_scr.grid(row=rows)
+    self.prev_entr.grid(row=rows)
+
+self.prev_entr = Text(master=root)
+self.prev_scr=Scrollbar(root,orient =VERTICAL,command=self.prev_entr.yview)
+self.prev_scr.grid(row=1, padx=1, column=7, rowspan=15, columnspan=1, sticky=NS)
+self.prev_entr.grid(row=1,column=1)
+self.prev_entr.config(yscrollcommand=self.prev_scr.set,font=('Arial', 8, 'bold', 'italic'))
+
+Button(root, text='Add detail frame', command=create_detail_frame).grid(row=0, column=7)
+create_detail_frame()
+
+mainloop()
+\"\"\"" code nil nil [26555 28746]))          
+      :file "SmithChart.py"
+      :pointmax 28747
+      :fsize 28746
+      :lastmodtime '(22630 16972 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!SmithChart!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,453 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("time.h" include (:system-flag t) nil [19 36])
+            ("../include/definitions.h" include nil nil [37 72])
+            ("min" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [89 95])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [96 102]))                  
+                :type "int")
+                nil [74 130])
+            ("max" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [146 152])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [153 159]))                  
+                :type "int")
+                nil [131 187])
+            ("getStepWidthToPoint2d" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [223 238])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [239 252])
+                    ("mapLength" variable (:type "int") (reparse-symbol arg-sub-list) [253 267])
+                    ("targetVector" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 297]))                  
+                :type "void")
+                nil [189 419])
+            ("inc_prec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("prec_b" variable (:type "int") (reparse-symbol arg-sub-list) [442 453])
+                    ("dst" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [454 468])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [469 483]))                  
+                :type "void")
+                nil [421 541])
+            ("texture_size_bytes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("len_pix" variable (:type "int") (reparse-symbol arg-sub-list) [573 585]))                  
+                :type "int")
+                nil [543 671])
+            ("_steps" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [691 701])
+                    ("upper" variable (:type "int") (reparse-symbol arg-sub-list) [702 712])
+                    ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [713 723]))                  
+                :type "int")
+                nil [673 762])
+            ("_lrp_steps" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rightPoints" variable
+                       (:dereference 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [787 810])
+                    ("leftPoints" variable
+                       (:dereference 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [811 833])
+                    ("nPoints" variable (:type "int") (reparse-symbol arg-sub-list) [843 855])
+                    ("left_upper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [865 886])
+                    ("right_upper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [887 909])
+                    ("left_lower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [919 940])
+                    ("right_lower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [941 963])
+                    ("imageHeightB" variable (:type "int") (reparse-symbol arg-sub-list) [973 990]))                  
+                :type "void")
+                nil [764 1732])
+            ("mapPicture2d_interpolated" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1781 1802])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1803 1829])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1831 1851])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1852 1873])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1875 1895])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1896 1917]))                  
+                :type "void")
+                nil [1734 4932])
+            ("__mapPicture2d_interpolated" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4974 4995])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4996 5022])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5033 5053])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5054 5075])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5086 5106])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5107 5128]))                  
+                :type "void")
+                nil [4934 8900])
+            ("mapPicture" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8918 8939])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8940 8966])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8967 8984])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8985 9003])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9004 9021])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9022 9040]))                  
+                :type "void")
+                nil [8902 9507]))          
+      :file "textureMapping.c"
+      :pointmax 9511
+      :fsize 9510
+      :lastmodtime '(23118 26902 604399 566000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/definitions.h" include nil nil [1 36])
+            ("allOutOfScreen_2d" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p12d" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67 88])
+                    ("p22d" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89 110])
+                    ("p32d" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111 132])
+                    ("p42d" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133 154]))                  
+                :type "int")
+                nil [38 526])
+            ("min" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [543 549])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [550 556]))                  
+                :type "int")
+                nil [528 584])
+            ("max" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [600 606])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [607 613]))                  
+                :type "int")
+                nil [585 641])
+            ("drawSquare" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [660 681])
+                    ("p1" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [682 701])
+                    ("p2" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [702 721])
+                    ("p3" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [722 741])
+                    ("p4" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [742 761])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [762 775]))                  
+                :type "void")
+                nil [643 1456]))          
+      :file "square.c"
+      :pointmax 1457
+      :fsize 1456
+      :lastmodtime '(23090 36761 690151 670000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/pixels.h" include nil nil [1 31])
+            ("getPixel" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49 70])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [71 77])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [78 84]))                  
+                :type ("Uint32" type (:type "class") nil nil))
+                nil [33 248])
+            ("putPixel" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [265 286])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [287 293])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [294 300])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 314]))                  
+                :type "void")
+                nil [250 477]))          
+      :file "pixels.c"
+      :pointmax 478
+      :fsize 477
+      :lastmodtime '(23086 56522 985083 569000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/lines.h" include nil nil [1 30])
+            ("drawLineSetPixels" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55 76])
+                    ("xstart" variable (:type "int") (reparse-symbol arg-sub-list) [77 88])
+                    ("ystart" variable (:type "int") (reparse-symbol arg-sub-list) [89 100])
+                    ("xend" variable (:type "int") (reparse-symbol arg-sub-list) [101 110])
+                    ("yend" variable (:type "int") (reparse-symbol arg-sub-list) [111 120])
+                    ("color" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121 134]))                  
+                :type "void")
+                nil [32 787]))          
+      :file "lines.c"
+      :pointmax 793
+      :fsize 751
+      :lastmodtime '(23086 56449 318078 556000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("malloc.h" include (:system-flag t) nil [19 38])
+            ("../include/definitions.h" include nil nil [39 74])
+            ("sin_tbl" variable
+               (:dereference 1
+                :type "double")
+                nil [76 98])
+            ("cos_tbl" variable
+               (:dereference 1
+                :type "double")
+                nil [99 121])
+            ("initSomePoints" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [123 1169])
+            ("project_3d_2d" function
+               (:arguments 
+                  ( ("pt" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1190 1200])
+                    ("targetPoint" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1201 1223]))                  
+                :type "void")
+                nil [1171 1552])
+            ("x" variable
+               (:default-value "x2d"
+                :type "int")
+                nil [1508 1516])
+            ("y" variable
+               (:default-value "y2d"
+                :type "int")
+                nil [1532 1540])
+            ("projectedFrom" variable (:type ("point_2d" type (:type "class") nil nil)) nil [1678 1701])
+            ("projectedTo" variable (:type ("point_2d" type (:type "class") nil nil)) nil [1704 1725])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [2537 2547])
+            ("maxWalls" variable (:type "int") nil [2552 2561])
+            ("mapPicture" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("surface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2584 2592])
+                    ("" variable (:type ("pictureToMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2593 2606])
+                    ("" variable (:type ("walls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2607 2615])
+                    ("" variable (:type ("leftUpper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2617 2627])
+                    ("" variable (:type ("walls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2636])
+                    ("" variable (:type ("rightUpper" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2638 2649])
+                    ("" variable (:type ("walls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2650 2658])
+                    ("" variable (:type ("leftLower" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2660 2670])
+                    ("" variable (:type ("walls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2671 2679])
+                    ("" variable (:type ("rightLower" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2681 2692]))                  
+                :type "int")
+                nil [2573 2693])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [2943 2953])
+            ("maxPoints" variable (:type "int") nil [2958 2968])
+            ("xTranslation" variable (:type "int") nil [2993 3006])
+            ("yTranslation" variable (:type "int") nil [3024 3037])
+            ("zTranslation" variable (:type "int") nil [3055 3068])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [3180 3190])
+            ("maxPoints" variable (:type "int") nil [3195 3205])
+            ("y3d" variable
+               (:default-value "pts[i]->y;"
+                :type "double")
+                nil [3217 3240])
+            ("z3d" variable
+               (:default-value "pts[i]->z;"
+                :type "double")
+                nil [3245 3268])
+            ("y" variable
+               (:default-value "(z3d*sin_tbl[idx] + y3d*cos_tbl[idx])"
+                :type "int")
+                nil [3281 3323])
+            ("z" variable
+               (:default-value "(z3d*cos_tbl[idx] - y3d*sin_tbl[idx])"
+                :type "int")
+                nil [3336 3378])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [3491 3501])
+            ("maxPoints" variable (:type "int") nil [3506 3516])
+            ("x3d" variable
+               (:default-value "pts[i]->x;"
+                :type "double")
+                nil [3528 3551])
+            ("z3d" variable
+               (:default-value "pts[i]->z;"
+                :type "double")
+                nil [3556 3579])
+            ("x" variable
+               (:default-value "(z3d*sin_tbl[idx] + x3d*cos_tbl[idx])"
+                :type "int")
+                nil [3592 3634])
+            ("z" variable
+               (:default-value "(z3d*cos_tbl[idx] - x3d*sin_tbl[idx])"
+                :type "int")
+                nil [3647 3689])
+            ("i" variable
+               (:default-value "0"
+                :type "int")
+                nil [3801 3811])
+            ("maxPoints" variable (:type "int") nil [3816 3826])
+            ("x3d" variable
+               (:default-value "pts[i]->x;"
+                :type "double")
+                nil [3838 3861])
+            ("y3d" variable
+               (:default-value "pts[i]->y;"
+                :type "double")
+                nil [3866 3889])
+            ("x" variable
+               (:default-value "(y3d*sin_tbl[idx] + x3d*cos_tbl[idx])"
+                :type "int")
+                nil [3902 3944])
+            ("y" variable
+               (:default-value "(y3d*cos_tbl[idx] - x3d*sin_tbl[idx])"
+                :type "int")
+                nil [3957 3999]))          
+      :file "3d.c"
+      :pointmax 4009
+      :fsize 4008
+      :lastmodtime '(23118 24426 64344 100000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!sdl3d!sdl3d_chapter2_2_2d_interpolation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

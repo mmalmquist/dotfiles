@@ -1,0 +1,495 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("texture.h" include nil nil [603 623])
+            ("../core/math3d.h" include nil nil [625 652])
+            ("../core/profiling.h" include nil nil [653 683])
+            ("../staticLibs/stb_image.h" include nil nil [685 721])
+            ("iostream" include (:system-flag t) nil [723 742])
+            ("cassert" include (:system-flag t) nil [743 761])
+            ("cstring" include (:system-flag t) nil [762 780])
+            ("Texture::s_resourceMap" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("std::string" type nil nil nil)
+                      ("TextureData" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [782 841])
+            ("TextureData" function
+               (:constructor-flag t
+                :parent "TextureData"
+                :arguments 
+                  ( ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 889])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [890 900])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [901 912])
+                    ("numTextures" variable (:type "int") (reparse-symbol arg-sub-list) [913 929])
+                    ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [930 951])
+                    ("filters" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 969])
+                    ("internalFormat" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [970 993])
+                    ("format" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [994 1009])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1010 1021])
+                    ("attachments" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1022 1042]))                  
+                :type ("TextureData" type (:type "class") nil nil))
+                nil [843 1411])
+            ("TextureData" function
+               (:destructor-flag t
+                :parent "TextureData"
+                :type "void")
+                nil [1413 1670])
+            ("InitTextures" function
+               (:parent "TextureData"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1703 1724])
+                    ("filters" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1725 1742])
+                    ("internalFormat" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1743 1766])
+                    ("format" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1767 1782])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1783 1794]))                  
+                :type "void")
+                nil [1672 2937])
+            ("InitRenderTargets" function
+               (:parent "TextureData"
+                :arguments 
+                  ( ("attachments" variable
+                       (:pointer 1
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2975 2995]))                  
+                :type "void")
+                nil [2939 4318])
+            ("Bind" function
+               (:methodconst-flag t
+                :parent "TextureData"
+                :arguments 
+                  ( ("textureNum" variable (:type "int") (reparse-symbol arg-sub-list) [4343 4358]))                  
+                :type "void")
+                nil [4320 4426])
+            ("BindAsRenderTarget" function
+               (:methodconst-flag t
+                :parent "TextureData"
+                :type "void")
+                nil [4428 4679])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4698 4726])
+                    ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4727 4748])
+                    ("filter" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4749 4764])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4765 4787])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4788 4802])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [4803 4814])
+                    ("attachment" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4815 4833]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [4681 5526])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [5545 5555])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [5556 5567])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5568 5588])
+                    ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5589 5610])
+                    ("filter" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5611 5626])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5627 5649])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5650 5664])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [5665 5676])
+                    ("attachment" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5677 5695]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [5528 5846])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("texture" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5865 5888]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [5848 5997])
+            ("=" function
+               (:operator-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("texture" variable (:type ("Texture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6023 6039]))                  
+                :type "void")
+                nil [5999 6208])
+            ("Texture" function
+               (:destructor-flag t
+                :parent "Texture"
+                :type "void")
+                nil [6210 6388])
+            ("Bind" function
+               (:methodconst-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("unit" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6409 6427]))                  
+                :type "void")
+                nil [6390 6534])
+            ("BindAsRenderTarget" function
+               (:methodconst-flag t
+                :parent "Texture"
+                :type "void")
+                nil [6536 6618]))          
+      :file "texture.cpp"
+      :pointmax 6619
+      :fsize 6618
+      :lastmodtime '(21523 23341 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TEXTURE_H" variable (:constant-flag t) nil [629 638])
+            ("../core/referenceCounter.h" include nil nil [640 677])
+            ("GL/glew.h" include (:system-flag t) nil [678 698])
+            ("string" include (:system-flag t) nil [699 716])
+            ("map" include (:system-flag t) nil [717 731])
+            ("TextureData" type
+               (:superclasses 
+                  ( ("ReferenceCounter" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [779 786])
+                    ("TextureData" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [800 821])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [822 832])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [833 844])
+                            ("numTextures" variable (:type "int") (reparse-symbol arg-sub-list) [845 861])
+                            ("data" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [862 883])
+                            ("filters" variable
+                               (:pointer 1
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [884 901])
+                            ("internalFormat" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [902 925])
+                            ("format" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [926 941])
+                            ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [942 953])
+                            ("attachments" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [954 974]))                          
+                        :type ("TextureData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [788 975])
+                    ("Bind" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("textureNum" variable (:type "int") (reparse-symbol arg-sub-list) [989 1004]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [979 1011])
+                    ("BindAsRenderTarget" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1013 1045])
+                    ("GetWidth" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1049 1097])
+                    ("GetHeight" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1099 1148])
+                    ("TextureData" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1152 1175])
+                    ("protected" label nil (reparse-symbol classsubparts) [1176 1186])
+                    ("private" label nil (reparse-symbol classsubparts) [1188 1196])
+                    ("TextureData" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :type ("TextureData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1210 1229]))                          
+                        :type ("TextureData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1198 1232])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :type ("TextureData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1249 1268]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1234 1271])
+                    ("InitTextures" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [1292 1313])
+                            ("filter" variable
+                               (:pointer 1
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1314 1330])
+                            ("internalFormat" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1331 1354])
+                            ("format" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1355 1370])
+                            ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1371 1382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1274 1383])
+                    ("InitRenderTargets" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("attachments" variable
+                               (:pointer 1
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1408 1428]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1385 1429])
+                    ("m_textureID" variable
+                       (:pointer 1
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1432 1452])
+                    ("m_textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1454 1477])
+                    ("m_frameBuffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1479 1500])
+                    ("m_renderBuffer" variable (:type ("GLuint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1502 1524])
+                    ("m_numTextures" variable (:type "int") (reparse-symbol classsubparts) [1526 1544])
+                    ("m_width" variable (:type "int") (reparse-symbol classsubparts) [1546 1558])
+                    ("m_height" variable (:type "int") (reparse-symbol classsubparts) [1560 1573]))                  
+                :type "class")
+                nil [733 1576])
+            ("Texture" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1594 1601])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1611 1639])
+                            ("textureTarget" variable
+                               (:default-value "GL_TEXTURE_2D"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1640 1676])
+                            ("filter" variable
+                               (:default-value "GL_LINEAR_MIPMAP_LINEAR"
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1678 1718])
+                            ("internalFormat" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1720 1751])
+                            ("format" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1753 1776])
+                            ("clamp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1778 1796])
+                            ("attachment" variable
+                               (:default-value "GL_NONE"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1798 1825]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1603 1827])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("width" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1837 1850])
+                            ("height" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1852 1866])
+                            ("data" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [1868 1891])
+                            ("textureTarget" variable
+                               (:default-value "GL_TEXTURE_2D"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1893 1929])
+                            ("filter" variable
+                               (:default-value "GL_LINEAR_MIPMAP_LINEAR"
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1931 1971])
+                            ("internalFormat" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1973 2004])
+                            ("format" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2006 2029])
+                            ("clamp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2031 2049])
+                            ("attachment" variable
+                               (:default-value "GL_NONE"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2051 2078]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1829 2080])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2090 2113]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2082 2114])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("texture" variable (:type ("Texture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2131 2147]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2116 2148])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2150 2169])
+                    ("Bind" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("unit" variable
+                               (:default-value "0"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2182 2203]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2172 2211])
+                    ("BindAsRenderTarget" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2214 2246])
+                    ("GetWidth" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2250 2316])
+                    ("GetHeight" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [2318 2385])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2405 2428]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2389 2485])
+                    ("!=" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2503 2526]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2487 2565])
+                    ("protected" label nil (reparse-symbol classsubparts) [2566 2576])
+                    ("private" label nil (reparse-symbol classsubparts) [2577 2585])
+                    ("s_resourceMap" variable
+                       (:typemodifiers ("static")
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("TextureData" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2587 2644])
+                    ("m_textureData" variable
+                       (:pointer 1
+                        :type ("TextureData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2647 2674])
+                    ("m_fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2676 2699]))                  
+                :type "class")
+                nil [1578 2702]))          
+      :file "texture.h"
+      :pointmax 2711
+      :fsize 2710
+      :lastmodtime '(21523 23341 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEXTURE_H")
+          )
+))
+  :file "!home!marcus!Programming!C++!3DEngineCpp-master!src!rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

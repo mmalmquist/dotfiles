@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("ROOT" variable (:default-value ("..")) nil [209 220])
+            ("RM" variable (:default-value ("rm" "-rf")) nil [253 266])
+            ("all" function (:arguments ("sdl3d")) nil [579 590])
+            ("sdl3d" function (:arguments ("$(OBJS)" "$(USER_OBJS)")) nil [610 917])
+            ("clean" function nil nil [934 996])
+            (".PHONY" function (:arguments ("all" "clean" "dependents")) nil [997 1026])
+            (".SECONDARY" function nil nil [1026 1038]))          
+      :file "makefile"
+      :pointmax 1073
+      :fsize 1072
+      :lastmodtime '(17689 50186 0 0)
+      :unmatched-syntax '((symbol 1055 . 1072) (semantic-list 1049 . 1055) (punctuation 1048 . 1049) (symbol 1039 . 1047) (bol 1039 . 1039) (symbol 472 . 486) (semantic-list 466 . 472) (punctuation 465 . 466) (symbol 456 . 464) (bol 456 . 456) (semantic-list 442 . 448) (punctuation 441 . 442) (symbol 432 . 440) (bol 432 . 432) (symbol 395 . 405) (symbol 386 . 394) (bol 386 . 386) (semantic-list 362 . 385) (punctuation 361 . 362) (symbol 352 . 360) (bol 352 . 352) (symbol 341 . 351) (symbol 332 . 340) (bol 332 . 332) (symbol 237 . 251) (semantic-list 231 . 237) (punctuation 230 . 231) (symbol 221 . 229) (bol 221 . 221))))
+  :file "!home!marcus!Programming!C!sdl3d!sdl3d_chapter2_3_2d_interpolation_bresenham!Debug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

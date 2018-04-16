@@ -1,0 +1,1943 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEADER_SIMPLE_OPENGL_IMAGE_LIBRARY" variable (:constant-flag t) nil [1017 1051])
+            ("SOIL_last_result" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15025 15032]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14990 15033])
+            ("SOIL_free_image_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("img_data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14795 14821]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14763 14822])
+            ("SOIL_save_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14464 14485])
+                    ("image_type" variable (:type "int") (reparse-symbol arg-sub-list) [14488 14503])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [14506 14516])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [14517 14528])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [14529 14542])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14545 14579]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14438 14580])
+            ("SOIL_load_image_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned char"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14201 14235])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [14238 14256])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14259 14270])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14271 14283])
+                    ("channels" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14284 14298])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [14301 14322]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14152 14323])
+            ("SOIL_load_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned char"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13702 13723])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13726 13737])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13738 13750])
+                    ("channels" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13751 13765])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [13768 13789]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13665 13790])
+            ("SOIL_save_screenshot" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13222 13243])
+                    ("image_type" variable (:type "int") (reparse-symbol arg-sub-list) [13246 13261])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [13264 13270])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [13271 13277])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [13280 13290])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [13291 13304]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13191 13305])
+            ("SOIL_create_OGL_single_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12924 12956])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [12959 12969])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [12970 12981])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [12982 12995])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12998 13023])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13026 13056])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13059 13080]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12874 13081])
+            ("SOIL_create_OGL_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [11929 11961])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [11964 11974])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [11975 11986])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [11987 12000])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12003 12033])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12036 12057]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11886 12058])
+            ("SOIL_load_OGL_single_cubemap_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10969 11003])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [11006 11024])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11027 11052])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [11055 11074])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11077 11107])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11110 11131]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10909 11132])
+            ("SOIL_load_OGL_cubemap_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("x_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9633 9673])
+                    ("x_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9676 9700])
+                    ("x_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9703 9743])
+                    ("x_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9746 9770])
+                    ("y_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9773 9813])
+                    ("y_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9816 9840])
+                    ("y_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9843 9883])
+                    ("y_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9886 9910])
+                    ("z_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9913 9953])
+                    ("z_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9956 9980])
+                    ("z_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9983 10023])
+                    ("z_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [10026 10050])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [10053 10072])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10075 10105])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10108 10129]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9580 10130])
+            ("SOIL_load_OGL_texture_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8131 8165])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [8168 8186])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [8189 8208])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8211 8241])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8244 8265]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8078 8266])
+            ("SOIL_load_OGL_HDR_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7305 7326])
+                    ("fake_HDR_format" variable (:type "int") (reparse-symbol arg-sub-list) [7329 7349])
+                    ("rescale_to_max" variable (:type "int") (reparse-symbol arg-sub-list) [7352 7371])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7374 7404])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7407 7428]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7260 7429])
+            ("SOIL_load_OGL_single_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6578 6599])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6602 6627])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [6630 6649])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6652 6682])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6685 6706]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6530 6707])
+            ("SOIL_load_OGL_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("x_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5582 5605])
+                    ("x_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5608 5631])
+                    ("y_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5634 5657])
+                    ("y_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5660 5683])
+                    ("z_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5686 5709])
+                    ("z_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5712 5735])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [5738 5757])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5760 5790])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5793 5814]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5541 5815])
+            ("SOIL_load_OGL_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4488 4509])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [4512 4531])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4534 4564])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4567 4588]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4447 4589])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_HDR_RGBE" variable
+                       (:constant-flag t
+                        :default-value (3811 3812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3795 3812])
+                    ("SOIL_HDR_RGBdivA" variable
+                       (:constant-flag t
+                        :default-value (3834 3835)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3815 3835])
+                    ("SOIL_HDR_RGBdivA2" variable
+                       (:constant-flag t
+                        :default-value (3858 3859)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3838 3859]))                  )
+                (reparse-symbol extern-c-contents) [3787 3862])
+            ("SOIL_DDS_CUBEMAP_FACE_ORDER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3588 3615])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_SAVE_TYPE_TGA" variable
+                       (:constant-flag t
+                        :default-value (3329 3330)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3308 3330])
+                    ("SOIL_SAVE_TYPE_BMP" variable
+                       (:constant-flag t
+                        :default-value (3354 3355)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3333 3355])
+                    ("SOIL_SAVE_TYPE_DDS" variable
+                       (:constant-flag t
+                        :default-value (3379 3380)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3358 3380]))                  )
+                (reparse-symbol extern-c-contents) [3300 3383])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_FLAG_POWER_OF_TWO" variable
+                       (:constant-flag t
+                        :default-value (2871 2872)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2846 2872])
+                    ("SOIL_FLAG_MIPMAPS" variable
+                       (:constant-flag t
+                        :default-value (2895 2896)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2875 2896])
+                    ("SOIL_FLAG_TEXTURE_REPEATS" variable
+                       (:constant-flag t
+                        :default-value (2927 2928)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2899 2928])
+                    ("SOIL_FLAG_MULTIPLY_ALPHA" variable
+                       (:constant-flag t
+                        :default-value (2958 2959)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2931 2959])
+                    ("SOIL_FLAG_INVERT_Y" variable
+                       (:constant-flag t
+                        :default-value (2983 2985)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2962 2985])
+                    ("SOIL_FLAG_COMPRESS_TO_DXT" variable
+                       (:constant-flag t
+                        :default-value (3016 3018)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2988 3018])
+                    ("SOIL_FLAG_DDS_LOAD_DIRECT" variable
+                       (:constant-flag t
+                        :default-value (3049 3051)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3021 3051])
+                    ("SOIL_FLAG_NTSC_SAFE_RGB" variable
+                       (:constant-flag t
+                        :default-value (3080 3083)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3054 3083])
+                    ("SOIL_FLAG_CoCg_Y" variable
+                       (:constant-flag t
+                        :default-value (3105 3108)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3086 3108])
+                    ("SOIL_FLAG_TEXTURE_RECTANGLE" variable
+                       (:constant-flag t
+                        :default-value (3141 3144)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3111 3144]))                  )
+                (reparse-symbol extern-c-contents) [2838 3147])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_CREATE_NEW_ID" variable
+                       (:constant-flag t
+                        :default-value (1856 1857)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1835 1857]))                  )
+                (reparse-symbol extern-c-contents) [1827 1860])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_LOAD_AUTO" variable
+                       (:constant-flag t
+                        :default-value (1498 1499)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1481 1499])
+                    ("SOIL_LOAD_L" variable
+                       (:constant-flag t
+                        :default-value (1516 1517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1502 1517])
+                    ("SOIL_LOAD_LA" variable
+                       (:constant-flag t
+                        :default-value (1535 1536)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1520 1536])
+                    ("SOIL_LOAD_RGB" variable
+                       (:constant-flag t
+                        :default-value (1555 1556)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1539 1556])
+                    ("SOIL_LOAD_RGBA" variable
+                       (:constant-flag t
+                        :default-value (1576 1577)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1559 1577]))                  )
+                (reparse-symbol extern-c-contents) [1473 1580]))          
+      :file "SOIL.h"
+      :pointmax 15113
+      :fsize 15545
+      :lastmodtime '(18546 16552 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOIL_DDS_CUBEMAP_FACE_ORDER" . ((string "\"EWUDNS\"" 3616 . 3624)))
+          ("HEADER_SIMPLE_OPENGL_IMAGE_LIBRARY")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEADER_STB_IMAGE_AUGMENTED" variable (:constant-flag t) nil [3624 3650])
+            ("stdio.h" include (:system-flag t) nil [7557 7575])
+            ("STBI_VERSION" variable (:constant-flag t) nil [7592 7604])
+            ("" type
+               (:members 
+                  ( ("STBI_default" variable
+                       (:constant-flag t
+                        :default-value (7633 7634)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7618 7634])
+                    ("STBI_grey" variable
+                       (:constant-flag t
+                        :default-value (7684 7685)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7666 7685])
+                    ("STBI_grey_alpha" variable
+                       (:constant-flag t
+                        :default-value (7708 7709)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7690 7709])
+                    ("STBI_rgb" variable
+                       (:constant-flag t
+                        :default-value (7732 7733)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7714 7733])
+                    ("STBI_rgb_alpha" variable
+                       (:constant-flag t
+                        :default-value (7756 7757)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [7738 7757]))                  
+                :type "enum")
+                nil [7608 7761])
+            ("stbi_uc" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [7763 7793])
+            ("stbi_register_loader" function
+               (:type "int"
+                :arguments 
+                  ( ("loader" variable
+                       (:pointer 1
+                        :type ("stbi_loader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15445 15465]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15413 15466])
+            ("stbi_loader" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("test_memory" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("buffer" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("stbi_uc" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [14923 14945])
+                                  ("len" variable (:type "int") (reparse-symbol arg-sub-list) [14946 14954]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [14898 14955])
+                          ("load_from_memory" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("buffer" variable
+                                     (:pointer 1
+                                      :constant-flag t
+                                      :type ("stbi_uc" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [14989 15011])
+                                  ("len" variable (:type "int") (reparse-symbol arg-sub-list) [15012 15020])
+                                  ("x" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15021 15028])
+                                  ("y" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15029 15036])
+                                  ("comp" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15037 15047])
+                                  ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [15048 15061]))                                
+                              :type ("stbi_uc" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14959 15062])
+                          ("test_file" function
+                             (:prototype-flag t
+                              :function-pointer t
+                              :arguments 
+                                ( ("f" variable
+                                     (:pointer 1
+                                      :type ("FILE" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [15114 15122]))                                
+                              :type "int")
+                              (reparse-symbol classsubparts) [15091 15123])
+                          ("load_from_file" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("f" variable
+                                     (:pointer 1
+                                      :type ("FILE" type (:type "class") nil nil))
+                                      (reparse-symbol arg-sub-list) [15155 15163])
+                                  ("x" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15164 15171])
+                                  ("y" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15172 15179])
+                                  ("comp" variable
+                                     (:pointer 1
+                                      :type "int")
+                                      (reparse-symbol arg-sub-list) [15180 15190])
+                                  ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [15191 15204]))                                
+                              :type ("stbi_uc" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15127 15205]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [14878 15230])
+            ("stbi_hdr_load_rgbe_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14780 14788])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14806 14813])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14814 14821])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14822 14832])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14833 14846]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14737 14847])
+            ("stbi_hdr_load_from_file" function
+               (:type "float"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14669 14677])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14695 14702])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14703 14710])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14711 14721])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14722 14735]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14626 14736])
+            ("stbi_hdr_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14616 14624]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14573 14625])
+            ("stbi_hdr_load_from_memory" function
+               (:type "float"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14477 14499])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [14500 14508])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14509 14516])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14517 14524])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14525 14535])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14536 14549]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14434 14550])
+            ("stbi_hdr_load_rgbe" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14360 14381])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14392 14399])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14400 14407])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14408 14418])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14419 14432]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14317 14433])
+            ("stbi_hdr_load_from_memory" function
+               (:type "float"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14243 14265])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [14266 14274])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14275 14282])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14283 14290])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14291 14301])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14302 14315]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14200 14316])
+            ("stbi_hdr_load" function
+               (:type "float"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14132 14153])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14158 14165])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14166 14173])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14174 14184])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [14185 14198]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14089 14199])
+            ("stbi_hdr_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14055 14077])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [14078 14086]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14012 14087])
+            ("stbi_psd_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13919 13927])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13945 13952])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13953 13960])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13961 13971])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13972 13985]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13876 13986])
+            ("stbi_psd_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13866 13874]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13823 13875])
+            ("stbi_psd_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13727 13749])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13750 13758])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13759 13766])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13767 13774])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13775 13785])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13786 13799]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13684 13800])
+            ("stbi_psd_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13616 13637])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13642 13649])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13650 13657])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13658 13668])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13669 13682]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13573 13683])
+            ("stbi_psd_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13539 13561])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13562 13570]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13496 13571])
+            ("stbi_tga_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13404 13412])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13430 13437])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13438 13445])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13446 13456])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13457 13470]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13361 13471])
+            ("stbi_tga_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13351 13359]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13308 13360])
+            ("stbi_tga_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13212 13234])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13235 13243])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13244 13251])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13252 13259])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13260 13270])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13271 13284]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13169 13285])
+            ("stbi_tga_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13101 13122])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13127 13134])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13135 13142])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13143 13153])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [13154 13167]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13058 13168])
+            ("stbi_tga_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13024 13046])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13047 13055]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12981 13056])
+            ("stbi_bmp_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12889 12897])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12915 12922])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12923 12930])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12931 12941])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [12942 12955]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12846 12956])
+            ("stbi_bmp_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12836 12844]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12793 12845])
+            ("stbi_bmp_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12697 12719])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12720 12728])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12729 12736])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12737 12744])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12745 12755])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [12756 12769]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12654 12770])
+            ("stbi_bmp_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12586 12607])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12612 12619])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12620 12627])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12628 12638])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [12639 12652]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12543 12653])
+            ("stbi_bmp_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12509 12531])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12532 12540]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12466 12541])
+            ("stbi_png_info_from_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12388 12396])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12414 12421])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12422 12429])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12430 12440]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12345 12441])
+            ("stbi_png_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12277 12285])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12303 12310])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12311 12318])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12319 12329])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [12330 12343]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12234 12344])
+            ("stbi_png_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12224 12232]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12181 12233])
+            ("stbi_png_info" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12127 12148])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12153 12160])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12161 12168])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12169 12179]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12084 12180])
+            ("stbi_png_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12016 12037])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12042 12049])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12050 12057])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12058 12068])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [12069 12082]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11973 12083])
+            ("stbi_png_info_from_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11890 11912])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11913 11921])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11922 11929])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11930 11937])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11938 11948]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11847 11949])
+            ("stbi_png_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11773 11795])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11796 11804])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11805 11812])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11813 11820])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11821 11831])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [11832 11845]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11730 11846])
+            ("stbi_png_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11697 11719])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11720 11728]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11654 11729])
+            ("stbi_jpeg_info_from_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11576 11584])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11602 11609])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11610 11617])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11618 11628]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11533 11629])
+            ("stbi_jpeg_info" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11479 11500])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11505 11512])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11513 11520])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11521 11531]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11436 11532])
+            ("stbi_jpeg_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11367 11375])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11393 11400])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11401 11408])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11409 11419])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [11420 11433]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11324 11434])
+            ("stbi_jpeg_test_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11314 11322]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11271 11323])
+            ("stbi_jpeg_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11203 11224])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11229 11236])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11237 11244])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11245 11255])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [11256 11269]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11160 11270])
+            ("stbi_jpeg_info_from_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11077 11099])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11100 11108])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11109 11116])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11117 11124])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11125 11135]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11034 11136])
+            ("stbi_jpeg_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10960 10982])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10983 10991])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10992 10999])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11000 11007])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11008 11018])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [11019 11032]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10917 11033])
+            ("stbi_jpeg_test_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10884 10906])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10907 10915]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10841 10916])
+            ("stbi_zlib_decode_noheader_buffer" function
+               (:type "int"
+                :arguments 
+                  ( ("obuffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10741 10755])
+                    ("olen" variable (:type "int") (reparse-symbol arg-sub-list) [10756 10765])
+                    ("ibuffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10766 10786])
+                    ("ilen" variable (:type "int") (reparse-symbol arg-sub-list) [10787 10796]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10695 10797])
+            ("stbi_zlib_decode_noheader_malloc" function
+               (:type "char"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10652 10671])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10672 10680])
+                    ("outlen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10681 10693]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10606 10694])
+            ("stbi_zlib_decode_buffer" function
+               (:type "int"
+                :arguments 
+                  ( ("obuffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10548 10562])
+                    ("olen" variable (:type "int") (reparse-symbol arg-sub-list) [10563 10572])
+                    ("ibuffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10573 10593])
+                    ("ilen" variable (:type "int") (reparse-symbol arg-sub-list) [10594 10603]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10511 10604])
+            ("stbi_zlib_decode_malloc" function
+               (:type "char"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10468 10487])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10488 10496])
+                    ("outlen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10497 10509]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10431 10510])
+            ("stbi_zlib_decode_malloc_guesssize" function
+               (:type "char"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10370 10389])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10390 10398])
+                    ("initial_size" variable (:type "int") (reparse-symbol arg-sub-list) [10399 10416])
+                    ("outlen" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10417 10429]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10323 10430])
+            ("stbi_is_hdr_from_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10245 10253]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10207 10254])
+            ("stbi_is_hdr" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10184 10205]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10146 10206])
+            ("stbi_info" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10092 10113])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10118 10125])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10126 10133])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10134 10144]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10054 10145])
+            ("stbi_is_hdr_from_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9999 10021])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [10022 10030]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9959 10031])
+            ("stbi_info_from_memory" function
+               (:type "int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9899 9921])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [9922 9930])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9931 9938])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9939 9946])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9947 9957]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9861 9958])
+            ("stbi_image_free" function
+               (:type "void"
+                :arguments 
+                  ( ("retval_from_stbi_load" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9770 9798]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9732 9799])
+            ("stbi_failure_reason" function
+               (:type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9675 9680]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9637 9681])
+            ("stbi_ldr_to_hdr_scale" function
+               (:type "void"
+                :arguments 
+                  ( ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [9542 9554]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9506 9555])
+            ("stbi_ldr_to_hdr_gamma" function
+               (:type "void"
+                :arguments 
+                  ( ("gamma" variable (:type "float") (reparse-symbol arg-sub-list) [9492 9504]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9456 9505])
+            ("stbi_hdr_to_ldr_scale" function
+               (:type "void"
+                :arguments 
+                  ( ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [9441 9453]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9405 9454])
+            ("stbi_hdr_to_ldr_gamma" function
+               (:type "void"
+                :arguments 
+                  ( ("gamma" variable (:type "float") (reparse-symbol arg-sub-list) [9391 9403]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9355 9404])
+            ("stbi_loadf_from_memory" function
+               (:type "float"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9280 9302])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [9303 9311])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9312 9319])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9320 9327])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9328 9338])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [9339 9352]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9243 9353])
+            ("stbi_loadf_from_file" function
+               (:type "float"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9168 9176])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9194 9201])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9202 9209])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9210 9220])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [9221 9234]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9131 9235])
+            ("stbi_loadf" function
+               (:type "float"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9063 9084])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9089 9096])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9097 9104])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9105 9115])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [9116 9129]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9026 9130])
+            ("stbi_load_from_memory" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("stbi_uc" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8827 8849])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [8850 8858])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8859 8866])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8867 8874])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8875 8885])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [8886 8899]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8789 8900])
+            ("stbi_info_from_file" function
+               (:type "int"
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8728 8736])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8754 8761])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8762 8769])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8770 8780]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8690 8781])
+            ("stbi_load_from_file" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8622 8630])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8648 8655])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8656 8663])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8664 8674])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [8675 8688]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8584 8689])
+            ("stbi_load" function
+               (:type ("stbi_uc" type (:type "class") nil nil)
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8516 8537])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8542 8549])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8550 8557])
+                    ("comp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8558 8568])
+                    ("req_comp" variable (:type "int") (reparse-symbol arg-sub-list) [8569 8582]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8478 8583])
+            ("stbi_write_tga" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8284 8305])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [8310 8316])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [8317 8323])
+                    ("comp" variable (:type "int") (reparse-symbol arg-sub-list) [8324 8333])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8334 8345]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8246 8346])
+            ("stbi_write_bmp" function
+               (:type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8183 8204])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [8209 8215])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [8216 8222])
+                    ("comp" variable (:type "int") (reparse-symbol arg-sub-list) [8223 8232])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8233 8244]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8145 8245]))          
+      :file "stb_image_aug.h"
+      :pointmax 16592
+      :fsize 16945
+      :lastmodtime '(18546 16552 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEADER_STB_IMAGE_AUGMENTED")
+          ("STBI_VERSION" . ((number "1" 7605 . 7606)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEADER_IMAGE_HELPER" variable (:constant-flag t) nil [109 128])
+            ("RGBE_to_RGBdivA2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("image" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2038 2059])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2062 2072])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2073 2084])
+                    ("rescale_to_max" variable (:type "int") (reparse-symbol arg-sub-list) [2087 2108]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2011 2109])
+            ("RGBE_to_RGBdivA" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("image" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1813 1834])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1837 1847])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1848 1859])
+                    ("rescale_to_max" variable (:type "int") (reparse-symbol arg-sub-list) [1862 1883]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1787 1884])
+            ("convert_YCoCg_to_RGB" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1599 1619])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1622 1632])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1633 1644])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [1645 1660]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1568 1661])
+            ("convert_RGB_to_YCoCg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1400 1420])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1423 1433])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1434 1445])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [1446 1461]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1369 1462])
+            ("scale_image_RGB_to_NTSC_safe" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1070 1090])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1093 1103])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1104 1115])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [1116 1131]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1031 1132])
+            ("mipmap_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [630 662])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [665 675])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [676 687])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [688 701])
+                    ("resampled" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [704 729])
+                    ("block_size_x" variable (:type "int") (reparse-symbol arg-sub-list) [732 749])
+                    ("block_size_y" variable (:type "int") (reparse-symbol arg-sub-list) [750 769]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [607 770])
+            ("up_scale_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("orig" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [333 365])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [368 378])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [379 390])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [391 404])
+                    ("resampled" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [407 432])
+                    ("resampled_width" variable (:type "int") (reparse-symbol arg-sub-list) [435 455])
+                    ("resampled_height" variable (:type "int") (reparse-symbol arg-sub-list) [456 479]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [308 480]))          
+      :file "image_helper.h"
+      :pointmax 2173
+      :fsize 2287
+      :lastmodtime '(18546 16552 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEADER_IMAGE_HELPER")
+          )
+))
+  :file "!usr!include!SOIL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

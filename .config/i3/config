@@ -23,8 +23,9 @@ floating_modifier $mod
 # default layout
 workspace_layout tabbed
 
-new_window pixel 1
-new_float pixel 1
+# Hide titlebar for windows and floating windows
+#new_window pixel 1
+#new_float pixel 1
 
 # pupups / dialogs should be floating
 for_window [window_role="pop-up"] floating enable
@@ -51,7 +52,8 @@ client.urgent           $urgnt_brdr	    $urgnt_brdr	       $factv_txt	#78994c
 ### Shortcuts ###
 
 # start a terminal
-bindsym $mod+Mod1+T exec urxvt
+#bindsym $mod+Mod1+T exec urxvt
+bindsym $mod+Mod1+T exec terminator
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -147,9 +149,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 ### Application control ### 
 
 # load apps in workspaces
-assign [class="urxvt"] $workspace1
 assign [class="Emacs"] $workspace2
-assign [class="chromium"] $workspace3
 
 ### Modes ###
 
@@ -180,9 +180,11 @@ exec_always ~/.screenlayout/$monitor_conf
 
 ### Desktop Layout ###
 
+exec terminator
+
 # systray icons
 exec_always nm-applet
-exec volumeicon
+#exec volumeicon
 exec_always xfce4-power-manager
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -193,7 +195,7 @@ bar {
         # only on laptop monitor
         output $monitor
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        position top
+        position bottom
         mode dock
         hidden_state hide
         modifier $mod

@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("string.h" include (:system-flag t) nil [38 57])
+            ("stddef.h" include (:system-flag t) nil [58 77])
+            ("LEAP_YEAR" variable (:constant-flag t) nil [87 96])
+            ("task2" function
+               (:prototype-flag t
+                :type "void")
+                nil [160 173])
+            ("task3" function
+               (:prototype-flag t
+                :type "void")
+                nil [174 187])
+            ("task4" function
+               (:prototype-flag t
+                :type "void")
+                nil [188 201])
+            ("task5" function
+               (:prototype-flag t
+                :type "void")
+                nil [202 215])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [226 235])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 248]))                  
+                :type "int")
+                nil [217 559])
+            ("task2" function (:type "void") nil [561 770])
+            ("task3" function (:type "void") nil [772 1221])
+            ("task4" function (:type "void") nil [1223 1441])
+            ("task5" function (:type "void") nil [1443 1953]))          
+      :file "main.c"
+      :pointmax 1954
+      :fsize 1959
+      :lastmodtime '(22956 37310 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LEAP_YEAR" (spp-arg-list ("year") 96 . 102) . ((semantic-list "((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)" 103 . 158)))
+          )
+))
+  :file "!home!marcus!Programming!C!vagen_till_c!ch4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

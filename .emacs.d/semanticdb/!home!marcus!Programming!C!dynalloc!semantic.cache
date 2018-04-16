@@ -1,0 +1,120 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("dynalloc.h" include nil nil [21 42])
+            ("Align" type
+               (:typedef ("long")
+                :type "typedef")
+                nil [44 63])
+            ("Header" type
+               (:typedef ("header_t" type (:type "union") nil nil)
+                :type "typedef")
+                nil [93 123])
+            ("header_t" type
+               (:members 
+                  ( ("block" variable (:type ("" type
+                         (:members 
+                            ( ("next" variable
+                                 (:pointer 1
+                                  :type ("header_t" type (:type "union") nil nil))
+                                  (reparse-symbol classsubparts) [157 178])
+                              ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [200 212]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [144 241])
+                    ("x" variable (:type ("Align" type (:type "class") nil nil)) (reparse-symbol classsubparts) [244 252]))                  
+                :type "union")
+                nil [125 288])
+            ("base" variable
+               (:typemodifiers ("static")
+                :type ("Header" type (:type "class") nil nil))
+                nil [290 309])
+            ("freeblk" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Header" type (:type "class") nil nil))
+                nil [310 333])
+            ("morecore" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("nunits" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [359 373]))                  
+                :type ("Header" type (:type "class") nil nil))
+                nil [335 374])
+            ("dynalloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 426]))                  
+                :type "void")
+                nil [399 1269])
+            ("morecore" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("nunits" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1339 1353]))                  
+                :type ("Header" type (:type "class") nil nil))
+                nil [1315 1655])
+            ("dynfree" function
+               (:arguments 
+                  ( ("block" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1709 1721]))                  
+                :type "void")
+                nil [1696 2351]))          
+      :file "dynalloc.c"
+      :pointmax 2352
+      :fsize 2351
+      :lastmodtime '(23002 23767 449263 461000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DYNALLOC_H" variable (:constant-flag t) nil [28 38])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("dynalloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76 88]))                  
+                :type "void")
+                nil [61 89])
+            ("dynfree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [103 112]))                  
+                :type "void")
+                nil [90 113]))          
+      :file "dynalloc.h"
+      :pointmax 136
+      :fsize 135
+      :lastmodtime '(23002 26256 555322 619000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DYNALLOC_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("dynalloc.h" include nil nil [40 61])
+            ("main" function (:type "int") nil [63 324]))          
+      :file "test.c"
+      :pointmax 325
+      :fsize 324
+      :lastmodtime '(22997 24651 640307 788000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!dynalloc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

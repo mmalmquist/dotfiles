@@ -1,0 +1,90 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("3DEngine.h" include nil nil [1 22])
+            ("testing.h" include nil nil [23 43])
+            ("components/freeLook.h" include nil nil [45 77])
+            ("components/freeMove.h" include nil nil [78 110])
+            ("components/physicsEngineComponent.h" include nil nil [111 157])
+            ("components/physicsObjectComponent.h" include nil nil [158 204])
+            ("physics/boundingSphere.h" include nil nil [205 240])
+            ("iostream" include (:system-flag t) nil [241 260])
+            ("TestGame" type
+               (:superclasses 
+                  ( ("Game" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [293 300])
+                    ("TestGame" function
+                       (:constructor-flag t
+                        :type ("TestGame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [302 315])
+                    ("Init" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("window" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Window" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [335 356]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [317 357])
+                    ("protected" label nil (reparse-symbol classsubparts) [358 368])
+                    ("private" label nil (reparse-symbol classsubparts) [369 377])
+                    ("TestGame" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TestGame" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [388 410]))                          
+                        :type ("TestGame" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [379 422])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("TestGame" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [439 461]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [424 464]))                  
+                :type "class")
+                nil [262 467])
+            ("Init" function
+               (:parent "TestGame"
+                :arguments 
+                  ( ("window" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Window" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [489 510]))                  
+                :type "void")
+                nil [469 4749])
+            ("main" function (:type "int") nil [4751 4998]))          
+      :file "main.cpp"
+      :pointmax 4999
+      :fsize 4998
+      :lastmodtime '(23125 13888 467368 242000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "3DEngine.h"
+      :fsize 1186
+      :lastmodtime '(21523 23341 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "testing.h"
+      :fsize 106
+      :lastmodtime '(23124 64464 589963 517000)))
+  :file "!home!marcus!Programming!Cpp!3deng!3DEngineCpp-master!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

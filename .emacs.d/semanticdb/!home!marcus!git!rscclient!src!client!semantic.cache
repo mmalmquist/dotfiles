@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("client" package nil nil [1 16])
+            ("java.io.InputStream" include nil nil [18 45])
+            ("sun.audio.AudioPlayer" include nil nil [47 76])
+            ("AudioReader" type
+               (:superclasses "InputStream"
+                :members 
+                  ( ("read" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("soundData" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [152 168])
+                            ("start" variable (:type "int") (reparse-symbol formal_parameters) [170 179])
+                            ("size" variable (:type "int") (reparse-symbol formal_parameters) [181 189]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [136 415])
+                    ("read" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [435 560])
+                    ("AudioReader" function (:constructor-flag t) (reparse-symbol class_member_declaration) [570 632])
+                    ("stopAudio" function (:type "void") (reparse-symbol class_member_declaration) [638 702])
+                    ("loadData" function
+                       (:arguments 
+                          ( ("soundData" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [722 738])
+                            ("start" variable (:type "int") (reparse-symbol formal_parameters) [740 749])
+                            ("size" variable (:type "int") (reparse-symbol formal_parameters) [751 759]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [708 862])
+                    ("soudData" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "byte")
+                        (reparse-symbol class_member_declaration) [872 896])
+                    ("offset" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [901 920])
+                    ("length" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [925 944]))                  
+                :type "class")
+                nil [78 946]))          
+      :file "AudioReader.java"
+      :pointmax 947
+      :fsize 993
+      :lastmodtime '(23081 58699 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!rscclient!src!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

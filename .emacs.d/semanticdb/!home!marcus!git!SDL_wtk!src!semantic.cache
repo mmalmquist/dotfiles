@@ -1,0 +1,938 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppPixels.h" include nil nil [1 34])
+            ("stdlib.h" include (:system-flag t) nil [35 54])
+            ("AppPixels_t" type
+               (:members 
+                  ( ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [79 102])
+                    ("texture" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [105 127])
+                    ("bounds" variable (:type ("SDL_Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [130 151])
+                    ("pixels" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [154 175])
+                    ("pitch" variable (:type "int") (reparse-symbol classsubparts) [178 198])
+                    ("access" variable (:type "int") (reparse-symbol classsubparts) [201 222])
+                    ("format" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [225 246]))                  
+                :type "struct")
+                nil [56 249])
+            ("AppPixels_GetUpperLim" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [289 302])
+                    ("rstart" variable (:type "int") (reparse-symbol arg-sub-list) [313 329])
+                    ("rlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [340 354]))                  
+                :type "unsigned int")
+                nil [251 355])
+            ("AppPixels_Draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [383 397])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [404 419])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [426 439])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [446 459])
+                    ("xsize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [466 483])
+                    ("ysize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [490 507]))                  
+                :type "void")
+                nil [356 508])
+            ("AppPixels_Fill" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tpixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [536 553])
+                    ("twidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [560 576])
+                    ("theight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [583 600])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [607 618])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [625 636])
+                    ("spixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [643 660])
+                    ("swidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [667 683])
+                    ("sheight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [690 707]))                  
+                :type "void")
+                nil [509 708])
+            ("AppPixels_ctor" function
+               (:pointer 1
+                :arguments 
+                  ( ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [736 754])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [755 770])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [771 787]))                  
+                :type ("AppPixels" type (:type "class") nil nil))
+                nil [710 1025])
+            ("AppPixels_dtor" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1047 1061]))                  
+                :type "void")
+                nil [1027 1203])
+            ("AppPixels_GetBounds" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1241 1255]))                  
+                :type ("SDL_Rect" type (:type "class") nil nil))
+                nil [1205 1281])
+            ("AppPixels_Paint" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1304 1318])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1319 1325])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1326 1332]))                  
+                :type "void")
+                nil [1283 1693])
+            ("AppPixels_SetRenderer" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1722 1736])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1737 1755]))                  
+                :type "void")
+                nil [1695 2127])
+            ("AppPixels_SetTexture" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2155 2169])
+                    ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2170 2193])
+                    ("texture" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2194 2215])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2221 2236])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2237 2253]))                  
+                :type "void")
+                nil [2129 2586])
+            ("AppPixels_SetSize" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2611 2625])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2626 2641])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2642 2658]))                  
+                :type "void")
+                nil [2588 2784])
+            ("AppPixels_SetPos" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2808 2822])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2823 2829])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2830 2836]))                  
+                :type "void")
+                nil [2786 2880])
+            ("AppPixels_FillColor" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2907 2921])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2922 2934]))                  
+                :type "void")
+                nil [2882 3108])
+            ("AppPixels_FillArray" function
+               (:arguments 
+                  ( ("pixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3135 3151])
+                    ("pwidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3152 3168])
+                    ("pheight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3169 3186])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3191 3197])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3198 3204])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3205 3221]))                  
+                :type "void")
+                nil [3110 3326])
+            ("AppPixels_FillPixels" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3354 3368])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3369 3375])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3376 3382])
+                    ("pixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3383 3400])
+                    ("pwidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3406 3423])
+                    ("pheight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3424 3442]))                  
+                :type "void")
+                nil [3328 3541])
+            ("AppPixels_FillRect" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3567 3581])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3582 3588])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3589 3595])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3596 3612]))                  
+                :type "void")
+                nil [3543 3732])
+            ("AppPixels_SetPixel" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3758 3772])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3772 3778])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3778 3784])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3785 3797]))                  
+                :type "void")
+                nil [3734 3858])
+            ("AppPixels_GetPixels" function
+               (:pointer 1
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3889 3903]))                  
+                :type ("Pixel_t" type (:type "class") nil nil))
+                nil [3860 3928])
+            ("AppPixels_DrawBoxEdge" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3957 3971])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3972 3987])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3988 4000]))                  
+                :type "void")
+                nil [3930 4388])
+            ("AppPixels_DrawLineX" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4415 4429])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4430 4441])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4442 4453])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4458 4474])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4475 4490])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4491 4503]))                  
+                :type "void")
+                nil [4390 4555])
+            ("AppPixels_DrawLineY" function
+               (:arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4582 4596])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4597 4608])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4609 4620])
+                    ("length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4625 4641])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4642 4657])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4658 4670]))                  
+                :type "void")
+                nil [4557 4722])
+            ("AppPixels_GetUpperLim" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4763 4776])
+                    ("rstart" variable (:type "int") (reparse-symbol arg-sub-list) [4777 4788])
+                    ("rlen" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4789 4803]))                  
+                :type "unsigned int")
+                nil [4725 4861])
+            ("AppPixels_Draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4889 4903])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4904 4916])
+                    ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4917 4928])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4935 4946])
+                    ("xsize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4947 4962])
+                    ("ysize" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4963 4978]))                  
+                :type "void")
+                nil [4862 5420])
+            ("AppPixels_Fill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tpixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5449 5466])
+                    ("twidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5467 5483])
+                    ("theight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5484 5501])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5502 5508])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5515 5521])
+                    ("spixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5522 5539])
+                    ("swidth" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5540 5556])
+                    ("sheight" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5557 5574]))                  
+                :type "void")
+                nil [5422 6011]))          
+      :file "AppPixels.c"
+      :pointmax 6012
+      :fsize 6120
+      :lastmodtime '(23030 13414 943000 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppButton.h" include nil nil [1 34])
+            ("stdlib.h" include (:system-flag t) nil [35 54])
+            ("../include/AppText.h" include nil nil [55 86])
+            ("AppButton_t" type
+               (:members 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [111 130])
+                    ("surface" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [133 155]))                  
+                :type "struct")
+                nil [88 158])
+            ("AppButton_Paint" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [191 211]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [160 212])
+            ("AppButton_UpdateRendering" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [254 274]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [213 275])
+            ("AppButton_ctor" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [302 307]))                  
+                :type ("AppButton" type (:type "class") nil nil))
+                nil [277 584])
+            ("AppButton_dtor" function
+               (:arguments 
+                  ( ("ab" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [606 619]))                  
+                :type "void")
+                nil [586 875])
+            ("AppButton_GetComponent" function
+               (:pointer 1
+                :arguments 
+                  ( ("ab" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [914 927]))                  
+                :type ("AppComponent" type (:type "class") nil nil))
+                nil [877 953])
+            ("AppButton_SetFont" function
+               (:arguments 
+                  ( ("ab" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 991])
+                    ("font" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [992 1006]))                  
+                :type "void")
+                nil [955 1045])
+            ("AppButton_SetText" function
+               (:arguments 
+                  ( ("ab" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1070 1083])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1084 1101])
+                    ("text_color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1102 1121]))                  
+                :type "void")
+                nil [1047 1233])
+            ("AppButton_UpdateRendering" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1276 1296]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [1235 1362])
+            ("AppButton_Paint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1395 1415]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [1364 1777]))          
+      :file "AppButton.c"
+      :pointmax 1778
+      :fsize 1768
+      :lastmodtime '(23030 13414 942000 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppComponent.h" include nil nil [1 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("AppComponent_ctor" function
+               (:pointer 1
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91 111])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [112 127])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [128 144]))                  
+                :type ("AppComponent" type (:type "class") nil nil))
+                nil [59 475])
+            ("AppComponent_dtor" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [500 517]))                  
+                :type "void")
+                nil [477 647])
+            ("AppComponent_MouseOver" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [676 693])
+                    ("mouse_x" variable (:type "int") (reparse-symbol arg-sub-list) [694 706])
+                    ("mouse_y" variable (:type "int") (reparse-symbol arg-sub-list) [707 719]))                  
+                :type "int")
+                nil [649 877])
+            ("AppComponent_SetForeground" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [911 928])
+                    ("argb" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [929 942]))                  
+                :type "void")
+                nil [879 968])
+            ("AppComponent_SetBackground" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1002 1019])
+                    ("argb" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1020 1033]))                  
+                :type "void")
+                nil [970 1059])
+            ("AppComponent_SetSize" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1087 1104])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1105 1120])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1121 1137]))                  
+                :type "void")
+                nil [1061 1227])
+            ("AppComponent_SetPosition" function
+               (:arguments 
+                  ( ("ac" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1259 1276])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1277 1283])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1284 1290]))                  
+                :type "void")
+                nil [1229 1332]))          
+      :file "AppComponent.c"
+      :pointmax 1333
+      :fsize 1323
+      :lastmodtime '(23030 13414 942000 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppContainer.h" include nil nil [1 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("../include/LinkedList.h" include nil nil [58 92])
+            ("AppContainer_t" type
+               (:members 
+                  ( ("host" variable (:type ("ContainerHost" type (:type "class") nil nil)) (reparse-symbol classsubparts) [120 140])
+                    ("_ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [143 162])
+                    ("bounds" variable (:type ("SDL_Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [165 187])
+                    ("containers" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [190 216])
+                    ("components" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [219 245])
+                    ("event" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("c" variable (:type ("Container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [270 282])
+                            ("evt" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [283 293]))                          
+                        :type ("funcptr" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [248 294]))                  
+                :type "struct")
+                nil [94 297])
+            ("AppContainer_UpdateRender" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [337 353])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [354 372]))                  
+                :type "void")
+                nil [299 373])
+            ("AppContainer_ctor" function
+               (:arguments 
+                  ( ("host" variable (:type ("ContainerHost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [406 425])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [426 444])
+                    ("event_handler" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("ContainerHost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [480 494])
+                            ("" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 501]))                          
+                        :type ("funcptr" type (:type "class") nil nil))
+                        nil nil))                  
+                :type ("AppContainer" type (:type "class") nil nil))
+                nil [375 735])
+            ("AppContainer_dtor" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [760 776]))                  
+                :type "void")
+                nil [737 1056])
+            ("AppContainer_GetRenderer" function
+               (:pointer 2
+                :arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1114]))                  
+                :type ("SDL_Renderer" type (:type "class") nil nil))
+                nil [1058 1138])
+            ("AppContainer_SetEventHandler" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1174 1190])
+                    ("event_handler" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1217 1227])
+                            ("" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1234]))                          
+                        :type ("funcptr" type (:type "class") nil nil))
+                        nil nil))                  
+                :type "void")
+                nil [1140 1267])
+            ("AppContainer_AddComponent" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1300 1316])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1317 1330]))                  
+                :type "void")
+                nil [1269 1371])
+            ("AppContainer_AddContainer" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1404 1420])
+                    ("c" variable (:type ("Container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1433]))                  
+                :type "void")
+                nil [1373 1517])
+            ("AppContainer_HandleEvents" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1624 1640])
+                    ("event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1653]))                  
+                :type "void")
+                nil [1593 1875])
+            ("AppContainer_PaintComponents" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1973 1989]))                  
+                :type "void")
+                nil [1939 2327])
+            ("AppContainer_AssertBounds" function
+               (:arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2360 2376]))                  
+                :type "void")
+                nil [2329 3535])
+            ("AppContainer_GetBounds" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3576 3592]))                  
+                :type ("SDL_Rect" type (:type "class") nil nil))
+                nil [3537 3618])
+            ("AppContainer_UpdateRender" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ac" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3658 3674])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3675 3693]))                  
+                :type "void")
+                nil [3620 4121]))          
+      :file "AppContainer.c"
+      :pointmax 4122
+      :fsize 4117
+      :lastmodtime '(23030 13414 943000 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL2/SDL_ttf.h" include (:system-flag t) nil [33 58])
+            ("AppFont_t" type
+               (:members 
+                  ( ("font" variable
+                       (:pointer 1
+                        :type ("TTF_Font" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [81 102])
+                    ("ren" variable
+                       (:pointer 2
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [105 125]))                  
+                :type "struct")
+                nil [60 128])
+            ("AppFont_ctor" function
+               (:pointer 1
+                :arguments 
+                  ( ("ren" variable
+                       (:pointer 2
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [152 171]))                  
+                :type ("AppFont" type (:type "class") nil nil))
+                nil [130 299])
+            ("AppFont_dtor" function
+               (:arguments 
+                  ( ("af" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [318 330]))                  
+                :type "void")
+                nil [300 471])
+            ("AppFont_LoadFont" function
+               (:arguments 
+                  ( ("af" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [494 506])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [507 524])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [525 539]))                  
+                :type "int")
+                nil [473 689])
+            ("AppFont_Render" function
+               (:pointer 1
+                :arguments 
+                  ( ("af" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [717 729])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [730 750])
+                    ("color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [751 765]))                  
+                :type ("AppPixels" type (:type "class") nil nil))
+                nil [691 1383]))          
+      :file "AppFont.c"
+      :pointmax 1384
+      :fsize 1383
+      :lastmodtime '(23030 13414 943000 497000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppText.h" include nil nil [1 32])
+            ("SDL2/SDL.h" include (:system-flag t) nil [33 54])
+            ("AppText_t" type
+               (:members 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [77 98])
+                    ("color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [101 123])
+                    ("font" variable (:type ("AppFont" type (:type "class") nil nil)) (reparse-symbol classsubparts) [126 147])
+                    ("pixels" variable (:type ("AppPixels" type (:type "class") nil nil)) (reparse-symbol classsubparts) [150 173])
+                    ("bounds" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [176 199]))                  
+                :type "struct")
+                nil [56 202])
+            ("AppText_ctor" function
+               (:arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [225 242]))                  
+                :type ("AppText" type (:type "class") nil nil))
+                nil [204 464])
+            ("AppText_dtor" function
+               (:arguments 
+                  ( ("at" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [484 495]))                  
+                :type "void")
+                nil [466 727])
+            ("AppText_SetText" function
+               (:arguments 
+                  ( ("at" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [750 761])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [762 779]))                  
+                :type "void")
+                nil [729 916])
+            ("AppText_SetColor" function
+               (:arguments 
+                  ( ("at" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 951])
+                    ("color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [952 966]))                  
+                :type "void")
+                nil [918 991])
+            ("AppText_SetFont" function
+               (:arguments 
+                  ( ("at" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1014 1025])
+                    ("font" variable (:type ("AppFont" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1026 1039]))                  
+                :type "void")
+                nil [993 1062])
+            ("AppText_Center" function
+               (:arguments 
+                  ( ("at" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1084 1095])
+                    ("bounds" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1096 1119]))                  
+                :type "void")
+                nil [1064 1274])
+            ("AppText_UpdateRendering" function
+               (:arguments 
+                  ( ("this" variable (:type ("ComponentHost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1327]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [1276 1588])
+            ("AppText_Paint" function
+               (:arguments 
+                  ( ("this" variable (:type ("ComponentHost" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1613 1632]))                  
+                :type ("funcptr" type (:type "class") nil nil))
+                nil [1591 1746]))          
+      :file "AppText.c"
+      :pointmax 1747
+      :fsize 1746
+      :lastmodtime '(23030 13825 382010 252000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/AppWindow.h" include nil nil [1 34])
+            ("AppWindow_t" type
+               (:members 
+                  ( ("running" variable (:type "int") (reparse-symbol classsubparts) [59 81])
+                    ("components" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [84 109])
+                    ("win" variable
+                       (:pointer 1
+                        :type ("SDL_Window" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [112 130])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [133 151])
+                    ("tex" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [154 172])
+                    ("tbounds" variable (:type ("SDL_Rect" type (:type "class") nil nil)) (reparse-symbol classsubparts) [175 197]))                  
+                :type "struct")
+                nil [36 200])
+            ("AppWindow_SetSize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [232 245])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [255 271])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [281 298]))                  
+                :type "void")
+                nil [202 299])
+            ("AppWindow_SetVisible" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [333 346])
+                    ("visible" variable (:type "int") (reparse-symbol arg-sub-list) [352 370]))                  
+                :type "void")
+                nil [300 371])
+            ("AppWindow_PollEvents" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 418]))                  
+                :type "void")
+                nil [372 419])
+            ("AppWindow_ctor" function
+               (:arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [446 464]))                  
+                :type ("AppWindow" type (:type "class") nil nil))
+                nil [421 948])
+            ("AppWindow_dtor" function
+               (:arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [970 983]))                  
+                :type "void")
+                nil [950 1409])
+            ("AppWindow_GetContainer" function
+               (:arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1447 1460]))                  
+                :type ("AppContainer" type (:type "class") nil nil))
+                nil [1411 1489])
+            ("AppWindow_UpdateSize" function
+               (:arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1517 1530]))                  
+                :type "void")
+                nil [1491 1696])
+            ("AppWindow_Loop" function
+               (:arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1718 1731]))                  
+                :type "void")
+                nil [1698 1972])
+            ("AppWindow_SetSize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2004 2017])
+                    ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2018 2033])
+                    ("height" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2034 2050]))                  
+                :type "void")
+                nil [1974 2099])
+            ("AppWindow_SetVisible" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2134 2147])
+                    ("visible" variable (:type "int") (reparse-symbol arg-sub-list) [2148 2160]))                  
+                :type "void")
+                nil [2101 2254])
+            ("AppWindow_PollEvents" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("aw" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2302]))                  
+                :type "void")
+                nil [2256 2709]))          
+      :file "AppWindow.c"
+      :pointmax 2710
+      :fsize 2709
+      :lastmodtime '(23022 56022 475019 309000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../include/LinkedList.h" include nil nil [1 35])
+            ("stdlib.h" include (:system-flag t) nil [36 55])
+            ("LinkedList_t" type
+               (:members 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [81 93])
+                    ("next" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [96 112]))                  
+                :type "struct")
+                nil [57 115])
+            ("LinkedList_ctor" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [144 149]))                  
+                :type ("LinkedList" type (:type "class") nil nil))
+                nil [117 282])
+            ("LinkedList_dtor" function
+               (:arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [305 319]))                  
+                :type "void")
+                nil [284 403])
+            ("LinkedList_Add" function
+               (:arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [425 439])
+                    ("entry" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [440 452]))                  
+                :type "void")
+                nil [405 701])
+            ("LinkedList_RemoveEntry" function
+               (:arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [730 744])
+                    ("entry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [745 769]))                  
+                :type "void")
+                nil [702 1016])
+            ("LinkedList_RemoveIdx" function
+               (:arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1044 1058])
+                    ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1059 1070]))                  
+                :type "void")
+                nil [1018 1323])
+            ("LinkedList_Get" function
+               (:pointer 1
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1345 1359])
+                    ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1360 1371]))                  
+                :type "void")
+                nil [1324 1537]))          
+      :file "LinkedList.c"
+      :pointmax 1538
+      :fsize 1537
+      :lastmodtime '(23015 11159 806203 317000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!SDL_wtk!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

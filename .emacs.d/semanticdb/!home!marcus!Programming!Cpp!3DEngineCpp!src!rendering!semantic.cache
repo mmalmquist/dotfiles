@@ -1,0 +1,454 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("shader.h" include nil nil [1 20])
+            ("lighting.h" include nil nil [21 42])
+            ("renderingEngine.h" include nil nil [43 71])
+            ("../core/profiling.h" include nil nil [73 103])
+            ("../core/util.h" include nil nil [104 129])
+            ("cassert" include (:system-flag t) nil [131 149])
+            ("fstream" include (:system-flag t) nil [150 168])
+            ("iostream" include (:system-flag t) nil [169 188])
+            ("GL/glew.h" include (:system-flag t) nil [189 209])
+            ("cstdlib" include (:system-flag t) nil [210 228])
+            ("cstring" include (:system-flag t) nil [229 247])
+            ("sstream" include (:system-flag t) nil [248 266])
+            ("Shader::s_resourceMap" variable (:type ("std::map" type
+                 (:template-specifier 
+                    ( ("std::string" type nil nil nil)
+                      ("ShaderData" type (:pointer 1) nil nil))                    
+                  :type "class")
+                  nil nil)) nil [462 519])
+            ("ShaderData::s_supportedOpenGLLevel" variable
+               (:default-value "0"
+                :type "int")
+                nil [520 563])
+            ("ShaderData::s_glslVersion" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [564 607])
+            ("CheckShaderError" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("shader" variable (:type "int") (reparse-symbol arg-sub-list) [828 839])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [840 849])
+                    ("isProgram" variable (:type "bool") (reparse-symbol arg-sub-list) [850 865])
+                    ("errorMessage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [866 898]))                  
+                :type "void")
+                nil [799 899])
+            ("FindUniformStructs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("shaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [953 983]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("UniformStruct" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [900 984])
+            ("FindUniformStructName" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("structStartToOpeningBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1026 1071]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [985 1072])
+            ("FindUniformStructComponents" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("openingBraceToClosingBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1131 1177]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("TypedData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1073 1178])
+            ("LoadShader" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1209 1237]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1179 1238])
+            ("ShaderData" function
+               (:constructor-flag t
+                :parent "ShaderData"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1457 1485]))                  
+                :type ("ShaderData" type (:type "class") nil nil))
+                nil [1434 3242])
+            ("ShaderData" function
+               (:destructor-flag t
+                :parent "ShaderData"
+                :type "void")
+                nil [3244 3448])
+            ("Shader" function
+               (:constructor-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3465 3493]))                  
+                :type ("Shader" type (:type "class") nil nil))
+                nil [3450 3844])
+            ("Shader" function
+               (:constructor-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3861 3881]))                  
+                :type ("Shader" type (:type "class") nil nil))
+                nil [3846 3983])
+            ("Shader" function
+               (:destructor-flag t
+                :parent "Shader"
+                :type "void")
+                nil [3985 4157])
+            ("Bind" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :type "void")
+                nil [4359 4431])
+            ("UpdateUniforms" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("transform" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Transform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4461 4488])
+                    ("material" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Material" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4489 4514])
+                    ("renderingEngine" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RenderingEngine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4515 4554])
+                    ("camera" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4555 4576]))                  
+                :type "void")
+                nil [4433 7130])
+            ("SetUniformi" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7157 7188])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [7189 7199]))                  
+                :type "void")
+                nil [7132 7277])
+            ("SetUniformf" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7304 7335])
+                    ("value" variable (:type "float") (reparse-symbol arg-sub-list) [7336 7348]))                  
+                :type "void")
+                nil [7279 7426])
+            ("SetUniformVector3f" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7460 7491])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7492 7514]))                  
+                :type "void")
+                nil [7428 7627])
+            ("SetUniformMatrix4f" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7661 7692])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7693 7715]))                  
+                :type "void")
+                nil [7629 7822])
+            ("SetUniformDirectionalLight" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7864 7895])
+                    ("directionalLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DirectionalLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7896 7937]))                  
+                :type "void")
+                nil [7824 8221])
+            ("SetUniformPointLight" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8257 8288])
+                    ("pointLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8289 8318]))                  
+                :type "void")
+                nil [8223 8897])
+            ("SetUniformSpotLight" function
+               (:methodconst-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8932 8963])
+                    ("spotLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SpotLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8964 8991]))                  
+                :type "void")
+                nil [8899 9810])
+            ("AddVertexShader" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9845 9869]))                  
+                :type "void")
+                nil [9812 9910])
+            ("AddGeometryShader" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9947 9971]))                  
+                :type "void")
+                nil [9912 10014])
+            ("AddFragmentShader" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10051 10075]))                  
+                :type "void")
+                nil [10016 10118])
+            ("AddProgram" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("text" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10148 10172])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [10173 10182]))                  
+                :type "void")
+                nil [10120 10831])
+            ("AddAllAttributes" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("vertexShaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10867 10903])
+                    ("attributeKeyword" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10904 10940]))                  
+                :type "void")
+                nil [10833 12120])
+            ("AddShaderUniforms" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("shaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12157 12187]))                  
+                :type "void")
+                nil [12122 13333])
+            ("AddUniform" function
+               (:parent "ShaderData"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13363 13394])
+                    ("uniformType" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13395 13426])
+                    ("structs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("UniformStruct" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13427 13469]))                  
+                :type "void")
+                nil [13335 14064])
+            ("CompileShader" function
+               (:methodconst-flag t
+                :parent "ShaderData"
+                :type "void")
+                nil [14066 14339])
+            ("CheckShaderError" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("shader" variable (:type "int") (reparse-symbol arg-sub-list) [14571 14582])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [14583 14592])
+                    ("isProgram" variable (:type "bool") (reparse-symbol arg-sub-list) [14593 14608])
+                    ("errorMessage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14609 14641]))                  
+                :type "void")
+                nil [14542 15027])
+            ("LoadShader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15059 15087]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [15029 15708])
+            ("FindUniformStructComponents" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("openingBraceToClosingBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15768 15814]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("TypedData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [15710 16919])
+            ("FindUniformStructName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("structStartToOpeningBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16962 17007]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [16921 17089])
+            ("FindUniformStructs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("shaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17144 17174]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("UniformStruct" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [17091 17901]))          
+      :file "shader.cpp"
+      :pointmax 17902
+      :fsize 17901
+      :lastmodtime '(23127 41869 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "shader.h"
+      :fsize 3540
+      :lastmodtime '(23127 41905 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "lighting.h"
+      :fsize 4314
+      :lastmodtime '(23127 41600 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "renderingEngine.h"
+      :fsize 2942
+      :lastmodtime '(23127 41676 0 0)))
+  :file "!home!marcus!Programming!Cpp!3DEngineCpp!src!rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,227 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Window.hpp" include nil nil [1 22])
+            ("iostream" include (:system-flag t) nil [24 43])
+            ("GL/glew.h" include (:system-flag t) nil [44 64])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [65 88])
+            ("../core/Input.hpp" include nil nil [90 118])
+            ("FramebufferSizeCallback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 175])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [176 186])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [187 198]))                  
+                :type "void")
+                nil [120 199])
+            ("ErrorCallback" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [226 236])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [237 261]))                  
+                :type "void")
+                nil [200 262])
+            ("MouseButtonCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [296 315])
+                    ("button" variable (:type "int") (reparse-symbol arg-sub-list) [316 327])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [328 339])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [340 349]))                  
+                :type "void")
+                nil [264 350])
+            ("CursorPosCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [381 400])
+                    ("xpos" variable (:type "double") (reparse-symbol arg-sub-list) [401 413])
+                    ("ypos" variable (:type "double") (reparse-symbol arg-sub-list) [414 426]))                  
+                :type "void")
+                nil [351 427])
+            ("CursorEnterCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [460 479])
+                    ("entered" variable (:type "int") (reparse-symbol arg-sub-list) [480 492]))                  
+                :type "void")
+                nil [428 493])
+            ("ScrollCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [521 540])
+                    ("xoffset" variable (:type "double") (reparse-symbol arg-sub-list) [541 556])
+                    ("yoffset" variable (:type "double") (reparse-symbol arg-sub-list) [557 572]))                  
+                :type "void")
+                nil [494 573])
+            ("KeyCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [598 617])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [618 626])
+                    ("scancode" variable (:type "int") (reparse-symbol arg-sub-list) [627 640])
+                    ("action" variable (:type "int") (reparse-symbol arg-sub-list) [641 652])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [653 662]))                  
+                :type "void")
+                nil [574 663])
+            ("CharCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [689 708])
+                    ("codepoint" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [709 732]))                  
+                :type "void")
+                nil [664 733])
+            ("CharModsCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [763 782])
+                    ("codepoint" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [783 806])
+                    ("mods" variable (:type "int") (reparse-symbol arg-sub-list) [807 816]))                  
+                :type "void")
+                nil [734 817])
+            ("DropCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [843 862])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [863 873])
+                    ("paths" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [874 893]))                  
+                :type "void")
+                nil [818 894])
+            ("JoystickCallback" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("joy" variable (:type "int") (reparse-symbol arg-sub-list) [924 932])
+                    ("event" variable (:type "int") (reparse-symbol arg-sub-list) [933 943]))                  
+                :type "void")
+                nil [895 944])
+            ("Window" function
+               (:constructor-flag t
+                :parent "Window"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [961 971])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [972 983])
+                    ("title" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [984 1009]))                  
+                :type ("Window" type (:type "class") nil nil))
+                nil [946 2540])
+            ("Window" function
+               (:destructor-flag t
+                :parent "Window"
+                :type "void")
+                nil [2542 2614])
+            ("update" function
+               (:parent "Window"
+                :type "void")
+                nil [2616 2757])
+            ("SwapBuffers" function
+               (:parent "Window"
+                :type "void")
+                nil [2759 2820])
+            ("PollEvents" function
+               (:methodconst-flag t
+                :parent "Window"
+                :type "void")
+                nil [2822 2879])
+            ("IsCloseRequested" function
+               (:methodconst-flag t
+                :parent "Window"
+                :type "bool")
+                nil [2881 2963])
+            ("BindAsRenderTarget" function
+               (:methodconst-flag t
+                :parent "Window"
+                :type "void")
+                nil [2965 3125])
+            ("SetFullScreen" function
+               (:parent "Window"
+                :arguments 
+                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [3154 3165]))                  
+                :type "void")
+                nil [3127 3233])
+            ("FramebufferSizeCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3271 3290])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3291 3301])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3302 3313]))                  
+                :type "void")
+                nil [3235 3354])
+            ("ErrorCallback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [3382 3392])
+                    ("description" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3393 3417]))                  
+                :type "void")
+                nil [3356 3490]))          
+      :file "Window.cpp"
+      :pointmax 3491
+      :fsize 3490
+      :lastmodtime '(23216 13175 873286 161000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "Window.hpp"
+      :fsize 1023
+      :lastmodtime '(23167 20796 0 0)))
+  :file "!home!marcus!git!3DEngine!src!rendering!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,477 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ARRAY_H" variable (:constant-flag t) nil [25 32])
+            ("iterator.h" include nil nil [34 55])
+            ("stddef.h" include (:system-flag t) nil [56 75])
+            ("Array" type
+               (:typedef ("array_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [77 106])
+            ("array_create" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments ((nil variable (:pointer (("" variable (:pointer 1 :type "void") (reparse-symbol arg-sub-list) [150 157])) :type "void") (reparse-symbol arg-sub-list) [135 158]))
+                :type ("Array" type (:type "class") nil nil))
+                nil [108 159])
+            ("array_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [183 194]))                  
+                :type "void")
+                nil [160 195])
+            ("array_add" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [218 229])
+                    ("entry" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [230 242]))                  
+                :type "void")
+                nil [196 243])
+            ("array_remove_entry" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [275 286])
+                    ("entry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [287 305]))                  
+                :type "void")
+                nil [244 306])
+            ("array_remove_index" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [338 349])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [350 363]))                  
+                :type "void")
+                nil [307 364])
+            ("array_get" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [388 399])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [400 413]))                  
+                :type "void")
+                nil [365 414])
+            ("array_get_iterator" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [452 464]))                  
+                :type ("Iterator" type (:type "class") nil nil))
+                nil [416 465])
+            ("array_iterator_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [498 512]))                  
+                :type "void")
+                nil [466 513]))          
+      :file "array.h"
+      :pointmax 532
+      :fsize 531
+      :lastmodtime '(23076 10418 870500 546000)
+      :unmatched-syntax '((punctuation 459 . 460) (semantic-list 446 . 459))
+      :lexical-table 
+        '(("ARRAY_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("array.h" include nil nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("stdio.h" include (:system-flag t) nil [40 58])
+            ("array_t" type
+               (:members 
+                  ( ("capacity" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [79 95])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [98 112])
+                    ("entry" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol classsubparts) [115 128]))                  
+                :type "struct")
+                nil [60 157])
+            ("iterator_data_t" type
+               (:members 
+                  ( ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [186 200]))                  
+                :type "struct")
+                nil [159 203])
+            ("" type
+               (:members 
+                  ( ("INITIAL_CAPACITY" variable
+                       (:constant-flag t
+                        :default-value (229 230)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [212 230]))                  
+                :type "enum")
+                nil [205 233])
+            ("array_iterator_hasnext" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [269 283]))                  
+                :type "int")
+                nil [235 284])
+            ("array_iterator_next" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [318 332]))                  
+                :type "void")
+                nil [285 333])
+            ("array_iterator_remove" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [368 382]))                  
+                :type "void")
+                nil [334 383])
+            ("increase_capacity" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [415 426]))                  
+                :type "void")
+                nil [385 427])
+            ("array_create" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments ((nil variable (:pointer (("" variable (:pointer 1 :type "void") (reparse-symbol arg-sub-list) [471 478])) :type "void") (reparse-symbol arg-sub-list) [456 479]))
+                :type ("Array" type (:type "class") nil nil))
+                nil [429 675])
+            ("array_free" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [700 711]))                  
+                :type "void")
+                nil [677 983])
+            ("array_add" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1007 1018])
+                    ("entry" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1019 1031]))                  
+                :type "void")
+                nil [985 1136])
+            ("array_remove_entry" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1169 1180])
+                    ("entry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1181 1199]))                  
+                :type "void")
+                nil [1138 1333])
+            ("array_remove_index" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1366 1377])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1378 1391]))                  
+                :type "void")
+                nil [1335 1609])
+            ("array_get" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1633 1644])
+                    ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1645 1658]))                  
+                :type "void")
+                nil [1610 1719])
+            ("array_get_iterator" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1769]))                  
+                :type ("Iterator" type (:type "class") nil nil))
+                nil [1721 2087])
+            ("array_iterator_free" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2121 2135]))                  
+                :type "void")
+                nil [2089 2198])
+            ("array_iterator_hasnext" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2234 2248]))                  
+                :type "int")
+                nil [2200 2312])
+            ("array_iterator_next" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2347 2361]))                  
+                :type "void")
+                nil [2314 2453])
+            ("array_iterator_remove" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("itr" variable
+                       (:pointer 1
+                        :type ("Iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2489 2503]))                  
+                :type "void")
+                nil [2455 2559])
+            ("increase_capacity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2591 2602]))                  
+                :type "void")
+                nil [2561 2841]))          
+      :file "array.c"
+      :pointmax 2842
+      :fsize 2841
+      :lastmodtime '(23076 14897 201408 644000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ITERATOR_H" variable (:constant-flag t) nil [28 38])
+            ("Iterator" type
+               (:typedef ("iterator_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [40 75])
+            ("IteratorData" type
+               (:typedef ("iterator_data_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [76 120])
+            ("iterator_t" type
+               (:members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("IteratorData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [144 163])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("itr" variable
+                               (:pointer 1
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [182 196]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [166 197])
+                    ("host" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [201 212])
+                    ("next" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("itr" variable
+                               (:pointer 1
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [229 243]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [215 244])
+                    ("has_next" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("itr" variable
+                               (:pointer 1
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [263 277]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [247 278])
+                    ("remove" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("itr" variable
+                               (:pointer 1
+                                :type ("Iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [296 310]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [281 311]))                  
+                :type "struct")
+                nil [122 314]))          
+      :file "iterator.h"
+      :pointmax 336
+      :fsize 335
+      :lastmodtime '(23076 10105 208506 983000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ITERATOR_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("str.h" include nil nil [1 17])
+            ("string.h" include (:system-flag t) nil [18 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("dfree" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78 86]))                  
+                :type "void")
+                nil [60 120])
+            ("add_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("Array" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [145 156])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [157 174])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [175 186]))                  
+                :type "void")
+                nil [122 304])
+            ("str_split" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [330 347])
+                    ("delim" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [348 366]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [306 783]))          
+      :file "str.c"
+      :pointmax 784
+      :fsize 783
+      :lastmodtime '(23076 10909 537490 477000)
+      :unmatched-syntax '((semantic-list 87 . 120) (semantic-list 77 . 86)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("STR_H" variable (:constant-flag t) nil [23 28])
+            ("array.h" include nil nil [30 48])
+            ("str_split" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [74 91])
+                    ("delim" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92 110]))                  
+                :type ("Array" type (:type "class") nil nil))
+                nil [50 111]))          
+      :file "str.h"
+      :pointmax 128
+      :fsize 127
+      :lastmodtime '(23076 10521 991498 430000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("STR_H")
+          )
+))
+  :file "!home!marcus!git!chalmers!satpos!c-code!src!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

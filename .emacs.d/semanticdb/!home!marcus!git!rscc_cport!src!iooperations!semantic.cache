@@ -1,0 +1,496 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../../include/iooperations/iostrm.h" include nil nil [1 47])
+            ("stdlib.h" include (:system-flag t) nil [49 68])
+            ("unistd.h" include (:system-flag t) nil [69 88])
+            ("string.h" include (:system-flag t) nil [89 108])
+            ("stdio.h" include (:system-flag t) nil [109 127])
+            ("sys/types.h" include (:system-flag t) nil [128 150])
+            ("sys/socket.h" include (:system-flag t) nil [151 174])
+            ("netinet/in.h" include (:system-flag t) nil [175 198])
+            ("netdb.h" include (:system-flag t) nil [199 217])
+            ("../../include/iooperations/buffer.h" include nil nil [219 265])
+            ("BUFF_SIZE" variable (:constant-flag t) nil [275 284])
+            ("__iostream_buffer_t" type
+               (:members 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [324 335])
+                    ("offset" variable (:type "int") (reparse-symbol classsubparts) [340 351]))                  
+                :type "struct")
+                nil [291 354])
+            ("__iostream_t" type
+               (:members 
+                  ( ("streamopen" variable (:type "int") (reparse-symbol classsubparts) [382 397])
+                    ("tret" variable (:type "int") (reparse-symbol classsubparts) [444 453])
+                    ("sockfd" variable (:type "int") (reparse-symbol classsubparts) [488 499])
+                    ("portno" variable (:type "int") (reparse-symbol classsubparts) [527 538])
+                    ("serv_addr" variable
+                       (:pointer 1
+                        :type ("sockaddr_in" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [544 574])
+                    ("server" variable
+                       (:pointer 1
+                        :type ("hostent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [579 602])
+                    ("bfr_in" variable (:type ("__iostream_buffer_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [608 642])
+                    ("bfr_out" variable (:type ("__iostream_buffer_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [684 719]))                  
+                :type "struct")
+                nil [356 757])
+            ("__iostrm_run_thread" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [814 824]))                  
+                :type "void")
+                nil [781 825])
+            ("__iostrm_buffer_add" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("__iostream_buffer_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [896 926])
+                    ("src" variable
+                       (:constant-flag t
+                        :type ("_Buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [927 945]))                  
+                :type "void")
+                nil [864 946])
+            ("__iostrm_buffer_reset" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("__iostream_buffer_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1052 1082]))                  
+                :type "void")
+                nil [1018 1083])
+            ("mutx" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1085 1113])
+            ("cond" variable
+               (:typemodifiers ("static")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [1114 1141])
+            ("_iostrm_ctor" function
+               (:arguments 
+                  ( ("hostname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1164 1186])
+                    ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1187 1205]))                  
+                :type ("_Stream" type (:type "class") nil nil))
+                nil [1143 2032])
+            ("_iostrm_dtor" function
+               (:arguments 
+                  ( ("obj" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2052 2064]))                  
+                :type "void")
+                nil [2034 2269])
+            ("__iostrm_buffer_add" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("__iostream_buffer_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2303 2333])
+                    ("src" variable
+                       (:constant-flag t
+                        :type ("_Buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2334 2352]))                  
+                :type "void")
+                nil [2271 2440])
+            ("__iostrm_buffer_reset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("__iostream_buffer_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2476 2506]))                  
+                :type "void")
+                nil [2442 2564])
+            ("_iostrm_socketwrite" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2645 2658]))                  
+                :type "int")
+                nil [2621 3051])
+            ("_iostrm_socketread" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3127 3140])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [3141 3149]))                  
+                :type "int")
+                nil [3104 3663])
+            ("_iostrm_open_socket" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3756 3769]))                  
+                :type "int")
+                nil [3732 4021])
+            ("_iostrm_close_socket" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4072 4085]))                  
+                :type "int")
+                nil [4047 4212])
+            ("_iostrm_connect_socket" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4301 4314]))                  
+                :type "int")
+                nil [4274 4435])
+            ("_iostrm_start_thread" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4486 4499])
+                    ("thrd" variable
+                       (:pointer 1
+                        :type ("pthread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4500 4516]))                  
+                :type "void")
+                nil [4460 4658])
+            ("__iostrm_run_thread" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4714 4724]))                  
+                :type "void")
+                nil [4681 5185])
+            ("_iostrm_put_outstream_buffer" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5222 5235])
+                    ("src" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5236 5248]))                  
+                :type "void")
+                nil [5188 5444])
+            ("_iostrm_get_instream_data" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5477 5490])
+                    ("dst" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5491 5503]))                  
+                :type "void")
+                nil [5446 5616]))          
+      :file "iostrm.c"
+      :pointmax 5617
+      :fsize 5616
+      :lastmodtime '(22835 9248 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFF_SIZE" . ((number "5000" 285 . 289)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("../../include/iooperations/buffer.h" include nil nil [1 47])
+            ("stdio.h" include (:system-flag t) nil [49 67])
+            ("stdlib.h" include (:system-flag t) nil [68 87])
+            ("string.h" include (:system-flag t) nil [88 107])
+            ("endian.h" include (:system-flag t) nil [108 127])
+            ("../../include/dataoperations/intops.h" include nil nil [128 176])
+            ("../../include/dataoperations/floatops.h" include nil nil [177 227])
+            ("../../include/dataoperations/strops.h" include nil nil [228 276])
+            ("READ_ERROR" variable (:constant-flag t) nil [286 296])
+            ("WRITE_ERROR" variable (:constant-flag t) nil [308 319])
+            ("NSTR_TERM" variable (:constant-flag t) nil [331 340])
+            ("__BUFFER_WRAPARROUND" variable (:constant-flag t) nil [475 495])
+            ("__BUFFER_INCREMENT" variable (:constant-flag t) nil [600 618])
+            ("__alloc_t" type
+               (:members 
+                  ( ("offset" variable (:type "int") (reparse-symbol classsubparts) [697 708])
+                    ("len" variable (:type "int") (reparse-symbol classsubparts) [756 764]))                  
+                :type "struct")
+                nil [674 805])
+            ("__buffer_t" type
+               (:members 
+                  ( ("buffer_size" variable (:type "int") (reparse-symbol classsubparts) [831 847])
+                    ("bfr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [852 862])
+                    ("write_offset" variable (:type "int") (reparse-symbol classsubparts) [867 884])
+                    ("read_offset" variable (:type "int") (reparse-symbol classsubparts) [889 905])
+                    ("last_packet_offset" variable (:type "int") (reparse-symbol classsubparts) [910 933])
+                    ("header" variable (:type ("__alloc_t" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [938 962]))                  
+                :type "struct")
+                nil [807 965])
+            ("__buffer_get_next_byte" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1084 1097]))                  
+                :type "unsigned char")
+                nil [1040 1098])
+            ("__buffer_put_next_byte" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1208 1221])
+                    ("var" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1222 1240]))                  
+                :type "void")
+                nil [1173 1241])
+            ("__buffer_overflow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1399 1412])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1413 1421]))                  
+                :type "int")
+                nil [1370 1422])
+            ("__buffer_underflow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1569 1582])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1583 1591]))                  
+                :type "int")
+                nil [1539 1592])
+            ("_buffer_ctor" function
+               (:arguments 
+                  ( ("bsize" variable (:type "int") (reparse-symbol arg-sub-list) [1615 1625]))                  
+                :type ("_Buffer" type (:type "class") nil nil))
+                nil [1594 1888])
+            ("_buffer_dtor" function
+               (:arguments 
+                  ( ("obj" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1908 1920]))                  
+                :type "void")
+                nil [1890 1996])
+            ("_buffer_get_write_offset" function
+               (:arguments 
+                  ( ("self" variable
+                       (:constant-flag t
+                        :type ("_Buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2027 2046]))                  
+                :type "int")
+                nil [1998 2162])
+            ("_buffer_get_read_offset" function
+               (:arguments 
+                  ( ("self" variable
+                       (:constant-flag t
+                        :type ("_Buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2191 2210]))                  
+                :type "int")
+                nil [2163 2325])
+            ("_buffer_push_alloc" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2350 2363])
+                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2364 2374]))                  
+                :type "int")
+                nil [2327 2697])
+            ("_buffer_pop_alloc" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2734])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2735 2752])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2753 2761]))                  
+                :type "int")
+                nil [2699 3316])
+            ("_buffer_dealloc" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3339 3352]))                  
+                :type "void")
+                nil [3318 3412])
+            ("_buffer_reset" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3432 3445]))                  
+                :type "int")
+                nil [3414 3616])
+            ("_buffer_put_data" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3640 3653])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3654 3671])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [3672 3680]))                  
+                :type "void")
+                nil [3618 3807])
+            ("_buffer_get_data" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:constant-flag t
+                        :type ("_Buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3831 3850])
+                    ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3851 3861]))                  
+                :type "char")
+                nil [3808 4056])
+            ("__buffer_overflow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4087 4100])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4101 4109]))                  
+                :type "int")
+                nil [4058 4480])
+            ("__buffer_underflow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4511 4524])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4525 4533]))                  
+                :type "int")
+                nil [4481 4902])
+            ("__buffer_get_next_byte" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4948 4961]))                  
+                :type "unsigned char")
+                nil [4904 5137])
+            ("_buffer_get_1_byte" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5172 5185]))                  
+                :type "unsigned char")
+                nil [5139 5294])
+            ("_buffer_get_2_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5330 5343])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [5344 5355]))                  
+                :type "unsigned short")
+                nil [5295 5647])
+            ("_buffer_get_4_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5681 5694])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [5695 5706]))                  
+                :type "unsigned int")
+                nil [5648 5996])
+            ("_buffer_get_8_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6031 6044])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [6045 6056]))                  
+                :type "unsigned long")
+                nil [5997 6347])
+            ("_buffer_get_float" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6372 6385]))                  
+                :type "float")
+                nil [6348 6678])
+            ("_buffer_get_double" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6705 6718]))                  
+                :type "double")
+                nil [6679 7016])
+            ("_buffer_get_string" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7042 7055])
+                    ("dst" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7056 7066]))                  
+                :type "void")
+                nil [7018 7353])
+            ("__buffer_put_next_byte" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7390 7403])
+                    ("var" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7404 7422]))                  
+                :type "void")
+                nil [7355 7619])
+            ("_buffer_put_1_byte" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7644 7657])
+                    ("var" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7658 7676]))                  
+                :type "void")
+                nil [7620 7771])
+            ("_buffer_put_2_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7797 7810])
+                    ("var" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [7811 7830])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [7831 7842]))                  
+                :type "void")
+                nil [7772 8066])
+            ("_buffer_put_4_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8092 8105])
+                    ("var" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8106 8123])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [8124 8135]))                  
+                :type "void")
+                nil [8067 8359])
+            ("_buffer_put_8_bytes" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8385 8398])
+                    ("var" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8399 8417])
+                    ("endian" variable (:type "int") (reparse-symbol arg-sub-list) [8418 8429]))                  
+                :type "void")
+                nil [8360 8653])
+            ("_buffer_put_float" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8677 8690])
+                    ("var" variable (:type "float") (reparse-symbol arg-sub-list) [8691 8701]))                  
+                :type "void")
+                nil [8654 8955])
+            ("_buffer_put_double" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8980 8993])
+                    ("var" variable (:type "double") (reparse-symbol arg-sub-list) [8994 9005]))                  
+                :type "void")
+                nil [8956 9265])
+            ("_buffer_put_string" function
+               (:arguments 
+                  ( ("self" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9290 9303])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9304 9320]))                  
+                :type "void")
+                nil [9266 9626]))          
+      :file "buffer.c"
+      :pointmax 9627
+      :fsize 9626
+      :lastmodtime '(22834 63732 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NSTR_TERM" . ((number "10" 341 . 343)))
+          ("READ_ERROR" . ((punctuation "-" 297 . 298) (number "1" 298 . 299)))
+          ("__BUFFER_INCREMENT" (spp-arg-list ("offset" "step" "totsize") 618 . 641) . ((semantic-list "((offset + step) % totsize)" 645 . 672)))
+          ("__BUFFER_WRAPARROUND" (spp-arg-list ("obj" "offset" "len") 495 . 513) . ((semantic-list "(offset + len >= self->buffer_size)" 517 . 552)))
+          ("WRITE_ERROR" . ((punctuation "-" 320 . 321) (number "1" 321 . 322)))
+          )
+))
+  :file "!home!marcus!git!rscc_cport!src!iooperations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

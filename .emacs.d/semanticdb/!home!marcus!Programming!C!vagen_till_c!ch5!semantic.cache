@@ -1,0 +1,322 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("file.h" include nil nil [1 18])
+            ("stdio.h" include (:system-flag t) nil [20 38])
+            ("string.h" include (:system-flag t) nil [39 58])
+            ("stdlib.h" include (:system-flag t) nil [59 78])
+            ("assert.h" include (:system-flag t) nil [79 98])
+            ("file_allocate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [126 145])
+                    ("nslots" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146 160]))                  
+                :type "void")
+                nil [100 161])
+            ("file_init" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [178 197]))                  
+                :type "void")
+                nil [163 239])
+            ("file_destr" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [257 276]))                  
+                :type "void")
+                nil [241 336])
+            ("file_allocate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [364 383])
+                    ("nslots" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 398]))                  
+                :type "void")
+                nil [338 578])
+            ("openfile" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [646 665])
+                    ("filepath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [666 681])
+                    ("opentype" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [682 698]))                  
+                :type "int")
+                nil [633 756])
+            ("closefile" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [799 818]))                  
+                :type "int")
+                nil [785 848])
+            ("readfile" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [911 930]))                  
+                :type "void")
+                nil [897 1205])
+            ("file_readline" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("__file_t" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1271 1290]))                  
+                :type "int")
+                nil [1253 1644]))          
+      :file "file.c"
+      :pointmax 1645
+      :fsize 1644
+      :lastmodtime '(22959 54922 19734 842000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "file.h"
+      :fsize 441
+      :lastmodtime '(22959 64509 656609 350000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("math.h" include (:system-flag t) nil [40 57])
+            ("stdlib.h" include (:system-flag t) nil [58 77])
+            ("assert.h" include (:system-flag t) nil [78 97])
+            ("time.h" include (:system-flag t) nil [98 115])
+            ("file.h" include nil nil [117 134])
+            ("PI" variable (:constant-flag t) nil [144 146])
+            ("task1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start" variable (:type "double") (reparse-symbol arg-sub-list) [171 184])
+                    ("stop" variable (:type "double") (reparse-symbol arg-sub-list) [185 197])
+                    ("step" variable (:type "double") (reparse-symbol arg-sub-list) [198 210]))                  
+                :type "void")
+                nil [160 211])
+            ("task2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [223 228]))                  
+                :type "void")
+                nil [212 229])
+            ("task3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [241 246]))                  
+                :type "void")
+                nil [230 247])
+            ("my_cos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [262 275])
+                    ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [276 287]))                  
+                :type "double")
+                nil [248 288])
+            ("task4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [300 305]))                  
+                :type "void")
+                nil [289 306])
+            ("task5" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [318 323]))                  
+                :type "void")
+                nil [307 324])
+            ("task6" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [336 341]))                  
+                :type "void")
+                nil [325 342])
+            ("bubble_sort" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [360 370])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [371 382]))                  
+                :type "void")
+                nil [343 383])
+            ("task7" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filepath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [395 410]))                  
+                :type "void")
+                nil [384 411])
+            ("task8" function
+               (:prototype-flag t
+                :type "void")
+                nil [412 425])
+            ("is_prime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [439 455])
+                    ("primes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [456 478])
+                    ("pidx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [479 493]))                  
+                :type "int")
+                nil [426 494])
+            ("task9" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [506 511]))                  
+                :type "void")
+                nil [495 512])
+            ("task10" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [525 530]))                  
+                :type "void")
+                nil [513 531])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [542 551])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [552 564]))                  
+                :type "int")
+                nil [533 1282])
+            ("task1" function
+               (:arguments 
+                  ( ("start" variable (:type "double") (reparse-symbol arg-sub-list) [1295 1308])
+                    ("stop" variable (:type "double") (reparse-symbol arg-sub-list) [1309 1321])
+                    ("step" variable (:type "double") (reparse-symbol arg-sub-list) [1322 1334]))                  
+                :type "void")
+                nil [1284 1658])
+            ("task2" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1671 1676]))                  
+                :type "void")
+                nil [1660 1981])
+            ("task3" function (:type "void") nil [1983 2137])
+            ("my_cos" function
+               (:arguments 
+                  ( ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [2153 2166])
+                    ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [2167 2178]))                  
+                :type "double")
+                nil [2139 2384])
+            ("task4" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2397 2402]))                  
+                :type "void")
+                nil [2386 3039])
+            ("task5" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3052 3057]))                  
+                :type "void")
+                nil [3041 3387])
+            ("task6" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3400 3405]))                  
+                :type "void")
+                nil [3389 3652])
+            ("bubble_sort" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3671 3681])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3682 3693]))                  
+                :type "void")
+                nil [3654 3914])
+            ("task7" function
+               (:arguments 
+                  ( ("filepath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3927 3942]))                  
+                :type "void")
+                nil [3916 4339])
+            ("task8" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4352 4357]))                  
+                :type "void")
+                nil [4341 5094])
+            ("is_prime" function
+               (:arguments 
+                  ( ("i" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5109 5125])
+                    ("primes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [5126 5148])
+                    ("pidx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5149 5163]))                  
+                :type "int")
+                nil [5096 5411])
+            ("task9" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5424 5429]))                  
+                :type "void")
+                nil [5413 6094])
+            ("task10" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6108 6113]))                  
+                :type "void")
+                nil [6096 6844]))          
+      :file "main.c"
+      :pointmax 6848
+      :fsize 6847
+      :lastmodtime '(22959 64124 197614 395000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PI" . ((number "3.141592654" 147 . 158)))
+          )
+))
+  :file "!home!marcus!Programming!C!vagen_till_c!ch5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

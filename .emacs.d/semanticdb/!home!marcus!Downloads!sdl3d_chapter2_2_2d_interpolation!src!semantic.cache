@@ -1,0 +1,93 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1073 1090])
+            ("../include/definitions.h" include nil nil [1091 1126])
+            ("getStepWidthToPoint2d" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1829 1844])
+                    ("to" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1845 1858])
+                    ("mapLength" variable (:type "int") (reparse-symbol arg-sub-list) [1859 1873])
+                    ("targetVector" variable
+                       (:pointer 1
+                        :type ("point_2d_float" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1874 1903]))                  
+                :type "void")
+                nil [1795 2025])
+            ("mapPicture2d_interpolated" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2657 2678])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2679 2705])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2706 2726])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2727 2748])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2749 2769])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point_2d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2770 2791]))                  
+                :type "void")
+                nil [2619 6025])
+            ("mapPicture" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6847 6868])
+                    ("pictureToMap" variable
+                       (:pointer 1
+                        :type ("SDL_Surface" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6869 6895])
+                    ("leftUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6896 6913])
+                    ("rightUpper" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6914 6932])
+                    ("leftLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6933 6950])
+                    ("rightLower" variable
+                       (:pointer 1
+                        :type ("point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6951 6969]))                  
+                :type "void")
+                nil [6831 7626]))          
+      :file "textureMapping.c"
+      :pointmax 7630
+      :fsize 7629
+      :lastmodtime '(17689 48853 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Downloads!sdl3d_chapter2_2_2d_interpolation!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

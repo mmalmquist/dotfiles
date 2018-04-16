@@ -1,0 +1,1211 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL_WTK_H" variable (:constant-flag t) nil [27 36])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("stdio.h" include (:system-flag t) nil [58 76])
+            ("string.h" include (:system-flag t) nil [77 96])
+            ("SDL2/SDL.h" include (:system-flag t) nil [98 119])
+            ("SDL2/SDL_ttf.h" include (:system-flag t) nil [120 145])
+            ("class.h" include nil nil [147 165])
+            ("Header.h" include nil nil [166 185])
+            ("AppEvent.h" include nil nil [186 207])
+            ("AppPixels.h" include nil nil [208 230])
+            ("AppFont.h" include nil nil [231 251])
+            ("AppComponent.h" include nil nil [252 277])
+            ("AppText.h" include nil nil [278 298])
+            ("AppButton.h" include nil nil [299 321])
+            ("AppContainer.h" include nil nil [322 347])
+            ("AppWindow.h" include nil nil [348 370]))          
+      :file "SDL_wtk.h"
+      :pointmax 391
+      :fsize 390
+      :lastmodtime '(23211 47927 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SDL_WTK_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEADER_H" variable (:constant-flag t) nil [26 34])
+            ("FPRET" variable (:constant-flag t) nil [44 49])
+            ("funcptr" type
+               (:typedef ("void")
+                :pointer 1
+                :type "typedef")
+                nil [62 85]))          
+      :file "Header.h"
+      :pointmax 105
+      :fsize 104
+      :lastmodtime '(23015 10826 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEADER_H")
+          ("FPRET" . ((RETURN "return" 50 . 56) (symbol "NULL" 57 . 61)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPEVENT_H" variable (:constant-flag t) nil [28 38])
+            ("SDL2/SDL.h" include (:system-flag t) nil [40 61])
+            ("class.h" include nil nil [62 80])
+            ("Event" type
+               (:typedef ("void")
+                :type "typedef")
+                nil [82 101])
+            ("C" extern nil nil [122 300]))          
+      :file "AppEvent.h"
+      :pointmax 329
+      :fsize 328
+      :lastmodtime '(23211 49794 0 0)
+      :unmatched-syntax '((punctuation 277 . 278) (semantic-list 158 . 277) (semantic-list 148 . 157) (CLASS 143 . 148) (close-paren 156 . 157) (symbol 149 . 156) (open-paren 148 . 149) (close-paren 156 . 157) (symbol 149 . 156) (open-paren 148 . 149))
+      :lexical-table 
+        '(("APPEVENT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LINKEDLIST_H" variable (:constant-flag t) nil [30 42])
+            ("stddef.h" include (:system-flag t) nil [44 63])
+            ("LinkedList" type
+               (:typedef ("LinkedList_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [65 105])
+            ("LinkedList_Get" function
+               (:type "void"
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [475 489])
+                    ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 512]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [447 513])
+            ("LinkedList_RemoveIdx" function
+               (:type "void"
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [410 424])
+                    ("idx" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 445]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [377 446])
+            ("LinkedList_RemoveEntry" function
+               (:type "void"
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 349])
+                    ("entry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [357 375]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [299 376])
+            ("LinkedList_Add" function
+               (:type "void"
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 273])
+                    ("entry" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [280 297]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [232 298])
+            ("LinkedList_dtor" function
+               (:type "void"
+                :arguments 
+                  ( ("ll" variable (:type ("LinkedList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216 230]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [188 231])
+            ("LinkedList_ctor" function
+               (:type ("LinkedList" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [181 186]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [147 187]))          
+      :file "LinkedList.h"
+      :pointmax 567
+      :fsize 532
+      :lastmodtime '(23210 55099 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LINKEDLIST_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPPIXELS_H" variable (:constant-flag t) nil [29 40])
+            ("SDL2/SDL.h" include (:system-flag t) nil [42 63])
+            ("class.h" include nil nil [64 82])
+            ("Pixel_t" type
+               (:typedef ("Uint32" type (:type "class") nil nil)
+                :type "typedef")
+                nil [84 107])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppPixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119 129]))                  
+                :type "int")
+                nil [108 130])
+            ("AppPixels_DrawLineY" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1749 1765])
+                    ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1766 1777])
+                    ("y" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1778 1789])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1790 1806])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1807 1822])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1823 1835]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1717 1836])
+            ("AppPixels_DrawLineX" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1629 1645])
+                    ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1646 1657])
+                    ("y" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1658 1669])
+                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1670 1686])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1687 1702])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1703 1715]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1597 1716])
+            ("AppPixels_DrawBoxEdge" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1550 1566])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1567 1582])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1583 1595]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1516 1596])
+            ("AppPixels_SetPixel" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1463 1479])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1480 1490])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1491 1501])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1502 1514]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1432 1515])
+            ("AppPixels_FillRect" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1375 1391])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1402])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1403 1413])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1414 1430]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1344 1431])
+            ("AppPixels_FillPixels" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1230 1246])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1247 1257])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1268])
+                    ("pixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1269 1285])
+                    ("pwidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1286 1302])
+                    ("pheight" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1303 1320]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1197 1321])
+            ("AppPixels_FillArray" function
+               (:type "void"
+                :arguments 
+                  ( ("pixels" variable
+                       (:pointer 1
+                        :type ("Pixel_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1081 1097])
+                    ("pwidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1114])
+                    ("pheight" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1115 1132])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1133 1143])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1144 1154])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1155 1171]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1049 1172])
+            ("AppPixels_FillColor" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [992 1008])
+                    ("val" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1009 1021]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [960 1022])
+            ("AppPixels_Paint" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [920 936])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [937 947])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [948 958]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [892 959])
+            ("AppPixels_SetPos" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [839 855])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [856 866])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [867 877]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [810 878])
+            ("AppPixels_SetSize" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [759 775])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [776 791])
+                    ("height" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [792 808]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [729 809])
+            ("AppPixels_SetTexture" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [631 647])
+                    ("renderer" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [648 671])
+                    ("texture" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [672 694])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [695 710])
+                    ("height" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [711 727]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [598 728])
+            ("AppPixels_SetRenderer" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [561 577])
+                    ("ren" variable
+                       (:pointer 1
+                        :type ("SDL_Renderer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [578 596]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [527 597])
+            ("AppPixels_GetPixels" function
+               (:type ("Pixel_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [495 511]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [459 512])
+            ("AppPixels_GetBounds" function
+               (:type ("SDL_Rect" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [441 457]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [398 458])
+            ("AppPixels_GetSize" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppPixels" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [345 361])
+                    ("width" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [362 378])
+                    ("height" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [379 396]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [315 397])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppPixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [289 299]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [266 300])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppPixels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196 206])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [207 263]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [172 265]))          
+      :file "AppPixels.h"
+      :pointmax 1890
+      :fsize 1889
+      :lastmodtime '(23211 50233 0 0)
+      :unmatched-syntax '((semantic-list 211 . 263))
+      :lexical-table 
+        '(("APPPIXELS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPFONT_H" variable (:constant-flag t) nil [27 36])
+            ("SDL2/SDL.h" include (:system-flag t) nil [38 59])
+            ("stdbool.h" include (:system-flag t) nil [60 80])
+            ("AppPixels.h" include nil nil [81 103])
+            ("class.h" include nil nil [104 122])
+            ("Font" type
+               (:typedef ("void")
+                :type "typedef")
+                nil [124 142])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppFont" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [154 162]))                  
+                :type "int")
+                nil [143 163])
+            ("AppFont_Render" function
+               (:type ("AppPixels" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [409 423])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [424 444])
+                    ("color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 459]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [376 460])
+            ("AppFont_LoadFont" function
+               (:type "bool"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [329 343])
+                    ("file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [344 361])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [362 374]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [300 375])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppFont" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [290 298]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [267 299])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppFont" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231 239])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [240 264]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [207 266]))          
+      :file "AppFont.h"
+      :pointmax 510
+      :fsize 509
+      :lastmodtime '(23211 49906 0 0)
+      :unmatched-syntax '((semantic-list 244 . 264))
+      :lexical-table 
+        '(("APPFONT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPCOMPONENT_H" variable (:constant-flag t) nil [32 46])
+            ("SDL2/SDL.h" include (:system-flag t) nil [48 69])
+            ("stdint.h" include (:system-flag t) nil [70 89])
+            ("Header.h" include nil nil [90 109])
+            ("AppPixels.h" include nil nil [110 132])
+            ("class.h" include nil nil [133 151])
+            ("gc.h" include nil nil [152 167])
+            ("CFG_DEFAULT" variable (:constant-flag t) nil [177 188])
+            ("CBG_DEFAULT" variable (:constant-flag t) nil [208 219])
+            ("ComponentHost" type
+               (:typedef ("void")
+                :type "typedef")
+                nil [232 259])
+            ("Component" type
+               (:typedef ("StackObject" type (:type "class") nil nil)
+                :type "typedef")
+                nil [260 290])
+            ("AppComponent_SetPosition" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1067 1086])
+                    ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1087 1097])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1098 1108]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1030 1109])
+            ("AppComponent_SetSize" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [976 995])
+                    ("width" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [996 1011])
+                    ("height" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1012 1028]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [943 1029])
+            ("AppComponent_SetBackground" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [908 927])
+                    ("argb" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [928 941]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [869 942])
+            ("AppComponent_SetForeground" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [834 853])
+                    ("argb" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [854 867]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [795 868])
+            ("AppComponent_MouseOver" function
+               (:type ("int32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppComponent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [740 759])
+                    ("mouse_x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [760 776])
+                    ("mouse_y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [777 793]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [702 794])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppComponent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [686 699]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [663 700])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppComponent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [588 601])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [602 660]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [564 662]))          
+      :file "AppComponent.h"
+      :pointmax 1166
+      :fsize 1165
+      :lastmodtime '(23215 33832 0 0)
+      :unmatched-syntax '((semantic-list 606 . 660) (punctuation 521 . 522) (semantic-list 312 . 521) (semantic-list 297 . 311) (CLASS 292 . 297) (close-paren 310 . 311) (symbol 298 . 310) (open-paren 297 . 298) (close-paren 310 . 311) (symbol 298 . 310) (open-paren 297 . 298))
+      :lexical-table 
+        '(("APPCOMPONENT_H")
+          ("CBG_DEFAULT" . ((number "0xFF3F3F3F" 220 . 230)))
+          ("CFG_DEFAULT" . ((number "0xFFDCDCCC" 189 . 199)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPTEXT_H" variable (:constant-flag t) nil [27 36])
+            ("SDL2/SDL.h" include (:system-flag t) nil [38 59])
+            ("Header.h" include nil nil [60 79])
+            ("AppPixels.h" include nil nil [80 102])
+            ("AppFont.h" include nil nil [103 123])
+            ("AppComponent.h" include nil nil [124 149])
+            ("class.h" include nil nil [150 168])
+            ("Text" type
+               (:typedef ("void")
+                :type "typedef")
+                nil [170 188])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [200 208]))                  
+                :type "int")
+                nil [189 209])
+            ("AppText_Paint" function
+               (:type ("funcptr" type (:type "class") nil nil)
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [740 760]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [711 761])
+            ("AppText_UpdateRendering" function
+               (:type ("funcptr" type (:type "class") nil nil)
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ComponentHost" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [689 709]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [650 710])
+            ("AppText_Center" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [610 624])
+                    ("bounds" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [625 648]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [583 649])
+            ("AppText_GetComponent" function
+               (:type ("AppComponent" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [567 581]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [525 582])
+            ("AppText_SetFont" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [494 508])
+                    ("font" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [509 523]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [466 524])
+            ("AppText_SetColor" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [435 449])
+                    ("color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [450 464]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [406 465])
+            ("AppText_SetText" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppText" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [372 386])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [387 404]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [344 405])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 342]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [311 343])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppText" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [277 285])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [286 308]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [253 310]))          
+      :file "AppText.h"
+      :pointmax 813
+      :fsize 812
+      :lastmodtime '(23211 50833 0 0)
+      :unmatched-syntax '((semantic-list 290 . 308))
+      :lexical-table 
+        '(("APPTEXT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPBUTTON_H" variable (:constant-flag t) nil [29 40])
+            ("AppPixels.h" include nil nil [42 64])
+            ("AppFont.h" include nil nil [65 85])
+            ("AppComponent.h" include nil nil [86 111])
+            ("class.h" include nil nil [112 130])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143 153]))                  
+                :type "int")
+                nil [132 154])
+            ("AppButton_SetText" function
+               (:type "void"
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("AppButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [430 444])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [445 462])
+                    ("text_color" variable (:type ("Pixel_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [463 482]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [400 483])
+            ("AppButton_SetFont" function
+               (:type "void"
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("AppButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [369 383])
+                    ("font" variable
+                       (:pointer 1
+                        :type ("AppFont" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [384 398]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [339 399])
+            ("AppButton_GetComponent" function
+               (:type ("AppComponent" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ab" variable
+                       (:pointer 1
+                        :type ("AppButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 337]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [279 338])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [267 277]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [244 278])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppButton" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [220 230])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [231 241]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [196 243]))          
+      :file "AppButton.h"
+      :pointmax 535
+      :fsize 534
+      :lastmodtime '(23211 49376 0 0)
+      :unmatched-syntax '((semantic-list 235 . 241))
+      :lexical-table 
+        '(("APPBUTTON_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPCONTAINER_H" variable (:constant-flag t) nil [32 46])
+            ("SDL2/SDL.h" include (:system-flag t) nil [48 69])
+            ("Header.h" include nil nil [70 89])
+            ("AppEvent.h" include nil nil [90 111])
+            ("AppComponent.h" include nil nil [112 137])
+            ("class.h" include nil nil [138 156])
+            ("gc.h" include nil nil [157 172])
+            ("ContainerHost" type
+               (:typedef ("void")
+                :type "typedef")
+                nil [174 201])
+            ("Container" type
+               (:typedef ("StackObject" type (:type "class") nil nil)
+                :type "typedef")
+                nil [202 232])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [244 257]))                  
+                :type "int")
+                nil [233 258])
+            ("AppContainer_GetBounds" function
+               (:type ("SDL_Rect" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [929 948]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [883 949])
+            ("AppContainer_AssertBounds" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [862 881]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [824 882])
+            ("AppContainer_PaintComponents" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [803 822]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [762 823])
+            ("AppContainer_HandleEvents" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [727 746])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("Event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [747 760]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [689 761])
+            ("AppContainer_AddContainer" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [654 673])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Container" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [674 687]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [616 688])
+            ("AppContainer_AddComponent" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [581 600])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Component" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [601 614]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [543 615])
+            ("AppContainer_GetRenderer" function
+               (:type ("SDL_Renderer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppContainer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [522 541]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 2
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [475 542])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [460 473]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [437 474])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppContainer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [324 337])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [338 434]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [300 436]))          
+      :file "AppContainer.h"
+      :pointmax 1006
+      :fsize 1005
+      :lastmodtime '(23215 33915 0 0)
+      :unmatched-syntax '((semantic-list 342 . 434))
+      :lexical-table 
+        '(("APPCONTAINER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("APPWINDOW_H" variable (:constant-flag t) nil [29 40])
+            ("AppContainer.h" include nil nil [42 67])
+            ("class.h" include nil nil [68 86])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99 109]))                  
+                :type "int")
+                nil [88 110])
+            ("AppWindow_Loop" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [389 405]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [362 406])
+            ("AppWindow_UpdateSize" function
+               (:type "void"
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [344 360]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [311 361])
+            ("AppWindow_GetContainer" function
+               (:type ("AppContainer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("AppWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [293 309]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [249 310])
+            ("Destructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [236 246]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [213 247])
+            ("Constructor_decl" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type ("AppWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176 186])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [187 210]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [152 212]))          
+      :file "AppWindow.h"
+      :pointmax 458
+      :fsize 457
+      :lastmodtime '(23211 48569 0 0)
+      :unmatched-syntax '((semantic-list 191 . 210))
+      :lexical-table 
+        '(("APPWINDOW_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [15 34])
+            ("assert.h" include (:system-flag t) nil [35 54])
+            ("args" variable (:constant-flag t) nil [77 81])
+            ("class_decl" variable (:constant-flag t) nil [115 125])
+            ("class" variable (:constant-flag t) nil [165 170])
+            ("use_result" variable (:constant-flag t) nil [221 231])
+            ("new" variable (:constant-flag t) nil [277 280])
+            ("delete" variable (:constant-flag t) nil [337 343])
+            ("_Constructor_" variable (:constant-flag t) nil [372 385])
+            ("Constructor_decl" variable (:constant-flag t) nil [412 428])
+            ("Constructor" variable (:constant-flag t) nil [491 502])
+            ("ctor_return" variable (:constant-flag t) nil [616 627])
+            ("_Destructor_" variable (:constant-flag t) nil [674 686])
+            ("Destructor_decl" variable (:constant-flag t) nil [713 728])
+            ("Destructor" variable (:constant-flag t) nil [779 789])
+            ("dtor_return" variable (:constant-flag t) nil [856 867])
+            ("Construct" variable (:constant-flag t) nil [911 920])
+            ("Destruct" variable (:constant-flag t) nil [977 985]))          
+      :file "class.h"
+      :pointmax 1031
+      :fsize 1030
+      :lastmodtime '(23215 33552 0 0)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("args" (spp-arg-list ("...") 81 . 86) . ((symbol "__VA_ARGS__" 87 . 98)))
+          ("use_result" . ((symbol "__attribute__" 232 . 245) (semantic-list "((warn_unused_result))" 245 . 267)))
+          ("_Constructor_" (spp-arg-list ("type") 385 . 391) . ((spp-symbol-merge ((symbol "type" 392 . 396) (symbol "_init" 398 . 403)) 392 . 403)))
+          ("ctor_return" . 
+              ((RETURN "return" 650 . 656) (symbol "this" 657 . 661) (punctuation ";" 661 . 662) (close-paren "}" 663 . 664)))
+          ("delete" (spp-arg-list ("obj") 343 . 348) . ((symbol "free" 353 . 357) (semantic-list "(obj)" 357 . 362)))
+          ("Destructor_decl" (spp-arg-list ("type") 728 . 734) . 
+              ((VOID "void" 735 . 739) (symbol "_Destructor_" 740 . 752) (semantic-list "(type)" 752 . 758) (semantic-list "(type *this)" 758 . 770)))
+          ("dtor_return" . 
+              ((DELETE "delete" 878 . 884) (semantic-list "(this)" 884 . 890) (punctuation ";" 890 . 891) (RETURN "return" 892 . 898) (punctuation ";" 898 . 899) (close-paren "}" 900 . 901)))
+          ("Construct" (spp-arg-list ("type" "init_args") 920 . 937) . 
+              ((symbol "_Constructor_" 938 . 951) (semantic-list "(type)" 951 . 957) (semantic-list "(init_args)" 957 . 968)))
+          ("Destruct" (spp-arg-list ("type" "instance") 985 . 1001) . 
+              ((symbol "_Destructor_" 1002 . 1014) (semantic-list "(type)" 1014 . 1020) (semantic-list "(instance)" 1020 . 1030)))
+          ("new" (spp-arg-list ("type" "size") 280 . 292) . 
+              ((semantic-list "(type *)" 293 . 301) (symbol "calloc" 302 . 308) (semantic-list "(size, sizeof(type))" 308 . 328)))
+          ("_Destructor_" (spp-arg-list ("type") 686 . 692) . ((spp-symbol-merge ((symbol "type" 693 . 697) (symbol "_dstr" 699 . 704)) 693 . 704)))
+          ("class" (spp-arg-list ("name") 170 . 176) . 
+              ((symbol "class_decl" 182 . 192) (semantic-list "(name)" 192 . 198) (punctuation ";" 198 . 199) (STRUCT "struct" 200 . 206) (symbol "name" 207 . 211)))
+          ("Constructor_decl" (spp-arg-list ("type" "init_args") 428 . 445) . 
+              ((symbol "type" 446 . 450) (punctuation "*" 451 . 452) (symbol "_Constructor_" 452 . 465) (semantic-list "(type)" 465 . 471) (semantic-list "(init_args)" 471 . 482)))
+          ("Constructor" (spp-arg-list ("type" "init_args") 502 . 519) . 
+              ((symbol "Constructor_decl" 525 . 541) (semantic-list "(type, args(init_args))" 541 . 564) (open-paren "{" 565 . 566) (symbol "type" 567 . 571) (punctuation "*" 572 . 573) (symbol "this" 573 . 577) (punctuation "=" 578 . 579) (NEW "new" 580 . 583) (semantic-list "(type, 1)" 583 . 592) (punctuation ";" 592 . 593) (symbol "assert" 594 . 600) (semantic-list "(this)" 600 . 606) (punctuation ";" 606 . 607)))
+          ("Destructor" (spp-arg-list ("type") 789 . 795) . 
+              ((symbol "Destructor_decl" 801 . 816) (semantic-list "(type)" 816 . 822) (open-paren "{" 823 . 824) (IF "if" 825 . 827) (semantic-list "(!this)" 828 . 835) (semantic-list "{ return; }" 836 . 847)))
+          ("class_decl" (spp-arg-list ("name") 125 . 131) . 
+              ((TYPEDEF "typedef" 132 . 139) (STRUCT "struct" 140 . 146) (symbol "name" 147 . 151) (symbol "name" 152 . 156)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Stack.h" include nil nil [15 33])
+            ("class.h" include nil nil [34 52])
+            ("gc_decl" variable (:constant-flag t) nil [62 69])
+            ("with_gc" variable (:constant-flag t) nil [90 97])
+            ("gc_return" variable (:constant-flag t) nil [132 141])
+            ("gc_stack_push" variable (:constant-flag t) nil [188 201])
+            ("gc_Construct" variable (:constant-flag t) nil [350 362])
+            ("gc_Assign" variable (:constant-flag t) nil [479 488])
+            ("gc_new" variable (:constant-flag t) nil [654 660])
+            ("gc_assign" variable (:constant-flag t) nil [769 778])
+            ("StackPtr_push" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("StackObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [903 920]))                  
+                :type "void")
+                nil [877 921])
+            ("StackPtr_destroy_all" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [955 960]))                  
+                :type "void")
+                nil [922 961])
+            ("RootPtr_push" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [987 992]))                  
+                :type "void")
+                nil [962 993])
+            ("RootPtr_pop" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1018 1023]))                  
+                :type "void")
+                nil [994 1024]))          
+      :file "gc.h"
+      :pointmax 1025
+      :fsize 1024
+      :lastmodtime '(23215 34195 0 0)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("gc_new" (spp-arg-list ("type" "var" "size") 660 . 677) . 
+              ((symbol "type" 690 . 694) (punctuation "*" 695 . 696) (symbol "var" 696 . 699) (punctuation "=" 700 . 701) (NEW "new" 702 . 705) (semantic-list "(type, size)" 705 . 717) (punctuation ";" 717 . 718) (symbol "gc_stack_push" 736 . 749) (semantic-list "(var, NULL)" 749 . 760)))
+          ("gc_decl" . ((symbol "use_result" 70 . 80)))
+          ("gc_return" (spp-arg-list ("ret") 141 . 146) . ((semantic-list "{ RootPtr_pop(); return ret; }" 148 . 178)))
+          ("gc_stack_push" (spp-arg-list ("var" "destructor") 201 . 218) . ((symbol "StackPtr_push" 219 . 232) (semantic-list "(Construct(StackObject, args(var, (DSTR) destructor)))" 232 . 286)))
+          ("with_gc" . 
+              ((symbol "RootPtr_push" 108 . 120) (semantic-list "()" 120 . 122) (punctuation ";" 122 . 123)))
+          ("gc_Assign" (spp-arg-list ("type" "var" "expr") 488 . 505) . 
+              ((symbol "type" 515 . 519) (punctuation "*" 520 . 521) (symbol "var" 521 . 524) (punctuation "=" 525 . 526) (symbol "expr" 527 . 531) (punctuation ";" 531 . 532) (symbol "gc_stack_push" 561 . 574) (semantic-list "(var, _Destructor_(type))" 574 . 599)))
+          ("gc_Construct" (spp-arg-list ("type" "var" "init_args") 362 . 384) . 
+              ((symbol "type" 386 . 390) (punctuation "*" 391 . 392) (symbol "var" 392 . 395) (punctuation "=" 396 . 397) (symbol "Construct" 398 . 407) (semantic-list "(type, args(init_args))" 407 . 430) (punctuation ";" 430 . 431) (symbol "gc_stack_push" 432 . 445) (semantic-list "(var, _Destructor_(type))" 445 . 470)))
+          ("gc_assign" (spp-arg-list ("type" "var" "expr") 778 . 795) . 
+              ((symbol "type" 805 . 809) (punctuation "*" 810 . 811) (symbol "var" 811 . 814) (punctuation "=" 815 . 816) (symbol "expr" 817 . 821) (punctuation ";" 821 . 822) (symbol "gc_stack_push" 851 . 864) (semantic-list "(var, NULL)" 864 . 875)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [15 34])
+            ("class.h" include nil nil [36 54])
+            ("DSTR" variable (:constant-flag t) nil [64 68])
+            ("StackObject_Construct" variable (:constant-flag t) nil [94 115])
+            ("StackObject_new" variable (:constant-flag t) nil [218 233])
+            ("class_decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [312 318]))                  
+                :type "int")
+                nil [301 319])
+            ("Constructor_decl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("StackObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 417])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [418 464]))                  
+                :type "int")
+                nil [381 466])
+            ("Destructor_decl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("StackObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [490 502]))                  
+                :type "int")
+                nil [467 503])
+            ("Constructor_decl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [529 535])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [536 546]))                  
+                :type "int")
+                nil [505 548])
+            ("Destructor_decl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("Stack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [572 578]))                  
+                :type "int")
+                nil [549 579])
+            ("Stack_push" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("Stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [603 615])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("StackObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [616 633]))                  
+                :type "void")
+                nil [580 634])
+            ("use_result" variable (:type "int") nil [678 689])
+            ("Stack_peek" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("this" variable
+                       (:pointer 1
+                        :type ("Stack" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [727 739]))                  
+                :type ("StackObject" type (:type "class") nil nil))
+                nil [690 740]))          
+      :file "Stack.h"
+      :pointmax 741
+      :fsize 740
+      :lastmodtime '(23215 31863 0 0)
+      :unmatched-syntax '((semantic-list 664 . 677) (symbol 655 . 664) (punctuation 654 . 655) (symbol 642 . 653) (EXTERN 635 . 641) (semantic-list 540 . 546) (semantic-list 422 . 464) (punctuation 378 . 379) (semantic-list 340 . 378) (semantic-list 326 . 339) (CLASS 321 . 326) (close-paren 338 . 339) (symbol 327 . 338) (open-paren 326 . 327) (close-paren 338 . 339) (symbol 327 . 338) (open-paren 326 . 327) (symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))
+      :lexical-table 
+        '(("StackObject_new" (spp-arg-list ("type" "count") 233 . 246) . ((symbol "Construct" 247 . 256) (semantic-list "(StackObject, args(new(type, count), NULL))" 256 . 299)))
+          ("DSTR" . 
+              ((VOID "void" 69 . 73) (semantic-list "(*)" 74 . 77) (semantic-list "(void *)" 77 . 85)))
+          ("StackObject_Construct" (spp-arg-list ("type" "init_args") 115 . 132) . ((symbol "Construct" 133 . 142) (semantic-list "(StackObject, args(Construct(type, init_args), (DSTR) type##_dstr))" 142 . 209)))
+          )
+))
+  :file "!usr!local!include!SDL_wtk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

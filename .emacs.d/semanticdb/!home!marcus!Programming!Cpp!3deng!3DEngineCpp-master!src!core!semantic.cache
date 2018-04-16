@@ -1,0 +1,1694 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MATH3D_H_INCLUDED" variable (:constant-flag t) nil [637 654])
+            ("math.h" include (:system-flag t) nil [656 673])
+            ("MATH_PI" variable (:constant-flag t) nil [682 689])
+            ("Clamp" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [761 772])
+                    ("min" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [773 786])
+                    ("max" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [787 800]))                  
+                :typemodifiers ("inline"))
+                nil [725 853])
+            ("ToRadians" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [895 910]))                  
+                :typemodifiers ("inline"))
+                nil [855 941])
+            ("ToDegrees" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [983 998]))                  
+                :typemodifiers ("inline"))
+                nil [943 1029])
+            ("Vector" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("unsigned int" type (:typevar "D") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1083 1090])
+                    ("Vector" function
+                       (:constructor-flag t
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1092 1104])
+                    ("Dot" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1120 1142]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1107 1264])
+                    ("Max" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1291 1312]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1268 1462])
+                    ("Max" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1465 1625])
+                    ("LengthSq" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1629 1683])
+                    ("Length" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1685 1737])
+                    ("Normalized" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1739 1803])
+                    ("Lerp" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1829 1850])
+                            ("lerpFactor" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1851 1864]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1805 1915])
+                    ("Reflect" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("normal" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1945 1971]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1918 2036])
+                    ("+" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2069 2090]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2039 2216])
+                    ("-" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2250 2271]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2220 2397])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2431 2442]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2401 2565])
+                    ("/" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2599 2610]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2569 2733])
+                    ("+=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2769 2790]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2737 2888])
+                    ("-=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2924 2945]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2892 3043])
+                    ("=" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3079 3090]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3047 3185])
+                    ("/=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3221 3232]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3189 3327])
+                    ("[]" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3347 3362]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3331 3384])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("i" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3401 3416]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3386 3444])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3471 3492]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3448 3601])
+                    ("!=" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3628 3649]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3605 3682])
+                    ("protected" label nil (reparse-symbol classsubparts) [3683 3693])
+                    ("private" label nil (reparse-symbol classsubparts) [3694 3702])
+                    ("values" variable
+                       (:dereference 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3704 3716]))                  )
+                nil [1031 3719])
+            ("Vector2" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3780 3787])
+                    ("Vector2" function
+                       (:constructor-flag t
+                        :type ("Vector2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3789 3802])
+                    ("Vector2" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("2"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3814 3836]))                          
+                        :type ("Vector2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3806 3884])
+                    ("Vector2" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3896 3900])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3901 3905]))                          
+                        :type ("Vector2" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3888 3947])
+                    ("Cross" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3959 3979]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3951 4039])
+                    ("GetX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4043 4087])
+                    ("GetY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4089 4133])
+                    ("SetX" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4154 4165]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4137 4185])
+                    ("SetY" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4204 4215]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4187 4235])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4255 4266])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4267 4278]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4239 4300])
+                    ("protected" label nil (reparse-symbol classsubparts) [4301 4311])
+                    ("private" label nil (reparse-symbol classsubparts) [4312 4320]))                  
+                :superclasses 
+                  ( ("Vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [3721 4323])
+            ("Vector3" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4384 4391])
+                    ("Vector3" function
+                       (:constructor-flag t
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4393 4406])
+                    ("Vector3" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("3"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4418 4440]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4410 4509])
+                    ("Vector3" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4521 4525])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4526 4530])
+                            ("z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4531 4535]))                          
+                        :type ("Vector3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4513 4595])
+                    ("Cross" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4623 4643]))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4599 4827])
+                    ("Rotate" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("angle" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4855 4863])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4864 4887]))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4830 5174])
+                    ("GetXY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5178 5248])
+                    ("GetYZ" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5250 5320])
+                    ("GetZX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5322 5392])
+                    ("GetYX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5396 5466])
+                    ("GetZY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5468 5538])
+                    ("GetXZ" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5540 5610])
+                    ("GetX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5614 5658])
+                    ("GetY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5660 5704])
+                    ("GetZ" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5706 5750])
+                    ("SetX" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5771 5782]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5754 5802])
+                    ("SetY" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5821 5832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5804 5852])
+                    ("SetZ" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("z" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5871 5882]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5854 5902])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5922 5933])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5934 5945])
+                            ("z" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5946 5957]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5906 5988])
+                    ("protected" label nil (reparse-symbol classsubparts) [5989 5999])
+                    ("private" label nil (reparse-symbol classsubparts) [6000 6008]))                  
+                :superclasses 
+                  ( ("Vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [4325 6011])
+            ("Vector4" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6072 6079])
+                    ("Vector4" function
+                       (:constructor-flag t
+                        :type ("Vector4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6081 6094])
+                    ("Vector4" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("4"))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6106 6128]))                          
+                        :type ("Vector4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6098 6218])
+                    ("Vector4" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6368 6372])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6373 6377])
+                            ("z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6378 6382])
+                            ("w" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6383 6387]))                          
+                        :type ("Vector4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6360 6465])
+                    ("GetX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6469 6513])
+                    ("GetY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6515 6559])
+                    ("GetZ" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6561 6605])
+                    ("GetW" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6607 6651])
+                    ("SetX" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6672 6683]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6655 6703])
+                    ("SetY" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6722 6733]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6705 6753])
+                    ("SetZ" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("z" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6772 6783]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6755 6803])
+                    ("SetW" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("w" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6822 6833]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6805 6853])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6873 6884])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6885 6896])
+                            ("z" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6897 6908])
+                            ("w" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6909 6920]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6857 6960])
+                    ("protected" label nil (reparse-symbol classsubparts) [6961 6971])
+                    ("private" label nil (reparse-symbol classsubparts) [6972 6980]))                  
+                :superclasses 
+                  ( ("Vector" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [6013 6983])
+            ("Matrix" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil)
+                    ("unsigned int" type (:typevar "D") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [7037 7044])
+                    ("InitIdentity" function
+                       (:typemodifiers ("inline")
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7046 7266])
+                    ("InitScale" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("Vector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7300 7313])
+                            ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7313 7315])
+                            ("" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7315 7318])
+                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7323 7325]))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7270 7554])
+                    ("InitTranslation" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("Vector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7594 7607])
+                            ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7607 7609])
+                            ("" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7609 7612])
+                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7617 7619]))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7558 7893])
+                    ("Transpose" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [7896 8066])
+                    ("Inverse" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8110 9527])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9559 9580]))                          
+                        :type ("Matrix" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9530 9832])
+                    ("Transform" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [9865 9886]))                          
+                        :type ("Vector" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil)
+                                  ("D" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9836 10067])
+                    ("Transform" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("Vector" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10102 10115])
+                            ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10115 10117])
+                            ("" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10117 10119])
+                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10123 10125]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [10092 10371])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10391 10406])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10407 10422])
+                            ("val" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10423 10429]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [10375 10448])
+                    ("[]" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [10479 10489]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10452 10516])
+                    ("[]" function
+                       (:operator-flag t
+                        :pointer 1
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [10539 10549]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10518 10570])
+                    ("protected" label nil (reparse-symbol classsubparts) [10571 10581])
+                    ("private" label nil (reparse-symbol classsubparts) [10582 10590])
+                    ("m" variable
+                       (:dereference 2
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10592 10602]))                  )
+                nil [6985 10605])
+            ("Matrix4" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [10666 10673])
+                    ("Matrix4" function
+                       (:constructor-flag t
+                        :type ("Matrix4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10675 10688])
+                    ("Matrix4" function
+                       (:template 
+                          ( ("unsigned int" type (:typevar "D") nil nil))                          
+                        :type ("Matrix4" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [10725 10747]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [10691 11034])
+                    ("InitRotationEuler" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("rotateX" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11073 11083])
+                            ("rotateY" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11084 11094])
+                            ("rotateZ" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11095 11105]))                          
+                        :type ("Matrix4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11037 12193])
+                    ("InitRotationFromVectors" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12239 12259])
+                            ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12260 12280])
+                            ("u" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12281 12301]))                          
+                        :type ("Matrix4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12197 12760])
+                    ("InitRotationFromDirection" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("forward" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12808 12834])
+                            ("up" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12835 12856]))                          
+                        :type ("Matrix4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [12764 13029])
+                    ("InitPerspective" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("fov" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13067 13073])
+                            ("aspectRatio" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13074 13088])
+                            ("zNear" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13089 13097])
+                            ("zFar" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13098 13105]))                          
+                        :type ("Matrix4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13033 13756])
+                    ("InitOrthographic" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("left" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13795 13802])
+                            ("right" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13803 13811])
+                            ("bottom" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13812 13821])
+                            ("top" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13822 13828])
+                            ("near" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13829 13836])
+                            ("far" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13837 13843]))                          
+                        :type ("Matrix4" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13760 14461])
+                    ("protected" label nil (reparse-symbol classsubparts) [14462 14472])
+                    ("private" label nil (reparse-symbol classsubparts) [14473 14481]))                  
+                :superclasses 
+                  ( ("Matrix" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [10607 14484])
+            ("Matrix3" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14545 14552])
+                    ("Matrix3" function
+                       (:constructor-flag t
+                        :type ("Matrix3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14554 14567])
+                    ("Matrix3" function
+                       (:template 
+                          ( ("unsigned int" type (:typevar "D") nil nil))                          
+                        :type ("Matrix3" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil)
+                                          ("D" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14605 14627]))                          
+                        :constructor-flag t)
+                        (reparse-symbol classsubparts) [14571 14914]))                  
+                :superclasses 
+                  ( ("Matrix" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [14486 14917])
+            ("Quaternion" type
+               (:prototype t
+                :type "class")
+                nil [14919 14936])
+            ("Vector3f" type
+               (:superclasses 
+                  ( ("Vector3" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [14979 14986])
+                    ("Vector3f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [14997 15011])
+                            ("y" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [15013 15027])
+                            ("z" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [15029 15043]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14988 15104])
+                    ("Vector3f" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [15117 15141]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15108 15210])
+                    ("Length" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [15213 15311])
+                    ("Dot" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15330 15348]))                          
+                        :type "float")
+                        (reparse-symbol classsubparts) [15313 15424])
+                    ("Cross" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15449 15467]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15427 15685])
+                    ("Rotate" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("angle" variable (:type "float") (reparse-symbol arg-sub-list) [15711 15723])
+                            ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [15724 15745]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [15688 16533])
+                    ("Rotate" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("rotation" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16552 16579]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16536 16586])
+                    ("Normalized" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16589 16733])
+                    ("+" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16762 16780]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16736 16864])
+                    ("-" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16892 16910]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16866 16994])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [17022 17030]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [16996 17093])
+                    ("/" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [17121 17129]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17095 17192])
+                    ("==" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17218 17236]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17195 17317])
+                    ("!=" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17342 17360]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [17319 17393])
+                    ("+=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17424 17442]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17396 17543])
+                    ("-=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17577 17595]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17549 17702])
+                    ("=" function
+                       (:operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [17740 17748]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17712 17834])
+                    ("/=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [17869 17877]))                          
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [17841 17957])
+                    ("GetX" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [17960 18008])
+                    ("GetY" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [18010 18058])
+                    ("GetZ" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [18060 18108])
+                    ("SetX" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [18128 18136]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18111 18156])
+                    ("SetY" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("y" variable (:type "float") (reparse-symbol arg-sub-list) [18175 18183]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18158 18203])
+                    ("SetZ" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("z" variable (:type "float") (reparse-symbol arg-sub-list) [18222 18230]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18205 18250])
+                    ("Set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [18269 18277])
+                            ("y" variable (:type "float") (reparse-symbol arg-sub-list) [18278 18286])
+                            ("z" variable (:type "float") (reparse-symbol arg-sub-list) [18287 18295]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18253 18347])
+                    ("private" label nil (reparse-symbol classsubparts) [18348 18356]))                  
+                :type "class")
+                nil [14938 18375])
+            ("Vector2i" type
+               (:typedef ("Vector2" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18377 18407])
+            ("Vector3i" type
+               (:typedef ("Vector3" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18408 18438])
+            ("Vector4i" type
+               (:typedef ("Vector4" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18439 18469])
+            ("Vector2f" type
+               (:typedef ("Vector2" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18471 18503])
+            ("Vector4f" type
+               (:typedef ("Vector4" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18539 18571])
+            ("Vector2d" type
+               (:typedef ("Vector2" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18573 18606])
+            ("Vector3d" type
+               (:typedef ("Vector3" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18607 18640])
+            ("Vector4d" type
+               (:typedef ("Vector4" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18641 18674])
+            ("Matrix2i" type
+               (:typedef ("Matrix" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("2"))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18676 18708])
+            ("Matrix3i" type
+               (:typedef ("Matrix3" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18709 18739])
+            ("Matrix4i" type
+               (:typedef ("Matrix4" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18740 18770])
+            ("Matrix2f" type
+               (:typedef ("Matrix" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil)
+                          ("2"))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18772 18806])
+            ("Matrix3f" type
+               (:typedef ("Matrix3" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18807 18839])
+            ("Matrix4f" type
+               (:typedef ("Matrix4" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18840 18872])
+            ("Matrix2d" type
+               (:typedef ("Matrix" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("2"))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18874 18909])
+            ("Matrix3d" type
+               (:typedef ("Matrix3" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18910 18943])
+            ("Matrix4d" type
+               (:typedef ("Matrix4" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [18944 18977])
+            ("Quaternion" type
+               (:superclasses 
+                  ( ("Vector4" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [19022 19029])
+                    ("Quaternion" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [19042 19056])
+                            ("y" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [19058 19072])
+                            ("z" variable
+                               (:default-value "0.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [19074 19088])
+                            ("w" variable
+                               (:default-value "1.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [19090 19104]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19031 19183])
+                    ("Quaternion" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector4" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19198 19222]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19187 19312])
+                    ("Quaternion" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("axis" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19327 19348])
+                            ("angle" variable (:type "float") (reparse-symbol arg-sub-list) [19349 19361]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19316 19604])
+                    ("Quaternion" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Matrix4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19619 19637]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [19608 20829])
+                    ("NLerp" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20857 20877])
+                            ("lerpFactor" variable (:type "float") (reparse-symbol arg-sub-list) [20878 20895])
+                            ("shortestPath" variable (:type "bool") (reparse-symbol arg-sub-list) [20896 20914]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [20833 21121])
+                    ("SLerp" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21149 21169])
+                            ("lerpFactor" variable (:type "float") (reparse-symbol arg-sub-list) [21170 21187])
+                            ("shortestPath" variable (:type "bool") (reparse-symbol arg-sub-list) [21188 21206]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21125 21818])
+                    ("ToRotationMatrix" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Matrix4f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21822 22412])
+                    ("GetForward" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22416 22498])
+                    ("GetBack" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22502 22582])
+                    ("GetUp" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22586 22663])
+                    ("GetDown" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22667 22747])
+                    ("GetRight" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22751 22831])
+                    ("GetLeft" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Vector3f" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22835 22916])
+                    ("Conjugate" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22919 23012])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Quaternion" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23043 23063]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23015 23537])
+                    ("" function
+                       (:methodconst-flag t
+                        :operator-flag t
+                        :function-pointer t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [23569 23593]))                          
+                        :type ("Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [23541 23987]))                  
+                :type "class")
+                nil [18979 23990]))          
+      :file "math3d.h"
+      :pointmax 24020
+      :fsize 24019
+      :lastmodtime '(23124 39963 477363 616000)
+      :unmatched-syntax '((punctuation 10121 . 10122) (punctuation 10120 . 10121) (number 10119 . 10120) (punctuation 10118 . 10119) (punctuation 10114 . 10115) (punctuation 10090 . 10091) (number 10089 . 10090) (punctuation 10088 . 10089) (symbol 10087 . 10088) (punctuation 10086 . 10087) (symbol 10085 . 10086) (punctuation 10084 . 10085) (symbol 10078 . 10084) (INLINE 10071 . 10077) (punctuation 7615 . 7616) (punctuation 7614 . 7615) (number 7613 . 7614) (punctuation 7611 . 7612) (punctuation 7606 . 7607) (punctuation 7321 . 7322) (punctuation 7320 . 7321) (number 7319 . 7320) (punctuation 7317 . 7318) (punctuation 7312 . 7313))
+      :lexical-table 
+        '(("MATH_PI" . ((number "3.1415926535897932384626433832795" 690 . 723)))
+          ("MATH3D_H_INCLUDED")
+          )
+))
+  :file "!home!marcus!Programming!Cpp!3deng!3DEngineCpp-master!src!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

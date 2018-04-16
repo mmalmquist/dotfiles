@@ -1,0 +1,69 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("../include/vtkp.h" include nil nil [20 48])
+            ("vtkp_bytes_to_double" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("bytes" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [94 106]))                  
+                :type "double")
+                nil [50 260])
+            ("vtkp_bytes_to_doubles" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("carr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [305 320])
+                    ("darr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [322 337])
+                    ("carr_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [339 357]))                  
+                :type "void")
+                nil [262 458])
+            ("vtkp_read_all_bytes" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [501 522])
+                    ("result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [524 543]))                  
+                :type "void")
+                nil [460 749])
+            ("vtkp_load_data" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [787 808])
+                    ("arr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [810 826]))                  
+                :type "void")
+                nil [751 910]))          
+      :file "vtkp.c"
+      :pointmax 911
+      :fsize 910
+      :lastmodtime '(23036 24516 443155 657000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!vtkPlot!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

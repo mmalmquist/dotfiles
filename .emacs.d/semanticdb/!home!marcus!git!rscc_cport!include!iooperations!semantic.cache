@@ -1,0 +1,111 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("IOSTRM_H" variable (:constant-flag t) nil [26 34])
+            ("pthread.h" include (:system-flag t) nil [37 57])
+            ("buffer.h" include nil nil [58 77])
+            ("_Stream" type
+               (:typedef ("__iostream_t" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [151 188])
+            ("_iostrm_ctor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hostname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [230 252])
+                    ("port" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [253 271]))                  
+                :type ("_Stream" type (:type "class") nil nil))
+                nil [209 272])
+            ("_iostrm_dtor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [309 321]))                  
+                :type "void")
+                nil [291 322])
+            ("_iostrm_open_socket" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 429]))                  
+                :type "int")
+                nil [392 430])
+            ("_iostrm_close_socket" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [481 494]))                  
+                :type "int")
+                nil [456 495])
+            ("_iostrm_connect_socket" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [584 597]))                  
+                :type "int")
+                nil [557 598])
+            ("_iostrm_socketwrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [679 692]))                  
+                :type "int")
+                nil [655 693])
+            ("_iostrm_socketread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [769 782])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [783 791]))                  
+                :type "int")
+                nil [746 792])
+            ("_iostrm_start_thread" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [839 852])
+                    ("thrd" variable
+                       (:pointer 1
+                        :type ("pthread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [853 869]))                  
+                :type "void")
+                nil [813 870])
+            ("_iostrm_get_instream_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [947 960])
+                    ("dst" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [961 973]))                  
+                :type "void")
+                nil [916 974])
+            ("_iostrm_put_outstream_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable (:type ("_Stream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1078 1091])
+                    ("src" variable (:type ("_Buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1092 1104]))                  
+                :type "void")
+                nil [1044 1105]))          
+      :file "iostrm.h"
+      :pointmax 1126
+      :fsize 1125
+      :lastmodtime '(22834 63732 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IOSTRM_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "buffer.h"
+      :fsize 2208
+      :lastmodtime '(22834 63732 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "crypto.h"
+      :fsize 339
+      :lastmodtime '(22834 63732 0 0)))
+  :file "!home!marcus!git!rscc_cport!include!iooperations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("common.implementation" package nil nil [1 31])
+            ("Constants" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("getEnum" function
+                       (:arguments 
+                          ( ("v" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [217 222])
+                            ("ordinal" variable (:type "int") (reparse-symbol formal_parameters) [224 235]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [207 330])
+                    ("getEnum" function
+                       (:throws ("NumberFormatException")
+                        :arguments 
+                          ( ("v" variable
+                               (:dereference 1
+                                :type "T")
+                                (reparse-symbol formal_parameters) [377 382])
+                            ("ordinalStr" variable (:type "String") (reparse-symbol formal_parameters) [384 401]))                          
+                        :type "T")
+                        (reparse-symbol class_member_declaration) [367 487])
+                    ("equal" function
+                       (:arguments 
+                          ( ("lhs" variable (:type "T") (reparse-symbol formal_parameters) [538 543])
+                            ("rhs" variable (:type "T") (reparse-symbol formal_parameters) [545 550]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [524 590]))                  
+                :type "class")
+                nil [33 592]))          
+      :file "Constants.java"
+      :pointmax 593
+      :fsize 592
+      :lastmodtime '(23164 59512 33398 348000)
+      :unmatched-syntax '((RSHIFT 521 . 523) (LT 519 . 520) (EXTENDS 507 . 514) (PUBLIC 490 . 496) (LT 504 . 505) (RSHIFT 364 . 366) (LT 362 . 363) (EXTENDS 350 . 357) (PUBLIC 333 . 339) (LT 347 . 348) (RSHIFT 204 . 206) (LT 202 . 203) (EXTENDS 190 . 197) (PUBLIC 68 . 74) (BRACE_BLOCK 101 . 170) (PUBLIC 173 . 179) (LT 187 . 188))))
+  :file "!home!marcus!git!PROM_PREM_Collector!src!common!implementation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

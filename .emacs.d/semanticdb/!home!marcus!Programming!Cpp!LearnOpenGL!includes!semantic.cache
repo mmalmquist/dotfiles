@@ -1,0 +1,471 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEADER_SIMPLE_OPENGL_IMAGE_LIBRARY" variable (:constant-flag t) nil [1017 1051])
+            ("SOIL_last_result" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15025 15032]))                  
+                :constant-flag t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14990 15033])
+            ("SOIL_free_image_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("img_data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14795 14821]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14763 14822])
+            ("SOIL_save_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14464 14485])
+                    ("image_type" variable (:type "int") (reparse-symbol arg-sub-list) [14488 14503])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [14506 14516])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [14517 14528])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [14529 14542])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14545 14579]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14438 14580])
+            ("SOIL_load_image_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned char"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14201 14235])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [14238 14256])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14259 14270])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14271 14283])
+                    ("channels" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14284 14298])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [14301 14322]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14152 14323])
+            ("SOIL_load_image" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned char"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13702 13723])
+                    ("width" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13726 13737])
+                    ("height" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13738 13750])
+                    ("channels" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13751 13765])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [13768 13789]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13665 13790])
+            ("SOIL_save_screenshot" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13222 13243])
+                    ("image_type" variable (:type "int") (reparse-symbol arg-sub-list) [13246 13261])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [13264 13270])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [13271 13277])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [13280 13290])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [13291 13304]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13191 13305])
+            ("SOIL_create_OGL_single_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12924 12956])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [12959 12969])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [12970 12981])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [12982 12995])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12998 13023])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13026 13056])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13059 13080]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12874 13081])
+            ("SOIL_create_OGL_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [11929 11961])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [11964 11974])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [11975 11986])
+                    ("channels" variable (:type "int") (reparse-symbol arg-sub-list) [11987 12000])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12003 12033])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12036 12057]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11886 12058])
+            ("SOIL_load_OGL_single_cubemap_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10969 11003])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [11006 11024])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11027 11052])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [11055 11074])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11077 11107])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11110 11131]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10909 11132])
+            ("SOIL_load_OGL_cubemap_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("x_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9633 9673])
+                    ("x_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9676 9700])
+                    ("x_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9703 9743])
+                    ("x_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9746 9770])
+                    ("y_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9773 9813])
+                    ("y_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9816 9840])
+                    ("y_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9843 9883])
+                    ("y_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9886 9910])
+                    ("z_pos_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9913 9953])
+                    ("z_pos_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [9956 9980])
+                    ("z_neg_buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9983 10023])
+                    ("z_neg_buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [10026 10050])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [10053 10072])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10075 10105])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10108 10129]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9580 10130])
+            ("SOIL_load_OGL_texture_from_memory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [8131 8165])
+                    ("buffer_length" variable (:type "int") (reparse-symbol arg-sub-list) [8168 8186])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [8189 8208])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8211 8241])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8244 8265]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8078 8266])
+            ("SOIL_load_OGL_HDR_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7305 7326])
+                    ("fake_HDR_format" variable (:type "int") (reparse-symbol arg-sub-list) [7329 7349])
+                    ("rescale_to_max" variable (:type "int") (reparse-symbol arg-sub-list) [7352 7371])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7374 7404])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7407 7428]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7260 7429])
+            ("SOIL_load_OGL_single_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6578 6599])
+                    ("face_order" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6602 6627])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [6630 6649])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6652 6682])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6685 6706]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6530 6707])
+            ("SOIL_load_OGL_cubemap" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("x_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5582 5605])
+                    ("x_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5608 5631])
+                    ("y_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5634 5657])
+                    ("y_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5660 5683])
+                    ("z_pos_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5686 5709])
+                    ("z_neg_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5712 5735])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [5738 5757])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5760 5790])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5793 5814]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5541 5815])
+            ("SOIL_load_OGL_texture" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4488 4509])
+                    ("force_channels" variable (:type "int") (reparse-symbol arg-sub-list) [4512 4531])
+                    ("reuse_texture_ID" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4534 4564])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4567 4588]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4447 4589])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_HDR_RGBE" variable
+                       (:constant-flag t
+                        :default-value (3811 3812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3795 3812])
+                    ("SOIL_HDR_RGBdivA" variable
+                       (:constant-flag t
+                        :default-value (3834 3835)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3815 3835])
+                    ("SOIL_HDR_RGBdivA2" variable
+                       (:constant-flag t
+                        :default-value (3858 3859)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3838 3859]))                  )
+                (reparse-symbol extern-c-contents) [3787 3862])
+            ("SOIL_DDS_CUBEMAP_FACE_ORDER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3588 3615])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_SAVE_TYPE_TGA" variable
+                       (:constant-flag t
+                        :default-value (3329 3330)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3308 3330])
+                    ("SOIL_SAVE_TYPE_BMP" variable
+                       (:constant-flag t
+                        :default-value (3354 3355)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3333 3355])
+                    ("SOIL_SAVE_TYPE_DDS" variable
+                       (:constant-flag t
+                        :default-value (3379 3380)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3358 3380]))                  )
+                (reparse-symbol extern-c-contents) [3300 3383])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_FLAG_POWER_OF_TWO" variable
+                       (:constant-flag t
+                        :default-value (2871 2872)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2846 2872])
+                    ("SOIL_FLAG_MIPMAPS" variable
+                       (:constant-flag t
+                        :default-value (2895 2896)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2875 2896])
+                    ("SOIL_FLAG_TEXTURE_REPEATS" variable
+                       (:constant-flag t
+                        :default-value (2927 2928)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2899 2928])
+                    ("SOIL_FLAG_MULTIPLY_ALPHA" variable
+                       (:constant-flag t
+                        :default-value (2958 2959)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2931 2959])
+                    ("SOIL_FLAG_INVERT_Y" variable
+                       (:constant-flag t
+                        :default-value (2983 2985)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2962 2985])
+                    ("SOIL_FLAG_COMPRESS_TO_DXT" variable
+                       (:constant-flag t
+                        :default-value (3016 3018)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2988 3018])
+                    ("SOIL_FLAG_DDS_LOAD_DIRECT" variable
+                       (:constant-flag t
+                        :default-value (3049 3051)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3021 3051])
+                    ("SOIL_FLAG_NTSC_SAFE_RGB" variable
+                       (:constant-flag t
+                        :default-value (3080 3083)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3054 3083])
+                    ("SOIL_FLAG_CoCg_Y" variable
+                       (:constant-flag t
+                        :default-value (3105 3108)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3086 3108])
+                    ("SOIL_FLAG_TEXTURE_RECTANGLE" variable
+                       (:constant-flag t
+                        :default-value (3141 3144)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3111 3144]))                  )
+                (reparse-symbol extern-c-contents) [2838 3147])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_CREATE_NEW_ID" variable
+                       (:constant-flag t
+                        :default-value (1856 1857)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1835 1857]))                  )
+                (reparse-symbol extern-c-contents) [1827 1860])
+            ("" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("SOIL_LOAD_AUTO" variable
+                       (:constant-flag t
+                        :default-value (1498 1499)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1481 1499])
+                    ("SOIL_LOAD_L" variable
+                       (:constant-flag t
+                        :default-value (1516 1517)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1502 1517])
+                    ("SOIL_LOAD_LA" variable
+                       (:constant-flag t
+                        :default-value (1535 1536)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1520 1536])
+                    ("SOIL_LOAD_RGB" variable
+                       (:constant-flag t
+                        :default-value (1555 1556)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1539 1556])
+                    ("SOIL_LOAD_RGBA" variable
+                       (:constant-flag t
+                        :default-value (1576 1577)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1559 1577]))                  )
+                (reparse-symbol extern-c-contents) [1473 1580]))          
+      :file "SOIL.h"
+      :pointmax 15113
+      :fsize 15112
+      :lastmodtime '(23142 10559 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SOIL_DDS_CUBEMAP_FACE_ORDER" . ((string "\"EWUDNS\"" 3616 . 3624)))
+          ("HEADER_SIMPLE_OPENGL_IMAGE_LIBRARY")
+          )
+))
+  :file "!home!marcus!Programming!Cpp!LearnOpenGL!includes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,99 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.base.engine.core" package nil nil [603 632])
+            ("com.base.engine.components.GameComponent" include nil nil [634 682])
+            ("com.base.engine.rendering.RenderingEngine" include nil nil [683 732])
+            ("com.base.engine.rendering.Shader" include nil nil [733 773])
+            ("java.util.ArrayList" include nil nil [775 802])
+            ("GameObject" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("m_transform" variable
+                       (:typemodifiers ("private")
+                        :type "Transform")
+                        (reparse-symbol class_member_declaration) [922 952])
+                    ("m_engine" variable
+                       (:typemodifiers ("private")
+                        :type "CoreEngine")
+                        (reparse-symbol class_member_declaration) [954 982])
+                    ("GameObject" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [985 1155])
+                    ("AddChild" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("child" variable (:type "GameObject") (reparse-symbol formal_parameters) [1185 1201]))                          
+                        :type "GameObject")
+                        (reparse-symbol class_member_declaration) [1158 1327])
+                    ("AddComponent" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("component" variable (:type "GameComponent") (reparse-symbol formal_parameters) [1361 1384]))                          
+                        :type "GameObject")
+                        (reparse-symbol class_member_declaration) [1330 1467])
+                    ("InputAll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("delta" variable (:type "float") (reparse-symbol formal_parameters) [1491 1502]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1470 1589])
+                    ("UpdateAll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("delta" variable (:type "float") (reparse-symbol formal_parameters) [1614 1625]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1592 1714])
+                    ("RenderAll" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("shader" variable (:type "Shader") (reparse-symbol formal_parameters) [1739 1752])
+                            ("renderingEngine" variable (:type "RenderingEngine") (reparse-symbol formal_parameters) [1754 1785]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1717 1910])
+                    ("Input" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("delta" variable (:type "float") (reparse-symbol formal_parameters) [1931 1942]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1913 2047])
+                    ("Update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("delta" variable (:type "float") (reparse-symbol formal_parameters) [2069 2080]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2050 2161])
+                    ("Render" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("shader" variable (:type "Shader") (reparse-symbol formal_parameters) [2183 2196])
+                            ("renderingEngine" variable (:type "RenderingEngine") (reparse-symbol formal_parameters) [2198 2229]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2164 2328])
+                    ("GetAllAttached" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2360 2562])
+                    ("GetTransform" function
+                       (:typemodifiers ("public")
+                        :type "Transform")
+                        (reparse-symbol class_member_declaration) [2565 2624])
+                    ("SetEngine" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("engine" variable (:type "CoreEngine") (reparse-symbol formal_parameters) [2649 2666]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2627 2889]))                  
+                :type "class")
+                nil [804 2891]))          
+      :file "GameObject.java"
+      :pointmax 2892
+      :fsize 2891
+      :lastmodtime '(23118 35785 937239 358000)
+      :unmatched-syntax '((GT 2358 . 2359) (PUBLIC 2331 . 2337) (LT 2347 . 2348) (SEMICOLON 919 . 920) (GT 905 . 906) (LT 891 . 892) (SEMICOLON 871 . 872) (GT 859 . 860) (PRIVATE 831 . 838) (LT 848 . 849))))
+  :file "!home!marcus!workspace!3DGameEngine-master!src!com!base!engine!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

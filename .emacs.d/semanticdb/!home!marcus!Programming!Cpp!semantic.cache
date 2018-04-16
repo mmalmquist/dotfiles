@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [315 334])
+            ("ImageMagick-7/Magick++.h" include (:system-flag t) nil [335 370])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [381 390])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [391 404]))                  
+                :type "int")
+                nil [372 1082]))          
+      :file "JunkCpp.cpp"
+      :pointmax 1083
+      :fsize 1082
+      :lastmodtime '(23124 49103 495176 317000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!Cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,81 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("check.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("../../src/util/array.h" include nil nil [40 73])
+            ("dcreate" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable (:type "double") (reparse-symbol arg-sub-list) [98 107]))                  
+                :type "double")
+                nil [75 174])
+            ("dfree" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [193 201]))                  
+                :type "void")
+                nil [175 235])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [248 260]))                  
+                :type "int")
+                nil [237 815])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [837 851]))                  
+                :type ("END_TEST" type (:type "class") nil nil))
+                nil [816 1270])
+            ("array_case" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1306 1311]))                  
+                :type ("TCase" type (:type "class") nil nil))
+                nil [1281 1443]))          
+      :file "array_test.c"
+      :pointmax 1444
+      :fsize 1443
+      :lastmodtime '(23076 12086 986466 314000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("check.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("stdio.h" include (:system-flag t) nil [40 58])
+            ("../../src/util/str.h" include nil nil [59 90])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_split_single_delim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104 128]))                  
+                :type "int")
+                nil [93 517])
+            ("START_TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("test_split_multiple_delim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [539 565]))                  
+                :type ("END_TEST" type (:type "class") nil nil))
+                nil [518 953])
+            ("str_case" function
+               (:pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [987 992]))                  
+                :type ("TCase" type (:type "class") nil nil))
+                nil [964 1146]))          
+      :file "str_test.c"
+      :pointmax 1147
+      :fsize 1146
+      :lastmodtime '(23076 12067 181466 720000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!chalmers!satpos!c-code!test!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

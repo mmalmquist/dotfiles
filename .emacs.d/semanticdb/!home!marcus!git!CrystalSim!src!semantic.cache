@@ -1,0 +1,57 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("ctime" include (:system-flag t) nil [39 55])
+            ("SDL_wtk/SDL_wtk.hpp" include (:system-flag t) nil [57 87])
+            ("../include/CrystalControl.hpp" include nil nil [89 129])
+            ("../include/CrystalModel.hpp" include nil nil [130 168])
+            ("cm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [178 193]))                  
+                :type "void")
+                nil [170 194])
+            ("cc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [203 218]))                  
+                :type "void")
+                nil [195 219])
+            ("cm" function
+               (:arguments 
+                  ( ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [229 244]))                  
+                :type "void")
+                nil [221 481])
+            ("cc" function
+               (:arguments 
+                  ( ("width" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [491 506]))                  
+                :type "void")
+                nil [483 654])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [665 674])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [675 687]))                  
+                :type "int")
+                nil [656 1806]))          
+      :file "CrystalSim.cpp"
+      :pointmax 1807
+      :fsize 1806
+      :lastmodtime '(23215 59408 144544 856000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!CrystalSim!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

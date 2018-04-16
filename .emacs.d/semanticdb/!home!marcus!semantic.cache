@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("main.client" package nil nil [1 21])
+            ("Class30" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("swap" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [50 295])
+                    ("aLong548" variable
+                       (:typemodifiers ("public")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [301 322])
+                    ("aClass30_549" variable
+                       (:typemodifiers ("public")
+                        :type "Class30")
+                        (reparse-symbol class_member_declaration) [327 355])
+                    ("aClass30_550" variable (:type "Class30") (reparse-symbol class_member_declaration) [360 381])
+                    ("aBoolean551" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [386 420]))                  
+                :type "class")
+                nil [23 422]))          
+      :file "Class30.java"
+      :pointmax 423
+      :fsize 440
+      :lastmodtime '(23222 55980 794196 995000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("main.client" package nil nil [1 21])
+            ("Class1" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("Class1" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("j" variable (:type "int") (reparse-symbol formal_parameters) [70 75]))                          )
+                        (reparse-symbol class_member_declaration) [56 361])
+                    ("method148" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("l" variable (:type "long") (reparse-symbol formal_parameters) [392 398]))                          
+                        :type "Class30")
+                        (reparse-symbol class_member_declaration) [367 694])
+                    ("method149" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("class30" variable (:type "Class30") (reparse-symbol formal_parameters) [722 737])
+                            ("l" variable (:type "long") (reparse-symbol formal_parameters) [739 745]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [700 1431])
+                    ("anInt39" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1437 1457])
+                    ("aClass30Array40" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Class30")
+                        (reparse-symbol class_member_declaration) [1462 1496]))                  
+                :type "class")
+                nil [23 1498]))          
+      :file "Class1.java"
+      :pointmax 1499
+      :fsize 1550
+      :lastmodtime '(23222 55977 159247 461000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

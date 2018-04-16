@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("" type
+               (:members 
+                  ( ("w" variable
+                       (:constant-flag t
+                        :default-value (10 13)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [8 13])
+                    ("h" variable
+                       (:constant-flag t
+                        :default-value (17 20)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15 20]))                  
+                :type "enum")
+                nil [1 23])
+            ("a" variable
+               (:dereference 1
+                :type "int")
+                nil [31 42])
+            ("f" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [51 51])
+                    ("w" variable (:type "int") (reparse-symbol arg-sub-list) [51 51])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [51 56]))                  
+                :type "void")
+                nil [44 112])
+            ("main" function (:type "int") nil [114 147]))          
+      :file "test.c"
+      :pointmax 148
+      :fsize 147
+      :lastmodtime '(23236 53037 789979 769000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!junk!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

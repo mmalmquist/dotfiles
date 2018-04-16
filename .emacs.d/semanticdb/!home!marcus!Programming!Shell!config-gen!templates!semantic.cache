@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("PROM/PREM Collector" section nil nil [21 69])
+            ("PROM/PREM Collector" section (:members 
+              ( ("PROM/PREM Collector" section (:members 
+                  ( ("NIASC GitHub page" anchor nil nil [593 596])
+                    ("[Applet version]" anchor nil nil [858 861])
+                    ("servlet" anchor nil nil [933 936])
+                    ("[Web Start version]" anchor nil nil [987 990]))                  ) nil [190 1163]))              ) nil [69 1163]))          
+      :file "index.html"
+      :pointmax 1163
+      :fsize 1196
+      :lastmodtime '(23165 33949 603042 72000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!Shell!config-gen!templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1331 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_GLIBMM_MAIN_H" variable (:constant-flag t) nil [32 46])
+            ("glibmmconfig.h" include (:system-flag t) nil [774 799])
+            ("glibmm/refptr.h" include (:system-flag t) nil [800 826])
+            ("glibmm/timeval.h" include (:system-flag t) nil [827 854])
+            ("glibmm/priorities.h" include (:system-flag t) nil [855 885])
+            ("glibmm/iochannel.h" include (:system-flag t) nil [886 915])
+            ("sigc++/sigc++.h" include (:system-flag t) nil [916 942])
+            ("vector" include (:system-flag t) nil [943 960])
+            ("cstddef" include (:system-flag t) nil [961 979])
+            ("Glib" type
+               (:members 
+                  ( ("Cond" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1033 1044])
+                    ("Mutex" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1045 1057])
+                    ("Threads" type
+                       (:members 
+                          ( ("Cond" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1079 1090])
+                            ("Mutex" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1091 1103]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1059 1105])
+                    ("PollFD" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1256 1263])
+                            ("fd_t" variable
+                               (:default-value "decltype(GPollFD::fd)"
+                                :type "int")
+                                (reparse-symbol classsubparts) [1272 1301])
+                            ("PollFD" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PollFD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1305 1314])
+                            ("PollFD" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("fd" variable (:type ("fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1333 1341]))                                  
+                                :type ("PollFD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1326 1342])
+                            ("PollFD" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("fd" variable (:type ("fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1352 1360])
+                                    ("events" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1361 1380]))                                  
+                                :type ("PollFD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1345 1381])
+                            ("set_fd" function
+                               (:arguments 
+                                  ( ("fd" variable (:type ("fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1397 1405]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1385 1427])
+                            ("get_fd" function
+                               (:methodconst-flag t
+                                :type ("fd_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1430 1473])
+                            ("set_events" function
+                               (:arguments 
+                                  ( ("events" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1512]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1477 1542])
+                            ("get_events" function
+                               (:methodconst-flag t
+                                :type ("IOCondition" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1545 1629])
+                            ("set_revents" function
+                               (:arguments 
+                                  ( ("revents" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1650 1670]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1633 1702])
+                            ("get_revents" function
+                               (:methodconst-flag t
+                                :type ("IOCondition" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1705 1791])
+                            ("gobj" function
+                               (:pointer 1
+                                :type ("GPollFD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1795 1832])
+                            ("gobj" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("GPollFD" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1835 1884])
+                            ("private" label nil (reparse-symbol classsubparts) [1886 1894])
+                            ("gobject_" variable (:type ("GPollFD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1897 1914]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1241 1917])
+                    ("SignalTimeout" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2540 2547])
+                            ("SignalTimeout" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("context" variable
+                                       (:pointer 1
+                                        :type ("GMainContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2613 2635]))                                  
+                                :type ("SignalTimeout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2592 2636])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4301 4330])
+                                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4331 4353])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [4354 4385]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4271 4387])
+                            ("connect_once" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5305 5334])
+                                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5335 5357])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [5358 5389]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5282 5391])
+                            ("connect_seconds" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6981 7010])
+                                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7011 7033])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7034 7065]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6943 7067])
+                            ("connect_seconds_once" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8045 8074])
+                                    ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8075 8097])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8098 8129]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8014 8131])
+                            ("private" label nil (reparse-symbol classsubparts) [8133 8141])
+                            ("context_" variable
+                               (:pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8144 8167])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalTimeout" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8220 8241]))                                  
+                                :type ("SignalTimeout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8195 8242]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2518 8245])
+                    ("SignalIdle" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8266 8273])
+                            ("SignalIdle" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("context" variable
+                                       (:pointer 1
+                                        :type ("GMainContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8336 8358]))                                  
+                                :type ("SignalIdle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8318 8359])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9291 9320])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT_IDLE"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [9321 9357]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9266 9359])
+                            ("connect_once" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10212 10241])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT_IDLE"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [10242 10278]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10194 10280])
+                            ("private" label nil (reparse-symbol classsubparts) [10282 10290])
+                            ("context_" variable
+                               (:pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10293 10316])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalIdle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10366 10384]))                                  
+                                :type ("SignalIdle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10344 10385]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [8247 10388])
+                    ("SignalIO" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [10407 10414])
+                            ("SignalIO" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("context" variable
+                                       (:pointer 1
+                                        :type ("GMainContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10475 10497]))                                  
+                                :type ("SignalIO" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10459 10498])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("IOCondition" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11785 11827])
+                                    ("fd" variable (:type ("PollFD::fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11828 11844])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11845 11867])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [11872 11903]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11760 11905])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("IOCondition" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13174 13216])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::RefPtr" type
+                                             (:template-specifier 
+                                                ( ("IOChannel" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13221 13260])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13261 13283])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [13284 13315]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13149 13317])
+                            ("private" label nil (reparse-symbol classsubparts) [13319 13327])
+                            ("context_" variable
+                               (:pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13330 13353])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalIO" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13401 13417]))                                  
+                                :type ("SignalIO" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13381 13418]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [10390 13421])
+                    ("SignalChildWatch" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [13448 13455])
+                            ("SignalChildWatch" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("context" variable
+                                       (:pointer 1
+                                        :type ("GMainContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13524 13546]))                                  
+                                :type ("SignalChildWatch" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13500 13547])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil)
+                                                  ("GPid" type nil nil nil)
+                                                  ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14261 14301])
+                                    ("pid" variable (:type ("GPid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14302 14311])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [14312 14343]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14231 14345])
+                            ("private" label nil (reparse-symbol classsubparts) [14347 14355])
+                            ("context_" variable
+                               (:pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14358 14381])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalChildWatch" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14437 14461]))                                  
+                                :type ("SignalChildWatch" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14409 14462]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [13423 14465])
+                    ("signal_timeout" function
+                       (:prototype-flag t
+                        :type ("SignalTimeout" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14572 14603])
+                    ("signal_idle" function
+                       (:prototype-flag t
+                        :type ("SignalIdle" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14704 14729])
+                    ("signal_io" function
+                       (:prototype-flag t
+                        :type ("SignalIO" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14827 14848])
+                    ("signal_child_watch" function
+                       (:prototype-flag t
+                        :type ("SignalChildWatch" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14962 15000])
+                    ("MainContext" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [15044 15051])
+                            ("Glib::MainContext" variable (:type "int") (reparse-symbol classsubparts) [15076 15094])
+                            ("BaseObjectType" variable
+                               (:default-value "GMainContext"
+                                :type "int")
+                                (reparse-symbol classsubparts) [15103 15133])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainContext" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [15339 15381])
+                            ("get_default" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainContext" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [15574 15621])
+                            ("iteration" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("may_block" variable (:type "bool") (reparse-symbol arg-sub-list) [16266 16281]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16251 16282])
+                            ("pending" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16404 16419])
+                            ("wakeup" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [16543 16557])
+                            ("acquire" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17079 17094])
+                            ("wait" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cond" variable
+                                       (:reference 1
+                                        :type ("Glib::Cond" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17695 17712])
+                                    ("mutex" variable
+                                       (:reference 1
+                                        :type ("Glib::Mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17713 17732]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [17685 17733])
+                            ("wait" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cond" variable
+                                       (:reference 1
+                                        :type ("Glib::Threads::Cond" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18409 18435])
+                                    ("mutex" variable
+                                       (:reference 1
+                                        :type ("Glib::Threads::Mutex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18436 18464]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18399 18465])
+                            ("release" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [18745 18760])
+                            ("prepare" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("priority" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19078 19092]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19065 19093])
+                            ("prepare" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [19307 19322])
+                            ("query" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("max_priority" variable (:type "int") (reparse-symbol arg-sub-list) [19773 19790])
+                                    ("timeout" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [19791 19804])
+                                    ("fds" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PollFD" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [19805 19830]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19762 19831])
+                            ("check" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("max_priority" variable (:type "int") (reparse-symbol arg-sub-list) [20131 20148])
+                                    ("fds" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("PollFD" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20149 20174]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [20120 20175])
+                            ("dispatch" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [20223 20239])
+                            ("set_poll_func" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("poll_func" variable (:type ("GPollFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20687 20707]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [20668 20708])
+                            ("get_poll_func" function
+                               (:prototype-flag t
+                                :type ("GPollFunc" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [20817 20843])
+                            ("add_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fd" variable
+                                       (:reference 1
+                                        :type ("PollFD" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21389 21400])
+                                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [21401 21414]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21375 21415])
+                            ("remove_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fd" variable
+                                       (:reference 1
+                                        :type ("PollFD" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21628 21639]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21611 21640])
+                            ("invoke" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [23053 23082])
+                                    ("priority" variable
+                                       (:default-value "PRIORITY_DEFAULT"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [23083 23114]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [23041 23116])
+                            ("signal_timeout" function
+                               (:prototype-flag t
+                                :type ("SignalTimeout" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23249 23280])
+                            ("signal_idle" function
+                               (:prototype-flag t
+                                :type ("SignalIdle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23407 23432])
+                            ("signal_io" function
+                               (:prototype-flag t
+                                :type ("SignalIO" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23556 23577])
+                            ("signal_child_watch" function
+                               (:prototype-flag t
+                                :type ("SignalChildWatch" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23717 23755])
+                            ("reference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [23759 23782])
+                            ("unreference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [23785 23810])
+                            ("gobj" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23814 23835])
+                            ("gobj" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23838 23871])
+                            ("gobj_copy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23874 23906])
+                            ("private" label nil (reparse-symbol classsubparts) [23908 23916])
+                            ("MainContext" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("MainContext" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [23982 23996]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [15024 24043])
+                    ("wrap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gobject" variable
+                               (:pointer 1
+                                :type ("GMainContext" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24110 24132])
+                            ("take_copy" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [24133 24155]))                          
+                        :type ("Glib::RefPtr" type
+                             (:template-specifier 
+                                ( ("MainContext" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [24079 24157])
+                    ("MainLoop" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [24176 24183])
+                            ("Glib::MainLoop" variable (:type "int") (reparse-symbol classsubparts) [24208 24223])
+                            ("BaseObjectType" variable
+                               (:default-value "GMainLoop"
+                                :type "int")
+                                (reparse-symbol classsubparts) [24232 24259])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("is_running" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [24300 24323]))                                  
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainLoop" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [24263 24325])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("context" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::RefPtr" type
+                                             (:template-specifier 
+                                                ( ("MainContext" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [24370 24411])
+                                    ("is_running" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [24412 24435]))                                  
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainLoop" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [24328 24437])
+                            ("run" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [24645 24656])
+                            ("quit" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [24748 24760])
+                            ("is_running" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [24899 24917])
+                            ("get_context" function
+                               (:prototype-flag t
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainContext" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [25004 25044])
+                            ("depth" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "int")
+                                (reparse-symbol classsubparts) [25100 25119])
+                            ("reference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [25194 25217])
+                            ("unreference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [25366 25391])
+                            ("gobj" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("GMainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25395 25413])
+                            ("gobj" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("GMainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25416 25446])
+                            ("gobj_copy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :type ("GMainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25449 25478])
+                            ("private" label nil (reparse-symbol classsubparts) [25480 25488])
+                            ("MainLoop" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("MainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25551 25562])
+                            ("MainLoop" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MainLoop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25619 25635]))                                  
+                                :type ("MainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25610 25636])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MainLoop" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [25659 25675]))                                  
+                                :type ("MainLoop" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [25639 25676]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [24159 25679])
+                    ("wrap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("gobject" variable
+                               (:pointer 1
+                                :type ("GMainLoop" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25740 25759])
+                            ("take_copy" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [25760 25782]))                          
+                        :type ("Glib::RefPtr" type
+                             (:template-specifier 
+                                ( ("MainLoop" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [25712 25784])
+                    ("Source" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [25801 25808])
+                            ("Glib::Source" variable (:type "int") (reparse-symbol classsubparts) [25833 25846])
+                            ("BaseObjectType" variable
+                               (:default-value "GSource"
+                                :type "int")
+                                (reparse-symbol classsubparts) [25855 25880])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Source" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [25981 26028])
+                            ("attach" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("context" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::RefPtr" type
+                                             (:template-specifier 
+                                                ( ("MainContext" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [26234 26275]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [26214 26276])
+                            ("attach" function
+                               (:prototype-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [26466 26488])
+                            ("destroy" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [26760 26775])
+                            ("set_priority" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [27069 27082]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27051 27083])
+                            ("get_priority" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [27171 27196])
+                            ("set_can_recurse" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("can_recurse" variable (:type "bool") (reparse-symbol arg-sub-list) [27570 27587]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27549 27588])
+                            ("get_can_recurse" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [27731 27760])
+                            ("get_id" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [28021 28049])
+                            ("get_context" function
+                               (:prototype-flag t
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("MainContext" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [28371 28411])
+                            ("gobj" function
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28415 28451])
+                            ("gobj" function
+                               (:methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28454 28502])
+                            ("gobj_copy" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28505 28532])
+                            ("reference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [28536 28559])
+                            ("unreference" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [28562 28587])
+                            ("protected" label nil (reparse-symbol classsubparts) [28589 28599])
+                            ("Source" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Source" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [28701 28710])
+                            ("Source" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cast_item" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29218 29237])
+                                    ("callback_func" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29238 29264]))                                  
+                                :type ("Source" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29211 29265])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [29287 29296])
+                            ("connect_generic" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot_base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29333 29361]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [29300 29362])
+                            ("add_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("poll_fd" variable
+                                       (:reference 1
+                                        :type ("PollFD" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29705 29721]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29691 29722])
+                            ("remove_poll" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("poll_fd" variable
+                                       (:reference 1
+                                        :type ("PollFD" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [29907 29923]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29890 29924])
+                            ("get_current_time" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("current_time" variable
+                                       (:reference 1
+                                        :type ("Glib::TimeVal" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [30388 30416]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30366 30417])
+                            ("get_time" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("gint64" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31054 31078])
+                            ("prepare" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31103 31116]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31082 31121])
+                            ("check" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31124 31149])
+                            ("dispatch" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:pointer 1
+                                        :type ("sigc::slot_base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31174 31196]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [31152 31201])
+                            ("private" label nil (reparse-symbol classsubparts) [31203 31211])
+                            ("gobject_" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31214 31232])
+                            ("get_wrapper" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static" "inline")
+                                :arguments 
+                                  ( ("source" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31303 31319]))                                  
+                                :type ("Source" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31269 31320])
+                            ("vfunc_table_" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("GSourceFuncs" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31324 31363])
+                            ("prepare_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("source" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31397 31413])
+                                    ("timeout" variable
+                                       (:pointer 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [31414 31427]))                                  
+                                :type ("gboolean" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31367 31428])
+                            ("check_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("source" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31459 31475]))                                  
+                                :type ("gboolean" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31431 31476])
+                            ("dispatch_vfunc" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("source" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31510 31526])
+                                    ("callback" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31527 31548])
+                                    ("user_data" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [31549 31565]))                                  
+                                :type ("gboolean" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31479 31566])
+                            ("public" label nil (reparse-symbol classsubparts) [31568 31575])
+                            ("destroy_notify_callback" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [31614 31625]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [31578 31626])
+                            ("attach_signal_source" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot_base" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31723 31751])
+                                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [31752 31765])
+                                    ("source" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31770 31786])
+                                    ("context" variable
+                                       (:pointer 1
+                                        :type ("GMainContext" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31787 31809])
+                                    ("callback_func" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31810 31836]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31678 31837])
+                            ("get_slot_from_connection_node" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [31933 31944]))                                  
+                                :type ("sigc::slot_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [31879 31945])
+                            ("get_slot_from_callback_data" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [32052 32063]))                                  
+                                :type ("sigc::slot_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32000 32064]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [25786 32105])
+                    ("TimeoutSource" type
+                       (:superclasses 
+                          ( ("Glib::Source" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [32151 32158])
+                            ("Glib::TimeoutSource" variable (:type "int") (reparse-symbol classsubparts) [32183 32203])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32249 32271]))                                  
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("TimeoutSource" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [32207 32272])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [32300 32329]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32275 32330])
+                            ("protected" label nil (reparse-symbol classsubparts) [32332 32342])
+                            ("TimeoutSource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("interval" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32368 32390]))                                  
+                                :type ("TimeoutSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32354 32391])
+                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32411 32429])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [32460 32469])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [32485 32494])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [32534 32543])
+                            ("private" label nil (reparse-symbol classsubparts) [32545 32553])
+                            ("expiration_" variable (:type ("Glib::TimeVal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32642 32668])
+                            ("interval_" variable (:type "unsigned int") (reparse-symbol classsubparts) [32672 32695]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [32107 32698])
+                    ("IdleSource" type
+                       (:superclasses 
+                          ( ("Glib::Source" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [32741 32748])
+                            ("Glib::IdleSource" variable (:type "int") (reparse-symbol classsubparts) [32773 32790])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("IdleSource" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [32794 32835])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [32863 32892]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32838 32893])
+                            ("protected" label nil (reparse-symbol classsubparts) [32895 32905])
+                            ("IdleSource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("IdleSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [32908 32921])
+                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32938 32956])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [32987 32996])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [33012 33021])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [33066 33075]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [32700 33078])
+                    ("IOSource" type
+                       (:superclasses 
+                          ( ("Glib::Source" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [33119 33126])
+                            ("Glib::IOSource" variable (:type "int") (reparse-symbol classsubparts) [33151 33166])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("fd" variable (:type ("PollFD::fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33207 33223])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33224 33246]))                                  
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("IOSource" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [33170 33247])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::RefPtr" type
+                                             (:template-specifier 
+                                                ( ("IOChannel" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33292 33331])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33332 33354]))                                  
+                                :type ("Glib::RefPtr" type
+                                     (:template-specifier 
+                                        ( ("IOSource" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [33250 33355])
+                            ("connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("slot" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sigc::slot" type
+                                             (:template-specifier 
+                                                ( ("bool" type nil nil nil)
+                                                  ("IOCondition" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33383 33425]))                                  
+                                :type ("sigc::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33358 33426])
+                            ("protected" label nil (reparse-symbol classsubparts) [33428 33438])
+                            ("IOSource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("fd" variable (:type ("PollFD::fd_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33450 33466])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33467 33489]))                                  
+                                :type ("IOSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33441 33490])
+                            ("IOSource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Glib::RefPtr" type
+                                             (:template-specifier 
+                                                ( ("IOChannel" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [33502 33541])
+                                    ("condition" variable (:type ("IOCondition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33542 33564]))                                  
+                                :type ("IOSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33493 33565])
+                            ("IOSource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cast_item" variable
+                                       (:pointer 1
+                                        :type ("GSource" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [33816 33835])
+                                    ("callback_func" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33836 33862]))                                  
+                                :type ("IOSource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [33807 33863])
+                            ("override" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33879 33897])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [33928 33937])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [33953 33962])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [34002 34011])
+                            ("private" label nil (reparse-symbol classsubparts) [34013 34021])
+                            ("poll_fd_" variable (:type ("PollFD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [34024 34040]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [33080 34043]))                  
+                :type "namespace")
+                nil [981 34072]))          
+      :file "main.h"
+      :pointmax 34120
+      :fsize 34119
+      :lastmodtime '(22978 51567 0 0)
+      :unmatched-syntax '((semantic-list 33978 . 34001) (symbol 33970 . 33978) (BOOL 33965 . 33969) (semantic-list 33950 . 33952) (symbol 33945 . 33950) (BOOL 33940 . 33944) (semantic-list 33913 . 33927) (symbol 33906 . 33913) (BOOL 33901 . 33905) (semantic-list 33876 . 33878) (symbol 33868 . 33876) (punctuation 33867 . 33868) (punctuation 33149 . 33150) (symbol 33135 . 33148) (USING 33129 . 33134) (semantic-list 33037 . 33065) (symbol 33029 . 33037) (BOOL 33024 . 33028) (semantic-list 33009 . 33011) (symbol 33004 . 33009) (BOOL 32999 . 33003) (semantic-list 32972 . 32986) (symbol 32965 . 32972) (BOOL 32960 . 32964) (semantic-list 32935 . 32937) (symbol 32925 . 32935) (punctuation 32924 . 32925) (punctuation 32771 . 32772) (symbol 32757 . 32770) (USING 32751 . 32756) (semantic-list 32510 . 32533) (symbol 32502 . 32510) (BOOL 32497 . 32501) (semantic-list 32482 . 32484) (symbol 32477 . 32482) (BOOL 32472 . 32476) (semantic-list 32445 . 32459) (symbol 32438 . 32445) (BOOL 32433 . 32437) (semantic-list 32408 . 32410) (symbol 32395 . 32408) (punctuation 32394 . 32395) (EXPLICIT 32345 . 32353) (punctuation 32181 . 32182) (symbol 32167 . 32180) (USING 32161 . 32166) (semantic-list 29284 . 29286) (symbol 29278 . 29284) (punctuation 29277 . 29278) (VIRTUAL 29269 . 29276) (punctuation 25976 . 25977) (DELETE 25970 . 25976) (punctuation 25968 . 25969) (semantic-list 25952 . 25967) (punctuation 25951 . 25952) (OPERATOR 25943 . 25951) (punctuation 25941 . 25942) (symbol 25935 . 25941) (punctuation 25931 . 25932) (DELETE 25925 . 25931) (punctuation 25923 . 25924) (semantic-list 25907 . 25922) (symbol 25901 . 25907) (USING 25849 . 25854) (punctuation 25831 . 25832) (symbol 25817 . 25830) (USING 25811 . 25816) (punctuation 25605 . 25606) (semantic-list 25585 . 25605) (DELETE 25579 . 25585) (OPERATOR 25570 . 25578) (VOID 25565 . 25569) (USING 24226 . 24231) (punctuation 24206 . 24207) (symbol 24192 . 24205) (USING 24186 . 24191) (punctuation 24039 . 24040) (semantic-list 24019 . 24039) (DELETE 24013 . 24019) (OPERATOR 24004 . 24012) (VOID 23999 . 24003) (punctuation 15261 . 15262) (DELETE 15255 . 15261) (punctuation 15253 . 15254) (semantic-list 15226 . 15252) (punctuation 15225 . 15226) (OPERATOR 15217 . 15225) (punctuation 15215 . 15216) (symbol 15204 . 15215) (punctuation 15200 . 15201) (DELETE 15194 . 15200) (punctuation 15192 . 15193) (semantic-list 15165 . 15191) (symbol 15154 . 15165) (USING 15097 . 15102) (punctuation 15074 . 15075) (symbol 15060 . 15073) (USING 15054 . 15059) (EXPLICIT 13491 . 13499) (EXPLICIT 10450 . 10458) (EXPLICIT 8309 . 8317) (EXPLICIT 2583 . 2591) (EXPLICIT 1317 . 1325) (USING 1266 . 1271))
+      :lexical-table 
+        '(("_GLIBMM_MAIN_H")
+          )
+))
+  :file "!usr!include!glibmm-2.4!glibmm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

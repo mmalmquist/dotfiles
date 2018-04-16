@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"
+Illustrate simple contour plotting, contours on an image with
+a colorbar for the contours, and labelled contours.
+
+See also contour_image.py.
+\"\"\"" code nil nil [1 150])
+            ("matplotlib" include nil nil [151 168])
+            ("numpy" include nil nil [169 187])
+            ("matplotlib.cm" include nil nil [188 214])
+            ("matplotlib.mlab" include nil nil [215 245])
+            ("matplotlib.pyplot" include nil nil [246 277])
+            ("matplotlib" variable nil nil [279 325])
+            ("matplotlib" variable nil nil [326 372])
+            ("delta" variable nil nil [374 387])
+            ("x" variable nil nil [388 419])
+            ("y" variable nil nil [420 451])
+            ("X, Y" code nil nil [452 476])
+            ("Z1" variable nil nil [477 529])
+            ("Z2" variable nil nil [530 578])
+            ("Z" code nil nil [605 625])
+            ("plt" code nil nil [847 859])
+            ("CS" variable nil nil [860 885])
+            ("plt" code nil nil [886 923])
+            ("plt" code nil nil [924 965])
+            ("plt" code nil nil [1120 1132])
+            ("CS" variable nil nil [1133 1158])
+            ("manual_locations" variable nil nil [1159 1252])
+            ("plt" code nil nil [1253 1315])
+            ("plt" code nil nil [1316 1357])
+            ("plt" code nil nil [1415 1427])
+            ("CS" variable nil nil [1428 1551])
+            ("plt" code nil nil [1552 1588])
+            ("plt" code nil nil [1589 1641])
+            ("matplotlib" variable nil nil [1706 1765])
+            ("plt" code nil nil [1766 1778])
+            ("CS" variable nil nil [1779 1902])
+            ("plt" code nil nil [1903 1939])
+            ("plt" code nil nil [1940 1991])
+            ("plt" code nil nil [2051 2063])
+            ("CS" variable nil nil [2064 2237])
+            ("plt" code nil nil [2238 2274])
+            ("plt" code nil nil [2275 2299])
+            ("plt" code nil nil [2411 2423])
+            ("im" variable nil nil [2424 2537])
+            ("levels" variable nil nil [2538 2572])
+            ("CS" variable nil nil [2573 2704])
+            ("zc" variable nil nil [2734 2756])
+            ("plt" code nil nil [2757 2782])
+            ("plt" code nil nil [2784 2909])
+            ("CB" variable nil nil [2951 2999])
+            ("plt" code nil nil [3001 3033])
+            ("plt" code nil nil [3107 3117])
+            ("CBI" variable nil nil [3169 3229])
+            ("l, b, w, h" code nil nil [3325 3369])
+            ("ll, bb, ww, hh" code nil nil [3370 3414])
+            ("CB" code nil nil [3415 3461])
+            ("plt" code nil nil [3464 3474]))          
+      :file "contour_demo.py"
+      :pointmax 3475
+      :fsize 3474
+      :lastmodtime '(23106 35490 614311 307000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

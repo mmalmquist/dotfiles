@@ -1,0 +1,709 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [193 214])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [215 242])
+            ("SDL2/SDL_ttf.h" include (:system-flag t) nil [243 268])
+            ("stdio.h" include (:system-flag t) nil [269 287])
+            ("string.h" include (:system-flag t) nil [288 307])
+            ("math.h" include (:system-flag t) nil [308 325])
+            ("stdbool.h" include (:system-flag t) nil [326 346])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [377 406])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [407 437])
+            ("LTexture" type
+               (:typedef ("LTexture" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [439 472])
+            ("LTexture_ctor" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [498 503]))                  
+                :type ("LTexture" type (:type "class") nil nil))
+                nil [474 504])
+            ("LTexture_dtor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [524 537]))                  
+                :type "void")
+                nil [505 538])
+            ("LTexture_loadFromFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [568 581])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [582 599]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [540 600])
+            ("LTexture_loadFromRenderedText" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [637 650])
+                    ("textureText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [651 675])
+                    ("textColor" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 697]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [601 698])
+            ("LTexture_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [718 731]))                  
+                :type "void")
+                nil [699 732])
+            ("LTexture_setColor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [756 769])
+                    ("red" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [770 780])
+                    ("green" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [781 793])
+                    ("blue" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [794 805]))                  
+                :type "void")
+                nil [733 806])
+            ("LTexture_setBlendMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [834 847])
+                    ("blending" variable (:type ("SDL_BlendMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [848 871]))                  
+                :type "void")
+                nil [807 872])
+            ("LTexture_setAlpha" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [896 909])
+                    ("alpha" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [910 922]))                  
+                :type "void")
+                nil [873 923])
+            ("LTexture_render" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [945 958])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [959 965])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [966 972])
+                    ("clip" variable
+                       (:pointer 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [973 988])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [989 1002])
+                    ("center" variable
+                       (:pointer 1
+                        :type ("SDL_Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1003 1021])
+                    ("flip" variable (:type ("SDL_RendererFlip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1022 1044]))                  
+                :type "void")
+                nil [924 1045])
+            ("LTexture_getWidth" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1068 1081]))                  
+                :type "int")
+                nil [1046 1082])
+            ("LTexture_getHeight" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1106 1119]))                  
+                :type "int")
+                nil [1083 1120])
+            ("LTexture" type
+               (:members 
+                  ( ("loadFromFile" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1200 1213])
+                            ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1214 1231]))                          
+                        :type ("_Bool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1178 1232])
+                    ("loadFromRenderedText" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1265 1278])
+                            ("textureText" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1279 1303])
+                            ("textColor" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1304 1324]))                          
+                        :type ("_Bool" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1235 1325])
+                    ("free" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1341 1354]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1328 1355])
+                    ("setColor" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1375 1388])
+                            ("red" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1389 1399])
+                            ("green" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1400 1412])
+                            ("blue" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1413 1424]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1358 1425])
+                    ("setBlendMode" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1449 1462])
+                            ("blending" variable (:type ("SDL_BlendMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1463 1486]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1428 1487])
+                    ("setAlpha" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1507 1520])
+                            ("alpha" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1521 1533]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1490 1534])
+                    ("render" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1552 1565])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1566 1572])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1573 1579])
+                            ("clip" variable
+                               (:pointer 1
+                                :type ("SDL_Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1580 1595])
+                            ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [1596 1609])
+                            ("center" variable
+                               (:pointer 1
+                                :type ("SDL_Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1610 1628])
+                            ("flip" variable (:type ("SDL_RendererFlip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1629 1651]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1537 1652])
+                    ("getWidth" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1671 1684]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1655 1685])
+                    ("getHeight" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("lt" variable
+                               (:pointer 1
+                                :type ("LTexture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1705 1718]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1688 1719])
+                    ("mTexture" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1736 1758])
+                    ("mWidth" variable (:type "int") (reparse-symbol classsubparts) [1761 1772])
+                    ("mHeight" variable (:type "int") (reparse-symbol classsubparts) [1775 1787]))                  
+                :type "struct")
+                nil [1146 1790])
+            ("ttf_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1807 1812]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [1792 1813])
+            ("loadMedia" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1830 1835]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [1814 1836])
+            ("ttf_close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1852 1857]))                  
+                :type "void")
+                nil [1837 1858])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [1859 1886])
+            ("gRenderer" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Renderer" type (:type "class") nil nil))
+                nil [1887 1918])
+            ("gFont" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("TTF_Font" type (:type "class") nil nil))
+                nil [1919 1942])
+            ("gTextTexture" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("LTexture" type (:type "class") nil nil))
+                nil [1943 1973])
+            ("LTexture_ctor" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1999 2004]))                  
+                :type ("LTexture" type (:type "class") nil nil))
+                nil [1975 2506])
+            ("LTexture_dtor" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2527 2540]))                  
+                :type "void")
+                nil [2508 2587])
+            ("LTexture_loadFromFile" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2617 2630])
+                    ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2631 2648]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [2589 3612])
+            ("LTexture_loadFromRenderedText" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3650 3663])
+                    ("textureText" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3664 3688])
+                    ("textColor" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3689 3710]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [3614 4486])
+            ("LTexture_free" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4507 4520]))                  
+                :type "void")
+                nil [4488 4692])
+            ("LTexture_setColor" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4717 4730])
+                    ("red" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4731 4741])
+                    ("green" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4742 4754])
+                    ("blue" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4755 4766]))                  
+                :type "void")
+                nil [4694 4853])
+            ("LTexture_setBlendMode" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4882 4895])
+                    ("blending" variable (:type ("SDL_BlendMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4896 4919]))                  
+                :type "void")
+                nil [4855 5000])
+            ("LTexture_setAlpha" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5027 5040])
+                    ("alpha" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5041 5053]))                  
+                :type "void")
+                nil [5004 5131])
+            ("LTexture_render" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5154 5167])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5168 5174])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5175 5181])
+                    ("clip" variable
+                       (:pointer 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5182 5197])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [5198 5211])
+                    ("center" variable
+                       (:pointer 1
+                        :type ("SDL_Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5212 5230])
+                    ("flip" variable (:type ("SDL_RendererFlip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5231 5253]))                  
+                :type "void")
+                nil [5133 5586])
+            ("LTexture_getWidth" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5610 5623]))                  
+                :type "int")
+                nil [5588 5648])
+            ("LTexture_getHeight" function
+               (:arguments 
+                  ( ("lt" variable
+                       (:pointer 1
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5673 5686]))                  
+                :type "int")
+                nil [5650 5712])
+            ("ttf_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5729 5734]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [5714 6940])
+            ("loadMedia" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6958 6963]))                  
+                :type ("_Bool" type (:type "class") nil nil))
+                nil [6942 7395])
+            ("ttf_close" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7412 7417]))                  
+                :type "void")
+                nil [7397 7653])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7665 7674])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7675 7688]))                  
+                :type "int")
+                nil [7655 8521])
+            ("ttf_close" function
+               (:prototype-flag t
+                :type "int")
+                nil [8464 8476])
+            ("LTexture_dtor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gTextTexture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8493 8506]))                  
+                :type "int")
+                nil [8479 8507]))          
+      :file "16_true_type_fonts.c"
+      :pointmax 8522
+      :fsize 8521
+      :lastmodtime '(23010 8357 49483 6000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [193 214])
+            ("SDL2/SDL_image.h" include (:system-flag t) nil [215 242])
+            ("SDL2/SDL_ttf.h" include (:system-flag t) nil [243 268])
+            ("stdio.h" include (:system-flag t) nil [269 287])
+            ("string" include (:system-flag t) nil [288 305])
+            ("cmath" include (:system-flag t) nil [306 322])
+            ("SCREEN_WIDTH" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [353 382])
+            ("SCREEN_HEIGHT" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [383 413])
+            ("LTexture" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [457 464])
+                    ("LTexture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("LTexture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [493 504])
+                    ("LTexture" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 543])
+                    ("loadFromFile" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [600 618]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [581 619])
+                    ("loadFromRenderedText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("textureText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [687 711])
+                            ("textColor" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [712 733]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [660 734])
+                    ("free" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [762 774])
+                    ("setColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("red" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [818 828])
+                            ("green" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [829 841])
+                            ("blue" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [842 854]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [803 855])
+                    ("setBlendMode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("blending" variable (:type ("SDL_BlendMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [895 919]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [876 920])
+                    ("setAlpha" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("alpha" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [964 977]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [949 978])
+                    ("render" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1032 1038])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1039 1045])
+                            ("clip" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("SDL_Rect" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1046 1067])
+                            ("angle" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1069 1087])
+                            ("center" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("SDL_Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1089 1113])
+                            ("flip" variable
+                               (:default-value "SDL_FLIP_NONE"
+                                :type ("SDL_RendererFlip" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1115 1152]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1019 1155])
+                    ("getWidth" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1185 1200])
+                    ("getHeight" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1203 1219])
+                    ("private" label nil (reparse-symbol classsubparts) [1222 1230])
+                    ("mTexture" variable
+                       (:pointer 1
+                        :type ("SDL_Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1265 1287])
+                    ("mWidth" variable (:type "int") (reparse-symbol classsubparts) [1312 1323])
+                    ("mHeight" variable (:type "int") (reparse-symbol classsubparts) [1326 1338]))                  
+                :type "class")
+                nil [439 1341])
+            ("init" function
+               (:prototype-flag t
+                :type "bool")
+                nil [1378 1390])
+            ("loadMedia" function
+               (:prototype-flag t
+                :type "bool")
+                nil [1406 1423])
+            ("close" function
+               (:prototype-flag t
+                :type "void")
+                nil [1458 1471])
+            ("gWindow" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Window" type (:type "class") nil nil))
+                nil [1508 1535])
+            ("gRenderer" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("SDL_Renderer" type (:type "class") nil nil))
+                nil [1559 1590])
+            ("gFont" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("TTF_Font" type (:type "class") nil nil))
+                nil [1613 1636])
+            ("gTextTexture" variable (:type ("LTexture" type (:type "class") nil nil)) nil [1657 1679])
+            ("LTexture" function
+               (:constructor-flag t
+                :parent "LTexture"
+                :type ("LTexture" type (:type "class") nil nil))
+                nil [1682 1765])
+            ("LTexture" function
+               (:destructor-flag t
+                :parent "LTexture"
+                :type "void")
+                nil [1767 1815])
+            ("loadFromFile" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("path" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1846 1864]))                  
+                :type "bool")
+                nil [1817 2804])
+            ("loadFromRenderedText" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("textureText" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2843 2867])
+                    ("textColor" variable (:type ("SDL_Color" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2868 2889]))                  
+                :type "bool")
+                nil [2806 3624])
+            ("free" function
+               (:parent "LTexture"
+                :type "void")
+                nil [3626 3792])
+            ("setColor" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("red" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3819 3829])
+                    ("green" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3830 3842])
+                    ("blue" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3843 3855]))                  
+                :type "void")
+                nil [3794 3938])
+            ("setBlendMode" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("blending" variable (:type ("SDL_BlendMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3969 3993]))                  
+                :type "void")
+                nil [3940 4070])
+            ("setAlpha" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("alpha" variable (:type ("Uint8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4099 4112]))                  
+                :type "void")
+                nil [4074 4186])
+            ("render" function
+               (:parent "LTexture"
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4211 4217])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4218 4224])
+                    ("clip" variable
+                       (:pointer 1
+                        :type ("SDL_Rect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4225 4240])
+                    ("angle" variable (:type "double") (reparse-symbol arg-sub-list) [4241 4254])
+                    ("center" variable
+                       (:pointer 1
+                        :type ("SDL_Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4255 4273])
+                    ("flip" variable (:type ("SDL_RendererFlip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4274 4297]))                  
+                :type "void")
+                nil [4188 4610])
+            ("getWidth" function
+               (:parent "LTexture"
+                :type "int")
+                nil [4612 4656])
+            ("getHeight" function
+               (:parent "LTexture"
+                :type "int")
+                nil [4658 4704])
+            ("init" function (:type "bool") nil [4706 6226])
+            ("loadMedia" function (:type "bool") nil [6228 6758])
+            ("close" function (:type "void") nil [6760 7066])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7078 7087])
+                    ("args" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7088 7102]))                  
+                :type "int")
+                nil [7068 8005]))          
+      :file "16_true_type_fonts.cpp~"
+      :pointmax 8006
+      :fsize 8005
+      :lastmodtime '(23009 20622 517248 440000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Downloads!16_true_type_fonts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
