@@ -1319,11 +1319,170 @@
                 nil [981 34072]))          
       :file "main.h"
       :pointmax 34120
-      :fsize 34119
-      :lastmodtime '(22978 51567 0 0)
+      :fsize 33916
+      :lastmodtime '(23231 16295 0 0)
       :unmatched-syntax '((semantic-list 33978 . 34001) (symbol 33970 . 33978) (BOOL 33965 . 33969) (semantic-list 33950 . 33952) (symbol 33945 . 33950) (BOOL 33940 . 33944) (semantic-list 33913 . 33927) (symbol 33906 . 33913) (BOOL 33901 . 33905) (semantic-list 33876 . 33878) (symbol 33868 . 33876) (punctuation 33867 . 33868) (punctuation 33149 . 33150) (symbol 33135 . 33148) (USING 33129 . 33134) (semantic-list 33037 . 33065) (symbol 33029 . 33037) (BOOL 33024 . 33028) (semantic-list 33009 . 33011) (symbol 33004 . 33009) (BOOL 32999 . 33003) (semantic-list 32972 . 32986) (symbol 32965 . 32972) (BOOL 32960 . 32964) (semantic-list 32935 . 32937) (symbol 32925 . 32935) (punctuation 32924 . 32925) (punctuation 32771 . 32772) (symbol 32757 . 32770) (USING 32751 . 32756) (semantic-list 32510 . 32533) (symbol 32502 . 32510) (BOOL 32497 . 32501) (semantic-list 32482 . 32484) (symbol 32477 . 32482) (BOOL 32472 . 32476) (semantic-list 32445 . 32459) (symbol 32438 . 32445) (BOOL 32433 . 32437) (semantic-list 32408 . 32410) (symbol 32395 . 32408) (punctuation 32394 . 32395) (EXPLICIT 32345 . 32353) (punctuation 32181 . 32182) (symbol 32167 . 32180) (USING 32161 . 32166) (semantic-list 29284 . 29286) (symbol 29278 . 29284) (punctuation 29277 . 29278) (VIRTUAL 29269 . 29276) (punctuation 25976 . 25977) (DELETE 25970 . 25976) (punctuation 25968 . 25969) (semantic-list 25952 . 25967) (punctuation 25951 . 25952) (OPERATOR 25943 . 25951) (punctuation 25941 . 25942) (symbol 25935 . 25941) (punctuation 25931 . 25932) (DELETE 25925 . 25931) (punctuation 25923 . 25924) (semantic-list 25907 . 25922) (symbol 25901 . 25907) (USING 25849 . 25854) (punctuation 25831 . 25832) (symbol 25817 . 25830) (USING 25811 . 25816) (punctuation 25605 . 25606) (semantic-list 25585 . 25605) (DELETE 25579 . 25585) (OPERATOR 25570 . 25578) (VOID 25565 . 25569) (USING 24226 . 24231) (punctuation 24206 . 24207) (symbol 24192 . 24205) (USING 24186 . 24191) (punctuation 24039 . 24040) (semantic-list 24019 . 24039) (DELETE 24013 . 24019) (OPERATOR 24004 . 24012) (VOID 23999 . 24003) (punctuation 15261 . 15262) (DELETE 15255 . 15261) (punctuation 15253 . 15254) (semantic-list 15226 . 15252) (punctuation 15225 . 15226) (OPERATOR 15217 . 15225) (punctuation 15215 . 15216) (symbol 15204 . 15215) (punctuation 15200 . 15201) (DELETE 15194 . 15200) (punctuation 15192 . 15193) (semantic-list 15165 . 15191) (symbol 15154 . 15165) (USING 15097 . 15102) (punctuation 15074 . 15075) (symbol 15060 . 15073) (USING 15054 . 15059) (EXPLICIT 13491 . 13499) (EXPLICIT 10450 . 10458) (EXPLICIT 8309 . 8317) (EXPLICIT 2583 . 2591) (EXPLICIT 1317 . 1325) (USING 1266 . 1271))
       :lexical-table 
         '(("_GLIBMM_MAIN_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_GLIBMM_REFPTR_H" variable (:constant-flag t) nil [34 50])
+            ("glibmmconfig.h" include (:system-flag t) nil [774 799])
+            ("glib.h" include (:system-flag t) nil [800 817])
+            ("utility" include (:system-flag t) nil [818 836])
+            ("Glib" type
+               (:members 
+                  ( ("RefPtr" type
+                       (:template 
+                          ( ("T_CppObject" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2034 2042])
+                            ("is_allowed_type" type
+                               (:members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2473 2481])
+                                    ("big" type
+                                       (:members 
+                                          ( ("memory" variable
+                                               (:dereference 1
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2509 2524]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [2486 2531])
+                                    ("check" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2554 2558]))                                          
+                                        :type ("big" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2537 2559])
+                                    ("check" function
+                                       (:template 
+                                          ( ("X" type (:type "class") nil nil))                                          
+                                        :type ("X::dont_allow_use_in_glib_refptr_" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("obj" variable
+                                               (:pointer 1
+                                                :type ("X" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2813 2820]))                                          
+                                        :typemodifiers ("static" "typename")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [2731 2821])
+                                    ("public" label nil (reparse-symbol classsubparts) [2825 2832]))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [2445 2933])
+                            ("static_assert" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("is_allowed_type::value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2951 2974]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2937 3025])
+                            ("public" label nil (reparse-symbol classsubparts) [3065 3072])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3207 3216])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3284 3293])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3392 3401])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3521 3530])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3591 3600])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3740 3749])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3936 3945])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4207 4216])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4296 4305])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4380 4389])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4542 4551])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4735 4744])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4862 4877])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4947 4962])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5127 5142])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5235 5250])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5470 5485])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [5725 5734])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [5930 5939])
+                            ("G_GNUC_WARN_UNUSED_RESULT" variable (:type ("noexcept" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6407 6442])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [6753 6762])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [7037 7046])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [7346 7355])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [7807 7822])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [7891 7906])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [7974 7989])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [8058 8073])
+                            ("private" label nil (reparse-symbol classsubparts) [8075 8083])
+                            ("pCppObject_" variable
+                               (:pointer 1
+                                :type ("T_CppObject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8086 8111]))                          )
+                        (reparse-symbol namespacesubparts) [1990 8114])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("nullptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8497 8505]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8485 8509])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("pCppObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8801 8812]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8789 8816])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8924 8928])
+                            ("" variable (:type ("pCppObject_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8928 8940]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8912 8993])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9096 9100])
+                            ("" variable (:type ("pCppObject_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9100 9112]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9084 9145])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9288 9292])
+                            ("" variable (:type ("release" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9292 9301]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9276 9306])
+                    ("pCppObject_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9808 9812]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9796 9878]))                  
+                :type "namespace")
+                nil [838 14937]))          
+      :file "refptr.h"
+      :pointmax 14987
+      :fsize 14986
+      :lastmodtime '(23231 16295 0 0)
+      :unmatched-syntax '((semantic-list 14914 . 14934) (symbol 14905 . 14913) (semantic-list 14852 . 14904) (symbol 14848 . 14852) (VOID 14843 . 14847) (INLINE 14836 . 14842) (punctuation 14834 . 14835) (symbol 14823 . 14834) (CLASS 14817 . 14822) (punctuation 14816 . 14817) (TEMPLATE 14807 . 14815) (semantic-list 14691 . 14737) (symbol 14682 . 14690) (CONST 14676 . 14681) (semantic-list 14656 . 14675) (punctuation 14655 . 14656) (punctuation 14654 . 14655) (OPERATOR 14646 . 14654) (punctuation 14645 . 14646) (punctuation 14644 . 14645) (punctuation 14643 . 14644) (symbol 14632 . 14643) (punctuation 14631 . 14632) (symbol 14625 . 14631) (BOOL 14620 . 14624) (INLINE 14613 . 14619) (punctuation 14611 . 14612) (symbol 14600 . 14611) (CLASS 14594 . 14599) (punctuation 14593 . 14594) (TEMPLATE 14584 . 14592) (semantic-list 14537 . 14582) (symbol 14528 . 14536) (CONST 14522 . 14527) (semantic-list 14502 . 14521) (punctuation 14501 . 14502) (OPERATOR 14493 . 14501) (punctuation 14492 . 14493) (punctuation 14491 . 14492) (punctuation 14490 . 14491) (symbol 14479 . 14490) (punctuation 14478 . 14479) (symbol 14472 . 14478) (BOOL 14467 . 14471) (INLINE 14460 . 14466) (punctuation 14458 . 14459) (symbol 14447 . 14458) (CLASS 14441 . 14446) (punctuation 14440 . 14441) (TEMPLATE 14431 . 14439) (semantic-list 14383 . 14429) (symbol 14374 . 14382) (CONST 14368 . 14373) (semantic-list 14348 . 14367) (punctuation 14347 . 14348) (punctuation 14346 . 14347) (OPERATOR 14338 . 14346) (punctuation 14337 . 14338) (punctuation 14336 . 14337) (punctuation 14335 . 14336) (symbol 14324 . 14335) (punctuation 14323 . 14324) (symbol 14317 . 14323) (BOOL 14312 . 14316) (INLINE 14305 . 14311) (punctuation 14303 . 14304) (symbol 14292 . 14303) (CLASS 14286 . 14291) (punctuation 14285 . 14286) (TEMPLATE 14276 . 14284) (semantic-list 14229 . 14274) (symbol 14220 . 14228) (CONST 14214 . 14219) (semantic-list 14194 . 14213) (punctuation 14193 . 14194) (OPERATOR 14185 . 14193) (punctuation 14184 . 14185) (punctuation 14183 . 14184) (punctuation 14182 . 14183) (symbol 14171 . 14182) (punctuation 14170 . 14171) (symbol 14164 . 14170) (BOOL 14159 . 14163) (INLINE 14152 . 14158) (punctuation 14150 . 14151) (symbol 14139 . 14150) (CLASS 14133 . 14138) (punctuation 14132 . 14133) (TEMPLATE 14123 . 14131) (semantic-list 13949 . 14121) (symbol 13940 . 13948) (semantic-list 13908 . 13939) (symbol 13898 . 13908) (punctuation 13897 . 13898) (punctuation 13896 . 13897) (punctuation 13895 . 13896) (symbol 13884 . 13895) (punctuation 13883 . 13884) (symbol 13877 . 13883) (punctuation 13875 . 13876) (symbol 13864 . 13875) (punctuation 13863 . 13864) (symbol 13857 . 13863) (INLINE 13850 . 13856) (punctuation 13848 . 13849) (symbol 13838 . 13848) (CLASS 13832 . 13837) (punctuation 13831 . 13832) (TEMPLATE 13822 . 13830) (punctuation 13820 . 13821) (symbol 13809 . 13820) (CLASS 13803 . 13808) (punctuation 13802 . 13803) (TEMPLATE 13793 . 13801) (semantic-list 13618 . 13791) (symbol 13609 . 13617) (semantic-list 13577 . 13608) (symbol 13566 . 13577) (punctuation 13565 . 13566) (punctuation 13564 . 13565) (punctuation 13563 . 13564) (symbol 13552 . 13563) (punctuation 13551 . 13552) (symbol 13545 . 13551) (punctuation 13543 . 13544) (symbol 13532 . 13543) (punctuation 13531 . 13532) (symbol 13525 . 13531) (INLINE 13518 . 13524) (punctuation 13516 . 13517) (symbol 13506 . 13516) (CLASS 13500 . 13505) (punctuation 13499 . 13500) (TEMPLATE 13490 . 13498) (punctuation 13488 . 13489) (symbol 13477 . 13488) (CLASS 13471 . 13476) (punctuation 13470 . 13471) (TEMPLATE 13461 . 13469) (semantic-list 13285 . 13459) (symbol 13276 . 13284) (semantic-list 13244 . 13275) (symbol 13232 . 13244) (punctuation 13231 . 13232) (punctuation 13230 . 13231) (punctuation 13229 . 13230) (symbol 13218 . 13229) (punctuation 13217 . 13218) (symbol 13211 . 13217) (punctuation 13209 . 13210) (symbol 13198 . 13209) (punctuation 13197 . 13198) (symbol 13191 . 13197) (INLINE 13184 . 13190) (punctuation 13182 . 13183) (symbol 13172 . 13182) (CLASS 13166 . 13171) (punctuation 13165 . 13166) (TEMPLATE 13156 . 13164) (punctuation 13154 . 13155) (symbol 13143 . 13154) (CLASS 13137 . 13142) (punctuation 13136 . 13137) (TEMPLATE 13127 . 13135) (semantic-list 13049 . 13125) (symbol 13040 . 13048) (semantic-list 13037 . 13039) (symbol 13030 . 13037) (punctuation 13029 . 13030) (punctuation 13028 . 13029) (punctuation 13027 . 13028) (symbol 13016 . 13027) (punctuation 13015 . 13016) (symbol 13009 . 13015) (punctuation 13007 . 13008) (symbol 12996 . 13007) (INLINE 12989 . 12995) (punctuation 12987 . 12988) (symbol 12976 . 12987) (CLASS 12970 . 12975) (punctuation 12969 . 12970) (TEMPLATE 12960 . 12968) (semantic-list 12861 . 12958) (symbol 12852 . 12860) (semantic-list 12849 . 12851) (symbol 12844 . 12849) (punctuation 12843 . 12844) (punctuation 12842 . 12843) (punctuation 12841 . 12842) (symbol 12830 . 12841) (punctuation 12829 . 12830) (symbol 12823 . 12829) (VOID 12818 . 12822) (INLINE 12811 . 12817) (punctuation 12809 . 12810) (symbol 12798 . 12809) (CLASS 12792 . 12797) (punctuation 12791 . 12792) (TEMPLATE 12782 . 12790) (semantic-list 12730 . 12744) (symbol 12721 . 12729) (semantic-list 12718 . 12720) (symbol 12713 . 12718) (punctuation 12712 . 12713) (punctuation 12711 . 12712) (punctuation 12710 . 12711) (symbol 12699 . 12710) (punctuation 12698 . 12699) (symbol 12692 . 12698) (VOID 12687 . 12691) (INLINE 12680 . 12686) (punctuation 12678 . 12679) (symbol 12667 . 12678) (CLASS 12661 . 12666) (punctuation 12660 . 12661) (TEMPLATE 12651 . 12659) (semantic-list 12577 . 12615) (symbol 12568 . 12576) (CONST 12562 . 12567) (semantic-list 12559 . 12561) (BOOL 12555 . 12559) (OPERATOR 12546 . 12554) (punctuation 12545 . 12546) (punctuation 12544 . 12545) (punctuation 12543 . 12544) (symbol 12532 . 12543) (punctuation 12531 . 12532) (symbol 12525 . 12531) (INLINE 12518 . 12524) (punctuation 12516 . 12517) (symbol 12505 . 12516) (CLASS 12499 . 12504) (punctuation 12498 . 12499) (TEMPLATE 12489 . 12497) (semantic-list 12462 . 12487) (symbol 12453 . 12461) (CONST 12447 . 12452) (semantic-list 12444 . 12446) (symbol 12441 . 12444) (punctuation 12440 . 12441) (punctuation 12439 . 12440) (punctuation 12438 . 12439) (symbol 12427 . 12438) (punctuation 12426 . 12427) (symbol 12420 . 12426) (punctuation 12418 . 12419) (symbol 12407 . 12418) (INLINE 12400 . 12406) (punctuation 12398 . 12399) (symbol 12387 . 12398) (CLASS 12381 . 12386) (punctuation 12380 . 12381) (TEMPLATE 12371 . 12379) (semantic-list 12323 . 12369) (symbol 12314 . 12322) (CONST 12308 . 12313) (semantic-list 12288 . 12307) (punctuation 12287 . 12288) (punctuation 12286 . 12287) (OPERATOR 12278 . 12286) (punctuation 12277 . 12278) (punctuation 12276 . 12277) (punctuation 12275 . 12276) (symbol 12264 . 12275) (punctuation 12263 . 12264) (symbol 12257 . 12263) (BOOL 12252 . 12256) (INLINE 12245 . 12251) (punctuation 12243 . 12244) (symbol 12232 . 12243) (CLASS 12226 . 12231) (punctuation 12225 . 12226) (TEMPLATE 12216 . 12224) (semantic-list 12168 . 12214) (symbol 12159 . 12167) (CONST 12153 . 12158) (semantic-list 12133 . 12152) (punctuation 12132 . 12133) (punctuation 12131 . 12132) (OPERATOR 12123 . 12131) (punctuation 12122 . 12123) (punctuation 12121 . 12122) (punctuation 12120 . 12121) (symbol 12109 . 12120) (punctuation 12108 . 12109) (symbol 12102 . 12108) (BOOL 12097 . 12101) (INLINE 12090 . 12096) (punctuation 12088 . 12089) (symbol 12077 . 12088) (CLASS 12071 . 12076) (punctuation 12070 . 12071) (TEMPLATE 12061 . 12069) (semantic-list 11987 . 12059) (symbol 11978 . 11986) (semantic-list 11946 . 11977) (punctuation 11945 . 11946) (OPERATOR 11937 . 11945) (punctuation 11936 . 11937) (punctuation 11935 . 11936) (punctuation 11934 . 11935) (symbol 11923 . 11934) (punctuation 11922 . 11923) (symbol 11916 . 11922) (punctuation 11914 . 11915) (punctuation 11913 . 11914) (symbol 11902 . 11913) (punctuation 11901 . 11902) (symbol 11895 . 11901) (INLINE 11888 . 11894) (punctuation 11886 . 11887) (symbol 11876 . 11886) (CLASS 11870 . 11875) (punctuation 11869 . 11870) (TEMPLATE 11860 . 11868) (punctuation 11858 . 11859) (symbol 11847 . 11858) (CLASS 11841 . 11846) (punctuation 11840 . 11841) (TEMPLATE 11831 . 11839) (semantic-list 11727 . 11829) (symbol 11718 . 11726) (semantic-list 11691 . 11717) (punctuation 11690 . 11691) (OPERATOR 11682 . 11690) (punctuation 11711 . 11712) (punctuation 11681 . 11682) (punctuation 11680 . 11681) (punctuation 11679 . 11680) (symbol 11668 . 11679) (punctuation 11667 . 11668) (symbol 11661 . 11667) (punctuation 11711 . 11712) (punctuation 11659 . 11660) (punctuation 11658 . 11659) (symbol 11647 . 11658) (punctuation 11646 . 11647) (symbol 11640 . 11646) (punctuation 11711 . 11712) (INLINE 11633 . 11639) (punctuation 11711 . 11712) (punctuation 11631 . 11632) (symbol 11621 . 11631) (CLASS 11615 . 11620) (punctuation 11614 . 11615) (TEMPLATE 11605 . 11613) (punctuation 11711 . 11712) (punctuation 11603 . 11604) (symbol 11592 . 11603) (CLASS 11586 . 11591) (punctuation 11585 . 11586) (TEMPLATE 11576 . 11584) (semantic-list 11461 . 11574) (symbol 11452 . 11460) (semantic-list 11437 . 11451) (punctuation 11436 . 11437) (OPERATOR 11428 . 11436) (punctuation 11445 . 11446) (punctuation 11427 . 11428) (punctuation 11426 . 11427) (punctuation 11425 . 11426) (symbol 11414 . 11425) (punctuation 11413 . 11414) (symbol 11407 . 11413) (punctuation 11445 . 11446) (punctuation 11405 . 11406) (punctuation 11404 . 11405) (symbol 11393 . 11404) (punctuation 11392 . 11393) (symbol 11386 . 11392) (punctuation 11445 . 11446) (INLINE 11379 . 11385) (punctuation 11445 . 11446) (punctuation 11377 . 11378) (symbol 11366 . 11377) (CLASS 11360 . 11365) (punctuation 11359 . 11360) (TEMPLATE 11350 . 11358) (punctuation 11445 . 11446) (semantic-list 10196 . 11348) (symbol 10187 . 10195) (semantic-list 10167 . 10186) (punctuation 10166 . 10167) (OPERATOR 10158 . 10166) (punctuation 10157 . 10158) (punctuation 10156 . 10157) (punctuation 10155 . 10156) (symbol 10144 . 10155) (punctuation 10143 . 10144) (symbol 10137 . 10143) (punctuation 10135 . 10136) (punctuation 10134 . 10135) (symbol 10123 . 10134) (punctuation 10122 . 10123) (symbol 10116 . 10122) (INLINE 10109 . 10115) (punctuation 10107 . 10108) (symbol 10096 . 10107) (CLASS 10090 . 10095) (punctuation 10089 . 10090) (TEMPLATE 10080 . 10088) (semantic-list 9971 . 10078) (symbol 9962 . 9970) (semantic-list 9946 . 9961) (symbol 9942 . 9946) (punctuation 9941 . 9942) (punctuation 9940 . 9941) (punctuation 9939 . 9940) (symbol 9928 . 9939) (punctuation 9927 . 9928) (symbol 9921 . 9927) (VOID 9916 . 9920) (INLINE 9909 . 9915) (punctuation 9907 . 9908) (symbol 9896 . 9907) (CLASS 9890 . 9895) (punctuation 9889 . 9890) (TEMPLATE 9880 . 9888) (semantic-list 9822 . 9824) (punctuation 9821 . 9822) (punctuation 9820 . 9821) (OPERATOR 9812 . 9820) (punctuation 9811 . 9812) (punctuation 9577 . 9578) (symbol 9568 . 9576) (semantic-list 9536 . 9567) (symbol 9530 . 9536) (punctuation 9529 . 9530) (punctuation 9528 . 9529) (punctuation 9527 . 9528) (symbol 9516 . 9527) (punctuation 9515 . 9516) (symbol 9509 . 9515) (INLINE 9502 . 9508) (punctuation 9500 . 9501) (symbol 9490 . 9500) (CLASS 9484 . 9489) (punctuation 9483 . 9484) (TEMPLATE 9474 . 9482) (punctuation 9472 . 9473) (symbol 9461 . 9472) (CLASS 9455 . 9460) (punctuation 9454 . 9455) (TEMPLATE 9445 . 9453) (semantic-list 9299 . 9301) (punctuation 9291 . 9292) (punctuation 9274 . 9275) (symbol 9265 . 9273) (semantic-list 9238 . 9264) (symbol 9232 . 9238) (punctuation 9258 . 9259) (punctuation 9231 . 9232) (punctuation 9230 . 9231) (punctuation 9229 . 9230) (symbol 9218 . 9229) (punctuation 9217 . 9218) (symbol 9211 . 9217) (punctuation 9258 . 9259) (INLINE 9204 . 9210) (punctuation 9258 . 9259) (punctuation 9202 . 9203) (symbol 9192 . 9202) (CLASS 9186 . 9191) (punctuation 9185 . 9186) (TEMPLATE 9176 . 9184) (punctuation 9258 . 9259) (punctuation 9174 . 9175) (symbol 9163 . 9174) (CLASS 9157 . 9162) (punctuation 9156 . 9157) (TEMPLATE 9147 . 9155) (punctuation 9099 . 9100) (punctuation 9082 . 9083) (symbol 9073 . 9081) (semantic-list 9058 . 9072) (symbol 9052 . 9058) (punctuation 9066 . 9067) (punctuation 9051 . 9052) (punctuation 9050 . 9051) (punctuation 9049 . 9050) (symbol 9038 . 9049) (punctuation 9037 . 9038) (symbol 9031 . 9037) (punctuation 9066 . 9067) (INLINE 9024 . 9030) (punctuation 9066 . 9067) (punctuation 9022 . 9023) (symbol 9011 . 9022) (CLASS 9005 . 9010) (punctuation 9004 . 9005) (TEMPLATE 8995 . 9003) (punctuation 9066 . 9067) (punctuation 8927 . 8928) (punctuation 8910 . 8911) (symbol 8901 . 8909) (semantic-list 8881 . 8900) (symbol 8875 . 8881) (punctuation 8874 . 8875) (punctuation 8873 . 8874) (punctuation 8872 . 8873) (symbol 8861 . 8872) (punctuation 8860 . 8861) (symbol 8854 . 8860) (INLINE 8847 . 8853) (punctuation 8845 . 8846) (symbol 8834 . 8845) (CLASS 8828 . 8833) (punctuation 8827 . 8828) (TEMPLATE 8818 . 8826) (punctuation 8787 . 8788) (symbol 8778 . 8786) (semantic-list 8752 . 8777) (symbol 8746 . 8752) (punctuation 8745 . 8746) (punctuation 8744 . 8745) (punctuation 8743 . 8744) (symbol 8732 . 8743) (punctuation 8731 . 8732) (symbol 8725 . 8731) (INLINE 8718 . 8724) (punctuation 8716 . 8717) (symbol 8705 . 8716) (CLASS 8699 . 8704) (punctuation 8698 . 8699) (TEMPLATE 8689 . 8697) (semantic-list 8587 . 8687) (symbol 8578 . 8586) (semantic-list 8575 . 8577) (symbol 8569 . 8575) (punctuation 8568 . 8569) (punctuation 8567 . 8568) (punctuation 8566 . 8567) (punctuation 8565 . 8566) (symbol 8554 . 8565) (punctuation 8553 . 8554) (symbol 8547 . 8553) (INLINE 8540 . 8546) (punctuation 8538 . 8539) (symbol 8527 . 8538) (CLASS 8521 . 8526) (punctuation 8520 . 8521) (TEMPLATE 8511 . 8519) (punctuation 8483 . 8484) (symbol 8474 . 8482) (semantic-list 8471 . 8473) (symbol 8465 . 8471) (punctuation 8464 . 8465) (punctuation 8463 . 8464) (punctuation 8462 . 8463) (symbol 8451 . 8462) (punctuation 8450 . 8451) (symbol 8444 . 8450) (INLINE 8437 . 8443) (punctuation 8435 . 8436) (symbol 8424 . 8435) (CLASS 8418 . 8423) (punctuation 8417 . 8418) (TEMPLATE 8408 . 8416) (semantic-list 8381 . 8406) (symbol 8372 . 8380) (CONST 8366 . 8371) (semantic-list 8363 . 8365) (punctuation 8362 . 8363) (punctuation 8361 . 8362) (OPERATOR 8353 . 8361) (punctuation 8352 . 8353) (punctuation 8351 . 8352) (punctuation 8350 . 8351) (symbol 8339 . 8350) (punctuation 8338 . 8339) (symbol 8332 . 8338) (punctuation 8330 . 8331) (symbol 8319 . 8330) (INLINE 8312 . 8318) (punctuation 8310 . 8311) (symbol 8299 . 8310) (CLASS 8293 . 8298) (punctuation 8292 . 8293) (TEMPLATE 8283 . 8291) (semantic-list 8038 . 8057) (punctuation 8037 . 8038) (punctuation 8036 . 8037) (OPERATOR 8028 . 8036) (BOOL 8023 . 8027) (INLINE 8016 . 8022) (semantic-list 7954 . 7973) (punctuation 7953 . 7954) (OPERATOR 7945 . 7953) (BOOL 7940 . 7944) (INLINE 7933 . 7939) (semantic-list 7871 . 7890) (punctuation 7870 . 7871) (punctuation 7869 . 7870) (OPERATOR 7861 . 7869) (BOOL 7856 . 7860) (INLINE 7849 . 7855) (semantic-list 7787 . 7806) (punctuation 7786 . 7787) (OPERATOR 7778 . 7786) (BOOL 7773 . 7777) (INLINE 7766 . 7772) (semantic-list 7314 . 7345) (symbol 7304 . 7314) (symbol 7297 . 7303) (INLINE 7290 . 7296) (STATIC 7283 . 7289) (punctuation 7279 . 7280) (symbol 7269 . 7279) (CLASS 7263 . 7268) (punctuation 7262 . 7263) (TEMPLATE 7253 . 7261) (semantic-list 7005 . 7036) (symbol 6994 . 7005) (symbol 6987 . 6993) (INLINE 6980 . 6986) (STATIC 6973 . 6979) (punctuation 6969 . 6970) (symbol 6959 . 6969) (CLASS 6953 . 6958) (punctuation 6952 . 6953) (TEMPLATE 6943 . 6951) (semantic-list 6721 . 6752) (symbol 6709 . 6721) (symbol 6702 . 6708) (INLINE 6695 . 6701) (STATIC 6688 . 6694) (punctuation 6684 . 6685) (symbol 6674 . 6684) (CLASS 6668 . 6673) (punctuation 6667 . 6668) (TEMPLATE 6658 . 6666) (semantic-list 6404 . 6406) (symbol 6397 . 6404) (punctuation 6395 . 6396) (symbol 6384 . 6395) (INLINE 6377 . 6383) (semantic-list 5927 . 5929) (symbol 5922 . 5927) (VOID 5917 . 5921) (INLINE 5910 . 5916) (semantic-list 5722 . 5724) (symbol 5717 . 5722) (VOID 5712 . 5716) (INLINE 5705 . 5711) (semantic-list 5467 . 5469) (BOOL 5463 . 5467) (OPERATOR 5454 . 5462) (EXPLICIT 5445 . 5453) (INLINE 5438 . 5444) (semantic-list 5232 . 5234) (symbol 5229 . 5232) (punctuation 5227 . 5228) (symbol 5216 . 5227) (INLINE 5209 . 5215) (semantic-list 5124 . 5126) (punctuation 5123 . 5124) (punctuation 5122 . 5123) (OPERATOR 5114 . 5122) (punctuation 5112 . 5113) (symbol 5101 . 5112) (INLINE 5094 . 5100) (semantic-list 4927 . 4946) (punctuation 4926 . 4927) (punctuation 4925 . 4926) (OPERATOR 4917 . 4925) (BOOL 4912 . 4916) (INLINE 4905 . 4911) (semantic-list 4842 . 4861) (punctuation 4841 . 4842) (punctuation 4840 . 4841) (OPERATOR 4832 . 4840) (BOOL 4827 . 4831) (INLINE 4820 . 4826) (semantic-list 4703 . 4734) (punctuation 4702 . 4703) (OPERATOR 4694 . 4702) (punctuation 4692 . 4693) (symbol 4686 . 4692) (INLINE 4679 . 4685) (punctuation 4675 . 4676) (symbol 4665 . 4675) (CLASS 4659 . 4664) (punctuation 4658 . 4659) (TEMPLATE 4649 . 4657) (semantic-list 4515 . 4541) (punctuation 4514 . 4515) (OPERATOR 4506 . 4514) (punctuation 4535 . 4536) (punctuation 4504 . 4505) (symbol 4498 . 4504) (punctuation 4535 . 4536) (INLINE 4491 . 4497) (punctuation 4535 . 4536) (punctuation 4487 . 4488) (symbol 4477 . 4487) (CLASS 4471 . 4476) (punctuation 4470 . 4471) (TEMPLATE 4461 . 4469) (punctuation 4535 . 4536) (semantic-list 4365 . 4379) (punctuation 4364 . 4365) (OPERATOR 4356 . 4364) (punctuation 4373 . 4374) (punctuation 4354 . 4355) (symbol 4348 . 4354) (punctuation 4373 . 4374) (INLINE 4341 . 4347) (punctuation 4373 . 4374) (semantic-list 4276 . 4295) (punctuation 4275 . 4276) (OPERATOR 4267 . 4275) (punctuation 4265 . 4266) (symbol 4259 . 4265) (INLINE 4252 . 4258) (semantic-list 4191 . 4206) (symbol 4187 . 4191) (VOID 4182 . 4186) (INLINE 4175 . 4181) (semantic-list 3904 . 3935) (symbol 3898 . 3904) (INLINE 3891 . 3897) (punctuation 3887 . 3888) (symbol 3877 . 3887) (CLASS 3871 . 3876) (punctuation 3870 . 3871) (TEMPLATE 3861 . 3869) (semantic-list 3713 . 3739) (symbol 3707 . 3713) (punctuation 3733 . 3734) (INLINE 3700 . 3706) (punctuation 3733 . 3734) (punctuation 3696 . 3697) (symbol 3686 . 3696) (CLASS 3680 . 3685) (punctuation 3679 . 3680) (TEMPLATE 3670 . 3678) (punctuation 3733 . 3734) (semantic-list 3576 . 3590) (symbol 3570 . 3576) (punctuation 3584 . 3585) (INLINE 3563 . 3569) (punctuation 3584 . 3585) (semantic-list 3501 . 3520) (symbol 3495 . 3501) (INLINE 3488 . 3494) (semantic-list 3366 . 3391) (symbol 3360 . 3366) (INLINE 3353 . 3359) (EXPLICIT 3344 . 3352) (semantic-list 3281 . 3283) (symbol 3275 . 3281) (punctuation 3274 . 3275) (INLINE 3267 . 3273) (semantic-list 3204 . 3206) (symbol 3198 . 3204) (INLINE 3191 . 3197) (string 2975 . 3023) (punctuation 2927 . 2928) (semantic-list 2922 . 2927) (SIZEOF 2916 . 2922) (punctuation 2914 . 2915) (punctuation 2913 . 2914) (semantic-list 2869 . 2912) (SIZEOF 2863 . 2869) (punctuation 2861 . 2862) (symbol 2855 . 2860) (BOOL 2850 . 2854) (CONST 2844 . 2849) (STATIC 2837 . 2843) (punctuation 2927 . 2928) (semantic-list 2922 . 2927) (SIZEOF 2916 . 2922) (punctuation 2914 . 2915) (punctuation 2913 . 2914) (semantic-list 2869 . 2912) (SIZEOF 2863 . 2869) (punctuation 2861 . 2862) (symbol 2855 . 2860) (BOOL 2850 . 2854) (CONST 2844 . 2849) (STATIC 2837 . 2843))
+      :lexical-table 
+        '(("_GLIBMM_REFPTR_H")
           )
 ))
   :file "!usr!include!glibmm-2.4!glibmm!semantic.cache"

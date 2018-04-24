@@ -312,7 +312,7 @@
       :file "c++config.h"
       :pointmax 57970
       :fsize 57969
-      :lastmodtime '(23208 10137 0 0)
+      :lastmodtime '(23216 58379 0 0)
       :unmatched-syntax '((INLINE 6866 . 6872) (INLINE 6772 . 6778))
       :lexical-table 
         '(("_GLIBCXX_USE_DUAL_ABI" . ((number "1" 6526 . 6527)))
@@ -600,13 +600,53 @@
           )
 )
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_OS_DEFINES" variable (:constant-flag t) nil [1293 1312])
+            ("__NO_CTYPE" variable (:constant-flag t) nil [1494 1504])
+            ("features.h" include (:system-flag t) nil [1508 1529])
+            ("_GLIBCXX_NO_OBSOLETE_ISINF_ISNAN_DYNAMIC" variable (:constant-flag t) nil [1938 1978]))          
       :file "os_defines.h"
+      :pointmax 2008
       :fsize 2007
-      :lastmodtime '(23208 10137 0 0))
+      :lastmodtime '(23216 58378 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__NO_CTYPE" . ((number "1" 1505 . 1506)))
+          ("_GLIBCXX_OS_DEFINES" . ((number "1" 1313 . 1314)))
+          ("_GLIBCXX_NO_OBSOLETE_ISINF_ISNAN_DYNAMIC" . ((symbol "__GLIBC_PREREQ" 1979 . 1993) (semantic-list "(2,23)" 1993 . 1999)))
+          )
+)
     (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_CPU_DEFINES" variable (:constant-flag t) nil [1303 1323]))          
       :file "cpu_defines.h"
+      :pointmax 1334
       :fsize 1333
-      :lastmodtime '(23208 10137 0 0)))
+      :lastmodtime '(23216 58378 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GLIBCXX_CPU_DEFINES" . ((number "1" 1324 . 1325)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_GLIBCXX_CXX_ALLOCATOR_H" variable (:constant-flag t) nil [1287 1311])
+            ("ext/new_allocator.h" include (:system-flag t) nil [1315 1345])
+            ("__allocator_base" variable (:constant-flag t) nil [1792 1808]))          
+      :file "c++allocator.h"
+      :pointmax 1850
+      :fsize 1849
+      :lastmodtime '(23216 58379 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__allocator_base" . 
+              ((symbol "__gnu_cxx" 1810 . 1819) (punctuation ":" 1819 . 1820) (punctuation ":" 1820 . 1821) (symbol "new_allocator" 1821 . 1834)))
+          ("_GLIBCXX_CXX_ALLOCATOR_H" . ((number "1" 1312 . 1313)))
+          )
+))
   :file "!usr!include!c++!7.3.1!x86_64-pc-linux-gnu!bits!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

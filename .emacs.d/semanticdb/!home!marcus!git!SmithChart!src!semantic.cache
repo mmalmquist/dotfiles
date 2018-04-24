@@ -1,0 +1,169 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtkmm-3.0/gtkmm/application.h" include (:system-flag t) nil [1 41])
+            ("gtkmm-3.0/gtkmm/window.h" include (:system-flag t) nil [42 77])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [78 113])
+            ("gtkmm-3.0/gtkmm/box.h" include (:system-flag t) nil [114 146])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [147 181])
+            ("gtkmm-3.0/gtkmm/widget.h" include (:system-flag t) nil [182 217])
+            ("glibmm-2.4/glibmm/refptr.h" include (:system-flag t) nil [218 255])
+            ("memory" include (:system-flag t) nil [257 274])
+            ("SmithChartView.hpp" include nil nil [276 305])
+            ("SmithChartControl.hpp" include nil nil [306 338])
+            ("SmithChartModel.hpp" include nil nil [339 369])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [380 389])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [390 402]))                  
+                :type "int")
+                nil [371 859]))          
+      :file "SmithChart.cpp"
+      :pointmax 860
+      :fsize 859
+      :lastmodtime '(23254 64804 165518 826000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SMITHCHARTVIEW_HPP_" variable (:constant-flag t) nil [37 56])
+            ("memory" include (:system-flag t) nil [58 75])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [77 111])
+            ("SmithChartModel.hpp" include nil nil [113 143])
+            ("SmithChartView" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [168 175])
+                    ("SmithChartView" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("scm" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("SmithChartModel" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [192 229]))                          
+                        :type ("SmithChartView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [177 230])
+                    ("SmithChartView" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [232 250])
+                    ("private" label nil (reparse-symbol classsubparts) [251 259])
+                    ("m_scm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [261 300]))                  
+                :type "class")
+                nil [145 303]))          
+      :file "SmithChartView.hpp"
+      :pointmax 338
+      :fsize 337
+      :lastmodtime '(23254 64349 965268 866000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SMITHCHARTVIEW_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SMITHCHARTCONTROL_HPP_" variable (:constant-flag t) nil [40 62])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [64 98])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [99 134])
+            ("memory" include (:system-flag t) nil [135 152])
+            ("SmithChartModel.hpp" include nil nil [154 184])
+            ("SmithChartView.hpp" include nil nil [185 214])
+            ("SmithChartControl" type
+               (:superclasses 
+                  ( ("Gtk::HBox" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [261 268])
+                    ("SmithChartControl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("scm" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("SmithChartModel" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [288 325])
+                            ("scv" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("SmithChartView" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [326 362]))                          
+                        :type ("SmithChartControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [270 363])
+                    ("SmithChartControl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [365 394])
+                    ("private" label nil (reparse-symbol classsubparts) [395 403])
+                    ("m_scm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [405 444])
+                    ("m_scv" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartView" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [446 484]))                  
+                :type "class")
+                nil [216 487]))          
+      :file "SmithChartControl.hpp"
+      :pointmax 525
+      :fsize 524
+      :lastmodtime '(23254 64350 113266 664000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SMITHCHARTCONTROL_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SMITHCHARTMODEL_HPP_" variable (:constant-flag t) nil [38 58])
+            ("SmithChartModel" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [84 91])
+                    ("SmithChartModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("SmithChartModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [93 111])
+                    ("SmithChartModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [113 140]))                  
+                :type "class")
+                nil [60 143]))          
+      :file "SmithChartModel.hpp"
+      :pointmax 179
+      :fsize 178
+      :lastmodtime '(23254 64386 631723 408000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SMITHCHARTMODEL_HPP_")
+          )
+))
+  :file "!home!marcus!git!SmithChart!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
