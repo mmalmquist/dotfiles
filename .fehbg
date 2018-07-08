@@ -1,2 +1,0 @@
-#!/bin/sh
-feh  --bg-scale '/home/marcus/.config/i3/wallpaper2.png' 

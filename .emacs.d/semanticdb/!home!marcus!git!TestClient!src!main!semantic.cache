@@ -1,0 +1,56 @@
+;; Object main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "main/"
+  :tables
+  (list
+    (semanticdb-table "Main.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("main" package nil nil [1 14])
+            ("java.awt.BorderLayout" include nil nil [16 45])
+            ("java.awt.Dimension" include nil nil [46 72])
+            ("java.awt.Toolkit" include nil nil [73 97])
+            ("java.awt.image.BufferedImage" include nil nil [98 134])
+            ("java.io.BufferedWriter" include nil nil [135 165])
+            ("java.io.FileWriter" include nil nil [166 192])
+            ("java.io.IOException" include nil nil [193 220])
+            ("java.net.InetAddress" include nil nil [221 249])
+            ("javax.swing.JFrame" include nil nil [251 277])
+            ("main.client.client" include nil nil [279 305])
+            ("main.client.Logger" include nil nil [306 332])
+            ("main.client.rendering.RenderingContext" include nil nil [333 379])
+            ("Main" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("updateFrameHz" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [403 449])
+                    ("updateFrameInterval" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [451 521])
+                    ("lastFrameUpdate" variable
+                       (:typemodifiers ("public" "static")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [523 560])
+                    ("main" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [588 601]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [564 1283]))                  
+                :type "class")
+                nil [382 1285]))          
+      :file "Main.java"
+      :pointmax 1285
+      :fsize 1326
+      :lastmodtime '(23273 31445 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!TestClient!src!main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

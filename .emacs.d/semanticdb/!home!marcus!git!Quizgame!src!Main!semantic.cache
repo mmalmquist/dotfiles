@@ -1,0 +1,141 @@
+;; Object Main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Main/"
+  :tables
+  (list
+    (semanticdb-table "Quiz.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("Main" package nil nil [1 14])
+            ("Quiz" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("score" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [38 56])
+                    ("qCount" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58 77])
+                    ("nbrRounds" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [79 101])
+                    ("currQuestionId" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [103 130])
+                    ("history" variable
+                       (:dereference 2
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [132 159])
+                    ("quizentry" variable
+                       (:dereference 2
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [161 190])
+                    ("isPlaying" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [192 217])
+                    ("qdb" variable
+                       (:typemodifiers ("private")
+                        :type "QuizDB")
+                        (reparse-symbol class_member_declaration) [219 238])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [265 278]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [241 359])
+                    ("Quiz" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [362 483])
+                    ("checkAnswer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("answer" variable (:type "String") (reparse-symbol formal_parameters) [511 524]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [487 892])
+                    ("RestartRound" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [895 1056])
+                    ("genNewQuestionId" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1060 1150])
+                    ("setScore" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("score" variable (:type "int") (reparse-symbol formal_parameters) [1175 1184]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1154 1209])
+                    ("getScore" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1211 1250])
+                    ("setQCount" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("qCount" variable (:type "int") (reparse-symbol formal_parameters) [1274 1284]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1252 1311])
+                    ("getQCount" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1313 1354])
+                    ("setNbrRounds" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nbrRounds" variable (:type "int") (reparse-symbol formal_parameters) [1381 1394]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1356 1427])
+                    ("getNbrRounds" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1429 1476])
+                    ("setHistory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [1501 1508])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [1510 1517])
+                            ("val" variable (:type "String") (reparse-symbol formal_parameters) [1519 1529]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1478 1564])
+                    ("getHistory" function
+                       (:typemodifiers ("public")
+                        :type "String[][]")
+                        (reparse-symbol class_member_declaration) [1566 1616])
+                    ("getCurrQuestion" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1618 1690])
+                    ("getCurrAnswer" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1692 1762])
+                    ("getCurrImage" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1764 1850])
+                    ("getCurrQuestionID" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1852 1909]))                  
+                :type "class")
+                nil [17 1911]))          
+      :file "Quiz.java"
+      :pointmax 1913
+      :fsize 1912
+      :lastmodtime '(23316 13922 607395 203000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!Quizgame!src!Main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

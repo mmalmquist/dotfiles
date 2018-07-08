@@ -1,0 +1,44 @@
+;; Object opencl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "opencl/"
+  :tables
+  (list
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CL/opencl.h" include (:system-flag t) nil [1 23])
+            ("matvec" function
+               (:arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("__global" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164 184])
+                    ("A" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [179 188])
+                    ("" variable
+                       (:constant-flag t
+                        :type ("__global" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [189 209])
+                    ("x" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [204 213])
+                    ("ncols" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [221 232])
+                    ("" variable (:type ("__global" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [233 247])
+                    ("y" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [242 251]))                  
+                :type "void")
+                nil [152 565])
+            ("main" function (:type "int") nil [567 593]))          
+      :file "test.c"
+      :pointmax 594
+      :fsize 51
+      :lastmodtime '(23294 61789 102044 717000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!opencl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

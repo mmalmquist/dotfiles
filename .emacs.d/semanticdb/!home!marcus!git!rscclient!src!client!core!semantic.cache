@@ -4,7 +4,7 @@
   :tables
   (list
     (semanticdb-table "semanticdb-table"
-      :major-mode java-mode
+      :major-mode 'java-mode
       :tags 
         '( ("client.core" package nil nil [1 21])
             ("java.awt.Color" include nil nil [23 45])
@@ -516,8 +516,1273 @@
                 nil [893 18729]))          
       :file "GameWindow.java"
       :pointmax 18729
-      :fsize 19390
-      :lastmodtime '(22993 24594 17623 854000)
+      :fsize 15025
+      :lastmodtime '(23119 36980 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "GameImage.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("client.core" package nil nil [1 21])
+            ("client.DataOperations" include nil nil [23 52])
+            ("client.util.Config" include nil nil [53 79])
+            ("misc.Trig" include nil nil [80 97])
+            ("model.Sprite" include nil nil [98 118])
+            ("java.awt.Color" include nil nil [120 142])
+            ("java.awt.Component" include nil nil [143 169])
+            ("java.awt.Font" include nil nil [170 191])
+            ("java.awt.FontMetrics" include nil nil [192 220])
+            ("java.awt.Graphics" include nil nil [221 246])
+            ("java.awt.Graphics2D" include nil nil [247 274])
+            ("java.awt.Image" include nil nil [275 297])
+            ("java.awt.Rectangle" include nil nil [298 324])
+            ("java.awt.RenderingHints" include nil nil [325 356])
+            ("java.awt.image.ColorModel" include nil nil [357 390])
+            ("java.awt.image.DirectColorModel" include nil nil [391 430])
+            ("java.awt.image.ImageConsumer" include nil nil [431 467])
+            ("java.awt.image.ImageObserver" include nil nil [468 504])
+            ("java.awt.image.ImageProducer" include nil nil [505 541])
+            ("java.awt.image.PixelGrabber" include nil nil [542 577])
+            ("java.io.BufferedInputStream" include nil nil [578 613])
+            ("java.io.File" include nil nil [614 634])
+            ("java.util.HashMap" include nil nil [635 660])
+            ("java.util.Map" include nil nil [661 682])
+            ("java.util.TreeMap" include nil nil [683 708])
+            ("java.util.zip.ZipEntry" include nil nil [709 739])
+            ("java.util.zip.ZipFile" include nil nil [740 769])
+            ("javax.swing.JComponent" include nil nil [771 801])
+            ("GameImage" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("ImageProducer" "ImageObserver")
+                :superclasses "GameWindow"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [897 963])
+                    ("BACKGROUND" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [965 1013])
+                    ("gameWindowWidth" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1018 1045])
+                    ("gameWindowHeight" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1050 1078])
+                    ("imagePixelArray" variable
+                       (:dereference 1
+                        :typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1083 1112])
+                    ("image" variable
+                       (:typemodifiers ("public")
+                        :type "Image")
+                        (reparse-symbol class_member_declaration) [1117 1136])
+                    ("drawStringShadows" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1141 1174])
+                    ("GameImage" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("bounds" variable (:type "Rectangle") (reparse-symbol formal_parameters) [1197 1213])
+                            ("title" variable (:type "String") (reparse-symbol formal_parameters) [1215 1227])
+                            ("resizable" variable (:type "boolean") (reparse-symbol formal_parameters) [1229 1246])
+                            ("maxSprites" variable (:type "int") (reparse-symbol formal_parameters) [1248 1262]))                          )
+                        (reparse-symbol class_member_declaration) [1180 2813])
+                    ("paint" function
+                       (:typemodifiers ("public" "synchronized" "final")
+                        :arguments 
+                          ( ("g" variable (:type "Graphics") (reparse-symbol formal_parameters) [2864 2874]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2827 3005])
+                    ("addConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("imageconsumer" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3062 3089]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3025 3342])
+                    ("isConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("imageconsumer" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3401 3428]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3362 3488])
+                    ("removeConsumer" function
+                       (:typemodifiers ("public" "synchronized")
+                        :arguments 
+                          ( ("imageconsumer" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3548 3575]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3508 3666])
+                    ("startProduction" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("imageconsumer" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3714 3741]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3686 3790])
+                    ("requestTopDownLeftRightResend" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("imageconsumer" variable (:type "ImageConsumer") (reparse-symbol formal_parameters) [3852 3879]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3810 3905])
+                    ("imageUpdate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("image" variable (:type "Image") (reparse-symbol formal_parameters) [3952 3963])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [3965 3970])
+                            ("j" variable (:type "int") (reparse-symbol formal_parameters) [3972 3977])
+                            ("k" variable (:type "int") (reparse-symbol formal_parameters) [3979 3984])
+                            ("l" variable (:type "int") (reparse-symbol formal_parameters) [3986 3991])
+                            ("i1" variable (:type "int") (reparse-symbol formal_parameters) [3993 3999]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3925 4029])
+                    ("convertRGBToLong" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("red" variable (:type "int") (reparse-symbol formal_parameters) [4070 4077])
+                            ("green" variable (:type "int") (reparse-symbol formal_parameters) [4079 4088])
+                            ("blue" variable (:type "int") (reparse-symbol formal_parameters) [4090 4098]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4035 4161])
+                    ("loadFont" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("font" variable (:type "Font") (reparse-symbol formal_parameters) [4199 4208])
+                            ("fontNumber" variable (:type "int") (reparse-symbol formal_parameters) [4210 4224])
+                            ("component" variable (:type "JComponent") (reparse-symbol formal_parameters) [4226 4246]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4171 4594])
+                    ("drawLetter" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("font" variable (:type "Font") (reparse-symbol formal_parameters) [4640 4649])
+                            ("fontmetrics" variable (:type "FontMetrics") (reparse-symbol formal_parameters) [4651 4674])
+                            ("letter" variable (:type "char") (reparse-symbol formal_parameters) [4682 4693])
+                            ("component" variable (:type "Component") (reparse-symbol formal_parameters) [4695 4714]))                          
+                        :type "LetterData")
+                        (reparse-symbol class_member_declaration) [4604 6664])
+                    ("fontPixelXMin" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fontpixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [6707 6723])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [6725 6730])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [6732 6737]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6674 6929])
+                    ("fontPixelXMax" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fontpixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [6972 6988])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [6990 6995])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [6997 7002]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6939 7209])
+                    ("fontPixelYMin" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fontpixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [7252 7268])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [7270 7275])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [7277 7282]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7219 7468])
+                    ("fontPixelYMax" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("fontpixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [7511 7527])
+                            ("w" variable (:type "int") (reparse-symbol formal_parameters) [7529 7534])
+                            ("h" variable (:type "int") (reparse-symbol formal_parameters) [7536 7541]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7478 7743])
+                    ("transparent" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("color" variable (:type "int") (reparse-symbol formal_parameters) [7788 7797]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7753 7847])
+                    ("multiplyAlpha" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("foreground" variable (:type "int") (reparse-symbol formal_parameters) [7882 7896])
+                            ("background" variable (:type "int") (reparse-symbol formal_parameters) [7898 7912]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [7850 8408])
+                    ("multiplyAlpha" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("fgAlpha" variable (:type "int") (reparse-symbol formal_parameters) [8443 8454])
+                            ("foreground" variable (:type "int") (reparse-symbol formal_parameters) [8455 8469])
+                            ("background" variable (:type "int") (reparse-symbol formal_parameters) [8471 8485]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [8411 8613])
+                    ("completePixels" function
+                       (:typemodifiers ("public" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8619 8931])
+                    ("getSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [8965 8974]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [8941 9030])
+                    ("getUtilSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [9068 9077]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9040 9128])
+                    ("getMediaSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [9167 9176]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9138 9228])
+                    ("getItemSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [9266 9275]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9238 9326])
+                    ("getTextureSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [9367 9376]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9336 9430])
+                    ("getEntitySprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [9470 9479]))                          
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9440 9529])
+                    ("getMinimap" function
+                       (:typemodifiers ("public")
+                        :type "Sprite")
+                        (reparse-symbol class_member_declaration) [9536 9604])
+                    ("loadSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [9640 9646])
+                            ("packageName" variable (:type "String") (reparse-symbol formal_parameters) [9648 9666])
+                            ("amount" variable (:type "int") (reparse-symbol formal_parameters) [9668 9678]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9614 10375])
+                    ("setDimensions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bounds" variable (:type "Rectangle") (reparse-symbol formal_parameters) [10407 10423]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10381 10508])
+                    ("setDimensions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [10540 10545])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [10547 10552])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [10554 10563])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [10565 10575]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10514 10861])
+                    ("resetDimensions" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10867 10972])
+                    ("resetImagePixels" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("color" variable (:type "int") (reparse-symbol formal_parameters) [11007 11016]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [10978 11160])
+                    ("drawCircle" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("xCenter" variable (:type "int") (reparse-symbol formal_parameters) [11189 11200])
+                            ("yCenter" variable (:type "int") (reparse-symbol formal_parameters) [11202 11213])
+                            ("radius" variable (:type "int") (reparse-symbol formal_parameters) [11221 11231])
+                            ("fgColor" variable (:type "int") (reparse-symbol formal_parameters) [11233 11244])
+                            ("fgAlpha" variable (:type "int") (reparse-symbol formal_parameters) [11246 11257]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11166 13552])
+                    ("drawBox" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bounds" variable (:type "Rectangle") (reparse-symbol formal_parameters) [13582 13598])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [13600 13610]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13562 13659])
+                    ("drawBox" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [13685 13690])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [13692 13697])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [13699 13708])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [13710 13720])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [13722 13732]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13665 13794])
+                    ("drawBox" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bounds" variable (:type "Rectangle") (reparse-symbol formal_parameters) [13824 13840])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [13842 13852])
+                            ("alpha" variable (:type "int") (reparse-symbol formal_parameters) [13854 13863]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13804 13954])
+                    ("drawBox" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [13980 13985])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [13987 13992])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [13994 14003])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [14005 14015])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [14017 14027])
+                            ("alpha" variable (:type "int") (reparse-symbol formal_parameters) [14029 14038]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13960 15214])
+                    ("drawGradientBox" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [15248 15253])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [15255 15260])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [15262 15271])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [15273 15283])
+                            ("colorTop" variable (:type "int") (reparse-symbol formal_parameters) [15291 15303])
+                            ("colorBottom" variable (:type "int") (reparse-symbol formal_parameters) [15305 15320]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [15220 16363])
+                    ("drawBoxEdge" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("bounds" variable (:type "Rectangle") (reparse-symbol formal_parameters) [16393 16409])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [16411 16421]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16369 16509])
+                    ("drawBoxEdge" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [16539 16544])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [16546 16551])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [16553 16562])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [16564 16574])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [16576 16586]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16515 16790])
+                    ("drawLineX" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [16818 16823])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [16825 16830])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [16832 16842])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [16844 16854]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [16796 17282])
+                    ("drawLineY" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [17310 17315])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [17317 17322])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [17324 17334])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [17336 17346]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17288 17811])
+                    ("setMinimapPixel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [17845 17850])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [17852 17857])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [17859 17869]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [17817 18088])
+                    ("fadePixels" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18094 18462])
+                    ("average_pixels" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nX" variable (:type "int") (reparse-symbol formal_parameters) [18495 18501])
+                            ("nY" variable (:type "int") (reparse-symbol formal_parameters) [18503 18509])
+                            ("xStart" variable (:type "int") (reparse-symbol formal_parameters) [18511 18521])
+                            ("yStart" variable (:type "int") (reparse-symbol formal_parameters) [18523 18533])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [18535 18544])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [18546 18556]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18468 19503])
+                    ("cleanupSprites" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19509 19585])
+                    ("storeMinimapSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("startX" variable (:type "int") (reparse-symbol formal_parameters) [19622 19632])
+                            ("startY" variable (:type "int") (reparse-symbol formal_parameters) [19634 19644])
+                            ("width" variable (:type "int") (reparse-symbol formal_parameters) [19652 19661])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [19663 19673]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19591 20191])
+                    ("drawPicture" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [20221 20226])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [20228 20233])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [20235 20248]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20197 21899])
+                    ("drawPictureWithOverlay" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [21940 21945])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [21947 21952])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [21954 21967])
+                            ("overlay" variable (:type "int") (reparse-symbol formal_parameters) [21969 21980]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21905 23637])
+                    ("spriteClip1" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [23667 23672])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [23674 23679])
+                            ("scaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [23681 23696])
+                            ("scaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [23704 23720])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [23722 23735]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [23643 26613])
+                    ("drawSpriteWithClip" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [26650 26655])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [26657 26662])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [26664 26677])
+                            ("spriteAlpha" variable (:type "int") (reparse-symbol formal_parameters) [26679 26694]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26619 28172])
+                    ("spriteClip2" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [28350 28355])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [28357 28362])
+                            ("newWidth" variable (:type "int") (reparse-symbol formal_parameters) [28364 28376])
+                            ("newHeight" variable (:type "int") (reparse-symbol formal_parameters) [28384 28397])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [28399 28412])
+                            ("fgAlpha" variable (:type "int") (reparse-symbol formal_parameters) [28414 28425]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28326 31085])
+                    ("spriteClip3" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [31267 31272])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [31274 31279])
+                            ("newWidth" variable (:type "int") (reparse-symbol formal_parameters) [31281 31293])
+                            ("newHeight" variable (:type "int") (reparse-symbol formal_parameters) [31301 31314])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [31316 31329])
+                            ("spriteColor" variable (:type "int") (reparse-symbol formal_parameters) [31331 31346]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [31243 34001])
+                    ("imageToPixArray" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("pixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [34039 34051])
+                            ("rect" variable (:type "Rectangle") (reparse-symbol formal_parameters) [34053 34067]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34011 34212])
+                    ("NW" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34222 34254])
+                    ("SW" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34259 34291])
+                    ("SE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34296 34328])
+                    ("NE" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [34333 34365])
+                    ("DPoint" type
+                       (:typemodifiers ("private")
+                        :members 
+                          ( ("x" variable (:type "double") (reparse-symbol class_member_declaration) [34407 34416])
+                            ("y" variable (:type "double") (reparse-symbol class_member_declaration) [34417 34419])
+                            ("DPoint" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol formal_parameters) [34432 34440])
+                                    ("y" variable (:type "double") (reparse-symbol formal_parameters) [34442 34450]))                                  )
+                                (reparse-symbol class_member_declaration) [34425 34501]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [34375 34507])
+                    ("drawMinimapSprite" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("xCorner" variable (:type "int") (reparse-symbol formal_parameters) [34543 34554])
+                            ("yCorner" variable (:type "int") (reparse-symbol formal_parameters) [34556 34567])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [34575 34588])
+                            ("phi" variable (:type "int") (reparse-symbol formal_parameters) [34590 34597])
+                            ("theta" variable (:type "int") (reparse-symbol formal_parameters) [34599 34608]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34513 39297])
+                    ("calculateStartAndStopIndices" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("windowHeight" variable (:type "int") (reparse-symbol formal_parameters) [39342 39358])
+                            ("corners" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [39360 39376])
+                            ("cornRot" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [39378 39394])
+                            ("x_start" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39399 39415])
+                            ("x_end" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39417 39431])
+                            ("x_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39433 39456])
+                            ("x_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39458 39479])
+                            ("y_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39481 39504])
+                            ("y_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [39509 39530])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [39532 39547])
+                            ("spriteHeight" variable (:type "int") (reparse-symbol formal_parameters) [39549 39565]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39300 40489])
+                    ("processNorthHorizontalBound" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("windowHeight" variable (:type "int") (reparse-symbol formal_parameters) [40533 40549])
+                            ("corners" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [40551 40567])
+                            ("rotated" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [40569 40585])
+                            ("x_start" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40587 40603])
+                            ("x_end" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40608 40622])
+                            ("x_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40624 40647])
+                            ("x_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40649 40670])
+                            ("y_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40672 40695])
+                            ("y_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [40700 40721])
+                            ("slopes" variable (:type "RotationSlopes") (reparse-symbol formal_parameters) [40723 40744]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40492 42553])
+                    ("processSouthHorizontalBound" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("windowHeight" variable (:type "int") (reparse-symbol formal_parameters) [42597 42613])
+                            ("corners" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [42615 42631])
+                            ("rotated" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [42633 42649])
+                            ("x_start" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42654 42670])
+                            ("x_end" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42672 42686])
+                            ("x_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42688 42711])
+                            ("x_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42713 42734])
+                            ("y_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42736 42759])
+                            ("y_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [42764 42785])
+                            ("slopes" variable (:type "RotationSlopes") (reparse-symbol formal_parameters) [42787 42808]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42556 44765])
+                    ("processEastVerticalBound" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("windowHeight" variable (:type "int") (reparse-symbol formal_parameters) [44806 44822])
+                            ("corners" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [44824 44840])
+                            ("rotated" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [44842 44858])
+                            ("x_start" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44863 44879])
+                            ("x_end" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44881 44895])
+                            ("x_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44897 44920])
+                            ("x_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44922 44943])
+                            ("y_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44945 44968])
+                            ("y_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [44973 44994])
+                            ("slopes" variable (:type "RotationSlopes") (reparse-symbol formal_parameters) [44996 45017]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [44768 46966])
+                    ("processWestVerticalBound" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("windowHeight" variable (:type "int") (reparse-symbol formal_parameters) [47007 47023])
+                            ("corners" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [47025 47041])
+                            ("rotated" variable
+                               (:dereference 1
+                                :type "DPoint")
+                                (reparse-symbol formal_parameters) [47043 47059])
+                            ("x_start" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47061 47077])
+                            ("x_end" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47082 47096])
+                            ("x_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47098 47121])
+                            ("x_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47123 47144])
+                            ("y_start_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47146 47169])
+                            ("y_end_sprite" variable
+                               (:dereference 1
+                                :type "double")
+                                (reparse-symbol formal_parameters) [47174 47195])
+                            ("slopes" variable (:type "RotationSlopes") (reparse-symbol formal_parameters) [47197 47218]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46969 48815])
+                    ("RotationSlopes" type
+                       (:typemodifiers ("private")
+                        :members 
+                          ( ("horizontalRotatedXvsRotatedY" variable (:type "double") (reparse-symbol class_member_declaration) [48868 48904])
+                            ("verticalOriginalXvsRotatedY" variable (:type "double") (reparse-symbol class_member_declaration) [48913 48948])
+                            ("horizontalOriginalXvsRotatedY" variable (:type "double") (reparse-symbol class_member_declaration) [48957 48994]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [48825 49000])
+                    ("doSpriteClip1" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("startX" variable (:type "int") (reparse-symbol formal_parameters) [49032 49042])
+                            ("startY" variable (:type "int") (reparse-symbol formal_parameters) [49044 49054])
+                            ("newWidth" variable (:type "int") (reparse-symbol formal_parameters) [49056 49068])
+                            ("newHeight" variable (:type "int") (reparse-symbol formal_parameters) [49076 49089])
+                            ("spriteId" variable (:type "int") (reparse-symbol formal_parameters) [49091 49103])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [49105 49110])
+                            ("j" variable (:type "int") (reparse-symbol formal_parameters) [49112 49117]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49006 49209])
+                    ("spriteClip4" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("startX" variable (:type "int") (reparse-symbol formal_parameters) [49507 49517])
+                            ("startY" variable (:type "int") (reparse-symbol formal_parameters) [49519 49529])
+                            ("scaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [49531 49546])
+                            ("scaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [49554 49570])
+                            ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [49572 49585])
+                            ("hairColor" variable (:type "int") (reparse-symbol formal_parameters) [49587 49600])
+                            ("skinColor" variable (:type "int") (reparse-symbol formal_parameters) [49602 49615])
+                            ("l1" variable (:type "int") (reparse-symbol formal_parameters) [49623 49629])
+                            ("flip" variable (:type "boolean") (reparse-symbol formal_parameters) [49631 49643]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49483 53684])
+                    ("drawBoxTextRight" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [53719 53727])
+                            ("i" variable (:type "int") (reparse-symbol formal_parameters) [53729 53734])
+                            ("j" variable (:type "int") (reparse-symbol formal_parameters) [53736 53741])
+                            ("k" variable (:type "int") (reparse-symbol formal_parameters) [53743 53748])
+                            ("l" variable (:type "int") (reparse-symbol formal_parameters) [53750 53755]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53690 53817])
+                    ("drawText" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [53844 53854])
+                            ("xCenter" variable (:type "int") (reparse-symbol formal_parameters) [53856 53867])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [53869 53874])
+                            ("txtType" variable (:type "int") (reparse-symbol formal_parameters) [53876 53887])
+                            ("color" variable (:type "int") (reparse-symbol formal_parameters) [53889 53898]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53823 53990])
+                    ("drawBoxTextColour" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [54026 54034])
+                            ("xCenter" variable (:type "int") (reparse-symbol formal_parameters) [54036 54047])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [54049 54054])
+                            ("type" variable (:type "int") (reparse-symbol formal_parameters) [54056 54064])
+                            ("color" variable (:type "int") (reparse-symbol formal_parameters) [54066 54075])
+                            ("maxWidth" variable (:type "int") (reparse-symbol formal_parameters) [54077 54089]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53996 55641])
+                    ("findNext" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol formal_parameters) [55672 55682])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [55684 55694])
+                            ("token" variable (:type "char") (reparse-symbol formal_parameters) [55696 55706]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [55651 55823])
+                    ("drawString" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [55852 55860])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [55862 55867])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [55869 55874])
+                            ("type" variable (:type "int") (reparse-symbol formal_parameters) [55876 55884])
+                            ("color" variable (:type "int") (reparse-symbol formal_parameters) [55886 55895]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [55829 57940])
+                    ("messageFontHeight" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("messageType" variable (:type "int") (reparse-symbol formal_parameters) [57975 57990]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [57946 58489])
+                    ("method261" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [58516 58521]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58495 58677])
+                    ("textWidth" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [58704 58712])
+                            ("fontType" variable (:type "int") (reparse-symbol formal_parameters) [58714 58726]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [58683 59172])
+                    ("fontPixels" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static")
+                        :type "FontData")
+                        (reparse-symbol class_member_declaration) [59182 59238])
+                    ("charset" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "static" "final")
+                        :type "char")
+                        (reparse-symbol class_member_declaration) [59243 59279])
+                    ("spriteHandle" variable
+                       (:typemodifiers ("private")
+                        :type "SpriteHandler")
+                        (reparse-symbol class_member_declaration) [59284 59319])
+                    ("colourModel" variable
+                       (:typemodifiers ("private")
+                        :type "ColorModel")
+                        (reparse-symbol class_member_declaration) [59324 59355])
+                    ("imageConsumer" variable
+                       (:typemodifiers ("private")
+                        :type "ImageConsumer")
+                        (reparse-symbol class_member_declaration) [59360 59396])
+                    ("entityArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59401 59431])
+                    ("mediaArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59432 59445])
+                    ("utilArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59446 59458])
+                    ("itemArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59463 59475])
+                    ("logoArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59476 59488])
+                    ("projectileArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59489 59507])
+                    ("textureArchive" variable
+                       (:typemodifiers ("private")
+                        :type "ZipFile")
+                        (reparse-symbol class_member_declaration) [59508 59523])
+                    ("getColor" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("command" variable (:type "String") (reparse-symbol formal_parameters) [60587 60601])
+                            ("defaultColor" variable (:type "int") (reparse-symbol formal_parameters) [60603 60619]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [60559 60851])
+                    ("drawImage" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dst" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [61352 61361])
+                            ("src" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [61363 61372])
+                            ("srcStart" variable (:type "int") (reparse-symbol formal_parameters) [61374 61386])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [61394 61406])
+                            ("srcWidth" variable (:type "int") (reparse-symbol formal_parameters) [61408 61420])
+                            ("srcHeight" variable (:type "int") (reparse-symbol formal_parameters) [61422 61435])
+                            ("dstYStep" variable (:type "int") (reparse-symbol formal_parameters) [61437 61449])
+                            ("srcYStep" variable (:type "int") (reparse-symbol formal_parameters) [61457 61469]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [61329 61881])
+                    ("drawImageScale" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [61922 61937])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [61939 61954])
+                            ("srcXIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [61956 61969])
+                            ("srcYIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [61971 61984])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [61986 61998])
+                            ("dstYStep" variable (:type "int") (reparse-symbol formal_parameters) [62000 62012])
+                            ("srcScaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [62014 62032])
+                            ("srcScaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [62040 62059])
+                            ("srcXStepHD" variable (:type "int") (reparse-symbol formal_parameters) [62061 62075])
+                            ("srcYStepHD" variable (:type "int") (reparse-symbol formal_parameters) [62077 62091])
+                            ("srcWidthOriginal" variable (:type "int") (reparse-symbol formal_parameters) [62093 62113]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [61887 62979])
+                    ("drawImageTransparent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [63019 63034])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [63036 63051])
+                            ("srcStart" variable (:type "int") (reparse-symbol formal_parameters) [63053 63065])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [63073 63085])
+                            ("srcWidth" variable (:type "int") (reparse-symbol formal_parameters) [63087 63099])
+                            ("srcHeight" variable (:type "int") (reparse-symbol formal_parameters) [63101 63114])
+                            ("dstYStep" variable (:type "int") (reparse-symbol formal_parameters) [63116 63128])
+                            ("srcYStep" variable (:type "int") (reparse-symbol formal_parameters) [63136 63148])
+                            ("fgAlpha" variable (:type "int") (reparse-symbol formal_parameters) [63150 63161]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [62985 63557])
+                    ("drawImageTransparentScale" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [63609 63624])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [63626 63641])
+                            ("srcXIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [63649 63662])
+                            ("srcYIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [63664 63677])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [63685 63697])
+                            ("dstYStep" variable (:type "int") (reparse-symbol formal_parameters) [63699 63711])
+                            ("srcScaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [63719 63737])
+                            ("srcScaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [63739 63758])
+                            ("srcXStepHD" variable (:type "int") (reparse-symbol formal_parameters) [63766 63780])
+                            ("srcYStepHD" variable (:type "int") (reparse-symbol formal_parameters) [63782 63796])
+                            ("srcWidthOriginal" variable (:type "int") (reparse-symbol formal_parameters) [63804 63824])
+                            ("fgAlpha" variable (:type "int") (reparse-symbol formal_parameters) [63826 63837]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [63563 64688])
+                    ("drawImageOverlay" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [64721 64736])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [64738 64753])
+                            ("srcXIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [64755 64768])
+                            ("srcYIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [64773 64786])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [64788 64800])
+                            ("dstYStep" variable (:type "int") (reparse-symbol formal_parameters) [64802 64814])
+                            ("srcScaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [64816 64834])
+                            ("srcScaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [64839 64858])
+                            ("srcXStepHD" variable (:type "int") (reparse-symbol formal_parameters) [64860 64874])
+                            ("srcYStepHD" variable (:type "int") (reparse-symbol formal_parameters) [64876 64890])
+                            ("srcWidthOriginal" variable (:type "int") (reparse-symbol formal_parameters) [64895 64915])
+                            ("overlay" variable (:type "int") (reparse-symbol formal_parameters) [64917 64928]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [64691 65757])
+                    ("multiplyOverlay" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("overlay" variable (:type "int") (reparse-symbol formal_parameters) [65788 65799])
+                            ("src" variable (:type "int") (reparse-symbol formal_parameters) [65801 65808]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [65760 66190])
+                    ("darwImageOverlayScale" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [66229 66244])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [66246 66261])
+                            ("srcXIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [66266 66279])
+                            ("srcYIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [66281 66294])
+                            ("gameWindowStartIdx" variable (:type "int") (reparse-symbol formal_parameters) [66296 66318])
+                            ("srcScaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [66323 66341])
+                            ("spriteScaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [66343 66365])
+                            ("srcXStepHD" variable (:type "int") (reparse-symbol formal_parameters) [66370 66384])
+                            ("srcYStepHD" variable (:type "int") (reparse-symbol formal_parameters) [66386 66400])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [66402 66417])
+                            ("overlay" variable (:type "int") (reparse-symbol formal_parameters) [66419 66430])
+                            ("srcXIdxStartHD" variable (:type "int") (reparse-symbol formal_parameters) [66435 66453])
+                            ("srcXIdxStepHD" variable (:type "int") (reparse-symbol formal_parameters) [66455 66472]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [66194 67860])
+                    ("drawImageOverlayScale2" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [67899 67914])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [67916 67931])
+                            ("srcXIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [67936 67949])
+                            ("srcYIdxHD" variable (:type "int") (reparse-symbol formal_parameters) [67951 67964])
+                            ("gameWindowStartIdx" variable (:type "int") (reparse-symbol formal_parameters) [67966 67988])
+                            ("srcScaledWidth" variable (:type "int") (reparse-symbol formal_parameters) [67993 68011])
+                            ("spriteScaledHeight" variable (:type "int") (reparse-symbol formal_parameters) [68013 68035])
+                            ("srcXStepHD" variable (:type "int") (reparse-symbol formal_parameters) [68037 68051])
+                            ("srcYStepHD" variable (:type "int") (reparse-symbol formal_parameters) [68056 68070])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [68072 68087])
+                            ("overlay" variable (:type "int") (reparse-symbol formal_parameters) [68089 68100])
+                            ("color" variable (:type "int") (reparse-symbol formal_parameters) [68102 68111])
+                            ("srcXIdxStartHD" variable (:type "int") (reparse-symbol formal_parameters) [68116 68134])
+                            ("srcXIdxStepHD" variable (:type "int") (reparse-symbol formal_parameters) [68136 68153]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67863 69721])
+                    ("drawMapSprite" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("imagePixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [69751 69768])
+                            ("spritePixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [69770 69788])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [69793 69803])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [69805 69810])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [69812 69817])
+                            ("xStep" variable (:type "int") (reparse-symbol formal_parameters) [69819 69828])
+                            ("yStep" variable (:type "int") (reparse-symbol formal_parameters) [69830 69839])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [69844 69854])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [69856 69871])
+                            ("precisionShift" variable (:type "int") (reparse-symbol formal_parameters) [69873 69891]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [69724 70090])
+                    ("iterpolatePixelFast" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("spritePixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [70192 70210])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [70212 70217])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [70219 70224])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [70226 70241])
+                            ("precisionShift" variable (:type "int") (reparse-symbol formal_parameters) [70243 70261])
+                            ("transparent" variable (:type "boolean") (reparse-symbol formal_parameters) [70266 70285])
+                            ("bgAtXY" variable (:type "int") (reparse-symbol formal_parameters) [70287 70297]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [70160 73209])
+                    ("drawMapSpriteTransparent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("imagePixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [73251 73268])
+                            ("spritePixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [73270 73288])
+                            ("offset" variable (:type "int") (reparse-symbol formal_parameters) [73293 73303])
+                            ("x" variable (:type "int") (reparse-symbol formal_parameters) [73305 73310])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [73312 73317])
+                            ("xStep" variable (:type "int") (reparse-symbol formal_parameters) [73319 73328])
+                            ("yStep" variable (:type "int") (reparse-symbol formal_parameters) [73330 73339])
+                            ("length" variable (:type "int") (reparse-symbol formal_parameters) [73344 73354])
+                            ("spriteWidth" variable (:type "int") (reparse-symbol formal_parameters) [73356 73371])
+                            ("precisionShift" variable (:type "int") (reparse-symbol formal_parameters) [73373 73391]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [73213 73649])
+                    ("displayLetter" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol formal_parameters) [73682 73687])
+                            ("y" variable (:type "int") (reparse-symbol formal_parameters) [73689 73694])
+                            ("colour" variable (:type "int") (reparse-symbol formal_parameters) [73696 73706])
+                            ("letterInfo" variable (:type "LetterData") (reparse-symbol formal_parameters) [73708 73729]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [73655 75454])
+                    ("drawLetterTransparent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("dstPixels" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [75495 75510])
+                            ("srcPixels" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol formal_parameters) [75512 75528])
+                            ("color" variable (:type "int") (reparse-symbol formal_parameters) [75536 75545])
+                            ("srcStart" variable (:type "int") (reparse-symbol formal_parameters) [75547 75559])
+                            ("dstStart" variable (:type "int") (reparse-symbol formal_parameters) [75561 75573])
+                            ("srcWidth" variable (:type "int") (reparse-symbol formal_parameters) [75575 75587])
+                            ("srcHeight" variable (:type "int") (reparse-symbol formal_parameters) [75589 75602])
+                            ("dstStep" variable (:type "int") (reparse-symbol formal_parameters) [75604 75615])
+                            ("srcStep" variable (:type "int") (reparse-symbol formal_parameters) [75617 75628]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [75460 76259])
+                    ("loadArchive" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [76293 76299])
+                            ("archive" variable (:type "ZipFile") (reparse-symbol formal_parameters) [76301 76316]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [76265 76850])
+                    ("SpriteHandler" type
+                       (:typemodifiers ("private")
+                        :members 
+                          ( ("ENTITY_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [76899 76940])
+                            ("MEDIA_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [76946 76989])
+                            ("UTIL_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [76995 77037])
+                            ("ITEM_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [77043 77085])
+                            ("LOGO_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [77091 77133])
+                            ("PROJECTILE_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [77139 77187])
+                            ("TEXTURE_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [77193 77238])
+                            ("NULL_START" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [77244 77286])
+                            ("entity" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77301 77317])
+                            ("media" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77318 77324])
+                            ("util" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77325 77330])
+                            ("item" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77331 77336])
+                            ("logo" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77337 77342])
+                            ("projectile" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77343 77354])
+                            ("texture" variable
+                               (:dereference 1
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77355 77363])
+                            ("minimap" variable (:type "Sprite") (reparse-symbol class_member_declaration) [77372 77387])
+                            ("SpriteHandler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("maxSprites" variable (:type "int") (reparse-symbol formal_parameters) [77416 77430]))                                  )
+                                (reparse-symbol class_member_declaration) [77402 77871])
+                            ("getSprite" function
+                               (:arguments 
+                                  ( ("index" variable (:type "int") (reparse-symbol formal_parameters) [77900 77909]))                                  
+                                :type "Sprite")
+                                (reparse-symbol class_member_declaration) [77883 78407])
+                            ("getMinimap" function (:type "Sprite") (reparse-symbol class_member_declaration) [78419 78474])
+                            ("addSprite" function
+                               (:arguments 
+                                  ( ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [78501 78514])
+                                    ("index" variable (:type "int") (reparse-symbol formal_parameters) [78516 78525]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [78486 79194])
+                            ("addMinimap" function
+                               (:arguments 
+                                  ( ("sprite" variable (:type "Sprite") (reparse-symbol formal_parameters) [79222 79235]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [79206 79274])
+                            ("garbageCollect" function (:type "void") (reparse-symbol class_member_declaration) [79286 79898]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [76860 79904])
+                    ("FontData" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("fontHeight" variable (:type "int") (reparse-symbol class_member_declaration) [79958 79973])
+                            ("FontData" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("fontHeight" variable (:type "int") (reparse-symbol formal_parameters) [80035 80049]))                                  )
+                                (reparse-symbol class_member_declaration) [80026 80154]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [79914 80160])
+                    ("LetterData" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("bounds" variable (:type "ByteRectangle") (reparse-symbol class_member_declaration) [80213 80234])
+                            ("charWidth" variable (:type "byte") (reparse-symbol class_member_declaration) [80240 80255])
+                            ("data" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [80261 80273])
+                            ("LetterData" function (:constructor-flag t) (reparse-symbol class_member_declaration) [80279 80341]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [80170 80347])
+                    ("ByteRectangle" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("x" variable (:type "byte") (reparse-symbol class_member_declaration) [80403 80410])
+                            ("y" variable (:type "byte") (reparse-symbol class_member_declaration) [80411 80413])
+                            ("w" variable (:type "byte") (reparse-symbol class_member_declaration) [80414 80416])
+                            ("h" variable (:type "byte") (reparse-symbol class_member_declaration) [80417 80419]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [80357 80425]))                  
+                :type "class")
+                nil [803 80427]))          
+      :file "GameImage.java"
+      :pointmax 80428
+      :fsize 82618
+      :lastmodtime '(23084 31384 0 0)
       :unmatched-syntax nil))
   :file "!home!marcus!git!rscclient!src!client!core!semantic.cache"
   :semantic-tag-version "2.0"

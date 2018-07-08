@@ -1,0 +1,226 @@
+;; Object local/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "local/"
+  :tables
+  (list
+    (semanticdb-table "CrystalModel.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("CrystalModel.h" include nil nil [1 26])
+            ("strings.h" include (:system-flag t) nil [28 48])
+            ("crystal_model_t" type
+               (:members 
+                  ( ("m_bath" variable
+                       (:pointer 1
+                        :type ("Bath" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [77 90])
+                    ("m_p" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [93 103])
+                    ("m_cg" variable
+                       (:pointer 1
+                        :type ("CoordGen" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [106 121])
+                    ("m_im" variable
+                       (:pointer 1
+                        :type ("IonMovement" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [124 142])
+                    ("m_p_reset" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [145 161])
+                    ("m_cli_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [167 183])
+                    ("m_cli_strlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [186 206])
+                    ("m_x" variable (:type "int") (reparse-symbol classsubparts) [209 222])
+                    ("m_y" variable (:type "int") (reparse-symbol classsubparts) [209 222])
+                    ("tmp_x" variable (:type "int") (reparse-symbol classsubparts) [225 242])
+                    ("tmp_y" variable (:type "int") (reparse-symbol classsubparts) [225 242]))                  
+                :type "struct")
+                nil [50 245])
+            ("CrystalModel_generate" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [281 300]))                  
+                :type "void")
+                nil [247 301])
+            ("CrystalModel_step_once" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [337 356]))                  
+                :type "void")
+                nil [302 357])
+            ("CrystalModel_any_neighbours" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [398 423]))                  
+                :type "bool")
+                nil [358 424])
+            ("CrystalModel_create" function
+               (:pointer 1
+                :arguments 
+                  ( ("move_bath" variable
+                       (:pointer 1
+                        :type ("Bath" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [461 477])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [478 487])
+                    ("move_cg" variable
+                       (:pointer 1
+                        :type ("CoordGen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [488 506])
+                    ("move_im" variable
+                       (:pointer 1
+                        :type ("IonMovement" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [507 528]))                  
+                :type ("CrystalModel" type (:type "class") nil nil))
+                nil [426 925])
+            ("CrystalModel_destroy" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 971]))                  
+                :type "void")
+                nil [926 1141])
+            ("CrystalModel_crystallize_one_ion" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1181 1200]))                  
+                :type "bool")
+                nil [1143 1612])
+            ("CrystalModel_run_some_steps" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1647 1666])
+                    ("steps" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1667 1682]))                  
+                :type "bool")
+                nil [1614 1823])
+            ("CrystalModel_to_string" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1861 1886]))                  
+                :type "char")
+                nil [1825 2495])
+            ("out" variable (:type "int") nil [2600 2604])
+            ("Bath_is_populated" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2713 2718])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2719 2726])
+                    ("" variable (:type ("Point_get_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2727 2741])
+                    ("" variable (:type ("Point_get_y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2743 2757]))                  
+                :type "int")
+                nil [2695 2759])
+            ("Bath_is_populated" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3206 3211])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3212 3219])
+                    ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3220 3225])
+                    ("" variable (:type ("tmp_x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3233])
+                    ("" variable (:type ("x_step" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3234 3243])
+                    ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3245 3250])
+                    ("" variable (:type ("tmp_y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3251 3258])
+                    ("" variable (:type ("y_step" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3259 3268]))                  
+                :type "int")
+                nil [3188 3270])
+            ("m_p" variable
+               (:default-value "self->m_cg->generate(Bath_get_r_start(self->m_bath))"
+                :type "int")
+                nil [3335 3394])
+            ("Bath_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3457 3462])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3463 3470]))                  
+                :type "int")
+                nil [3446 3471])
+            ("m_p" variable
+               (:default-value "self->m_p_reset;"
+                :type "int")
+                nil [3480 3502])
+            ("Bath_x_bath_to_model_rep" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3619 3624])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3625 3632])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3633 3635]))                  
+                :type "int")
+                nil [3594 3636])
+            ("Bath_x_bath_to_model_rep" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3753 3758])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3759 3766])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3767 3769]))                  
+                :type "int")
+                nil [3728 3770])
+            ("m_p" variable (:type "int") nil [3844 3848])
+            ("Bath_get_r_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3933 3938])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3939 3946]))                  
+                :type "int")
+                nil [3916 3947])
+            ("Bath_get_size" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("self" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4033 4038])
+                    ("" variable (:type ("m_bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4039 4046]))                  
+                :type "int")
+                nil [4019 4047])
+            ("drand" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("M_PI" type (:type "class") nil nil))
+                nil [4126 4139])
+            ("tmp_x" variable
+               (:default-value "(int32_t) (Bath_get_r_start(self->m_bath)*cos(alpha))"
+                :type "int")
+                nil [4148 4210])
+            ("tmp_y" variable
+               (:default-value "(int32_t) (Bath_get_r_start(self->m_bath)*sin(alpha))"
+                :type "int")
+                nil [4219 4281])
+            ("i" variable
+               (:default-value "(int32_t)(4*drand())"
+                :type "int")
+                nil [4344 4373])
+            ("x_step" variable
+               (:dereference 1
+                :type "int")
+                nil [4391 4401])
+            ("y_step" variable
+               (:dereference 1
+                :type "int")
+                nil [4419 4429]))          
+      :file "CrystalModel.c"
+      :pointmax 4432
+      :fsize 4431
+      :lastmodtime '(23291 59595 219095 827000)
+      :unmatched-syntax '((close-paren 4430 . 4431) (punctuation 4417 . 4418) (punctuation 4416 . 4417) (symbol 4410 . 4415) (punctuation 4409 . 4410) (punctuation 4408 . 4409) (symbol 4404 . 4408) (punctuation 4389 . 4390) (punctuation 4388 . 4389) (symbol 4382 . 4387) (punctuation 4381 . 4382) (punctuation 4380 . 4381) (symbol 4376 . 4380) (open-paren 4340 . 4341) (close-paren 4338 . 4339) (symbol 4334 . 4338) (punctuation 4333 . 4334) (symbol 4320 . 4332) (open-paren 4319 . 4320) (symbol 4297 . 4319) (VOID 4292 . 4296) (STATIC 4285 . 4291) (close-paren 4282 . 4283) (punctuation 4218 . 4219) (punctuation 4217 . 4218) (symbol 4213 . 4217) (punctuation 4147 . 4148) (punctuation 4146 . 4147) (symbol 4142 . 4146) (punctuation 4125 . 4126) (number 4124 . 4125) (punctuation 4122 . 4123) (symbol 4116 . 4121) (DOUBLE 4109 . 4115) (open-paren 4105 . 4106) (close-paren 4103 . 4104) (symbol 4099 . 4103) (punctuation 4098 . 4099) (symbol 4085 . 4097) (open-paren 4084 . 4085) (symbol 4063 . 4084) (VOID 4058 . 4062) (STATIC 4051 . 4057) (close-paren 4048 . 4049) (punctuation 4038 . 4039) (punctuation 4037 . 4038) (RETURN 4012 . 4018) (open-paren 4008 . 4009) (close-paren 4006 . 4007) (symbol 4002 . 4006) (punctuation 4001 . 4002) (CONST 3995 . 4000) (symbol 3982 . 3994) (open-paren 3981 . 3982) (symbol 3954 . 3981) (INT 3950 . 3953) (close-paren 3948 . 3949) (punctuation 3938 . 3939) (punctuation 3937 . 3938) (RETURN 3909 . 3915) (open-paren 3905 . 3906) (close-paren 3903 . 3904) (symbol 3899 . 3903) (punctuation 3898 . 3899) (CONST 3892 . 3897) (symbol 3879 . 3891) (open-paren 3878 . 3879) (symbol 3855 . 3878) (INT 3851 . 3854) (close-paren 3849 . 3850) (punctuation 3843 . 3844) (punctuation 3842 . 3843) (symbol 3838 . 3842) (RETURN 3831 . 3837) (open-paren 3827 . 3828) (close-paren 3825 . 3826) (symbol 3821 . 3825) (punctuation 3820 . 3821) (CONST 3814 . 3819) (symbol 3801 . 3813) (open-paren 3800 . 3801) (symbol 3779 . 3800) (symbol 3773 . 3778) (close-paren 3771 . 3772) (punctuation 3758 . 3759) (punctuation 3757 . 3758) (RETURN 3721 . 3727) (open-paren 3717 . 3718) (close-paren 3715 . 3716) (symbol 3714 . 3715) (symbol 3706 . 3713) (punctuation 3704 . 3705) (symbol 3700 . 3704) (punctuation 3699 . 3700) (CONST 3693 . 3698) (symbol 3680 . 3692) (open-paren 3679 . 3680) (symbol 3647 . 3679) (symbol 3639 . 3646) (close-paren 3637 . 3638) (punctuation 3624 . 3625) (punctuation 3623 . 3624) (RETURN 3587 . 3593) (open-paren 3583 . 3584) (close-paren 3581 . 3582) (symbol 3580 . 3581) (symbol 3572 . 3579) (punctuation 3570 . 3571) (symbol 3566 . 3570) (punctuation 3565 . 3566) (CONST 3559 . 3564) (symbol 3546 . 3558) (open-paren 3545 . 3546) (symbol 3513 . 3545) (symbol 3505 . 3512) (close-paren 3503 . 3504) (punctuation 3479 . 3480) (punctuation 3478 . 3479) (symbol 3474 . 3478) (punctuation 3462 . 3463) (punctuation 3461 . 3462) (open-paren 3442 . 3443) (close-paren 3440 . 3441) (symbol 3436 . 3440) (punctuation 3435 . 3436) (symbol 3422 . 3434) (open-paren 3421 . 3422) (symbol 3403 . 3421) (VOID 3398 . 3402) (close-paren 3395 . 3396) (punctuation 3334 . 3335) (punctuation 3333 . 3334) (symbol 3329 . 3333) (open-paren 3325 . 3326) (close-paren 3323 . 3324) (symbol 3319 . 3323) (punctuation 3318 . 3319) (symbol 3305 . 3317) (open-paren 3304 . 3305) (symbol 3279 . 3304) (VOID 3274 . 3278) (close-paren 3271 . 3272) (semantic-list 3265 . 3268) (punctuation 3257 . 3258) (punctuation 3250 . 3251) (punctuation 3249 . 3250) (semantic-list 3240 . 3243) (punctuation 3232 . 3233) (punctuation 3225 . 3226) (punctuation 3224 . 3225) (punctuation 3211 . 3212) (punctuation 3210 . 3211) (punctuation 3186 . 3187) (punctuation 3185 . 3186) (semantic-list 3116 . 3180) (symbol 3099 . 3116) (semantic-list 3176 . 3179) (punctuation 3168 . 3169) (punctuation 3161 . 3162) (punctuation 3160 . 3161) (semantic-list 3151 . 3154) (punctuation 3143 . 3144) (punctuation 3136 . 3137) (punctuation 3135 . 3136) (punctuation 3122 . 3123) (punctuation 3121 . 3122) (punctuation 3097 . 3098) (punctuation 3096 . 3097) (semantic-list 3027 . 3091) (symbol 3010 . 3027) (semantic-list 3087 . 3090) (punctuation 3079 . 3080) (punctuation 3072 . 3073) (punctuation 3071 . 3072) (semantic-list 3062 . 3065) (punctuation 3054 . 3055) (punctuation 3047 . 3048) (punctuation 3046 . 3047) (punctuation 3033 . 3034) (punctuation 3032 . 3033) (punctuation 3008 . 3009) (punctuation 3007 . 3008) (semantic-list 2938 . 3002) (symbol 2921 . 2938) (semantic-list 2998 . 3001) (punctuation 2990 . 2991) (punctuation 2983 . 2984) (punctuation 2982 . 2983) (semantic-list 2973 . 2976) (punctuation 2965 . 2966) (punctuation 2958 . 2959) (punctuation 2957 . 2958) (punctuation 2944 . 2945) (punctuation 2943 . 2944) (RETURN 2914 . 2920) (open-paren 2910 . 2911) (close-paren 2908 . 2909) (symbol 2904 . 2908) (punctuation 2903 . 2904) (CONST 2897 . 2902) (symbol 2884 . 2896) (open-paren 2883 . 2884) (symbol 2856 . 2883) (BOOL 2851 . 2855) (STATIC 2844 . 2850) (punctuation 2841 . 2842) (close-paren 2840 . 2841) (number 2838 . 2839) (punctuation 2837 . 2838) (punctuation 2835 . 2836) (number 2834 . 2835) (punctuation 2832 . 2833) (number 2831 . 2832) (punctuation 2829 . 2830) (number 2828 . 2829) (open-paren 2826 . 2827) (punctuation 2824 . 2825) (close-paren 2822 . 2823) (number 2821 . 2822) (open-paren 2820 . 2821) (symbol 2814 . 2820) (INT 2810 . 2813) (STATIC 2803 . 2809) (punctuation 2801 . 2802) (close-paren 2800 . 2801) (number 2798 . 2799) (punctuation 2796 . 2797) (number 2795 . 2796) (punctuation 2793 . 2794) (number 2792 . 2793) (punctuation 2791 . 2792) (punctuation 2789 . 2790) (number 2788 . 2789) (open-paren 2786 . 2787) (punctuation 2784 . 2785) (close-paren 2782 . 2783) (number 2781 . 2782) (open-paren 2780 . 2781) (symbol 2774 . 2780) (INT 2770 . 2773) (STATIC 2763 . 2769) (close-paren 2760 . 2761) (semantic-list 2754 . 2757) (semantic-list 2738 . 2741) (punctuation 2718 . 2719) (punctuation 2717 . 2718) (RETURN 2688 . 2694) (open-paren 2684 . 2685) (close-paren 2682 . 2683) (symbol 2681 . 2682) (punctuation 2680 . 2681) (CONST 2674 . 2679) (symbol 2668 . 2673) (punctuation 2666 . 2667) (symbol 2662 . 2666) (punctuation 2661 . 2662) (CONST 2655 . 2660) (symbol 2642 . 2654) (open-paren 2641 . 2642) (symbol 2613 . 2641) (BOOL 2608 . 2612) (close-paren 2605 . 2606) (RETURN 2593 . 2599) (punctuation 2589 . 2590) (string 2585 . 2589) (punctuation 2583 . 2584) (punctuation 2581 . 2582) (punctuation 2580 . 2581) (symbol 2579 . 2580) (punctuation 2578 . 2579) (punctuation 2574 . 2575) (string 2570 . 2574) (punctuation 2568 . 2569) (punctuation 2566 . 2567) (punctuation 2565 . 2566) (symbol 2564 . 2565) (punctuation 2563 . 2564) (semantic-list 2539 . 2560) (semantic-list 2501 . 2538) (FOR 2498 . 2501) (RETURN 2688 . 2694) (open-paren 2684 . 2685) (close-paren 2682 . 2683) (symbol 2681 . 2682) (punctuation 2680 . 2681) (CONST 2674 . 2679) (symbol 2668 . 2673) (punctuation 2666 . 2667) (symbol 2662 . 2666) (punctuation 2661 . 2662) (CONST 2655 . 2660) (symbol 2642 . 2654) (open-paren 2641 . 2642) (symbol 2613 . 2641) (BOOL 2608 . 2612) (close-paren 2605 . 2606) (RETURN 2593 . 2599) (punctuation 2589 . 2590) (string 2585 . 2589) (punctuation 2583 . 2584) (punctuation 2581 . 2582) (punctuation 2580 . 2581) (symbol 2579 . 2580) (punctuation 2578 . 2579) (punctuation 2574 . 2575) (string 2570 . 2574) (punctuation 2568 . 2569) (punctuation 2566 . 2567) (punctuation 2565 . 2566) (symbol 2564 . 2565) (punctuation 2563 . 2564) (semantic-list 2539 . 2560) (semantic-list 2501 . 2538) (FOR 2498 . 2501))))
+  :file "!home!marcus!Programming!C!Gnome!gtk-test!local!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

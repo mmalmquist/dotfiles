@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PY_SSIZE_T_CLEAN" variable (:constant-flag t) nil [176 192])
+            ("Python.h" include nil nil [193 212]))          
+      :file "ha1utils.c"
+      :pointmax 432931
+      :fsize 432930
+      :lastmodtime '(22820 8806 0 0)
+      :unmatched-syntax '((punctuation 489 . 490) (punctuation 488 . 489) (number 485 . 488) (symbol 478 . 484) (symbol 475 . 477) (punctuation 473 . 474) (number 470 . 473) (symbol 463 . 469) (symbol 454 . 462) (symbol 447 . 453) (symbol 441 . 446) (punctuation 440 . 441) (punctuation 335 . 336) (symbol 329 . 335) (symbol 326 . 328) (symbol 318 . 325) (symbol 306 . 317) (symbol 298 . 305) (symbol 291 . 297) (punctuation 289 . 290) (symbol 279 . 289) (symbol 277 . 278) (symbol 269 . 276) (symbol 266 . 268) (symbol 259 . 265) (symbol 251 . 258) (symbol 244 . 250) (symbol 238 . 243) (punctuation 237 . 238))
+      :lexical-table 
+        '(("PY_SSIZE_T_CLEAN")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\" setup.py
+This code is adapted for 80 columns
+|------------------------------------------------------------------------------|
+Compiles the cython code into and extension module that can be imported in a
+regular python script.
+\"\"\"" code nil nil [1 234])
+            ("distutils.core" include nil nil [235 267])
+            ("Cython.Build" include nil nil [268 302])
+            ("setup" code nil nil [304 637]))          
+      :file "setup.py"
+      :pointmax 638
+      :fsize 637
+      :lastmodtime '(22958 23463 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!chalmers!rry080!hw1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

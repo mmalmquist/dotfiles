@@ -1,0 +1,64 @@
+;; Object math/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "math/"
+  :tables
+  (list
+
+    (semanticdb-table "MathVec.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MATH_VEC_HPP_" variable (:constant-flag t) nil [31 44])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("LinAlg" type
+               (:members 
+                  ( ("Vector" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [127 134])
+                            ("m_vec" function
+                               (:arguments 
+                                  ( ("" variable (:type ("vec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 184]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [174 196])
+                            ("+" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("lhs" variable (:type ("Vector" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [221 235])
+                                    ("rhs" variable (:type ("Vector" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [236 250]))                                  
+                                :type ("Vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [201 271])
+                            ("private" label nil (reparse-symbol classsubparts) [274 282])
+                            ("m_vec" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [287 308]))                          )
+                        (reparse-symbol namespacesubparts) [86 313]))                  
+                :type "namespace")
+                nil [65 315]))          
+      :file "MathVec.hpp"
+      :pointmax 340
+      :fsize 326
+      :lastmodtime '(23323 52299 460807 776000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MATH_VEC_HPP_")
+          )
+))
+  :file "!home!marcus!git!SmithChart!src!math!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

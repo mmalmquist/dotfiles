@@ -1,0 +1,2433 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("time.h" include (:system-flag t) nil [1 18])
+            ("stdint.h" include (:system-flag t) nil [19 38])
+            ("fact" function
+               (:arguments 
+                  ( ("" variable (:type "unsigned long long") (reparse-symbol arg-sub-list) [55 55])
+                    ("n" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55 66]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [42 104])
+            ("my_mod" function
+               (:arguments 
+                  ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121 131])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [132 142]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [106 164])
+            ("get_time" function
+               (:pointer 1
+                :type "char")
+                nil [166 242]))          
+      :file "example.c"
+      :pointmax 243
+      :fsize 242
+      :lastmodtime '(23266 21848 966891 468000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [238 257])
+            ("fact" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [279 290]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [265 291])
+            ("my_mod" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [314 324])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 335]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [292 336])
+            ("get_time" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [337 361]))          
+      :file "example.i"
+      :pointmax 362
+      :fsize 361
+      :lastmodtime '(23266 23139 952144 536000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [205 262])
+            ("if" code nil nil [263 1273])
+            ("del" code nil nil [1273 1302])
+            ("try" code nil nil [1304 1407])
+            ("try" code nil nil [1408 1491])
+            ("_swig_setattr_nondynamic" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1521 1525])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [1527 1537])
+                    ("name" variable nil (reparse-symbol function_parameters) [1539 1543])
+                    ("value" variable nil (reparse-symbol function_parameters) [1545 1550])
+                    ("static" variable nil (reparse-symbol function_parameters) [1552 1558]))                  )
+                nil [1492 2100])
+            ("_swig_setattr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [2120 2124])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [2126 2136])
+                    ("name" variable nil (reparse-symbol function_parameters) [2138 2142])
+                    ("value" variable nil (reparse-symbol function_parameters) [2144 2149]))                  )
+                nil [2102 2222])
+            ("_swig_getattr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [2242 2246])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [2248 2258])
+                    ("name" variable nil (reparse-symbol function_parameters) [2260 2264]))                  )
+                nil [2224 2521])
+            ("_swig_repr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [2538 2542]))                  )
+                nil [2523 2753])
+            ("try" code nil nil [2754 2878])
+            ("fact" function (:arguments 
+              ( ("n" variable nil (reparse-symbol function_parameters) [2889 2890]))              ) nil [2880 2921])
+            ("fact" variable nil nil [2921 2941])
+            ("my_mod" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [2954 2955])
+                ("y" variable nil (reparse-symbol function_parameters) [2957 2958]))              ) nil [2943 2994])
+            ("my_mod" variable nil nil [2994 3018])
+            ("get_time" function nil nil [3020 3067])
+            ("get_time" variable nil nil [3067 3095])
+            ("cvar" variable nil nil [3164 3184]))          
+      :file "example.py"
+      :pointmax 3186
+      :fsize 4212
+      :lastmodtime '(23266 23143 105482 546000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SWIGPYTHON" variable (:constant-flag t) nil [548 558])
+            ("SWIG_PYTHON_DIRECTOR_NO_VTABLE" variable (:constant-flag t) nil [575 605])
+            ("SWIGTEMPLATEDISAMBIGUATOR" variable (:constant-flag t) nil [1397 1422])
+            ("SWIGINLINE" variable (:constant-flag t) nil [1570 1580])
+            ("SWIGUNUSED" variable (:constant-flag t) nil [1851 1861])
+            ("SWIGUNUSED" variable (:constant-flag t) nil [2025 2035])
+            ("SWIGUNUSEDPARM" variable (:constant-flag t) nil [2264 2278])
+            ("SWIGINTERN" variable (:constant-flag t) nil [2402 2412])
+            ("SWIGINTERNINLINE" variable (:constant-flag t) nil [2507 2523])
+            ("GCC_HASCLASSVISIBILITY" variable (:constant-flag t) nil [2713 2735])
+            ("SWIGEXPORT" variable (:constant-flag t) nil [3048 3058])
+            ("SWIGSTDCALL" variable (:constant-flag t) nil [3333 3344])
+            ("Python.h" include (:system-flag t) nil [4585 4605])
+            ("SWIG_RUNTIME_VERSION" variable (:constant-flag t) nil [5041 5061])
+            ("SWIG_TYPE_TABLE_NAME" variable (:constant-flag t) nil [5331 5351])
+            ("SWIGRUNTIME" variable (:constant-flag t) nil [5698 5709])
+            ("SWIGRUNTIMEINLINE" variable (:constant-flag t) nil [5764 5781])
+            ("SWIG_BUFFER_SIZE" variable (:constant-flag t) nil [5874 5890])
+            ("SWIG_POINTER_DISOWN" variable (:constant-flag t) nil [5948 5967])
+            ("SWIG_CAST_NEW_MEMORY" variable (:constant-flag t) nil [5987 6007])
+            ("SWIG_POINTER_OWN" variable (:constant-flag t) nil [6063 6079])
+            ("SWIG_OK" variable (:constant-flag t) nil [8166 8173])
+            ("SWIG_ERROR" variable (:constant-flag t) nil [8205 8215])
+            ("SWIG_IsOK" variable (:constant-flag t) nil [8245 8254])
+            ("SWIG_ArgError" variable (:constant-flag t) nil [8289 8302])
+            ("SWIG_CASTRANKLIMIT" variable (:constant-flag t) nil [8436 8454])
+            ("SWIG_NEWOBJMASK" variable (:constant-flag t) nil [8548 8563])
+            ("SWIG_TMPOBJMASK" variable (:constant-flag t) nil [8677 8692])
+            ("SWIG_BADOBJ" variable (:constant-flag t) nil [8765 8776])
+            ("SWIG_OLDOBJ" variable (:constant-flag t) nil [8813 8824])
+            ("SWIG_NEWOBJ" variable (:constant-flag t) nil [8858 8869])
+            ("SWIG_TMPOBJ" variable (:constant-flag t) nil [8921 8932])
+            ("SWIG_AddNewMask" variable (:constant-flag t) nil [9022 9037])
+            ("SWIG_DelNewMask" variable (:constant-flag t) nil [9100 9115])
+            ("SWIG_IsNewObj" variable (:constant-flag t) nil [9179 9192])
+            ("SWIG_AddTmpMask" variable (:constant-flag t) nil [9254 9269])
+            ("SWIG_DelTmpMask" variable (:constant-flag t) nil [9332 9347])
+            ("SWIG_IsTmpObj" variable (:constant-flag t) nil [9411 9424])
+            ("SWIG_AddCast" variable (:constant-flag t) nil [10132 10144])
+            ("SWIG_CheckState" variable (:constant-flag t) nil [10162 10177])
+            ("string.h" include (:system-flag t) nil [10213 10232])
+            ("SWIG_UnpackDataName" function
+               (:type "char"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21016 21030])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21031 21041])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21042 21052])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21053 21070]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [20971 21246])
+            ("SWIG_PackDataName" function
+               (:type "char"
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20665 20676])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20677 20687])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20688 20698])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20699 20716])
+                    ("bsz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20717 20728]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [20628 20969])
+            ("SWIG_UnpackVoidPtr" function
+               (:type "char"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20393 20407])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20408 20419])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20420 20437]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [20349 20626])
+            ("SWIG_PackVoidPtr" function
+               (:type "char"
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20079 20090])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20091 20101])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20102 20119])
+                    ("bsz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20120 20131]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [20043 20347])
+            ("SWIG_UnpackData" function
+               (:type "char"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19375 19389])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19390 19400])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19401 19411]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [19334 19996])
+            ("SWIG_PackData" function
+               (:type "char"
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18987 18995])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18996 19006])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19007 19017]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [18954 19290])
+            ("SWIG_TypeQueryModule" function
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18219 18243])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18265 18287])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18295 18312]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [18169 18912])
+            ("SWIG_MangledTypeQueryModule" function
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16975 16999])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17028 17050])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17065 17082]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [16918 17721])
+            ("SWIG_TypeNewClientData" function
+               (:type "void"
+                :arguments 
+                  ( ("ti" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16539 16558])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16559 16576]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [16499 16638])
+            ("SWIG_TypeClientData" function
+               (:type "void"
+                :arguments 
+                  ( ("ti" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16148 16167])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16168 16185]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [16111 16498])
+            ("SWIG_TypePrettyName" function
+               (:type "char"
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15595 15622]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [15550 16064])
+            ("SWIG_TypeName" function
+               (:type "char"
+                :arguments 
+                  ( ("ty" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15374 15399]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [15329 15422])
+            ("SWIG_TypeDynamicCast" function
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15071 15090])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15091 15102]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [15021 15277])
+            ("SWIG_TypeCast" function
+               (:type "void"
+                :arguments 
+                  ( ("ty" variable
+                       (:pointer 1
+                        :type ("swig_cast_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14826 14845])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14846 14856])
+                    ("newmemory" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14857 14872]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [14787 14955])
+            ("SWIG_TypeCheckStruct" function
+               (:type ("swig_cast_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("from" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14177 14198])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14199 14218]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [14127 14734])
+            ("SWIG_TypeCheck" function
+               (:type ("swig_cast_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13472 13486])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13487 13506]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [13428 14036])
+            ("SWIG_TypeEquiv" function
+               (:type "int"
+                :arguments 
+                  ( ("nb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13320 13335])
+                    ("tb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13336 13351]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [13289 13399])
+            ("SWIG_TypeCmp" function
+               (:type "int"
+                :arguments 
+                  ( ("nb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12887 12902])
+                    ("tb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12903 12918]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [12858 13180])
+            ("SWIG_TypeNameComp" function
+               (:type "int"
+                :arguments 
+                  ( ("f1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12435 12450])
+                    ("l1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12451 12466])
+                    ("f2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12471 12486])
+                    ("l2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12487 12502]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [12401 12736])
+            ("swig_module_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("swig_module_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [11583 12178])
+            ("swig_module_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("types" variable
+                       (:pointer 2
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11619 11650])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11731 11759])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11808 11838])
+                    ("type_initial" variable
+                       (:pointer 2
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11898 11936])
+                    ("cast_initial" variable
+                       (:pointer 2
+                        :type ("swig_cast_info" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11990 12028])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [12085 12121]))                  )
+                (reparse-symbol extern-c-contents) [11583 12178])
+            ("swig_cast_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("swig_cast_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [11025 11386])
+            ("swig_cast_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [11059 11088])
+                    ("converter" variable (:type ("swig_converter_func" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11147 11181])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("swig_cast_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11226 11255])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("swig_cast_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11302 11331]))                  )
+                (reparse-symbol extern-c-contents) [11025 11386])
+            ("swig_type_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("swig_type_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [10438 10950])
+            ("swig_type_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [10472 10501])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [10538 10566])
+                    ("dcast" variable (:type ("swig_dycast_func" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10610 10640])
+                    ("cast" variable
+                       (:pointer 1
+                        :type ("swig_cast_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10689 10718])
+                    ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [10779 10814])
+                    ("owndata" variable (:type "int") (reparse-symbol classsubparts) [10852 10883]))                  )
+                (reparse-symbol extern-c-contents) [10438 10950])
+            ("swig_dycast_func" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("swig_type_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10378 10386]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10335 10387])
+            ("swig_converter_func" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10311 10318])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10319 10325]))                  
+                :function-pointer t
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10282 10326])
+            ("SWIG_UnknownError" variable (:constant-flag t) nil [21308 21325])
+            ("SWIG_IOError" variable (:constant-flag t) nil [21345 21357])
+            ("SWIG_RuntimeError" variable (:constant-flag t) nil [21381 21398])
+            ("SWIG_IndexError" variable (:constant-flag t) nil [21417 21432])
+            ("SWIG_TypeError" variable (:constant-flag t) nil [21453 21467])
+            ("SWIG_DivisionByZero" variable (:constant-flag t) nil [21489 21508])
+            ("SWIG_OverflowError" variable (:constant-flag t) nil [21525 21543])
+            ("SWIG_SyntaxError" variable (:constant-flag t) nil [21561 21577])
+            ("SWIG_ValueError" variable (:constant-flag t) nil [21597 21612])
+            ("SWIG_SystemError" variable (:constant-flag t) nil [21633 21649])
+            ("SWIG_AttributeError" variable (:constant-flag t) nil [21670 21689])
+            ("SWIG_MemoryError" variable (:constant-flag t) nil [21707 21723])
+            ("SWIG_NullReferenceError" variable (:constant-flag t) nil [21744 21767])
+            ("Py_TYPE" variable (:constant-flag t) nil [22632 22639])
+            ("SWIG_Python_str_FromFormat" variable (:constant-flag t) nil [22831 22857])
+            ("SWIG_Python_str_AsChar" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23063 23077]))                  
+                :type "char")
+                nil [23023 23392])
+            ("SWIG_Python_str_DelForPy3" variable (:constant-flag t) nil [23502 23527])
+            ("SWIG_Python_str_FromChar" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23587 23601]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [23541 23719])
+            ("PyOS_snprintf" variable (:constant-flag t) nil [23912 23925])
+            ("SWIG_PYBUFFER_SIZE" variable (:constant-flag t) nil [24085 24103])
+            ("PyString_FromFormat" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24155 24171])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [24172 24176]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [24117 24400])
+            ("PyObject_DEL" variable (:constant-flag t) nil [24439 24451])
+            ("PyExc_StopIteration" variable (:constant-flag t) nil [24604 24623])
+            ("PyObject_GenericGetAttr" variable (:constant-flag t) nil [24694 24717])
+            ("Py_NotImplemented" variable (:constant-flag t) nil [24855 24872])
+            ("PyString_AsStringAndSize" variable (:constant-flag t) nil [25054 25078])
+            ("PySequence_Size" variable (:constant-flag t) nil [25272 25287])
+            ("PyBool_FromLong" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ok" variable (:type "long") (reparse-symbol arg-sub-list) [25425 25433]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [25392 25521])
+            ("Py_ssize_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [25730 25753])
+            ("PY_SSIZE_T_MAX" variable (:constant-flag t) nil [25763 25777])
+            ("PY_SSIZE_T_MIN" variable (:constant-flag t) nil [25795 25809])
+            ("lenfunc" type
+               (:typedef ("inquiry" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25818 25842])
+            ("ssizeargfunc" type
+               (:typedef ("intargfunc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25843 25875])
+            ("ssizessizeargfunc" type
+               (:typedef ("intintargfunc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25876 25916])
+            ("ssizeobjargproc" type
+               (:typedef ("intobjargproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25917 25955])
+            ("ssizessizeobjargproc" type
+               (:typedef ("intintobjargproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [25956 26002])
+            ("readbufferproc" type
+               (:typedef ("getreadbufferproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [26003 26044])
+            ("writebufferproc" type
+               (:typedef ("getwritebufferproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [26045 26088])
+            ("segcountproc" type
+               (:typedef ("getsegcountproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [26089 26126])
+            ("charbufferproc" type
+               (:typedef ("getcharbufferproc" type (:type "class") nil nil)
+                :type "typedef")
+                nil [26127 26168])
+            ("PyNumber_AsSsize_t" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26201 26213])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26214 26240]))                  
+                :type "long")
+                nil [26169 26376])
+            ("PyInt_FromSize_t" variable (:constant-flag t) nil [26425 26441])
+            ("Py_VISIT" variable (:constant-flag t) nil [26517 26525])
+            ("PyHeapTypeObject" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("type" variable (:type ("PyTypeObject" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26742 26760])
+                          ("as_number" variable (:type ("PyNumberMethods" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26763 26789])
+                          ("as_mapping" variable (:type ("PyMappingMethods" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26792 26820])
+                          ("as_sequence" variable (:type ("PySequenceMethods" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26823 26853])
+                          ("as_buffer" variable (:type ("PyBufferProcs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26856 26880])
+                          ("name" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [26883 26906])
+                          ("slots" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [26883 26906]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [26723 26926])
+            ("freefunc" type
+               (:typedef ("destructor" type (:type "class") nil nil)
+                :type "typedef")
+                nil [26967 26995])
+            ("PyDescr_TYPE" variable (:constant-flag t) nil [27349 27361])
+            ("PyDescr_NAME" variable (:constant-flag t) nil [27406 27418])
+            ("Py_hash_t" variable (:constant-flag t) nil [27463 27472])
+            ("SWIG_Python_ErrorType" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("code" variable (:type "int") (reparse-symbol arg-sub-list) [27718 27727]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [27674 28562])
+            ("SWIG_Python_AddErrorMsg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mesg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28606 28623]))                  
+                :type "void")
+                nil [28565 29103])
+            ("SWIG_PYTHON_INITIALIZE_THREADS" variable (:constant-flag t) nil [31771 31801])
+            ("SWIG_PYTHON_THREAD_BEGIN_BLOCK" variable (:constant-flag t) nil [31812 31842])
+            ("SWIG_PYTHON_THREAD_END_BLOCK" variable (:constant-flag t) nil [31853 31881])
+            ("SWIG_PYTHON_THREAD_BEGIN_ALLOW" variable (:constant-flag t) nil [31892 31922])
+            ("SWIG_PYTHON_THREAD_END_ALLOW" variable (:constant-flag t) nil [31933 31961])
+            ("SWIG_PyInstanceMethod_New" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33189 33220])
+                    ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33221 33252]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [33141 33271])
+            ("swig_const_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("swig_const_info" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [32527 32680])
+            ("swig_const_info" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [32562 32571])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [32574 32585])
+                    ("lvalue" variable (:type "long") (reparse-symbol classsubparts) [32588 32600])
+                    ("dvalue" variable (:type "double") (reparse-symbol classsubparts) [32603 32617])
+                    ("pvalue" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [32620 32635])
+                    ("ptype" variable
+                       (:pointer 2
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32638 32661]))                  )
+                (reparse-symbol extern-c-contents) [32527 32680])
+            ("SWIG_PY_BINARY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [32471 32485])
+            ("SWIG_PY_POINTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [32445 32460])
+            ("SWIG_Python_ConvertPtr" variable (:constant-flag t) nil [33691 33713])
+            ("SWIG_ConvertPtr" variable (:constant-flag t) nil [33803 33818])
+            ("SWIG_ConvertPtrAndOwn" variable (:constant-flag t) nil [33906 33927])
+            ("SWIG_NewPointerObj" variable (:constant-flag t) nil [34159 34177])
+            ("SWIG_InternalNewPointerObj" variable (:constant-flag t) nil [34273 34299])
+            ("SWIG_CheckImplicit" variable (:constant-flag t) nil [34377 34395])
+            ("SWIG_AcquirePtr" variable (:constant-flag t) nil [34464 34479])
+            ("swig_owntype" variable (:constant-flag t) nil [34553 34565])
+            ("SWIG_ConvertPacked" variable (:constant-flag t) nil [34640 34658])
+            ("SWIG_NewPackedObj" variable (:constant-flag t) nil [34740 34757])
+            ("SWIG_ConvertInstance" variable (:constant-flag t) nil [34872 34892])
+            ("SWIG_NewInstanceObj" variable (:constant-flag t) nil [34968 34987])
+            ("SWIG_ConvertFunctionPtr" variable (:constant-flag t) nil [35099 35122])
+            ("SWIG_NewFunctionPtrObj" variable (:constant-flag t) nil [35203 35225])
+            ("SWIG_ConvertMember" variable (:constant-flag t) nil [35356 35374])
+            ("SWIG_NewMemberObj" variable (:constant-flag t) nil [35456 35473])
+            ("SWIG_GetModule" variable (:constant-flag t) nil [35573 35587])
+            ("SWIG_SetModule" variable (:constant-flag t) nil [35663 35677])
+            ("SWIG_NewClientData" variable (:constant-flag t) nil [35750 35768])
+            ("SWIG_SetErrorObj" variable (:constant-flag t) nil [35833 35849])
+            ("SWIG_SetErrorMsg" variable (:constant-flag t) nil [35941 35957])
+            ("SWIG_ErrorType" variable (:constant-flag t) nil [36021 36035])
+            ("SWIG_Error" variable (:constant-flag t) nil [36122 36132])
+            ("SWIG_fail" variable (:constant-flag t) nil [36217 36226])
+            ("SWIG_Python_SetErrorObj" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("errtype" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36373 36391])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36392 36406]))                  
+                :type "void")
+                nil [36332 36528])
+            ("SWIG_Python_SetErrorMsg" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("errtype" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36571 36589])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36590 36606]))                  
+                :type "void")
+                nil [36530 36709])
+            ("SWIG_Python_Raise" variable (:constant-flag t) nil [36719 36736])
+            ("SWIG_Python_SetConstant" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37450 37462])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37463 37480])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37481 37495]))                  
+                :type "void")
+                nil [37410 37677])
+            ("SWIG_Python_AppendOutput" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37773 37790])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37791 37805]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [37727 38650])
+            ("SWIG_Python_UnpackTuple" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38731 38746])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38747 38764])
+                    ("min" variable (:type ("Py_ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38765 38780])
+                    ("max" variable (:type ("Py_ssize_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38781 38796])
+                    ("objs" variable
+                       (:pointer 2
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38797 38813]))                  
+                :type ("Py_ssize_t" type (:type "class") nil nil))
+                nil [38685 39929])
+            ("SWIG_Python_CallFunctor" variable (:constant-flag t) nil [40151 40174])
+            ("SWIG_STATIC_POINTER" variable (:constant-flag t) nil [40427 40446])
+            ("SWIG_POINTER_NOSHADOW" variable (:constant-flag t) nil [40762 40783])
+            ("SWIG_POINTER_NEW" variable (:constant-flag t) nil [40827 40843])
+            ("SWIG_POINTER_IMPLICIT_CONV" variable (:constant-flag t) nil [40907 40933])
+            ("SWIG_BUILTIN_TP_INIT" variable (:constant-flag t) nil [40973 40993])
+            ("SWIG_BUILTIN_INIT" variable (:constant-flag t) nil [41030 41047])
+            ("SWIG_Python_MustGetPtr" function
+               (:type "void"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84795 84809])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84810 84829])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [84830 84857])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [84858 84868]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [84753 85142])
+            ("SWIG_Python_TypeError" function
+               (:type "void"
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [83680 83697])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83698 83712]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [83641 84680])
+            ("SwigPyObject_GetDesc" function
+               (:type "char"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83512 83527]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [83460 83639])
+            ("SWIG_Python_ArgFail" function
+               (:type "int"
+                :arguments 
+                  ( ("argnum" variable (:type "int") (reparse-symbol arg-sub-list) [83205 83216]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [83169 83458])
+            ("SWIG_Python_AddErrMesg" function
+               (:type "int"
+                :arguments 
+                  ( ("mesg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [82548 82565])
+                    ("infront" variable (:type "int") (reparse-symbol arg-sub-list) [82566 82578]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [82509 83165])
+            ("SWIG_MustGetPtr" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [82420 82435])
+            ("SWIG_arg_fail" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [82363 82376])
+            ("SWIG_POINTER_EXCEPTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [82329 82351])
+            ("SWIG_Python_TypeQuery" function
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [81481 81498]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [81430 82277])
+            ("SWIG_Python_TypeCache" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [81341 81346]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [81296 81428])
+            ("SWIG_Python_SetModule" function
+               (:type "void"
+                :arguments 
+                  ( ("swig_module" variable
+                       (:pointer 1
+                        :type ("swig_module_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80270 80300]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [80231 81259])
+            ("SWIG_Python_DestroyModule" function
+               (:type "void"
+                :arguments 
+                  ( ("vptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [79676 79687]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [79560 80229])
+            ("PyModule_AddObject" function
+               (:type "int"
+                :arguments 
+                  ( ("m" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78899 78911])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78912 78923])
+                    ("o" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78924 78936]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [78865 79551])
+            ("SWIG_Python_GetModule" function
+               (:type ("swig_module_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [78068 78101]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [78015 78686])
+            ("SWIG_Python_NewPackedObj" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [77633 77643])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77644 77654])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77655 77676]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [77579 77754])
+            ("SWIG_Python_NewPointerObj" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76177 76192])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [76193 76203])
+                    ("type" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76204 76225])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [76226 76236]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [76128 77543])
+            ("SWIG_Python_InitShadowInstance" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75734 75749]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [75681 76091])
+            ("SWIG_Python_SetSwigThis" function
+               (:type "void"
+                :arguments 
+                  ( ("inst" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75181 75196])
+                    ("swig_this" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75197 75217]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [75140 75677])
+            ("SWIG_Python_NewShadowInstance" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("SwigPyClientData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73231 73254])
+                    ("swig_this" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73255 73275]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [73178 75138])
+            ("SWIG_Python_ConvertPacked" function
+               (:type "int"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72549 72563])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [72564 72574])
+                    ("sz" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72575 72585])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72586 72605]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [72507 72880])
+            ("SWIG_Python_ConvertFunctionPtr" function
+               (:type "int"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71651 71665])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [71666 71677])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71678 71697]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [71604 72469])
+            ("SWIG_Python_ConvertPtrAndOwn" function
+               (:type "int"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68817 68831])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [68832 68843])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68844 68863])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [68864 68874])
+                    ("own" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [68875 68884]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [68772 71566])
+            ("SWIG_Python_AcquirePtr" function
+               (:type "int"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68512 68526])
+                    ("own" variable (:type "int") (reparse-symbol arg-sub-list) [68527 68535]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [68473 68739])
+            ("SWIG_Python_GetSwigThis" function
+               (:type ("SwigPyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pyobj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66971 66987]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [66920 68440])
+            ("SWIG_This" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [66633 66638]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [66600 66717])
+            ("swig_this" variable
+               (:type ("PyObject" type (:type "class") nil nil)
+                :default-value "NULL"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [66564 66598])
+            ("_SWIG_This" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [66508 66513]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [66468 66562])
+            ("SwigPyPacked_UnpackData" function
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66026 66040])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [66041 66051])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66052 66064]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [65973 66270])
+            ("SwigPyPacked_New" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [65581 65591])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65592 65604])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65605 65624]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [65541 65971])
+            ("SwigPyPacked_TypeOnce" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [61461 61466]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [61413 65539])
+            ("SwigPyPacked_dealloc" function
+               (:type "void"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61274 61286]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [61236 61411])
+            ("SwigPyPacked_Check" function
+               (:type "int"
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61103 61116]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [61062 61234])
+            ("SwigPyPacked_type" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [60960 60965]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [60916 61060])
+            ("SwigPyPacked_TypeOnce" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [60908 60913]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [60860 60914])
+            ("SwigPyPacked_compare" function
+               (:type "int"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyPacked" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60662 60678])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("SwigPyPacked" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60679 60695]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [60625 60858])
+            ("SwigPyPacked_str" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyPacked" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60364 60380]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [60324 60623])
+            ("SwigPyPacked_repr" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyPacked" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60023 60039]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [59982 60322])
+            ("SwigPyPacked_print" function
+               (:type "int"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyPacked" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59677 59693])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59694 59703])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [59704 59730]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [59642 59978])
+            ("SwigPyPacked" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("pack" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [59576 59587])
+                          ("ty" variable
+                             (:pointer 1
+                              :type ("swig_type_info" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [59590 59609])
+                          ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [59612 59624]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [59541 59640])
+            ("SwigPyObject_New" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [59058 59068])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59069 59088])
+                    ("own" variable (:type "int") (reparse-symbol arg-sub-list) [59089 59097]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [59018 59303])
+            ("SwigPyObject_TypeOnce" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53113 53118]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [53065 59016])
+            ("SwigPyObject_getattr" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("sobj" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52954 52973])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52973 52984]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [52911 53056])
+            ("swigobject_methods" variable
+               (:type ("PyMethodDef" type (:type "class") nil nil)
+                :default-value "{
+  {(char *)\"disown\",  (PyCFunction)SwigPyObject_disown,  METH_VARARGS,  (char *)\"releases ownership of the pointer\"},
+  {(char *)\"acquire\", (PyCFunction)SwigPyObject_acquire, METH_VARARGS,  (char *)\"acquires ownership of the pointer\"},
+  {(char *)\"own\",     (PyCFunction)SwigPyObject_own,     METH_VARARGS,  (char *)\"returns/sets ownership of the pointer\"},
+  {(char *)\"append\",  (PyCFunction)SwigPyObject_append,  METH_VARARGS,  (char *)\"appends another 'this' object\"},
+  {(char *)\"next\",    (PyCFunction)SwigPyObject_next,    METH_VARARGS,  (char *)\"returns the next 'this' object\"},
+  {(char *)\"__repr__\",(PyCFunction)SwigPyObject_repr,   METH_VARARGS,  (char *)\"returns object representation\"},
+  {0, 0, 0, 0}  
+}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1)
+                (reparse-symbol extern-c-contents) [52107 52870])
+            ("SwigPyObject_own" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50598 50610])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50611 50626]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [50560 51326])
+            ("SwigPyObject_acquire" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50404 50416])
+                    ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50417 50448]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [50303 50558])
+            ("SwigPyObject_disown" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50162 50174])
+                    ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50175 50206]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [50063 50301])
+            ("SwigPyObject_next" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49847 49859])
+                    ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49860 49891]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [49750 50061])
+            ("SwigPyObject_append" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49348 49360])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49361 49376]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [49305 49748])
+            ("SwigPyObject_dealloc" function
+               (:type "void"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47636 47648]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [47598 49303])
+            ("SwigPyObject_New" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [47556 47566])
+                    ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47567 47586])
+                    ("own" variable (:type "int") (reparse-symbol arg-sub-list) [47587 47595]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [47516 47596])
+            ("SwigPyObject_Check" function
+               (:type "int"
+                :arguments 
+                  ( ("op" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47180 47193]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [47139 47514])
+            ("SwigPyObject_type" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [47030 47035]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [46986 47130])
+            ("SwigPyObject_TypeOnce" function
+               (:type ("PyTypeObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [46663 46668]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [46615 46669])
+            ("SwigPyObject_richcompare" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46345 46361])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46362 46378])
+                    ("op" variable (:type "int") (reparse-symbol arg-sub-list) [46379 46386]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [46298 46612])
+            ("SwigPyObject_compare" function
+               (:type "int"
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46108 46124])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46125 46141]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [46071 46228])
+            ("SwigPyObject_repr" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45445 45461])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45462 45477]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [45344 46069])
+            ("SwigPyObject_hex" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45284 45300]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [45244 45342])
+            ("SwigPyObject_oct" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45184 45200]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [45144 45242])
+            ("SwigPyObject_format" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44707 44723])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44724 44740]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [44664 45142])
+            ("SwigPyObject_long" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("SwigPyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44605 44621]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [44564 44662])
+            ("SwigPyObject" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("ptr" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [44159 44169])
+                          ("ty" variable
+                             (:pointer 1
+                              :type ("swig_type_info" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [44172 44191])
+                          ("own" variable (:type "int") (reparse-symbol classsubparts) [44194 44202])
+                          ("next" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [44205 44220]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [44124 44287])
+            ("SwigPyClientData_Del" function
+               (:type "void"
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("SwigPyClientData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43952 43975]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [43913 44065])
+            ("SwigPyClientData_New" function
+               (:type ("SwigPyClientData" type (:type "class") nil nil)
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42575 42589]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [42522 43911])
+            ("SWIG_Python_ExceptionType" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42326 42347]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [42271 42519])
+            ("SWIG_Python_CheckImplicit" function
+               (:type "int"
+                :arguments 
+                  ( ("ty" variable
+                       (:pointer 1
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42143 42162]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [42094 42269])
+            ("SwigPyClientData" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("klass" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41935 41951])
+                          ("newraw" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41954 41971])
+                          ("newargs" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41974 41992])
+                          ("destroy" variable
+                             (:pointer 1
+                              :type ("PyObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [41995 42013])
+                          ("delargs" variable (:type "int") (reparse-symbol classsubparts) [42016 42028])
+                          ("implicitconv" variable (:type "int") (reparse-symbol classsubparts) [42031 42048])
+                          ("pytype" variable
+                             (:pointer 1
+                              :type ("PyTypeObject" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [42051 42072]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [41916 42092])
+            ("SWIG_Py_Void" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41819 41824]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [41776 41890])
+            ("SWIG_exception_fail" variable (:constant-flag t) nil [86444 86463])
+            ("SWIG_contract_assert" variable (:constant-flag t) nil [86535 86555])
+            ("SWIGTYPE_p_char" variable (:constant-flag t) nil [86693 86708])
+            ("swig_types" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type ("swig_type_info" type (:type "class") nil nil))
+                nil [86723 86760])
+            ("swig_module" variable
+               (:typemodifiers ("static")
+                :default-value "{swig_types, 1, 0, 0, 0, 0}"
+                :type ("swig_module_info" type (:type "class") nil nil))
+                nil [86761 86827])
+            ("SWIG_TypeQuery" variable (:constant-flag t) nil [86836 86850])
+            ("SWIG_MangledTypeQuery" variable (:constant-flag t) nil [86920 86941])
+            ("SWIG_init" variable (:constant-flag t) nil [87452 87461])
+            ("SWIG_name" variable (:constant-flag t) nil [87494 87503])
+            ("SWIGVERSION" variable (:constant-flag t) nil [87527 87538])
+            ("SWIG_VERSION" variable (:constant-flag t) nil [87557 87569])
+            ("SWIG_as_voidptr" variable (:constant-flag t) nil [87592 87607])
+            ("SWIG_as_voidptrptr" variable (:constant-flag t) nil [87648 87666])
+            ("My_variable" variable
+               (:typemodifiers ("extern")
+                :type "double")
+                nil [87781 87807])
+            ("fact" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [87826 87832]))                  
+                :type "int")
+                nil [87810 87833])
+            ("my_mod" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [87854 87860])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [87861 87867]))                  
+                :type "int")
+                nil [87836 87868])
+            ("get_time" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [87871 87895])
+            ("SWIG_AsVal_double" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87932 87946])
+                    ("val" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [87947 87959]))                  
+                :type "int")
+                nil [87898 88858])
+            ("SWIG_From_double" variable (:constant-flag t) nil [88871 88887])
+            ("limits.h" include (:system-flag t) nil [88912 88931])
+            ("LLONG_MAX" variable (:constant-flag t) nil [89052 89061])
+            ("LLONG_MIN" variable (:constant-flag t) nil [89091 89100])
+            ("ULLONG_MAX" variable (:constant-flag t) nil [89131 89141])
+            ("float.h" include (:system-flag t) nil [89185 89203])
+            ("math.h" include (:system-flag t) nil [89206 89223])
+            ("SWIG_CanCastAsInteger" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [89269 89279])
+                    ("min" variable (:type "double") (reparse-symbol arg-sub-list) [89280 89291])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [89292 89303]))                  
+                :type "int")
+                nil [89226 89836])
+            ("SWIG_AsVal_long" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89871 89885])
+                    ("val" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [89886 89896]))                  
+                :type "int")
+                nil [89839 90726])
+            ("SWIG_AsVal_int" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90760 90775])
+                    ("val" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [90776 90785]))                  
+                :type "int")
+                nil [90729 91006])
+            ("SWIG_From_int" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [91054 91064]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [91009 91107])
+            ("SWIG_pchar_descriptor" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [91159 91164]))                  
+                :type ("swig_type_info" type (:type "class") nil nil))
+                nil [91110 91312])
+            ("SWIG_FromCharPtrAndSize" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("carray" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91367 91386])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91387 91399]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [91315 92126])
+            ("SWIG_FromCharPtr" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92175 92192]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [92129 92264])
+            ("swig_const_table" variable
+               (:type ("swig_const_info" type (:type "class") nil nil)
+                :default-value "{
+{0, 0, 0, 0.0, 0, 0}}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1)
+                (reparse-symbol extern-c-contents) [95357 95425])
+            ("swig_cast_initial" variable
+               (:type ("swig_cast_info" type (:type "class") nil nil)
+                :default-value "{
+  _swigc__p_char,
+}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [95218 95285])
+            ("_swigc__p_char" variable
+               (:type ("swig_cast_info" type (:type "class") nil nil)
+                :default-value "{  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1)
+                (reparse-symbol extern-c-contents) [95131 95216])
+            ("swig_type_initial" variable
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :default-value "{
+  &_swigt__p_char,
+}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [95061 95129])
+            ("_swigt__p_char" variable
+               (:type ("swig_type_info" type (:type "class") nil nil)
+                :default-value "{\"_p_char\", \"char *\", 0, 0, (void*)0, 0}"
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [94979 95059])
+            ("SwigMethods" variable
+               (:type ("PyMethodDef" type (:type "class") nil nil)
+                :default-value "{
+	 { (char *)\"SWIG_PyInstanceMethod_New\", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
+	 { (char *)\"fact\", _wrap_fact, METH_VARARGS, NULL},
+	 { (char *)\"my_mod\", _wrap_my_mod, METH_VARARGS, NULL},
+	 { (char *)\"get_time\", _wrap_get_time, METH_VARARGS, NULL},
+	 { NULL, NULL, 0, NULL }
+}"
+                :typemodifiers ("extern" "\"C\"" "static")
+                :dereference 1)
+                (reparse-symbol extern-c-contents) [94573 94905])
+            ("_wrap_get_time" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94280 94311])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94312 94327]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [94244 94570])
+            ("_wrap_my_mod" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93400 93431])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93432 93447]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [93366 94241])
+            ("_wrap_fact" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92816 92847])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92848 92863]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [92784 93363])
+            ("Swig_var_My_variable_get" function
+               (:type ("PyObject" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [92679 92684]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [92633 92781])
+            ("Swig_var_My_variable_set" function
+               (:type "int"
+                :arguments 
+                  ( ("_val" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92345 92360]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [92305 92630])
+            ("C" extern nil nil [98048 98068])
+            ("SWIG_InitializeModule" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("clientdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [98177 98194]))                  
+                :type "void")
+                nil [98138 102731])
+            ("SWIG_PropagateClientData" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [103011 103016]))                  
+                :type "void")
+                nil [102969 103504])
+            ("SWIG_newvarlink" variable (:constant-flag t) nil [103650 103665])
+            ("SWIG_addvarlink" variable (:constant-flag t) nil [103729 103744])
+            ("SWIG_InstallConstants" variable (:constant-flag t) nil [103835 103856])
+            ("swig_globalvar" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [104172 104189])
+                    ("get_attr" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [104263 104268]))                          
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [104241 104269])
+                    ("set_attr" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("PyObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [104333 104344]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [104311 104345])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("swig_globalvar" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [104370 104398]))                  
+                :type "struct")
+                nil [104136 104418])
+            ("swig_globalvar" type
+               (:typedef ("swig_globalvar" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [104136 104418])
+            ("swig_varlinkobject" type
+               (:members 
+                  ( ("vars" variable
+                       (:pointer 1
+                        :type ("swig_globalvar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [104482 104503]))                  
+                :type "struct")
+                nil [104424 104527])
+            ("swig_varlinkobject" type
+               (:typedef ("swig_varlinkobject" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [104424 104527])
+            ("swig_varlink_repr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104575 104613]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [104533 104790])
+            ("swig_varlink_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104837 104859]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [104796 105919])
+            ("swig_varlink_print" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105961 105983])
+                    ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105984 105993])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [105994 106020]))                  
+                :type "int")
+                nil [105925 106253])
+            ("swig_varlink_dealloc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106298 106320]))                  
+                :type "void")
+                nil [106259 106477])
+            ("swig_varlink_getattr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106528 106550])
+                    ("n" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [106551 106559]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [106483 106913])
+            ("swig_varlink_setattr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("swig_varlinkobject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106957 106979])
+                    ("n" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [106980 106988])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106989 107001]))                  
+                :type "int")
+                nil [106919 107344])
+            ("swig_varlink_type" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [107395 107400]))                  
+                :type ("PyTypeObject" type (:type "class") nil nil))
+                nil [107350 110254])
+            ("SWIG_Python_newvarlink" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [110362 110367]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [110315 110542])
+            ("SWIG_Python_addvarlink" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110590 110602])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110603 110614])
+                    ("" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110615 110636])
+                    ("set_attr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("p" variable
+                               (:pointer 1
+                                :type ("PyObject" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [110660 110672]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "void")
+                nil [110548 111083])
+            ("SWIG_globals" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [111126 111131]))                  
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [111089 111265])
+            ("SWIG_Python_InstallConstants" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111552 111564])
+                    ("constants" variable
+                       (:dereference 1
+                        :type ("swig_const_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111565 111593]))                  
+                :type "void")
+                nil [111505 112150])
+            ("SWIG_Python_FixMethods" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("methods" variable
+                       (:pointer 1
+                        :type ("PyMethodDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112433 112454])
+                    ("const_table" variable
+                       (:pointer 1
+                        :type ("swig_const_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112459 112488])
+                    ("types" variable
+                       (:pointer 2
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112493 112516])
+                    ("types_initial" variable
+                       (:pointer 2
+                        :type ("swig_type_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112521 112552]))                  
+                :type "void")
+                nil [112392 113783])
+            ("m" variable
+               (:pointer 1
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [114138 114159])
+            ("d" variable
+               (:pointer 1
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [114138 114159])
+            ("md" variable
+               (:pointer 1
+                :type ("PyObject" type (:type "class") nil nil))
+                nil [114138 114159])
+            ("SWIG_Python_FixMethods" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SwigMethods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115766 115778])
+                    ("" variable (:type ("swig_const_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115779 115796])
+                    ("" variable (:type ("swig_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115797 115808])
+                    ("" variable (:type ("swig_type_initial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [115809 115827]))                  
+                :type "int")
+                nil [115743 115828])
+            ("m" variable
+               (:default-value "Py_InitModule((char *) SWIG_name, SwigMethods)"
+                :type "int")
+                nil [115910 115961])
+            ("d" variable
+               (:default-value "PyModule_GetDict(m)"
+                :type "int")
+                nil [115979 116003])
+            ("md" variable (:type "int") nil [116012 116015])
+            ("SWIG_InitializeModule" function
+               (:prototype-flag t
+                :type "int")
+                nil [116021 116046])
+            ("SWIG_Python_InstallConstants" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("d" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("swig_const_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [117403 117445])
+            ("PyDict_SetItemString" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("md" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117472 117475])
+                    ("" variable (:type ("SWIG_globals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117491 117505]))                  
+                :type "int")
+                nil [117451 117507])
+            ("SWIG_Python_addvarlink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SWIG_globals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [117510 117615]))          
+      :file "example_wrap.c"
+      :pointmax 117687
+      :fsize 129042
+      :lastmodtime '(23266 23143 105482 546000)
+      :unmatched-syntax '((close-paren 117684 . 117685) (punctuation 117675 . 117676) (RETURN 117669 . 117675) (semantic-list 117503 . 117505) (string 117483 . 117489) (semantic-list 117475 . 117483) (number 116043 . 116044) (semantic-list 116006 . 116012) (punctuation 115977 . 115978) (symbol 115974 . 115976) (open-paren 114134 . 114135) (close-paren 114132 . 114133) (VOID 114128 . 114132) (open-paren 114127 . 114128) (symbol "init_example" 114118 . 114127) (VOID 114106 . 114110) (close-paren 113807 . 113808) (semantic-list 110636 . 110642) (semantic-list 110625 . 110636) (symbol 104464 . 104477) (open-paren 103597 . 103598) (close-paren 103555 . 103556) (string 87133 . 87205) (symbol 87127 . 87132) (punctuation 87124 . 87125) (symbol 59560 . 59573) (symbol 44143 . 44156) (TYPEDEF 10327 . 10334) (TYPEDEF 10274 . 10281))
+      :lexical-table 
+        '(("SWIGRUNTIME" . ((symbol "SWIGINTERN" 5710 . 5720)))
+          ("SWIG_SystemError" . ((punctuation "-" 21657 . 21658) (number "10" 21658 . 21660)))
+          ("SWIG_Python_str_DelForPy3" (spp-arg-list ("x") 23527 . 23530))
+          ("PyOS_snprintf" . ((symbol "snprintf" 23926 . 23934)))
+          ("Py_NotImplemented" . ((symbol "PyExc_RuntimeError" 24873 . 24891)))
+          ("swig_owntype" . ((INT "int" 34601 . 34604)))
+          ("SWIG_ConvertPacked" (spp-arg-list ("obj" "ptr" "sz" "ty") 34658 . 34676) . ((symbol "SWIG_Python_ConvertPacked" 34688 . 34713) (semantic-list "(obj, ptr, sz, ty)" 34713 . 34731)))
+          ("SWIG_Python_Raise" (spp-arg-list ("obj" "type" "desc") 36736 . 36753) . ((symbol "SWIG_Python_SetErrorObj" 36755 . 36778) (semantic-list "(SWIG_Python_ExceptionType(desc), obj)" 36778 . 36816)))
+          ("SWIG_POINTER_IMPLICIT_CONV" . ((semantic-list "(SWIG_POINTER_DISOWN   << 1)" 40935 . 40963)))
+          ("LLONG_MAX" . ((symbol "__LONG_LONG_MAX__" 89062 . 89079)))
+          ("SWIG_InstallConstants" (spp-arg-list ("d" "constants") 103856 . 103870) . ((symbol "SWIG_Python_InstallConstants" 103881 . 103909) (semantic-list "(d, constants)" 103909 . 103923)))
+          ("SWIG_PY_POINTER" . ((number "4" 32461 . 32462)))
+          ("SWIGINTERNINLINE" . ((symbol "SWIGINTERN" 2524 . 2534) (symbol "SWIGINLINE" 2535 . 2545)))
+          ("SWIG_UnknownError" . ((punctuation "-" 21333 . 21334) (number "1" 21334 . 21335)))
+          ("SWIG_AttributeError" . ((punctuation "-" 21694 . 21695) (number "11" 21695 . 21697)))
+          ("SWIG_MemoryError" . ((punctuation "-" 21731 . 21732) (number "12" 21732 . 21734)))
+          ("SWIG_PYBUFFER_SIZE" . ((number "1024" 24104 . 24108)))
+          ("SWIG_SetModule" (spp-arg-list ("clientdata" "pointer") 35677 . 35698) . ((symbol "SWIG_Python_SetModule" 35711 . 35732) (semantic-list "(pointer)" 35732 . 35741)))
+          ("SWIG_POINTER_NEW" . ((semantic-list "(SWIG_POINTER_NOSHADOW | SWIG_POINTER_OWN)" 40855 . 40897)))
+          ("LLONG_MIN" . ((semantic-list "(-LLONG_MAX - 1LL)" 89101 . 89119)))
+          ("SWIGINLINE" . ((INLINE "inline" 1581 . 1587)))
+          ("SWIG_TYPE_TABLE_NAME")
+          ("SWIG_CASTRANKLIMIT" . ((semantic-list "(1 << 8)" 8463 . 8471)))
+          ("SWIG_TMPOBJMASK" . ((semantic-list "(SWIG_NEWOBJMASK << 1)" 8704 . 8726)))
+          ("SWIG_OLDOBJ" . ((semantic-list "(SWIG_OK)" 8840 . 8849)))
+          ("SWIG_AddTmpMask" (spp-arg-list ("r") 9269 . 9272) . ((semantic-list "(SWIG_IsOK(r) ? (r | SWIG_TMPOBJMASK) : r)" 9281 . 9323)))
+          ("SWIG_CheckState" (spp-arg-list ("r") 10177 . 10180) . ((semantic-list "(SWIG_IsOK(r) ? 1 : 0)" 10181 . 10203)))
+          ("SWIG_as_voidptr" (spp-arg-list ("a") 87607 . 87610) . ((semantic-list "(void *)" 87611 . 87619) (semantic-list "((const void *)(a))" 87619 . 87638)))
+          ("SWIG_addvarlink" (spp-arg-list ("p" "name" "get_attr" "set_attr") 103744 . 103773) . ((symbol "SWIG_Python_addvarlink" 103775 . 103797) (semantic-list "(p, name, get_attr, set_attr)" 103797 . 103826)))
+          ("SWIGEXPORT" . ((symbol "__attribute__" 3059 . 3072) (semantic-list "((visibility(\"default\")))" 3073 . 3098)))
+          ("SWIG_POINTER_OWN" . ((number "0x1" 6090 . 6093)))
+          ("SWIG_ERROR" . ((semantic-list "(-1)" 8232 . 8236)))
+          ("SWIG_OverflowError" . ((punctuation "-" 21549 . 21550) (number "7" 21550 . 21551)))
+          ("PyExc_StopIteration" . ((symbol "PyExc_RuntimeError" 24624 . 24642)))
+          ("SWIG_PYTHON_THREAD_BEGIN_ALLOW")
+          ("SWIGVERSION" . ((number "0x030012" 87539 . 87547)))
+          ("SWIG_newvarlink" (spp-arg-list nil 103665 . 103667) . ((symbol "SWIG_Python_newvarlink" 103696 . 103718) (semantic-list "()" 103718 . 103720)))
+          ("SWIG_BUFFER_SIZE" . ((number "1024" 5891 . 5895)))
+          ("SWIG_NEWOBJ" . ((semantic-list "(SWIG_OK | SWIG_NEWOBJMASK)" 8885 . 8912)))
+          ("SWIG_IsNewObj" (spp-arg-list ("r") 9192 . 9195) . ((semantic-list "(SWIG_IsOK(r) && (r & SWIG_NEWOBJMASK))" 9206 . 9245)))
+          ("SWIG_AddCast" (spp-arg-list ("r") 10144 . 10147) . ((semantic-list "(r)" 10148 . 10151)))
+          ("PyDescr_TYPE" (spp-arg-list ("x") 27361 . 27364) . ((semantic-list "(((PyDescrObject *)(x))->d_type)" 27365 . 27397)))
+          ("SWIG_NewInstanceObj" (spp-arg-list ("ptr" "type" "flags") 34987 . 35005) . ((symbol "SWIG_NewPointerObj" 35016 . 35034) (semantic-list "(ptr, type, flags)" 35034 . 35052)))
+          ("SWIG_POINTER_NOSHADOW" . ((semantic-list "(SWIG_POINTER_OWN      << 1)" 40790 . 40818)))
+          ("SWIG_contract_assert" (spp-arg-list ("expr" "msg") 86555 . 86566) . 
+              ((IF "if" 86567 . 86569) (semantic-list "(!(expr))" 86570 . 86579) (semantic-list "{ SWIG_Error(SWIG_RuntimeError, msg); SWIG_fail; }" 86580 . 86630) (ELSE "else" 86631 . 86635)))
+          ("SWIG_MangledTypeQuery" (spp-arg-list ("name") 86941 . 86947) . ((symbol "SWIG_MangledTypeQueryModule" 86948 . 86975) (semantic-list "(&swig_module, &swig_module, name)" 86975 . 87009)))
+          ("SWIGPYTHON")
+          ("GCC_HASCLASSVISIBILITY")
+          ("SWIG_POINTER_DISOWN" . ((number "0x1" 5975 . 5978)))
+          ("SWIG_DivisionByZero" . ((punctuation "-" 21513 . 21514) (number "6" 21514 . 21515)))
+          ("SWIG_NewMemberObj" (spp-arg-list ("ptr" "sz" "type") 35473 . 35488) . ((symbol "SWIG_Python_NewPackedObj" 35504 . 35528) (semantic-list "(ptr, sz, type)" 35528 . 35543)))
+          ("SWIGTYPE_p_char" . ((symbol "swig_types" 86709 . 86719) (semantic-list "[0]" 86719 . 86722)))
+          ("SWIG_POINTER_EXCEPTION" . ((number "0" 82353 . 82354)))
+          ("SWIG_IsOK" (spp-arg-list ("r") 8254 . 8257) . ((semantic-list "(r >= 0)" 8272 . 8280)))
+          ("PySequence_Size" . ((symbol "PySequence_Length" 25288 . 25305)))
+          ("SWIG_PYTHON_THREAD_END_BLOCK")
+          ("SWIG_ConvertMember" (spp-arg-list ("obj" "ptr" "sz" "ty") 35374 . 35392) . ((symbol "SWIG_Python_ConvertPacked" 35404 . 35429) (semantic-list "(obj, ptr, sz, ty)" 35429 . 35447)))
+          ("SWIG_BUILTIN_TP_INIT" . ((semantic-list "(SWIG_POINTER_OWN << 2)" 40998 . 41021)))
+          ("SWIG_exception_fail" (spp-arg-list ("code" "msg") 86463 . 86474) . 
+              ((DO "do" 86475 . 86477) (semantic-list "{ SWIG_Error(code, msg); SWIG_fail; }" 86478 . 86515) (WHILE "while" 86516 . 86521) (semantic-list "(0)" 86521 . 86524)))
+          ("SWIGSTDCALL")
+          ("SWIG_DelNewMask" (spp-arg-list ("r") 9115 . 9118) . ((semantic-list "(SWIG_IsOK(r) ? (r & ~SWIG_NEWOBJMASK) : r)" 9127 . 9170)))
+          ("SWIG_IOError" . ((punctuation "-" 21369 . 21370) (number "2" 21370 . 21371)))
+          ("PyObject_GenericGetAttr" . ((number "0" 24718 . 24719)))
+          ("PyDescr_NAME" (spp-arg-list ("x") 27418 . 27421) . ((semantic-list "(((PyDescrObject *)(x))->d_name)" 27422 . 27454)))
+          ("SWIG_CheckImplicit" (spp-arg-list ("ty") 34395 . 34399) . ((symbol "SWIG_Python_CheckImplicit" 34425 . 34450) (semantic-list "(ty)" 34450 . 34454)))
+          ("SWIG_AcquirePtr" (spp-arg-list ("ptr" "src") 34479 . 34489) . ((symbol "SWIG_Python_AcquirePtr" 34512 . 34534) (semantic-list "(ptr, src)" 34534 . 34544)))
+          ("SWIG_From_double" . ((symbol "PyFloat_FromDouble" 88890 . 88908)))
+          ("ULLONG_MAX" . ((semantic-list "(LLONG_MAX * 2ULL + 1ULL)" 89142 . 89167)))
+          ("SWIGTEMPLATEDISAMBIGUATOR")
+          ("SWIGINTERN" . ((STATIC "static" 2413 . 2419) (symbol "SWIGUNUSED" 2420 . 2430)))
+          ("SWIG_BADOBJ" . ((semantic-list "(SWIG_ERROR)" 8792 . 8804)))
+          ("SWIG_RuntimeError" . ((punctuation "-" 21405 . 21406) (number "3" 21406 . 21407)))
+          ("SWIG_SetErrorObj" . ((symbol "SWIG_Python_SetErrorObj" 35881 . 35904)))
+          ("SWIG_init" . ((symbol "init_example" 87465 . 87477)))
+          ("SWIG_PY_BINARY" . ((number "5" 32487 . 32488)))
+          ("SWIG_arg_fail" (spp-arg-list ("arg") 82376 . 82381) . ((symbol "SWIG_Python_ArgFail" 82387 . 82406) (semantic-list "(arg)" 82406 . 82411)))
+          ("SWIGRUNTIMEINLINE" . ((symbol "SWIGRUNTIME" 5782 . 5793) (symbol "SWIGINLINE" 5794 . 5804)))
+          ("SWIG_OK" . ((semantic-list "(0)" 8193 . 8196)))
+          ("SWIG_TypeError" . ((punctuation "-" 21477 . 21478) (number "5" 21478 . 21479)))
+          ("Py_TYPE" (spp-arg-list ("op") 22639 . 22643) . ((semantic-list "((op)->ob_type)" 22644 . 22659)))
+          ("SWIG_Python_str_FromFormat" . ((symbol "PyString_FromFormat" 22858 . 22877)))
+          ("Py_hash_t" . ((LONG "long" 27473 . 27477)))
+          ("SWIG_ConvertPtrAndOwn" (spp-arg-list ("obj" "pptr" "type" "flags" "own") 33927 . 33952) . ((symbol "SWIG_Python_ConvertPtrAndOwn" 33954 . 33982) (semantic-list "(obj, pptr, type, flags, own)" 33982 . 34011)))
+          ("SWIG_NewFunctionPtrObj" (spp-arg-list ("ptr" "type") 35225 . 35236) . ((symbol "SWIG_Python_NewPointerObj" 35251 . 35276) (semantic-list "(NULL, ptr, type, 0)" 35276 . 35296)))
+          ("SWIG_Error" (spp-arg-list ("code" "msg") 36132 . 36143) . ((symbol "SWIG_Python_SetErrorMsg" 36157 . 36180) (semantic-list "(SWIG_ErrorType(code), msg)" 36180 . 36207)))
+          ("SWIG_VERSION" . ((symbol "SWIGVERSION" 87570 . 87581)))
+          ("SWIG_PYTHON_DIRECTOR_NO_VTABLE")
+          ("SWIGUNUSEDPARM" (spp-arg-list ("p") 2278 . 2281))
+          ("SWIG_RUNTIME_VERSION" . ((string "\"4\"" 5062 . 5065)))
+          ("SWIG_ArgError" (spp-arg-list ("r") 8302 . 8305) . ((semantic-list "((r != SWIG_ERROR) ? r : SWIG_TypeError)" 8316 . 8356)))
+          ("SWIG_NEWOBJMASK" . ((semantic-list "(SWIG_CASTRANKLIMIT  << 1)" 8575 . 8601)))
+          ("SWIG_TMPOBJ" . ((semantic-list "(SWIG_OK | SWIG_TMPOBJMASK)" 8948 . 8975)))
+          ("SWIG_AddNewMask" (spp-arg-list ("r") 9037 . 9040) . ((semantic-list "(SWIG_IsOK(r) ? (r | SWIG_NEWOBJMASK) : r)" 9049 . 9091)))
+          ("SWIG_IsTmpObj" (spp-arg-list ("r") 9424 . 9427) . ((semantic-list "(SWIG_IsOK(r) && (r & SWIG_TMPOBJMASK))" 9438 . 9477)))
+          ("PY_SSIZE_T_MAX" . ((symbol "INT_MAX" 25778 . 25785)))
+          ("Py_VISIT" (spp-arg-list ("op") 26525 . 26529) . 
+              ((DO "do" 26537 . 26539) (semantic-list "{ 						\\
+    if (op) {					\\
+      int vret = visit((op), arg);		\\
+      if (vret)					\\
+        return vret;				\\
+    }						\\
+  }" 26540 . 26672) (WHILE "while" 26673 . 26678) (semantic-list "(0)" 26679 . 26682)))
+          ("SWIG_ConvertPtr" (spp-arg-list ("obj" "pptr" "type" "flags") 33818 . 33842) . ((symbol "SWIG_Python_ConvertPtr" 33851 . 33873) (semantic-list "(obj, pptr, type, flags)" 33873 . 33897)))
+          ("SWIG_InternalNewPointerObj" (spp-arg-list ("ptr" "type" "flags") 34299 . 34317) . ((symbol "SWIG_Python_NewPointerObj" 34318 . 34343) (semantic-list "(NULL, ptr, type, flags)" 34343 . 34367)))
+          ("SWIG_ConvertInstance" (spp-arg-list ("obj" "pptr" "type" "flags") 34892 . 34916) . ((symbol "SWIG_ConvertPtr" 34920 . 34935) (semantic-list "(obj, pptr, type, flags)" 34935 . 34959)))
+          ("SWIG_GetModule" (spp-arg-list ("clientdata") 35587 . 35599) . ((symbol "SWIG_Python_GetModule" 35621 . 35642) (semantic-list "(clientdata)" 35642 . 35654)))
+          ("SWIG_NewClientData" (spp-arg-list ("obj") 35768 . 35773) . ((symbol "SwigPyClientData_New" 35798 . 35818) (semantic-list "(obj)" 35818 . 35823)))
+          ("SWIG_fail" . ((symbol "goto" 36252 . 36256) (symbol "fail" 36257 . 36261)))
+          ("SWIG_STATIC_POINTER" (spp-arg-list ("var") 40446 . 40451) . ((symbol "var" 40453 . 40456)))
+          ("SWIG_name" . ((string "\"_example\"" 87507 . 87517)))
+          ("SWIG_SyntaxError" . ((punctuation "-" 21585 . 21586) (number "8" 21586 . 21587)))
+          ("SWIG_ValueError" . ((punctuation "-" 21621 . 21622) (number "9" 21622 . 21623)))
+          ("PY_SSIZE_T_MIN" . ((symbol "INT_MIN" 25810 . 25817)))
+          ("PyInt_FromSize_t" (spp-arg-list ("x") 26441 . 26444) . ((symbol "PyInt_FromLong" 26445 . 26459) (semantic-list "((long)x)" 26459 . 26468)))
+          ("SWIG_PYTHON_INITIALIZE_THREADS")
+          ("SWIG_PYTHON_THREAD_BEGIN_BLOCK")
+          ("SWIG_PYTHON_THREAD_END_ALLOW")
+          ("SWIG_NewPointerObj" (spp-arg-list ("ptr" "type" "flags") 34177 . 34195) . ((symbol "SWIG_Python_NewPointerObj" 34207 . 34232) (semantic-list "(NULL, ptr, type, flags)" 34232 . 34256)))
+          ("SWIG_Python_CallFunctor" (spp-arg-list ("functor" "obj") 40174 . 40188) . 
+              ((symbol "PyObject_CallFunction" 40197 . 40218) (semantic-list "(functor, \"O\", obj)" 40218 . 40237) (punctuation ";" 40237 . 40238)))
+          ("SWIGUNUSED")
+          ("SWIG_CAST_NEW_MEMORY" . ((number "0x2" 6014 . 6017)))
+          ("SWIG_DelTmpMask" (spp-arg-list ("r") 9347 . 9350) . ((semantic-list "(SWIG_IsOK(r) ? (r & ~SWIG_TMPOBJMASK) : r)" 9359 . 9402)))
+          ("SWIG_IndexError" . ((punctuation "-" 21441 . 21442) (number "4" 21442 . 21443)))
+          ("SWIG_NullReferenceError" . ((punctuation "-" 21770 . 21771) (number "13" 21771 . 21773)))
+          ("PyObject_DEL" . ((symbol "PyObject_Del" 24452 . 24464)))
+          ("PyString_AsStringAndSize" (spp-arg-list ("obj" "s" "len") 25078 . 25091) . ((semantic-list "{*s = PyString_AsString(obj); *len = *s ? strlen(*s) : 0;}" 25092 . 25150)))
+          ("SWIG_Python_ConvertPtr" (spp-arg-list ("obj" "pptr" "type" "flags") 33713 . 33737) . ((symbol "SWIG_Python_ConvertPtrAndOwn" 33739 . 33767) (semantic-list "(obj, pptr, type, flags, 0)" 33767 . 33794)))
+          ("SWIG_NewPackedObj" (spp-arg-list ("ptr" "sz" "type") 34757 . 34772) . ((symbol "SWIG_Python_NewPackedObj" 34788 . 34812) (semantic-list "(ptr, sz, type)" 34812 . 34827)))
+          ("SWIG_ConvertFunctionPtr" (spp-arg-list ("obj" "pptr" "type") 35122 . 35139) . ((symbol "SWIG_Python_ConvertFunctionPtr" 35147 . 35177) (semantic-list "(obj, pptr, type)" 35177 . 35194)))
+          ("SWIG_SetErrorMsg" . ((symbol "SWIG_Python_SetErrorMsg" 35982 . 36005)))
+          ("SWIG_ErrorType" (spp-arg-list ("code") 36035 . 36041) . ((symbol "SWIG_Python_ErrorType" 36062 . 36083) (semantic-list "(code)" 36083 . 36089)))
+          ("SWIG_BUILTIN_INIT" . ((semantic-list "(SWIG_BUILTIN_TP_INIT | SWIG_POINTER_OWN)" 41052 . 41093)))
+          ("SWIG_TypeQuery" (spp-arg-list ("name") 86850 . 86856) . ((symbol "SWIG_TypeQueryModule" 86857 . 86877) (semantic-list "(&swig_module, &swig_module, name)" 86877 . 86911)))
+          ("SWIG_as_voidptrptr" (spp-arg-list ("a") 87666 . 87669) . ((semantic-list "((void)SWIG_as_voidptr(*a),(void**)(a))" 87670 . 87709)))
+          ("SWIG_MustGetPtr" (spp-arg-list ("p" "type" "argnum" "flags") 82435 . 82459) . ((symbol "SWIG_Python_MustGetPtr" 82461 . 82483) (semantic-list "(p, type, argnum, flags)" 82483 . 82507)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("example" include nil nil [1 15])
+            ("fact" function (:arguments 
+              ( ("n" variable nil (reparse-symbol function_parameters) [27 28]))              ) nil [18 70])
+            ("mod" function (:arguments 
+              ( ("x" variable nil (reparse-symbol function_parameters) [80 81])
+                ("y" variable nil (reparse-symbol function_parameters) [83 84]))              ) nil [72 104])
+            ("if" code nil nil [106 213]))          
+      :file "main.py"
+      :pointmax 213
+      :fsize 212
+      :lastmodtime '(23266 21659 193273 492000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ctime" include (:system-flag t) nil [1 17])
+            ("cstdint" include (:system-flag t) nil [18 36])
+            ("fact" function
+               (:arguments 
+                  ( ("n" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53 64]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [39 102])
+            ("my_mod" function
+               (:arguments 
+                  ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119 129])
+                    ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130 140]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [104 160])
+            ("get_time" function
+               (:pointer 1
+                :type "char")
+                nil [162 238]))          
+      :file "example.cpp"
+      :pointmax 239
+      :fsize 238
+      :lastmodtime '(23266 22301 17565 746000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!CPython!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

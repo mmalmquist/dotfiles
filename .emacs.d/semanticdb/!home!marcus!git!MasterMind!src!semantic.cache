@@ -1,0 +1,412 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gtk/gtk.h" include (:system-flag t) nil [1 21])
+            ("stdlib.h" include (:system-flag t) nil [22 41])
+            ("inttypes.h" include (:system-flag t) nil [42 63])
+            ("string.h" include (:system-flag t) nil [64 83])
+            ("iostream" include (:system-flag t) nil [85 104])
+            ("memory" include (:system-flag t) nil [105 122])
+            ("Bitmap.hpp" include nil nil [124 145])
+            ("CrystalModel.hpp" include nil nil [146 173])
+            ("CrystalView.hpp" include nil nil [174 200])
+            ("CrystalControl.hpp" include nil nil [201 230])
+            ("m_mode" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [232 259])
+            ("m_size" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [260 282])
+            ("m_cc" variable
+               (:typemodifiers ("static")
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CrystalControl" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [283 327])
+            ("close_window_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [357 362]))                  
+                :type "void")
+                nil [329 366])
+            ("create_window" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("GtkApplication" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [401 421]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [368 677])
+            ("activate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("GtkApplication" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [700 720])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [723 742]))                  
+                :type "void")
+                nil [679 1370])
+            ("cli_sim" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1403]))                  
+                :type "int")
+                nil [1372 1680])
+            ("gui_sim" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1701 1710])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1712 1725]))                  
+                :type "int")
+                nil [1682 2034])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2045 2054])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2060 2073]))                  
+                :type "int")
+                nil [2036 2857]))          
+      :file "main.cpp"
+      :pointmax 2858
+      :fsize 2857
+      :lastmodtime '(23297 16954 212331 970000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Bitmap.hpp"
+      :file "Bitmap.hpp"
+      :fsize 883
+      :lastmodtime '(23297 16954 216331 979000))
+    (semanticdb-table "CrystalModel.hpp"
+      :file "CrystalModel.hpp"
+      :fsize 1702
+      :lastmodtime '(23297 16954 212331 970000))
+    (semanticdb-table "CrystalView.hpp"
+      :file "CrystalView.hpp"
+      :fsize 681
+      :lastmodtime '(23297 16954 216331 979000))
+    (semanticdb-table "CrystalControl.hpp"
+      :file "CrystalControl.hpp"
+      :fsize 864
+      :lastmodtime '(23297 16954 216331 979000))
+    (semanticdb-table "MasterMind.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "MasterMind.cpp"
+      :pointmax 1
+      :unmatched-syntax nil)
+    (semanticdb-table "MasterMind.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MASTER_MIND_MODEL_HPP_" variable (:constant-flag t) nil [40 62])
+            ("MasterMindModel" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [88 95])
+                    ("MasterMindModel" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("cols" variable
+                               (:default-value "5"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [114 124])
+                            ("nbr_of_colors" variable
+                               (:default-value "8"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [126 145]))                          
+                        :type ("MasterMindModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [98 179])
+                    ("private" label nil (reparse-symbol classsubparts) [180 188]))                  
+                :type "class")
+                nil [64 191]))          
+      :file "MasterMind.hpp"
+      :pointmax 225
+      :fsize 224
+      :lastmodtime '(23297 19847 572522 369000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MASTER_MIND_MODEL_HPP_")
+          )
+)
+    (semanticdb-table "Color.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("COLOR_HPP_" variable (:constant-flag t) nil [28 38])
+            ("Color" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [55 62])
+                    ("Color" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("red" variable (:type "int") (reparse-symbol arg-sub-list) [71 79])
+                            ("green" variable (:type "int") (reparse-symbol arg-sub-list) [80 90])
+                            ("blue" variable (:type "int") (reparse-symbol arg-sub-list) [91 100]))                          
+                        :type ("Color" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [65 147])
+                    ("white" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [153 178])
+                    ("WHITE" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [181 206])
+                    ("lightGray" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [209 238])
+                    ("LIGHT_GRAY" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [241 271])
+                    ("gray" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [274 298])
+                    ("GRAY" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [301 325])
+                    ("darkGray" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [328 356])
+                    ("DARK_GRAY" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [359 388])
+                    ("black" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [391 416])
+                    ("BLACK" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [419 444])
+                    ("red" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [447 470])
+                    ("RED" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [473 496])
+                    ("pink" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [499 523])
+                    ("PINK" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [526 550])
+                    ("orange" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [553 579])
+                    ("ORANGE" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [582 608])
+                    ("yellow" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [611 637])
+                    ("YELLOW" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [640 666])
+                    ("green" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [669 694])
+                    ("GREEN" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [697 722])
+                    ("magenta" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [725 752])
+                    ("MAGENTA" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [755 782])
+                    ("cyan" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [785 809])
+                    ("CYAN" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [812 836])
+                    ("blue" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [839 863])
+                    ("BLUE" variable
+                       (:typemodifiers ("static")
+                        :type ("Color" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [866 890])
+                    ("private" label nil (reparse-symbol classsubparts) [891 899])
+                    ("m_red" variable (:type "int") (reparse-symbol classsubparts) [902 912])
+                    ("m_green" variable (:type "int") (reparse-symbol classsubparts) [915 927])
+                    ("m_blue" variable (:type "int") (reparse-symbol classsubparts) [930 941]))                  
+                :type "struct")
+                nil [40 944]))          
+      :file "Color.hpp"
+      :pointmax 966
+      :fsize 965
+      :lastmodtime '(23297 19610 336248 610000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COLOR_HPP_")
+          )
+)
+    (semanticdb-table "Color.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Color.hpp" include nil nil [1 21])
+            ("white" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [23 63])
+            ("Color::WHITE" variable
+               (:default-value "white"
+                :type ("Color" type (:type "class") nil nil))
+                nil [64 97])
+            ("lightGray" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [98 142])
+            ("Color::LIGHT_GRAY" variable
+               (:default-value "lightGray"
+                :type ("Color" type (:type "class") nil nil))
+                nil [143 185])
+            ("gray" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [186 225])
+            ("Color::GRAY" variable
+               (:default-value "gray"
+                :type ("Color" type (:type "class") nil nil))
+                nil [226 257])
+            ("darkGray" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [258 298])
+            ("Color::DARK_GRAY" variable
+               (:default-value "darkGray"
+                :type ("Color" type (:type "class") nil nil))
+                nil [299 339])
+            ("black" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [340 374])
+            ("Color::BLACK" variable
+               (:default-value "black"
+                :type ("Color" type (:type "class") nil nil))
+                nil [375 408])
+            ("red" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [409 443])
+            ("Color::RED" variable
+               (:default-value "red"
+                :type ("Color" type (:type "class") nil nil))
+                nil [444 473])
+            ("pink" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [474 513])
+            ("Color::PINK" variable
+               (:default-value "pink"
+                :type ("Color" type (:type "class") nil nil))
+                nil [514 545])
+            ("orange" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [546 585])
+            ("Color::ORANGE" variable
+               (:default-value "orange"
+                :type ("Color" type (:type "class") nil nil))
+                nil [586 621])
+            ("yellow" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [622 661])
+            ("Color::YELLOW" variable
+               (:default-value "yellow"
+                :type ("Color" type (:type "class") nil nil))
+                nil [662 697])
+            ("green" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [698 734])
+            ("Color::GREEN" variable
+               (:default-value "green"
+                :type ("Color" type (:type "class") nil nil))
+                nil [735 768])
+            ("magenta" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [769 809])
+            ("Color::MAGENTA" variable
+               (:default-value "magenta"
+                :type ("Color" type (:type "class") nil nil))
+                nil [810 847])
+            ("cyan" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [848 885])
+            ("Color::CYAN" variable
+               (:default-value "cyan"
+                :type ("Color" type (:type "class") nil nil))
+                nil [886 917])
+            ("blue" function
+               (:prototype-flag t
+                :parent "Color"
+                :type ("Color" type (:type "class") nil nil))
+                nil [918 953])
+            ("Color::BLUE" variable
+               (:default-value "blue"
+                :type ("Color" type (:type "class") nil nil))
+                nil [954 985]))          
+      :file "Color.cpp"
+      :pointmax 986
+      :fsize 985
+      :lastmodtime '(23297 19582 584218 718000)
+      :unmatched-syntax '((number 948 . 951) (number 945 . 946) (number 942 . 943) (number 880 . 883) (number 875 . 878) (number 872 . 873) (number 804 . 807) (number 801 . 802) (number 796 . 799) (number 731 . 732) (number 726 . 729) (number 723 . 724) (number 658 . 659) (number 653 . 656) (number 648 . 651) (number 582 . 583) (number 577 . 580) (number 572 . 575) (number 508 . 511) (number 503 . 506) (number 498 . 501) (number 440 . 441) (number 437 . 438) (number 432 . 435) (number 371 . 372) (number 368 . 369) (number 365 . 366) (number 294 . 296) (number 290 . 292) (number 286 . 288) (number 220 . 223) (number 215 . 218) (number 210 . 213) (number 137 . 140) (number 132 . 135) (number 127 . 130) (number 58 . 61) (number 53 . 56) (number 48 . 51))))
+  :file "!home!marcus!git!MasterMind!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

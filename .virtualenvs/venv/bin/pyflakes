@@ -1,4 +1,4 @@
-#!/home/marcus/.virtualenvs/venv/bin/python
+#!/home/marcus/git/dotfiles/.virtualenvs/venv/bin/python
 
 # -*- coding: utf-8 -*-
 import re

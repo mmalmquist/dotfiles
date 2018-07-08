@@ -4,24 +4,16 @@
   :tables
   (list
     (semanticdb-table "semanticdb-table"
-      :major-mode c++-mode
+      :major-mode 'c++-mode
       :tags 
-        '( ("iostream" include (:system-flag t) nil [315 334])
-            ("ImageMagick-7/Magick++.h" include (:system-flag t) nil [335 370])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [381 390])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [391 404]))                  
-                :type "int")
-                nil [372 1082]))          
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("CL/cl2.hpp" include (:system-flag t) nil [39 60])
+            ("main" function (:type "int") nil [62 399]))          
       :file "JunkCpp.cpp"
-      :pointmax 1083
-      :fsize 1082
-      :lastmodtime '(23124 49103 495176 317000)
+      :pointmax 400
+      :fsize 399
+      :lastmodtime '(23302 39414 106461 775000)
       :unmatched-syntax nil))
   :file "!home!marcus!Programming!Cpp!semantic.cache"
   :semantic-tag-version "2.0"

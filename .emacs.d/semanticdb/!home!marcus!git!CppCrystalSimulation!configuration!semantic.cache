@@ -1,0 +1,23 @@
+;; Object configuration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "configuration/"
+  :tables
+  (list
+    (semanticdb-table "root_directory.h.in"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ROOT_DIRECTORY_H" variable (:constant-flag t) nil [34 50])
+            ("SYS_PATH" variable (:constant-flag t) nil [60 68]))          
+      :file "root_directory.h.in"
+      :pointmax 137
+      :fsize 136
+      :lastmodtime '(23312 63908 429125 673000)
+      :unmatched-syntax '((symbol 101 . 109) (string 79 . 100) (semantic-list 68 . 78))
+      :lexical-table 
+        '(("SYS_PATH" (spp-arg-list ("REL_PATH") 68 . 78) . ((string "\"${CMAKE_SOURCE_DIR}\"" 79 . 100) (symbol "REL_PATH" 101 . 109)))
+          ("ROOT_DIRECTORY_H")
+          )
+))
+  :file "!home!marcus!git!CppCrystalSimulation!configuration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

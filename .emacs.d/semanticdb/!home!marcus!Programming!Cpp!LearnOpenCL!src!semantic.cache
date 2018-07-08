@@ -1,0 +1,32 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("CL/cl.h" include (:system-flag t) nil [92 110])
+            ("MAX_SOURCE_SIZE" variable (:constant-flag t) nil [128 143])
+            ("LIST_SIZE" variable (:constant-flag t) nil [163 172])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [189 194]))                  
+                :type "int")
+                nil [180 4147]))          
+      :file "main.c"
+      :pointmax 4148
+      :fsize 4049
+      :lastmodtime '(23302 49748 246763 811000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_SOURCE_SIZE" . ((semantic-list "(0x100000)" 144 . 154)))
+          ("LIST_SIZE" . ((number "1024" 173 . 177)))
+          )
+))
+  :file "!home!marcus!Programming!Cpp!LearnOpenCL!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

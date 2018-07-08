@@ -1,0 +1,93 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("inttypes.h" include (:system-flag t) nil [1 22])
+            ("stdbool.h" include (:system-flag t) nil [23 43])
+            ("math.h" include (:system-flag t) nil [44 61])
+            ("stdio.h" include (:system-flag t) nil [62 80])
+            ("stdlib.h" include (:system-flag t) nil [81 100])
+            ("time.h" include (:system-flag t) nil [101 118])
+            ("FMOD" variable (:constant-flag t) nil [128 132])
+            ("NANOSECONDS_PER_SECOND" variable (:constant-flag t) nil [145 167])
+            ("FloatOverNetwork" type
+               (:members 
+                  ( ("exponent" variable (:type ("int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [211 227])
+                    ("val" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [232 244]))                  
+                :type "struct")
+                nil [181 247])
+            ("get_time" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [265 270]))                  
+                :type "double")
+                nil [249 432])
+            ("randf" function (:type "float") nil [434 489])
+            ("fill_rand" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [506 515])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [516 530]))                  
+                :type "void")
+                nil [491 623])
+            ("float_to_fpon_struct" function
+               (:arguments 
+                  ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [651 659])
+                    ("fon" variable
+                       (:pointer 1
+                        :type ("FloatOverNetwork" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [660 689]))                  
+                :type "void")
+                nil [625 830])
+            ("fpon_to_float_struct" function
+               (:arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [858 867])
+                    ("fon" variable
+                       (:pointer 1
+                        :type ("FloatOverNetwork" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [868 897]))                  
+                :type "void")
+                nil [832 955])
+            ("print_conversion_struct" function
+               (:arguments 
+                  ( ("f" variable (:type "float") (reparse-symbol arg-sub-list) [987 995])
+                    ("print" variable (:type "bool") (reparse-symbol arg-sub-list) [996 1007]))                  
+                :type "float")
+                nil [957 1272])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1283 1292])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1293 1306]))                  
+                :type "int")
+                nil [1274 1708]))          
+      :file "main.c"
+      :pointmax 1709
+      :fsize 1708
+      :lastmodtime '(23272 31718 613459 872000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FMOD" . ((number "1e7" 133 . 136)))
+          ("NANOSECONDS_PER_SECOND" . ((number "1000000000L" 168 . 179)))
+          )
+))
+  :file "!home!marcus!Programming!C!floating-point-cmp!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

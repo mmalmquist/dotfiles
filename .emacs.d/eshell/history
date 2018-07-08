@@ -122,3 +122,6 @@ ls
 mv codeblocks-16.01.release/ ~/dev/
 ls ~/dev/
 codeblocks &
+pip freeze
+source ~/.virtualenvs/
+source ~/.virtualenvs/venv/bin/activate

@@ -3,10 +3,6 @@
 (semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-
-
-
-
     (semanticdb-table "semanticdb-table"
       :major-mode c++-mode
       :tags 
@@ -51,6 +47,42 @@
       :pointmax 1807
       :fsize 1806
       :lastmodtime '(23215 59408 144544 856000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("../include/CrystalControl.hpp" include nil nil [1 41])
+            ("../include/CrystalModel.hpp" include nil nil [43 81])
+            ("../include/CrystalView.hpp" include nil nil [82 119])
+            ("CrystalControl" function
+               (:constructor-flag t
+                :parent "CrystalControl"
+                :arguments 
+                  ( ("cm" variable (:type ("CrystalModel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152 168]))                  
+                :type ("CrystalControl" type (:type "class") nil nil))
+                nil [121 800])
+            ("CrystalControl" function
+               (:destructor-flag t
+                :parent "CrystalControl"
+                :type "void")
+                nil [802 900])
+            ("Event" function
+               (:parent "CrystalControl"
+                :arguments 
+                  ( ("event" variable
+                       (:reference 1
+                        :type ("AWEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [929 944]))                  
+                :type "void")
+                nil [902 1548])
+            ("RunThread" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1550 1690]))          
+      :file "CrystalControl.cpp"
+      :pointmax 1691
+      :fsize 1690
+      :lastmodtime '(23215 59011 232701 668000)
       :unmatched-syntax nil))
   :file "!home!marcus!git!CrystalSim!src!semantic.cache"
   :semantic-tag-version "2.0"

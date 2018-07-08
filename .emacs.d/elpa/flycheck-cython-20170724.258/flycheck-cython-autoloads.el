@@ -1,10 +1,11 @@
 ;;; flycheck-cython-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("flycheck-cython.el") (23011 24563 168267
-;;;;;;  875000))
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/flycheck-cython-20170724.258/flycheck-cython-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/flycheck-cython-20170724.258/flycheck-cython.el")
+;;;;;;  (23281 37098 270218 353000))
 
 ;;;***
 

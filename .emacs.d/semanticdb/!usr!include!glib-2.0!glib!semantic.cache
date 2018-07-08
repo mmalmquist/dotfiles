@@ -1,0 +1,1105 @@
+;; Object glib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "glib/"
+  :tables
+  (list
+    (semanticdb-table "gmain.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_MAIN_H__" variable (:constant-flag t) nil [780 792])
+            ("glib/gpoll.h" include (:system-flag t) nil [915 938])
+            ("glib/gslist.h" include (:system-flag t) nil [939 963])
+            ("glib/gthread.h" include (:system-flag t) nil [964 989])
+            ("GIOCondition" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("G_IO_IN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1037 1063])
+                          ("GLIB_SYSDEF_POLLIN" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1045 1064])
+                          ("G_IO_OUT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1067 1095])
+                          ("GLIB_SYSDEF_POLLOUT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1076 1096])
+                          ("G_IO_PRI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1099 1127])
+                          ("GLIB_SYSDEF_POLLPRI" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1108 1128])
+                          ("G_IO_ERR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1131 1159])
+                          ("GLIB_SYSDEF_POLLERR" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1140 1160])
+                          ("G_IO_HUP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1163 1191])
+                          ("GLIB_SYSDEF_POLLHUP" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1172 1192])
+                          ("G_IO_NVAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1195 1225])
+                          ("GLIB_SYSDEF_POLLNVAL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1205 1227]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1006 1241])
+            ("GMainContext" type
+               (:typedef ("_GMainContext" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1387 1440])
+            ("GMainLoop" type
+               (:typedef ("_GMainLoop" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1583 1633])
+            ("GSource" type
+               (:typedef ("_GSource" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1738 1786])
+            ("GSourcePrivate" type
+               (:typedef ("_GSourcePrivate" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1787 1842])
+            ("GSourceCallbackFuncs" type
+               (:typedef ("_GSourceCallbackFuncs" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2193 2254])
+            ("GSourceFuncs" type
+               (:typedef ("_GSourceFuncs" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5289 5342])
+            ("GSourceFunc" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6098 6117]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [6067 6118])
+            ("GChildWatchFunc" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("pid" variable (:type ("GPid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6562 6575])
+                    ("status" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6615 6631])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6671 6690]))                  
+                :type "void")
+                nil [6531 6691])
+            ("_GSource" type
+               (:members 
+                  ( ("callback_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6730 6753])
+                    ("callback_funcs" variable
+                       (:pointer 1
+                        :type ("GSourceCallbackFuncs" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6756 6793])
+                    ("source_funcs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GSourceFuncs" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6797 6830])
+                    ("ref_count" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6833 6849])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6853 6875])
+                    ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6879 6893])
+                    ("flags" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6896 6908])
+                    ("source_id" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6911 6927])
+                    ("poll_fds" variable
+                       (:pointer 1
+                        :type ("GSList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6931 6948])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6954 6968])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6971 6985])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6989 7003])
+                    ("priv" variable
+                       (:pointer 1
+                        :type ("GSourcePrivate" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7007 7028]))                  
+                :type "struct")
+                nil [6692 7031])
+            ("_GSourceCallbackFuncs" type
+               (:members 
+                  ( ("ref" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cb_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7081 7102]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7066 7103])
+                    ("unref" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cb_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7121 7142]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7106 7143])
+                    ("get" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cb_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7161 7182])
+                            ("source" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7200 7220])
+                            ("func" variable
+                               (:pointer 1
+                                :type ("GSourceFunc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7239 7257])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("gpointer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7275 7293]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7146 7294]))                  
+                :type "struct")
+                nil [7033 7297])
+            ("GSourceDummyMarshal" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7476 7481]))                  
+                :type "void")
+                nil [7447 7482])
+            ("_GSourceFuncs" type
+               (:members 
+                  ( ("prepare" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("source" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7531 7550])
+                            ("timeout_" variable
+                               (:pointer 1
+                                :type ("gint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7575 7596]))                          
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7509 7597])
+                    ("check" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("source" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7622 7641]))                          
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7600 7642])
+                    ("dispatch" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("source" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7667 7686])
+                            ("callback" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7711 7732])
+                            ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7757 7779]))                          
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7645 7780])
+                    ("finalize" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("source" variable
+                               (:pointer 1
+                                :type ("GSource" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7805 7824]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7783 7825])
+                    ("closure_callback" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7905 7938])
+                    ("closure_marshal" variable (:type ("GSourceDummyMarshal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7949 7985]))                  
+                :type "struct")
+                nil [7484 8028])
+            ("G_PRIORITY_HIGH" variable (:constant-flag t) nil [8183 8198])
+            ("G_PRIORITY_DEFAULT" variable (:constant-flag t) nil [8459 8477])
+            ("G_PRIORITY_HIGH_IDLE" variable (:constant-flag t) nil [8859 8879])
+            ("G_PRIORITY_DEFAULT_IDLE" variable (:constant-flag t) nil [9073 9096])
+            ("G_PRIORITY_LOW" variable (:constant-flag t) nil [9238 9252])
+            ("G_SOURCE_REMOVE" variable (:constant-flag t) nil [9430 9445])
+            ("G_SOURCE_CONTINUE" variable (:constant-flag t) nil [9619 9636])
+            ("g_main_context_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9732 9737]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [9692 9738])
+            ("g_main_context_ref" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9801 9823]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [9761 9824])
+            ("g_main_context_unref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9887 9909]))                  
+                :type "void")
+                nil [9847 9910])
+            ("g_main_context_default" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9973 9978]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [9933 9979])
+            ("g_main_context_iteration" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10043 10065])
+                    ("may_block" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10106 10130]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [10003 10131])
+            ("g_main_context_pending" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10194 10216]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [10154 10217])
+            ("g_main_context_find_source_by_id" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10349 10371])
+                    ("source_id" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10433 10457]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [10288 10458])
+            ("g_main_context_find_source_by_user_data" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10542 10564])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10626 10650]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [10481 10651])
+            ("g_main_context_find_source_by_funcs_user_data" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10735 10757])
+                    ("funcs" variable
+                       (:pointer 1
+                        :type ("GSourceFuncs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10819 10839])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10901 10925]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [10674 10926])
+            ("g_main_context_wakeup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11046 11068]))                  
+                :type "void")
+                nil [11013 11069])
+            ("g_main_context_acquire" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11125 11147]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [11092 11148])
+            ("g_main_context_release" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11204 11226]))                  
+                :type "void")
+                nil [11171 11227])
+            ("g_main_context_is_owner" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11284 11306]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [11250 11307])
+            ("g_main_context_wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11363 11385])
+                    ("cond" variable
+                       (:pointer 1
+                        :type ("GCond" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11419 11438])
+                    ("mutex" variable
+                       (:pointer 1
+                        :type ("GMutex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11472 11492]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [11330 11493])
+            ("g_main_context_prepare" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11551 11573])
+                    ("priority" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11608 11631]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [11517 11632])
+            ("g_main_context_query" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11689 11711])
+                    ("max_priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11746 11773])
+                    ("timeout_" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11808 11831])
+                    ("fds" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11866 11884])
+                    ("n_fds" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11919 11939]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [11655 11940])
+            ("g_main_context_check" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11997 12019])
+                    ("max_priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12054 12081])
+                    ("fds" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12116 12134])
+                    ("n_fds" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12169 12189]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [11963 12190])
+            ("g_main_context_dispatch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12247 12269]))                  
+                :type "void")
+                nil [12213 12270])
+            ("g_main_context_set_poll_func" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12333 12355])
+                    ("func" variable (:type ("GPollFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12395 12414]))                  
+                :type "void")
+                nil [12294 12415])
+            ("g_main_context_get_poll_func" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12478 12500]))                  
+                :type ("GPollFunc" type (:type "class") nil nil))
+                nil [12438 12501])
+            ("g_main_context_add_poll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12623 12645])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12683 12700])
+                    ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12738 12761]))                  
+                :type "void")
+                nil [12586 12762])
+            ("g_main_context_remove_poll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12822 12844])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12882 12899]))                  
+                :type "void")
+                nil [12785 12900])
+            ("g_main_depth" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12961 12966]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [12924 12967])
+            ("g_main_current_source" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13027 13032]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [12990 13033])
+            ("g_main_context_push_thread_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13146 13168]))                  
+                :type "void")
+                nil [13096 13169])
+            ("g_main_context_pop_thread_default" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13242 13264]))                  
+                :type "void")
+                nil [13192 13265])
+            ("g_main_context_get_thread_default" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13338 13343]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [13288 13344])
+            ("g_main_context_ref_thread_default" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13417 13422]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [13367 13423])
+            ("g_main_loop_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13500 13522])
+                    ("is_running" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13558 13583]))                  
+                :type ("GMainLoop" type (:type "class") nil nil))
+                nil [13465 13584])
+            ("g_main_loop_run" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13642 13661]))                  
+                :type "void")
+                nil [13607 13662])
+            ("g_main_loop_quit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13720 13739]))                  
+                :type "void")
+                nil [13685 13740])
+            ("g_main_loop_ref" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13798 13817]))                  
+                :type ("GMainLoop" type (:type "class") nil nil))
+                nil [13763 13818])
+            ("g_main_loop_unref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13876 13895]))                  
+                :type "void")
+                nil [13841 13896])
+            ("g_main_loop_is_running" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13954 13973]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [13919 13974])
+            ("g_main_loop_get_context" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("GMainLoop" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14036 14055]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [13997 14056])
+            ("g_source_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("source_funcs" variable
+                       (:pointer 1
+                        :type ("GSourceFuncs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14131 14160])
+                    ("struct_size" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14196 14224]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [14096 14225])
+            ("g_source_ref" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14283 14306]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [14248 14307])
+            ("g_source_unref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14365 14388]))                  
+                :type "void")
+                nil [14330 14389])
+            ("g_source_attach" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14448 14471])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14507 14531]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [14413 14532])
+            ("g_source_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14590 14613]))                  
+                :type "void")
+                nil [14555 14614])
+            ("g_source_set_priority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14673 14696])
+                    ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14732 14757]))                  
+                :type "void")
+                nil [14638 14758])
+            ("g_source_get_priority" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14816 14839]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [14781 14840])
+            ("g_source_set_can_recurse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14898 14921])
+                    ("can_recurse" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14957 14985]))                  
+                :type "void")
+                nil [14863 14986])
+            ("g_source_get_can_recurse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15044 15067]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [15009 15068])
+            ("g_source_get_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15126 15149]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [15091 15150])
+            ("g_source_get_context" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15210 15232]))                  
+                :type ("GMainContext" type (:type "class") nil nil))
+                nil [15174 15233])
+            ("g_source_set_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15292 15315])
+                    ("func" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15351 15372])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15408 15429])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15465 15488]))                  
+                :type "void")
+                nil [15257 15489])
+            ("g_source_set_funcs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15548 15571])
+                    ("funcs" variable
+                       (:pointer 1
+                        :type ("GSourceFuncs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15607 15629]))                  
+                :type "void")
+                nil [15513 15630])
+            ("g_source_is_destroyed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15688 15711]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [15653 15712])
+            ("g_source_set_name" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15782 15805])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15852 15873]))                  
+                :type "void")
+                nil [15736 15874])
+            ("g_source_get_name" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15943 15966]))                  
+                :type "char")
+                nil [15897 15967])
+            ("g_source_set_name_by_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tag" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16036 16056])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16103 16124]))                  
+                :type "void")
+                nil [15990 16125])
+            ("g_source_set_ready_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16196 16219])
+                    ("ready_time" variable (:type ("gint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16266 16293]))                  
+                :type "void")
+                nil [16150 16294])
+            ("g_source_get_ready_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16364 16387]))                  
+                :type ("gint64" type (:type "class") nil nil))
+                nil [16318 16388])
+            ("g_source_set_callback_indirect" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17324 17353])
+                    ("callback_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17391 17427])
+                    ("callback_funcs" variable
+                       (:pointer 1
+                        :type ("GSourceCallbackFuncs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17465 17502]))                  
+                :type "void")
+                nil [17287 17503])
+            ("g_source_add_poll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17566 17589])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17601 17620]))                  
+                :type "void")
+                nil [17527 17621])
+            ("g_source_remove_poll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17683 17706])
+                    ("fd" variable
+                       (:pointer 1
+                        :type ("GPollFD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17718 17737]))                  
+                :type "void")
+                nil [17644 17738])
+            ("g_source_add_child_source" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17801 17824])
+                    ("child_source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17836 17865]))                  
+                :type "void")
+                nil [17762 17866])
+            ("g_source_remove_child_source" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17928 17951])
+                    ("child_source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17963 17992]))                  
+                :type "void")
+                nil [17889 17993])
+            ("g_source_get_current_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18078 18101])
+                    ("timeval" variable
+                       (:pointer 1
+                        :type ("GTimeVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18138 18162]))                  
+                :type "void")
+                nil [18042 18163])
+            ("g_source_get_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("GSource" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18223 18246]))                  
+                :type ("gint64" type (:type "class") nil nil))
+                nil [18187 18247])
+            ("g_idle_source_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18459 18464]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [18424 18465])
+            ("g_child_watch_source_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("pid" variable (:type ("GPid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18523 18532]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [18488 18533])
+            ("g_timeout_source_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18591 18606]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [18556 18607])
+            ("g_timeout_source_new_seconds" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18669 18684]))                  
+                :type ("GSource" type (:type "class") nil nil))
+                nil [18630 18685])
+            ("g_get_current_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("GTimeVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18783 18806]))                  
+                :type "void")
+                nil [18740 18807])
+            ("g_get_monotonic_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18873 18878]))                  
+                :type ("gint64" type (:type "class") nil nil))
+                nil [18830 18879])
+            ("g_get_real_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18945 18950]))                  
+                :type ("gint64" type (:type "class") nil nil))
+                nil [18902 18951])
+            ("g_source_remove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tag" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19054 19073]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [19008 19074])
+            ("g_source_remove_by_user_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19143 19168]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [19097 19169])
+            ("g_source_remove_by_funcs_user_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("funcs" variable
+                       (:pointer 1
+                        :type ("GSourceFuncs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19238 19259])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19306 19331]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [19192 19332])
+            ("g_timeout_add_full" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19434 19459])
+                    ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19497 19522])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19560 19585])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19623 19644])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19682 19705]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [19397 19706])
+            ("g_timeout_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19766 19791])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19829 19854])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19892 19913]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [19729 19914])
+            ("g_timeout_add_seconds_full" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19974 19999])
+                    ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20037 20062])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20100 20125])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20163 20184])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20222 20245]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [19937 20246])
+            ("g_timeout_add_seconds" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("interval" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20306 20331])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20369 20394])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20432 20453]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [20269 20454])
+            ("g_child_watch_add_full" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20514 20539])
+                    ("pid" variable (:type ("GPid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20577 20597])
+                    ("function" variable (:type ("GChildWatchFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20635 20660])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20698 20719])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20757 20780]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [20477 20781])
+            ("g_child_watch_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pid" variable (:type ("GPid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20841 20861])
+                    ("function" variable (:type ("GChildWatchFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20899 20924])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20962 20983]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [20804 20984])
+            ("g_idle_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21044 21069])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21107 21128]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [21007 21129])
+            ("g_idle_add_full" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21189 21214])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21252 21277])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21315 21336])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21374 21397]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [21152 21398])
+            ("g_idle_remove_by_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21458 21479]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [21421 21480])
+            ("g_main_context_invoke_full" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21541 21565])
+                    ("priority" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21603 21628])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21666 21691])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21729 21750])
+                    ("notify" variable (:type ("GDestroyNotify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21788 21811]))                  
+                :type "void")
+                nil [21504 21812])
+            ("g_main_context_invoke" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("context" variable
+                       (:pointer 1
+                        :type ("GMainContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21872 21896])
+                    ("function" variable (:type ("GSourceFunc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21934 21959])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21997 22018]))                  
+                :type "void")
+                nil [21835 22019])
+            ("g_timeout_funcs" variable (:type ("GSourceFuncs" type (:type "class") nil nil)) nil [22089 22118])
+            ("g_child_watch_funcs" variable (:type ("GSourceFuncs" type (:type "class") nil nil)) nil [22128 22161])
+            ("g_idle_funcs" variable (:type ("GSourceFuncs" type (:type "class") nil nil)) nil [22171 22197]))          
+      :file "gmain.h"
+      :pointmax 22351
+      :fsize 22350
+      :lastmodtime '(22639 54317 0 0)
+      :unmatched-syntax '((symbol 22312 . 22323) (symbol 22162 . 22170) (symbol 22119 . 22127) (symbol 22080 . 22088) (symbol 21813 . 21834) (symbol 21482 . 21503) (symbol 21399 . 21420) (symbol 21130 . 21151) (symbol 20985 . 21006) (symbol 20782 . 20803) (symbol 20455 . 20476) (symbol 20247 . 20268) (symbol 19915 . 19936) (symbol 19707 . 19728) (symbol 19375 . 19396) (symbol 19170 . 19191) (symbol 19075 . 19096) (symbol 18986 . 19007) (symbol 18880 . 18901) (symbol 18808 . 18829) (symbol 18718 . 18739) (symbol 18608 . 18629) (symbol 18534 . 18555) (symbol 18466 . 18487) (symbol 18402 . 18423) (symbol 18165 . 18186) (semantic-list 18022 . 18041) (symbol 17995 . 18022) (symbol 17867 . 17888) (symbol 17740 . 17761) (symbol 17622 . 17643) (symbol 17505 . 17526) (symbol 17265 . 17286) (symbol 16295 . 16317) (symbol 16127 . 16149) (symbol 15968 . 15989) (symbol 15875 . 15896) (symbol 15714 . 15735) (symbol 15631 . 15652) (symbol 15491 . 15512) (symbol 15235 . 15256) (symbol 15152 . 15173) (symbol 15069 . 15090) (symbol 14987 . 15008) (symbol 14841 . 14862) (symbol 14759 . 14780) (symbol 14616 . 14637) (symbol 14533 . 14554) (symbol 14391 . 14412) (symbol 14308 . 14329) (symbol 14226 . 14247) (symbol 14074 . 14095) (symbol 13975 . 13996) (symbol 13897 . 13918) (symbol 13819 . 13840) (symbol 13741 . 13762) (symbol 13663 . 13684) (symbol 13585 . 13606) (symbol 13443 . 13464) (symbol 13345 . 13366) (symbol 13266 . 13287) (symbol 13170 . 13191) (symbol 13074 . 13095) (symbol 12968 . 12989) (symbol 12902 . 12923) (symbol 12763 . 12784) (symbol 12564 . 12585) (symbol 12416 . 12437) (symbol 12272 . 12293) (symbol 12191 . 12212) (symbol 11941 . 11962) (symbol 11633 . 11654) (symbol 11495 . 11516) (symbol 11308 . 11329) (symbol 11228 . 11249) (symbol 11149 . 11170) (symbol 11070 . 11091) (symbol 10991 . 11012) (symbol 10652 . 10673) (symbol 10459 . 10480) (symbol 10266 . 10287) (symbol 10132 . 10153) (symbol 9981 . 10002) (symbol 9911 . 9932) (symbol 9825 . 9846) (symbol 9739 . 9760) (symbol 9670 . 9691) (TYPEDEF 7439 . 7446) (TYPEDEF 6523 . 6530) (TYPEDEF 6059 . 6066) (symbol 991 . 1004) (string 865 . 906) (symbol 859 . 864) (punctuation 858 . 859))
+      :lexical-table 
+        '(("G_SOURCE_REMOVE" . ((symbol "FALSE" 9454 . 9459)))
+          ("G_PRIORITY_DEFAULT" . ((number "0" 8487 . 8488)))
+          ("G_PRIORITY_LOW" . ((number "300" 9266 . 9269)))
+          ("G_PRIORITY_HIGH" . ((punctuation "-" 8210 . 8211) (number "100" 8211 . 8214)))
+          ("G_PRIORITY_DEFAULT_IDLE" . ((number "200" 9101 . 9104)))
+          ("__G_MAIN_H__")
+          ("G_PRIORITY_HIGH_IDLE" . ((number "100" 8887 . 8890)))
+          ("G_SOURCE_CONTINUE" . ((symbol "TRUE" 9643 . 9647)))
+          )
+))
+  :file "!usr!include!glib-2.0!glib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,106 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "shaders_uniform.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("GL/glew.h" include (:system-flag t) nil [88 108])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [109 132])
+            ("stdlib.h" include (:system-flag t) nil [134 153])
+            ("stdio.h" include (:system-flag t) nil [154 172])
+            ("math.h" include (:system-flag t) nil [173 190])
+            ("stdbool.h" include (:system-flag t) nil [191 211])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [244 263])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [264 274])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [275 286]))                  
+                :type "void")
+                nil [213 287])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [306 325]))                  
+                :type "void")
+                nil [288 326])
+            ("SRC_WIDTH_BITS" variable (:constant-flag t) nil [348 362])
+            ("SRC_HEIGHT_BITS" variable (:constant-flag t) nil [374 389])
+            ("SRC_WIDTH" variable (:constant-flag t) nil [400 409])
+            ("SRC_HEIGHT" variable (:constant-flag t) nil [440 450])
+            ("vertexShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 110\\n\"
+  \"attribute vec3 aPos;\\n\"
+  \"void main()\\n\"
+  \"{\\n\"
+  \"   gl_Position = vec4(aPos, 1.0);\\n\"
+  \"}\""
+                :type "char")
+                nil [958 1106])
+            ("fragmentShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 110\\n\"
+  \"uniform vec4 ourColor;\\n\"
+  \"void main()\\n\"
+  \"{\\n\"
+  \"   gl_FragColor = ourColor;\\n\"
+  \"}\\n\""
+                :type "char")
+                nil [1108 1257])
+            ("init" function
+               (:pointer 1
+                :type ("GLFWwindow" type (:type "class") nil nil))
+                nil [1455 2155])
+            ("initShaders" function
+               (:arguments 
+                  ( ("_shaderProgram" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2174 2194]))                  
+                :type "bool")
+                nil [2157 3646])
+            ("main" function (:type "int") nil [3648 7087])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7325 7344]))                  
+                :type "void")
+                nil [7307 7449])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7676 7695])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7696 7706])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7707 7718]))                  
+                :type "void")
+                nil [7645 7917]))          
+      :file "shaders_uniform.c"
+      :pointmax 7918
+      :fsize 7917
+      :lastmodtime '(23303 3819 267329 285000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SRC_WIDTH" . ((semantic-list "(1 << SRC_WIDTH_BITS)" 410 . 431)))
+          ("SRC_HEIGHT_BITS" . ((number "9" 390 . 391)))
+          ("SRC_WIDTH_BITS" . ((number "10" 363 . 365)))
+          ("SRC_HEIGHT" . ((semantic-list "(1 << SRC_HEIGHT_BITS)" 451 . 473)))
+          )
+))
+  :file "!home!marcus!Programming!C!LearnOpenCL!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,4 +1,4 @@
-This is ecb.info, produced by makeinfo version 5.2 from ecb.texi.
+This is ecb.info, produced by makeinfo version 6.1 from ecb.texi.
 
 INFO-DIR-SECTION GNU Emacs Lisp
 START-INFO-DIR-ENTRY
@@ -724,7 +724,7 @@ directories?                    the section
                                 *note Large directories::.
                                 
                                 
-Is it possible to               Yes.  *note Creating a new ECB-layout::
+Is it possible to               Yes. *note Creating a new ECB-layout::
 create/use other layouts        and
 than the built-in ones?         *note The layout-engine:: are the
                                 relevant sections.  The former one
@@ -793,8 +793,8 @@ methods-buffer does not         an entry to 'hs-special-modes-alist'
 work?                           (*note Hide-show::).
                                 
                                 
-Can i maximize one of the       Yes, see *note Maximizing the ECB
-ECB-windows for better          windows::.
+Can i maximize one of the       Yes, see
+ECB-windows for better          *note Maximizing the ECB windows::.
 overlook?                       
                                 
 Can i hide the ECB-windows      Yes, see *note Hiding the ECB windows::.
@@ -805,12 +805,12 @@ Can i define the actions        Yes, see *note Visiting tags::.
 ECB performs after visiting     
 a tag?
                                 
-Buffers are not displayed       See *note Problems with the compile
-correctly in the                window::.
+Buffers are not displayed       See
+correctly in the                *note Problems with the compile window::.
 compile-window?                 
                                 
-Can ECB work together with      Yes, see *note Window-managers and
-window-managers like            ECB::.
+Can ECB work together with      Yes, see
+window-managers like            *note Window-managers and ECB::.
 escreen.el?                     
                                 
 Can i remove these "ugly"       Yes, see option 'ecb-tree-buffer-style'.
@@ -857,8 +857,8 @@ Can i increase the allowed      Yes, see the docstring of the option
 depth of nested submenus.       'ecb-directories-menu-user-extension'.
                                 
                                 
-Can i apply some filters to     Yes, see *note Filtering the
-the Tree-buffers.               tree-buffers::
+Can i apply some filters to     Yes, see
+the Tree-buffers.               *note Filtering the tree-buffers::
                                 
                                 
 With XEmacs i get sometimes     Disable the func-menu support in your
@@ -913,8 +913,8 @@ long time.                      either the empty-dir-check (see option
                                 'ecb-prescan-directories-for-emptyness')
                                 or the VC-support (see
                                 'ecb-vc-enable-support') can block ECB.
-                                For the latter one see *note Known
-                                VC-problems::.
+                                For the latter one see
+                                *note Known VC-problems::.
                                 
                                 
 ECB seems to be blocked         Maybe the root repository for the

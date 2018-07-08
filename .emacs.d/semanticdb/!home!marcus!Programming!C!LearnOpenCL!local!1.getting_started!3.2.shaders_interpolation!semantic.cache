@@ -1,0 +1,94 @@
+;; Object 3.2.shaders_interpolation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "3.2.shaders_interpolation/"
+  :tables
+  (list
+    (semanticdb-table "shaders_interpolation.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("glad/glad.h" include (:system-flag t) nil [1 23])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [24 47])
+            ("iostream" include (:system-flag t) nil [49 68])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101 120])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [121 131])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [132 143]))                  
+                :type "void")
+                nil [70 144])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [163 182]))                  
+                :type "void")
+                nil [145 183])
+            ("SCR_WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type "unsigned int")
+                nil [197 232])
+            ("SCR_HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type "unsigned int")
+                nil [233 269])
+            ("vertexShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+    \"layout (location = 0) in vec3 aPos;\\n\"
+    \"layout (location = 1) in vec3 aColor;\\n\"
+    \"out vec3 ourColor;\\n\"
+    \"void main()\\n\"
+    \"{\\n\"
+    \"   gl_Position = vec4(aPos, 1.0);\\n\"
+    \"   ourColor = aColor;\\n\"
+    \"}\\0\""
+                :type "char")
+                nil [271 554])
+            ("fragmentShaderSource" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"#version 330 core\\n\"
+    \"out vec4 FragColor;\\n\"
+    \"in vec3 ourColor;\\n\"
+    \"void main()\\n\"
+    \"{\\n\"
+    \"   FragColor = vec4(ourColor, 1.0f);\\n\"
+    \"}\\n\\0\""
+                :type "char")
+                nil [556 754])
+            ("main" function (:type "int") nil [756 6244])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6482 6501]))                  
+                :type "void")
+                nil [6464 6612])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6839 6858])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6859 6869])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6870 6881]))                  
+                :type "void")
+                nil [6808 7086]))          
+      :file "shaders_interpolation.cpp"
+      :pointmax 7087
+      :fsize 7086
+      :lastmodtime '(23303 2870 436210 715000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!C!LearnOpenCL!local!1.getting_started!3.2.shaders_interpolation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

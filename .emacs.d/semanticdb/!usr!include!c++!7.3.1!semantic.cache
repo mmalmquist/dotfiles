@@ -17,7 +17,7 @@
       :file "memory"
       :pointmax 4712
       :fsize 4711
-      :lastmodtime '(23216 58381 0 0)
+      :lastmodtime '(23244 29520 0 0)
       :unmatched-syntax '((symbol 1764 . 1777) (symbol 1760 . 1763) (symbol 1753 . 1759) (punctuation 1752 . 1753))
       :lexical-table 
         '(("_GLIBCXX_MEMORY" . ((number "1" 1749 . 1750)))
@@ -38,7 +38,7 @@
       :file "vector"
       :pointmax 2748
       :fsize 2747
-      :lastmodtime '(23216 58381 0 0)
+      :lastmodtime '(23244 29520 0 0)
       :unmatched-syntax '((symbol 2302 . 2315) (symbol 2298 . 2301) (symbol 2291 . 2297) (punctuation 2290 . 2291))
       :lexical-table 
         '(("_GLIBCXX_VECTOR" . ((number "1" 2287 . 2288)))
@@ -54,7 +54,7 @@
       :file "utility"
       :pointmax 12503
       :fsize 12502
-      :lastmodtime '(23216 58381 0 0)
+      :lastmodtime '(23244 29520 0 0)
       :unmatched-syntax '((symbol 2311 . 2324) (symbol 2307 . 2310) (symbol 2300 . 2306) (punctuation 2299 . 2300))
       :lexical-table 
         '(("_GLIBCXX_UTILITY" . ((number "1" 2296 . 2297)))
@@ -119,7 +119,7 @@
       :file "new"
       :pointmax 7508
       :fsize 7507
-      :lastmodtime '(23216 58381 0 0)
+      :lastmodtime '(23244 29521 0 0)
       :unmatched-syntax '((symbol 7496 . 7499) (symbol 7485 . 7495) (symbol 7481 . 7484) (symbol 7474 . 7480) (punctuation 7473 . 7474) (semantic-list 6331 . 6334) (semantic-list "()" 6309 . 6330) (THROW "throw" 6309 . 6330) (semantic-list 6294 . 6308) (semantic-list 6292 . 6294) (DELETE 6286 . 6292) (OPERATOR 6277 . 6285) (VOID 6272 . 6276) (INLINE 6265 . 6271) (semantic-list 6261 . 6264) (semantic-list "()" 6239 . 6260) (THROW "throw" 6239 . 6260) (semantic-list 6224 . 6238) (DELETE 6216 . 6222) (OPERATOR 6207 . 6215) (VOID 6202 . 6206) (INLINE 6195 . 6201) (semantic-list 6128 . 6143) (semantic-list "()" 6106 . 6127) (THROW "throw" 6106 . 6127) (semantic-list 6081 . 6105) (semantic-list 6079 . 6081) (NEW 6076 . 6079) (OPERATOR 6067 . 6075) (punctuation 6065 . 6066) (VOID 6061 . 6065) (INLINE 6054 . 6060) (semantic-list 6038 . 6053) (semantic-list "()" 6016 . 6037) (THROW "throw" 6016 . 6037) (semantic-list 5991 . 6015) (NEW 5988 . 5991) (OPERATOR 5979 . 5987) (punctuation 5977 . 5978) (VOID 5973 . 5977) (INLINE 5966 . 5972) (punctuation 4592 . 4593) (semantic-list "()" 4529 . 4550) (THROW "throw" 4529 . 4550) (semantic-list 4498 . 4528) (semantic-list 4496 . 4498) (DELETE 4490 . 4496) (OPERATOR 4481 . 4489) (VOID 4476 . 4480) (punctuation 4474 . 4475) (semantic-list "()" 4411 . 4432) (THROW "throw" 4411 . 4432) (semantic-list 4380 . 4410) (DELETE 4374 . 4380) (OPERATOR 4365 . 4373) (VOID 4360 . 4364) (punctuation 4358 . 4359) (semantic-list "()" 4295 . 4316) (THROW "throw" 4295 . 4316) (semantic-list 4258 . 4294) (semantic-list 4256 . 4258) (NEW 4253 . 4256) (OPERATOR 4244 . 4252) (punctuation 4242 . 4243) (VOID 4238 . 4242) (punctuation 4236 . 4237) (semantic-list "()" 4173 . 4194) (THROW "throw" 4173 . 4194) (semantic-list 4136 . 4172) (NEW 4133 . 4136) (OPERATOR 4124 . 4132) (punctuation 4122 . 4123) (VOID 4118 . 4122) (punctuation 4109 . 4110) (semantic-list "()" 4046 . 4067) (THROW "throw" 4046 . 4067) (semantic-list 4025 . 4045) (semantic-list 4023 . 4025) (DELETE 4017 . 4023) (OPERATOR 4008 . 4016) (VOID 4003 . 4007) (punctuation 4001 . 4002) (semantic-list "()" 3938 . 3959) (THROW "throw" 3938 . 3959) (semantic-list 3917 . 3937) (DELETE 3911 . 3917) (OPERATOR 3902 . 3910) (VOID 3897 . 3901) (punctuation 3866 . 3867) (semantic-list "()" 3803 . 3824) (THROW "throw" 3803 . 3824) (semantic-list 3795 . 3802) (semantic-list 3793 . 3795) (DELETE 3787 . 3793) (OPERATOR 3778 . 3786) (VOID 3773 . 3777) (punctuation 3771 . 3772) (semantic-list "()" 3708 . 3729) (THROW "throw" 3708 . 3729) (semantic-list 3700 . 3707) (DELETE 3694 . 3700) (OPERATOR 3685 . 3693) (VOID 3680 . 3684) (punctuation 3678 . 3679) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 3621 . 3624)))) 3605 . 3636) (THROW "throw" 3605 . 3636) (semantic-list 3591 . 3604) (semantic-list 3589 . 3591) (NEW 3586 . 3589) (OPERATOR 3577 . 3585) (punctuation 3575 . 3576) (VOID 3571 . 3575) (punctuation 3569 . 3570) (semantic-list #("(_EXC)" 0 1 (macros (("_EXC" symbol "std" 3512 . 3515)))) 3496 . 3527) (THROW "throw" 3496 . 3527) (semantic-list 3482 . 3495) (NEW 3479 . 3482) (OPERATOR 3470 . 3478) (punctuation 3468 . 3469) (VOID 3464 . 3468) (TYPEDEF 2713 . 2720) (semantic-list 1457 . 1466) (symbol 1453 . 1457) (DEFAULT 1458 . 1465) (symbol 1442 . 1452) (DEFAULT 1458 . 1465) (symbol 1438 . 1441) (symbol 1431 . 1437) (punctuation 1430 . 1431) (symbol 1365 . 1378) (symbol 1361 . 1364) (symbol 1354 . 1360) (punctuation 1353 . 1354))
       :lexical-table 
         '(("_NEW")
@@ -172,10 +172,41 @@
       :file "exception"
       :pointmax 4778
       :fsize 4777
-      :lastmodtime '(23216 58381 0 0)
+      :lastmodtime '(23244 29521 0 0)
       :unmatched-syntax '((symbol 4662 . 4665) (symbol 4651 . 4661) (symbol 4647 . 4650) (symbol 4640 . 4646) (punctuation 4639 . 4640) (symbol 4595 . 4603) (punctuation 3711 . 3712) (semantic-list "()" 3663 . 3684) (THROW "throw" 3663 . 3684) (semantic-list 3660 . 3662) (symbol 3642 . 3660) (BOOL 3637 . 3641) (punctuation 2768 . 2769) (semantic-list "()" 2747 . 2768) (THROW "throw" 2747 . 2768) (semantic-list 2726 . 2746) (symbol 2712 . 2726) (symbol 2693 . 2711) (punctuation 2611 . 2612) (semantic-list "()" 2559 . 2580) (THROW "throw" 2559 . 2580) (semantic-list 2556 . 2558) (symbol 2547 . 2556) (VOID 2542 . 2546) (punctuation 2267 . 2268) (semantic-list "()" 2246 . 2267) (THROW "throw" 2246 . 2267) (semantic-list 2226 . 2245) (symbol 2213 . 2226) (symbol 2195 . 2212) (TYPEDEF 2076 . 2083) (TYPEDEF 1956 . 1963) (punctuation 1868 . 1869) (semantic-list "()" 1847 . 1868) (THROW "throw" 1847 . 1868) (CONST 1819 . 1824) (semantic-list 1816 . 1818) (symbol 1812 . 1816) (punctuation 1806 . 1807) (CHAR 1802 . 1806) (CONST 1796 . 1801) (VIRTUAL 1788 . 1795) (punctuation 1742 . 1743) (semantic-list "()" 1721 . 1742) (THROW "throw" 1721 . 1742) (semantic-list 1696 . 1698) (symbol 1683 . 1696) (punctuation 1682 . 1683) (VIRTUAL 1674 . 1681) (semantic-list 1560 . 1563) (semantic-list "()" 1538 . 1559) (THROW "throw" 1538 . 1559) (semantic-list 1535 . 1537) (symbol 1522 . 1535) (semantic-list 1230 . 1239) (symbol 1226 . 1230) (DEFAULT 1231 . 1238) (symbol 1215 . 1225) (DEFAULT 1231 . 1238) (symbol 1211 . 1214) (symbol 1204 . 1210) (punctuation 1203 . 1204) (symbol 1188 . 1201) (symbol 1184 . 1187) (symbol 1177 . 1183) (punctuation 1176 . 1177))
       :lexical-table 
         '(("__EXCEPTION__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("bits/c++config.h" include (:system-flag t) nil [1568 1595])
+            ("time.h" include (:system-flag t) nil [1596 1613])
+            ("_GLIBCXX_CTIME" variable (:constant-flag t) nil [1646 1660])
+            ("std" type
+               (:members 
+                  ( ("clock_t" variable (:type "int") (reparse-symbol namespacesubparts) [1895 1903])
+                    ("time_t" variable (:type "int") (reparse-symbol namespacesubparts) [1914 1921])
+                    ("tm" variable (:type "int") (reparse-symbol namespacesubparts) [1932 1935])
+                    ("clock" variable (:type "int") (reparse-symbol namespacesubparts) [1947 1953])
+                    ("difftime" variable (:type "int") (reparse-symbol namespacesubparts) [1964 1973])
+                    ("mktime" variable (:type "int") (reparse-symbol namespacesubparts) [1984 1991])
+                    ("time" variable (:type "int") (reparse-symbol namespacesubparts) [2002 2007])
+                    ("asctime" variable (:type "int") (reparse-symbol namespacesubparts) [2018 2026])
+                    ("ctime" variable (:type "int") (reparse-symbol namespacesubparts) [2037 2043])
+                    ("gmtime" variable (:type "int") (reparse-symbol namespacesubparts) [2054 2061])
+                    ("localtime" variable (:type "int") (reparse-symbol namespacesubparts) [2072 2082])
+                    ("strftime" variable (:type "int") (reparse-symbol namespacesubparts) [2093 2102]))                  
+                :type "namespace")
+                nil [1869 2104]))          
+      :file "ctime"
+      :pointmax 2126
+      :fsize 2125
+      :lastmodtime '(23244 29520 0 0)
+      :unmatched-syntax '((punctuation 2092 . 2093) (punctuation 2091 . 2092) (USING 2085 . 2090) (punctuation 2071 . 2072) (punctuation 2070 . 2071) (USING 2064 . 2069) (punctuation 2053 . 2054) (punctuation 2052 . 2053) (USING 2046 . 2051) (punctuation 2036 . 2037) (punctuation 2035 . 2036) (USING 2029 . 2034) (punctuation 2017 . 2018) (punctuation 2016 . 2017) (USING 2010 . 2015) (punctuation 2001 . 2002) (punctuation 2000 . 2001) (USING 1994 . 1999) (punctuation 1983 . 1984) (punctuation 1982 . 1983) (USING 1976 . 1981) (punctuation 1963 . 1964) (punctuation 1962 . 1963) (USING 1956 . 1961) (punctuation 1946 . 1947) (punctuation 1945 . 1946) (USING 1939 . 1944) (punctuation 1931 . 1932) (punctuation 1930 . 1931) (USING 1924 . 1929) (punctuation 1913 . 1914) (punctuation 1912 . 1913) (USING 1906 . 1911) (punctuation 1894 . 1895) (punctuation 1893 . 1894) (USING 1887 . 1892) (symbol 1553 . 1566) (symbol 1549 . 1552) (symbol 1542 . 1548) (punctuation 1541 . 1542))
+      :lexical-table 
+        '(("_GLIBCXX_CTIME" . ((number "1" 1661 . 1662)))
           )
 ))
   :file "!usr!include!c++!7.3.1!semantic.cache"

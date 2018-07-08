@@ -1,0 +1,158 @@
+;; Object main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "main/"
+  :tables
+  (list
+    (semanticdb-table "MasterMindModel.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("main" package nil nil [1 14])
+            ("java.awt.Color" include nil nil [16 38])
+            ("MasterMindModel" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("ROWS" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [72 89])
+                    ("COLS" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [91 108])
+                    ("randomCode" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [110 135])
+                    ("colors" variable
+                       (:dereference 1
+                        :typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [137 247])
+                    ("allColors" variable
+                       (:dereference 1
+                        :typemodifiers ("public" "static" "final")
+                        :type "Color")
+                        (reparse-symbol class_member_declaration) [249 509])
+                    ("color" variable
+                       (:dereference 1
+                        :typemodifiers ("public" "static" "final")
+                        :type "Color")
+                        (reparse-symbol class_member_declaration) [511 728])
+                    ("usedColors" variable
+                       (:dereference 1
+                        :typemodifiers ("public" "static")
+                        :type "Color")
+                        (reparse-symbol class_member_declaration) [730 763])
+                    ("board" variable
+                       (:dereference 2
+                        :typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [765 787])
+                    ("attemptNbr" variable
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [789 811])
+                    ("youWin" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [813 835])
+                    ("playing" variable
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [837 860])
+                    ("MasterMindModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [864 908])
+                    ("MasterMindModel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cols" variable (:type "int") (reparse-symbol formal_parameters) [935 943])
+                            ("nbrOfColors" variable (:type "int") (reparse-symbol formal_parameters) [945 960]))                          )
+                        (reparse-symbol class_member_declaration) [912 1467])
+                    ("NewGame" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1470 1551])
+                    ("NewGame" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("nCols" variable (:type "int") (reparse-symbol formal_parameters) [1582 1591])
+                            ("nColors" variable (:type "int") (reparse-symbol formal_parameters) [1593 1604]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1555 1672])
+                    ("getNbrOfRows" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1676 1718])
+                    ("getNbrOfCols" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1720 1762])
+                    ("getNbrOfColors" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1764 1825])
+                    ("getAttemptNbr" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1827 1876])
+                    ("getState" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [1900 1907])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [1909 1916]))                          
+                        :type "Color")
+                        (reparse-symbol class_member_declaration) [1878 1958])
+                    ("getStateInt" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [1983 1990])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [1992 1999]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1960 2066])
+                    ("setState" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("row" variable (:type "int") (reparse-symbol formal_parameters) [2089 2096])
+                            ("col" variable (:type "int") (reparse-symbol formal_parameters) [2098 2105])
+                            ("state" variable (:type "int") (reparse-symbol formal_parameters) [2107 2116]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2068 2243])
+                    ("getCurrentCode" function
+                       (:typemodifiers ("public")
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [2245 2304])
+                    ("getHiddenCode" function
+                       (:typemodifiers ("public")
+                        :type "int[]")
+                        (reparse-symbol class_member_declaration) [2306 2357])
+                    ("RevealHiddenCode" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2359 2498])
+                    ("CheckCorrect" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [2527 2537]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2502 3631])
+                    ("GenerateCode" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3635 3781]))                  
+                :type "class")
+                nil [40 3783]))          
+      :file "MasterMindModel.java"
+      :pointmax 3784
+      :fsize 3783
+      :lastmodtime '(23256 48458 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!MasterMind!java!src!main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

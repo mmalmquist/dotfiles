@@ -1,0 +1,18 @@
+;; Object Kingston/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Kingston/"
+  :tables
+  (list
+    (semanticdb-table "hello-world.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 76]))          
+      :file "hello-world.c"
+      :pointmax 78
+      :fsize 77
+      :lastmodtime '(23296 16103 255347 776000)
+      :unmatched-syntax nil))
+  :file "!media!marcus!Kingston!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

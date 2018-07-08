@@ -3,25 +3,1167 @@
 (semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "semanticdb-table"
-      :major-mode c++-mode
+    (semanticdb-table "Bitmap.hpp"
+      :major-mode 'c++-mode
       :tags 
-        '( ("gtkmm-3.0/gtkmm.h" include (:system-flag t) nil [1 29])
+        '( ("GTKMM_EXAMPLE_MYAREA_H" variable (:constant-flag t) nil [40 62])
+            ("gtkmm-3.0/gtkmm/drawingarea.h" include (:system-flag t) nil [64 104])
+            ("gdkmm-3.0/gdkmm/pixbuf.h" include (:system-flag t) nil [105 140])
+            ("cairomm-1.0/cairomm/refptr.h" include (:system-flag t) nil [141 180])
+            ("cairomm-1.0/cairomm/context.h" include (:system-flag t) nil [181 221])
+            ("vector" include (:system-flag t) nil [222 239])
+            ("Bitmap" type
+               (:superclasses 
+                  ( ("Gtk::DrawingArea" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [282 289])
+                    ("Bitmap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [299 312])
+                            ("height" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [313 327]))                          
+                        :type ("Bitmap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [292 328])
+                    ("Bitmap" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [331 349])
+                    ("getWidth" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [353 403])
+                    ("getHeigh" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [406 457])
+                    ("getPixel" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [485 494])
+                            ("y" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 504]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [460 548])
+                    ("getPixel" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [576 585]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [551 626])
+                    ("setPixel" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [650 659])
+                            ("y" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [660 669])
+                            ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [670 683]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [629 741])
+                    ("setPixel" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [765 774])
+                            ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [775 788]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 843])
+                    ("clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [847 860])
+                    ("invalidate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [863 881])
+                    ("protected" label nil (reparse-symbol classsubparts) [883 893])
+                    ("override" variable (:type "int") (reparse-symbol classsubparts) [950 959])
+                    ("private" label nil (reparse-symbol classsubparts) [961 969])
+                    ("m_pixels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("uint_fast8_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [972 1007])
+                    ("m_channels" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1010 1034])
+                    ("m_width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1037 1052])
+                    ("m_height" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1055 1071])
+                    ("m_image" variable (:type ("Glib::RefPtr" type
+                         (:template-specifier 
+                            ( ("Gdk::Pixbuf" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1074 1108])
+                    ("iRGB" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1131 1140]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1112 1171])
+                    ("iRGB" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1193 1202])
+                            ("y" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1203 1212]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1174 1259])
+                    ("vR" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1280 1291]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1262 1329])
+                    ("vG" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1350 1361]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1332 1398])
+                    ("vB" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("v" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1419 1430]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1401 1460])
+                    ("setColor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1485 1494])
+                            ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1495 1505])
+                            ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1506 1516])
+                            ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1517 1527]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1464 1581])
+                    ("getColor" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1610 1619]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1585 1696])
+                    ("setRed" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1719 1728])
+                            ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1729 1741]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1700 1764])
+                    ("setGreen" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1788 1797])
+                            ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1798 1810]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1767 1835])
+                    ("setBlue" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1858 1867])
+                            ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1868 1880]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1838 1905])
+                    ("getRed" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1930 1939]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1908 1969])
+                    ("getGreen" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1996 2005]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1972 2037])
+                    ("getBlue" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2063 2072]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2040 2104]))                  
+                :type "class")
+                nil [241 2107]))          
+      :file "Bitmap.hpp"
+      :pointmax 2142
+      :fsize 2141
+      :lastmodtime '(23231 41929 0 0)
+      :unmatched-syntax '((semantic-list 908 . 949) (symbol 901 . 908) (BOOL 896 . 900))
+      :lexical-table 
+        '(("GTKMM_EXAMPLE_MYAREA_H")
+          )
+)
+    (semanticdb-table "Bitmap.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../src/Bitmap.hpp" include nil nil [1 29])
+            ("cairomm-1.0/cairomm/context.h" include (:system-flag t) nil [31 71])
+            ("giomm-2.4/giomm/resource.h" include (:system-flag t) nil [72 109])
+            ("gdkmm-3.0/gdkmm/general.h" include (:system-flag t) nil [110 146])
+            ("glibmm-2.4/glibmm/fileutils.h" include (:system-flag t) nil [170 210])
+            ("gtkmm-3.0/gtkmm/widget.h" include (:system-flag t) nil [211 246])
+            ("ctime" include (:system-flag t) nil [247 263])
+            ("iostream" include (:system-flag t) nil [264 283])
+            ("vector" include (:system-flag t) nil [284 301])
+            ("Bitmap" function
+               (:constructor-flag t
+                :parent "Bitmap"
+                :arguments 
+                  ( ("width" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [318 331])
+                    ("height" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [332 346]))                  
+                :type ("Bitmap" type (:type "class") nil nil))
+                nil [303 618])
+            ("Bitmap" function
+               (:destructor-flag t
+                :parent "Bitmap"
+                :type "void")
+                nil [620 641])
+            ("clear" function
+               (:parent "Bitmap"
+                :type "void")
+                nil [643 778])
+            ("invalidate" function
+               (:parent "Bitmap"
+                :type "void")
+                nil [780 911])
+            ("on_draw" function
+               (:parent "Bitmap"
+                :arguments 
+                  ( ("cr" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Cairo::RefPtr" type
+                             (:template-specifier 
+                                ( ("Cairo::Context" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [934 974]))                  
+                :type "bool")
+                nil [913 1188]))          
+      :file "Bitmap.cpp"
+      :pointmax 1189
+      :fsize 1188
+      :lastmodtime '(23231 44232 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "CrystalControl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CrystalControl.hpp" include nil nil [1 30])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [32 67])
+            ("iostream" include (:system-flag t) nil [68 87])
+            ("CrystalControl" function
+               (:constructor-flag t
+                :parent "CrystalControl"
+                :arguments 
+                  ( ("_cm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CrystalModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [120 154])
+                    ("_cv" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("CrystalView" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [155 188]))                  
+                :type ("CrystalControl" type (:type "class") nil nil))
+                nil [89 308])
+            ("CrystalControl" function
+               (:destructor-flag t
+                :parent "CrystalControl"
+                :type "void")
+                nil [310 347])
+            ("initUI" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [349 849])
+            ("requestNewModifier" function
+               (:parent "CrystalControl"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [851 923])
+            ("startSimulation" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [925 1046])
+            ("stopSimulation" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1048 1146])
+            ("run" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1148 1504])
+            ("changeSpeedHandler" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1506 1653])
+            ("startHandler" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1654 1755])
+            ("stopHandler" function
+               (:parent "CrystalControl"
+                :type "void")
+                nil [1756 1813]))          
+      :file "CrystalControl.cpp"
+      :pointmax 1814
+      :fsize 1813
+      :lastmodtime '(23289 40087 7301 905000)
+      :unmatched-syntax nil)
+    (semanticdb-table "CrystalControl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CRYSTALCONTROL_HPP_" variable (:constant-flag t) nil [37 56])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [58 92])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [93 128])
+            ("CrystalModel.hpp" include nil nil [129 156])
+            ("CrystalView.hpp" include nil nil [157 183])
+            ("thread" include (:system-flag t) nil [184 201])
+            ("string" include (:system-flag t) nil [202 219])
+            ("chrono" include (:system-flag t) nil [220 237])
+            ("memory" include (:system-flag t) nil [238 255])
+            ("CrystalControl" type
+               (:superclasses 
+                  ( ("Gtk::VBox" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [299 306])
+                    ("CrystalControl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("_cm" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("CrystalModel" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [323 357])
+                            ("_cv" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("CrystalView" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [358 391]))                          
+                        :type ("CrystalControl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [308 392])
+                    ("CrystalControl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [394 420])
+                    ("initUI" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [423 437])
+                    ("requestNewModifier" function
+                       (:prototype-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [439 469])
+                    ("startSimulation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [471 494])
+                    ("stopSimulation" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [496 518])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [520 531])
+                    ("private" label nil (reparse-symbol classsubparts) [533 541])
+                    ("DEFAULT_SPEED" variable
+                       (:typemodifiers ("static")
+                        :default-value "10"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [543 584])
+                    ("number" variable
+                       (:default-value "DEFAULT_SPEED"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [589 621])
+                    ("simulating" variable (:type "bool") (reparse-symbol classsubparts) [626 642])
+                    ("m_cm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CrystalModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [647 682])
+                    ("m_cv" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("CrystalView" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [684 718])
+                    ("t" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [723 737])
+                    ("buttonBox" variable (:type ("Gtk::HBox" type (:type "class") nil nil)) (reparse-symbol classsubparts) [740 760])
+                    ("changeSpeedBtn" variable (:type ("Gtk::Button" type (:type "class") nil nil)) (reparse-symbol classsubparts) [762 808])
+                    ("startBtn" variable (:type ("Gtk::Button" type (:type "class") nil nil)) (reparse-symbol classsubparts) [762 808])
+                    ("stopBtn" variable (:type ("Gtk::Button" type (:type "class") nil nil)) (reparse-symbol classsubparts) [762 808])
+                    ("changeSpeedHandler" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [814 840])
+                    ("startHandler" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [845 865])
+                    ("stopHandler" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [867 886]))                  
+                :type "class")
+                nil [257 889]))          
+      :file "CrystalControl.hpp"
+      :pointmax 924
+      :fsize 923
+      :lastmodtime '(23231 43129 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALCONTROL_HPP_")
+          )
+)
+    (semanticdb-table "CrystalModel.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CRYSTALMODEL_HPP_" variable (:constant-flag t) nil [118 135])
+            ("random" include (:system-flag t) nil [137 154])
+            ("cmath" include (:system-flag t) nil [155 171])
+            ("string" include (:system-flag t) nil [172 189])
+            ("Bath.hpp" include nil nil [190 209])
+            ("Point.hpp" include nil nil [210 230])
+            ("sstream" include (:system-flag t) nil [231 249])
+            ("vector" include (:system-flag t) nil [250 267])
+            ("drand" variable (:constant-flag t) nil [277 282])
+            ("CoordGen" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [342 349])
+                    ("CoordGen" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [351 374])
+                    ("generate" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("bathRadius" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 427]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("int32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [376 588]))                  
+                :type "class")
+                nil [325 591])
+            ("IonMovement" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [612 619])
+                    ("IonMovement" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [621 647])
+                    ("stepOnce" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("current" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [681 711]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("int32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [649 775])
+                    ("private" label nil (reparse-symbol classsubparts) [776 784])
+                    ("m_movement" variable
+                       (:default-value "{ Point<int32_t>(1, 0), Point<int32_t>(-1, 0), Point<int32_t>(0, 1), Point<int32_t>(0, -1) }"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [786 926]))                  
+                :type "class")
+                nil [592 929])
+            ("CrystalModel" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [952 959])
+                    ("CrystalModel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bath" variable (:type ("Bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 988])
+                            ("p" variable (:type ("Point" type
+                                 (:template-specifier 
+                                    ( ("int32_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [989 1006])
+                            ("cg" variable (:type ("CoordGen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1007 1019])
+                            ("im" variable (:type ("IonMovement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1020 1035]))                          
+                        :type ("CrystalModel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [965 1036])
+                    ("CrystalModel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1038 1062])
+                    ("crystallizeOneIon" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1068 1093])
+                    ("runSomeSteps" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("steps" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1116 1131]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1098 1132])
+                    ("toString" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1137 1166])
+                    ("getModelValue" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1198 1222]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1172 1271])
+                    ("anyNeighbours" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1303 1327]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1277 1573])
+                    ("dropNewIon" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1579 1660])
+                    ("reset" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1666 1705])
+                    ("bathToModelRep" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1748 1772]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1710 1815])
+                    ("getLast" function
+                       (:typemodifiers ("inline")
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("int32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1820 1873])
+                    ("getRadius" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1878 1937])
+                    ("getBathWidth" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1942 2002])
+                    ("private" label nil (reparse-symbol classsubparts) [2004 2012])
+                    ("m_bath" variable (:type ("Bath" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2014 2026])
+                    ("m_p" variable (:type ("Point" type
+                         (:template-specifier 
+                            ( ("int32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2028 2047])
+                    ("m_cg" variable (:type ("CoordGen" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2049 2063])
+                    ("m_im" variable (:type ("IonMovement" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2065 2082]))                  
+                :type "class")
+                nil [931 2085]))          
+      :file "CrystalModel.hpp"
+      :pointmax 2118
+      :fsize 2117
+      :lastmodtime '(23289 39564 455709 646000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("drand" (spp-arg-list nil 282 . 284) . ((semantic-list "((double)(rand()-1)/(double)(RAND_MAX))" 285 . 324)))
+          ("CRYSTALMODEL_HPP_")
+          )
+)
+    (semanticdb-table "CrystalView.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CRYSTALVIEW_HPP_" variable (:constant-flag t) nil [34 50])
+            ("Bitmap.hpp" include nil nil [52 73])
+            ("CrystalModel.hpp" include nil nil [74 101])
+            ("gtkmm-3.0/gtkmm/frame.h" include (:system-flag t) nil [102 136])
+            ("memory" include (:system-flag t) nil [137 154])
+            ("CrystalView" type
+               (:superclasses 
+                  ( ("Gtk::Frame" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [196 203])
+                    ("CrystalView" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("cm" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("CrystalModel" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [217 250])
+                            ("image" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Bitmap" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [251 281]))                          
+                        :type ("CrystalView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [205 282])
+                    ("CrystalView" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [284 307])
+                    ("redraw" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [309 323])
+                    ("drawBackground" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [325 347])
+                    ("drawCrystal" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [349 368])
+                    ("private" label nil (reparse-symbol classsubparts) [369 377])
+                    ("m_cm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("CrystalModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [379 414])
+                    ("m_image" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("Bitmap" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [416 448])
+                    ("drawPoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("uint32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [465 490])
+                            ("color" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [491 506]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [450 507]))                  
+                :type "class")
+                nil [156 510]))          
+      :file "CrystalView.hpp"
+      :pointmax 542
+      :fsize 541
+      :lastmodtime '(23231 40179 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CRYSTALVIEW_HPP_")
+          )
+)
+    (semanticdb-table "CrystalModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CrystalModel.hpp" include nil nil [1 28])
+            ("CrystalModel" function
+               (:constructor-flag t
+                :parent "CrystalModel"
+                :arguments 
+                  ( ("bath" variable (:type ("Bath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57 67])
+                    ("p" variable (:type ("Point" type
+                         (:template-specifier 
+                            ( ("int32_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [68 85])
+                    ("cg" variable (:type ("CoordGen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86 98])
+                    ("im" variable (:type ("IonMovement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99 114]))                  
+                :type ("CrystalModel" type (:type "class") nil nil))
+                nil [30 163])
+            ("CrystalModel" function
+               (:destructor-flag t
+                :parent "CrystalModel"
+                :type "void")
+                nil [165 199])
+            ("crystallizeOneIon" function
+               (:parent "CrystalModel"
+                :type "bool")
+                nil [201 506])
+            ("runSomeSteps" function
+               (:parent "CrystalModel"
+                :arguments 
+                  ( ("steps" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [540 555]))                  
+                :type "bool")
+                nil [508 654])
+            ("toString" function
+               (:parent "CrystalModel"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [656 1309]))          
+      :file "CrystalModel.cpp"
+      :pointmax 1310
+      :fsize 1309
+      :lastmodtime '(23231 43013 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gtkmm-3.0/gtkmm/application.h" include (:system-flag t) nil [1 41])
+            ("gtkmm-3.0/gtkmm/window.h" include (:system-flag t) nil [42 77])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [78 113])
+            ("gtkmm-3.0/gtkmm/box.h" include (:system-flag t) nil [114 146])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [147 181])
+            ("glibmm-2.4/glibmm/refptr.h" include (:system-flag t) nil [182 219])
+            ("Bitmap.hpp" include nil nil [221 242])
+            ("CrystalModel.hpp" include nil nil [243 270])
+            ("CrystalView.hpp" include nil nil [271 297])
+            ("CrystalControl.hpp" include nil nil [298 327])
+            ("vector" include (:system-flag t) nil [328 345])
+            ("ctime" include (:system-flag t) nil [346 362])
+            ("iostream" include (:system-flag t) nil [363 382])
+            ("random" include (:system-flag t) nil [383 400])
+            ("memory" include (:system-flag t) nil [401 418])
+            ("cli_experiment" function
+               (:arguments 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [439 451]))                  
+                :type "int")
+                nil [420 892])
+            ("newCrystalModel" function
+               (:arguments 
+                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 954]))                  
+                :type ("std::shared_ptr" type
+                     (:template-specifier 
+                        ( ("CrystalModel" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [894 1256])
+            ("newCrystalControl" function
+               (:arguments 
+                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1322]))                  
+                :type ("std::unique_ptr" type
+                     (:template-specifier 
+                        ( ("CrystalControl" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1258 1582])
+            ("gui_experiment" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1603 1612])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1613 1625]))                  
+                :type "int")
+                nil [1584 1975])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [40 49])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1986 1995])
                     ("argv" variable
-                       (:pointer 1
-                        :dereference 1
+                       (:pointer 2
                         :type "char")
-                        (reparse-symbol arg-sub-list) [50 63]))                  
+                        (reparse-symbol arg-sub-list) [1996 2008]))                  
                 :type "int")
-                nil [31 237]))          
-      :file "Main.cpp"
-      :pointmax 238
-      :fsize 237
-      :lastmodtime '(23230 37099 829263 149000)
-      :unmatched-syntax nil))
+                nil [1977 2201]))          
+      :file "main.cpp"
+      :pointmax 2202
+      :fsize 2201
+      :lastmodtime '(23292 1584 814589 587000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Bath.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BATH_HPP_" variable (:constant-flag t) nil [27 36])
+            ("Matrix.hpp" include nil nil [38 59])
+            ("Point.hpp" include nil nil [60 80])
+            ("Bath" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [95 102])
+                    ("Bath" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("m" variable (:type ("Matrix" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [109 124])
+                            ("rStart" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125 139])
+                            ("rEscape" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140 155]))                          
+                        :type ("Bath" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [104 221])
+                    ("Bath" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [223 241])
+                    ("reset" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [247 333])
+                    ("populate" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [357 381]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [336 402])
+                    ("isPopulated" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [429 453]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [405 490])
+                    ("outsideStart" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [518 542]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [493 592])
+                    ("outsideBath" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [619 643]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [595 694])
+                    ("getRStart" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [697 750])
+                    ("getREscape" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [752 807])
+                    ("getSize" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [809 865])
+                    ("bathToModelRep" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [909 933]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("uint32_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [871 1024])
+                    ("private" label nil (reparse-symbol classsubparts) [1025 1033])
+                    ("m_m" variable (:type ("Matrix" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1038 1055])
+                    ("m_rStart" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1060 1076])
+                    ("m_rEscape" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1081 1098])
+                    ("get" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1120 1144]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1104 1255])
+                    ("set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("int32_t" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1277 1301])
+                            ("val" variable (:type "bool") (reparse-symbol arg-sub-list) [1302 1311]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1261 1414])
+                    ("xBathToModelRep" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1452 1462]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1420 1500])
+                    ("yBathToModelRep" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("y" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1537 1547]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1505 1585]))                  
+                :type "class")
+                nil [82 1588]))          
+      :file "Bath.hpp"
+      :pointmax 1613
+      :fsize 1612
+      :lastmodtime '(23231 42710 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BATH_HPP_")
+          )
+)
+    (semanticdb-table "Point.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("POINT_HPP_" variable (:constant-flag t) nil [104 114])
+            ("cmath" include (:system-flag t) nil [116 132])
+            ("Point" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [169 176])
+                    ("Point" function
+                       (:constructor-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [178 208])
+                    ("Point" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216 220])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [221 225]))                          
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [210 245])
+                    ("Point" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [247 266])
+                    ("x" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [268 297])
+                    ("y" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [299 328])
+                    ("x" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [330 371])
+                    ("y" function
+                       (:typemodifiers ("inline")
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [373 414])
+                    ("length" function
+                       (:typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [419 501])
+                    ("+" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [532 550]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [506 603])
+                    ("+" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("d" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [634 645]))                          
+                        :type ("Point" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [608 690])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [718 736]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [695 783])
+                    ("private" label nil (reparse-symbol classsubparts) [784 792])
+                    ("m_x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [794 805])
+                    ("m_y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [794 805]))                  )
+                nil [134 808]))          
+      :file "Point.hpp"
+      :pointmax 834
+      :fsize 833
+      :lastmodtime '(23231 42156 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POINT_HPP_")
+          )
+)
+    (semanticdb-table "Matrix.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("MATRIX_HPP_" variable (:constant-flag t) nil [29 40])
+            ("vector" include (:system-flag t) nil [42 59])
+            ("iostream" include (:system-flag t) nil [60 79])
+            ("Matrix" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [117 124])
+                    ("Matrix" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("array" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [133 154])
+                            ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155 167]))                          
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [126 202])
+                    ("Matrix" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [205 226])
+                    ("clear" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [232 409])
+                    ("get" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [428 437])
+                            ("y" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [438 447]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [415 487])
+                    ("set" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("x" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [508 517])
+                            ("y" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [518 527])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [528 541]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [492 574])
+                    ("getSize" function
+                       (:typemodifiers ("inline")
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [579 627])
+                    ("private" label nil (reparse-symbol classsubparts) [629 637])
+                    ("m_array" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("T" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [642 665])
+                    ("m_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [670 684]))                  )
+                nil [81 687]))          
+      :file "Matrix.hpp"
+      :pointmax 714
+      :fsize 713
+      :lastmodtime '(23231 42788 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MATRIX_HPP_")
+          )
+))
   :file "!home!marcus!Programming!Cpp!Gnome!gtkmm-test!src!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

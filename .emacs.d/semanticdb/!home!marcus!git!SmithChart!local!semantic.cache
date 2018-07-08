@@ -1,0 +1,221 @@
+;; Object local/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "local/"
+  :tables
+  (list
+    (semanticdb-table "SmithChart.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("copy" include nil nil [20 41])
+            ("" code nil nil [60 152])
+            ("" code nil nil [173 261])
+            ("matplotlib.figure" include nil nil [262 298])
+            ("matplotlib.backends.backend_tkagg" include nil nil [299 362])
+            ("cm_to_in" function (:arguments 
+              ( ("l" variable nil (reparse-symbol function_parameters) [378 379]))              ) nil [365 400])
+            ("dpc_to_dpi" function (:arguments 
+              ( ("dpc" variable nil (reparse-symbol function_parameters) [417 420]))              ) nil [402 443])
+            ("complx_str" function (:arguments 
+              ( ("z" variable nil (reparse-symbol function_parameters) [460 461]))              ) nil [445 496])
+            ("SmithChart" type
+               (:superclasses ("object")
+                :members 
+                  ( ("_impedance_color_" variable nil (reparse-symbol indented_block_body) [528 557])
+                    ("_admittance_color_" variable nil (reparse-symbol indented_block_body) [562 592])
+                    ("_normal_color_" variable nil (reparse-symbol indented_block_body) [597 623])
+                    ("_intermediate_impedance_style_" variable nil (reparse-symbol indented_block_body) [628 665])
+                    ("_impedance_change_style_" variable nil (reparse-symbol indented_block_body) [670 700])
+                    ("_final_impedance_style_" variable nil (reparse-symbol indented_block_body) [705 734])
+                    ("_smith_chart_linewidth_" variable nil (reparse-symbol indented_block_body) [739 768])
+                    ("_font_" variable nil (reparse-symbol indented_block_body) [773 795])
+                    ("_component_args_" variable nil (reparse-symbol indented_block_body) [800 943])
+                    ("\"\"\"
+    _component_args_ = {
+        \"bitmap\": \"\", \"image\": \"\", \"bg\": \"#777874\", \"bd\": 2,
+        \"cursor\": \"arrow\", \"fg\": \"#f8fbfc\", \"anchr\": \"center\",
+        \"height\": 1, \"width\": 16, \"font\": (\"Times\", 12),
+        \"justify\": \"center\", \"padx\": 0, \"pady\": 0,
+        \"relief\": \"flat\", \"textvariable\": \"\",
+        \"underline\": -1, \"wraplength\": -1
+    }
+    \"\"\"" code nil (reparse-symbol indented_block_body) [948 1310])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1344 1365])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1379 1393])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1407 1421])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1458 1483])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1492 1517])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1526 1551])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1560 1585])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1594 1619])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1628 1649])
+                            ("self" code nil (reparse-symbol indented_block_body) [1658 1674]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1329 1333]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1316 1675])
+                    ("display" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1692 1696]))                          )
+                        (reparse-symbol indented_block_body) [1680 1761])
+                    ("_init_gui" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1780 1784]))                          )
+                        (reparse-symbol indented_block_body) [1766 2964])
+                    ("_make_control_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2993 2997])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [2999 3011]))                          )
+                        (reparse-symbol indented_block_body) [2969 3721])
+                    ("_make_z_in_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3747 3751])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [3753 3765]))                          
+                        :documentation "
+        Displaying current _z_in.
+        ")
+                        (reparse-symbol indented_block_body) [3726 4216])
+                    ("_make_transmissionline_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4254 4258])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [4260 4272]))                          
+                        :documentation "
+        Transmission line part
+        ")
+                        (reparse-symbol indented_block_body) [4221 5358])
+                    ("_make_lumped_component_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5396 5400])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [5402 5414]))                          )
+                        (reparse-symbol indented_block_body) [5363 6539])
+                    ("_make_stub_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6565 6569])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [6571 6583]))                          )
+                        (reparse-symbol indented_block_body) [6544 7959])
+                    ("_make_system_props_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7993 7997])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [7999 8011]))                          )
+                        (reparse-symbol indented_block_body) [7964 8769])
+                    ("_make_clear_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8796 8800])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [8802 8814]))                          )
+                        (reparse-symbol indented_block_body) [8774 9266])
+                    ("_make_history_panel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9295 9299])
+                            ("parent_panel" variable nil (reparse-symbol function_parameters) [9301 9313]))                          )
+                        (reparse-symbol indented_block_body) [9271 9848])
+                    ("_plot_z_in" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9868 9872]))                          )
+                        (reparse-symbol indented_block_body) [9853 10178])
+                    ("_component_button_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10211 10215])
+                            ("button_id" variable nil (reparse-symbol function_parameters) [10217 10226]))                          )
+                        (reparse-symbol indented_block_body) [10183 13434])
+                    ("_remove_last_entry" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13463 13467])
+                            ("redraw" variable nil (reparse-symbol function_parameters) [13469 13475]))                          )
+                        (reparse-symbol indented_block_body) [13440 14256])
+                    ("_control_button_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14287 14291])
+                            ("button_id" variable nil (reparse-symbol function_parameters) [14293 14302]))                          )
+                        (reparse-symbol indented_block_body) [14261 14801])
+                    ("_make_label" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14822 14826])
+                            ("parent_frame" variable nil (reparse-symbol function_parameters) [14828 14840])
+                            ("label_text" variable nil (reparse-symbol function_parameters) [14842 14852])
+                            ("anchr" variable nil (reparse-symbol function_parameters) [14854 14859]))                          )
+                        (reparse-symbol indented_block_body) [14806 14962])
+                    ("_make_button" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14984 14988])
+                            ("parent_frame" variable nil (reparse-symbol function_parameters) [14990 15002])
+                            ("button_text" variable nil (reparse-symbol function_parameters) [15004 15015])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [15017 15020])
+                            ("anchr" variable nil (reparse-symbol function_parameters) [15022 15027]))                          )
+                        (reparse-symbol indented_block_body) [14967 15145])
+                    ("_parse_raw_input" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15171 15175])
+                            ("raw_in" variable nil (reparse-symbol function_parameters) [15177 15183]))                          
+                        :documentation "
+        Converts raw_in to the numerical representation.
+        Valid formats: '1234', '12.34', '2*pi', 'pi/3', '2*pi/3'.
+        
+        raises SyntaxError if the raw_in has incorrect format
+        ")
+                        (reparse-symbol indented_block_body) [15150 16060])
+                    ("_draw_chart_background" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16092 16096]))                          )
+                        (reparse-symbol indented_block_body) [16065 17359])
+                    ("_make_circles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17382 17386]))                          )
+                        (reparse-symbol indented_block_body) [17364 17572])
+                    ("_make_real_circles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17600 17604])
+                            ("x" variable nil (reparse-symbol function_parameters) [17606 17607])
+                            ("y" variable nil (reparse-symbol function_parameters) [17609 17610])
+                            ("vals" variable nil (reparse-symbol function_parameters) [17612 17616]))                          )
+                        (reparse-symbol indented_block_body) [17577 17799])
+                    ("_make_imag_circles" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17827 17831])
+                            ("x" variable nil (reparse-symbol function_parameters) [17833 17834])
+                            ("y" variable nil (reparse-symbol function_parameters) [17836 17837])
+                            ("vals" variable nil (reparse-symbol function_parameters) [17839 17843]))                          )
+                        (reparse-symbol indented_block_body) [17804 17999])
+                    ("_add_imag_pts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18022 18026])
+                            ("X" variable nil (reparse-symbol function_parameters) [18028 18029])
+                            ("x_pts" variable nil (reparse-symbol function_parameters) [18031 18036])
+                            ("y_pts" variable nil (reparse-symbol function_parameters) [18038 18043])
+                            ("v_start" variable nil (reparse-symbol function_parameters) [18045 18052])
+                            ("v_stop" variable nil (reparse-symbol function_parameters) [18054 18060]))                          )
+                        (reparse-symbol indented_block_body) [18004 18373]))                  
+                :type "class")
+                nil [498 18373])
+            ("if" code nil nil [18375 18429]))          
+      :file "SmithChart.py"
+      :pointmax 18429
+      :fsize 18428
+      :lastmodtime '(23361 58323 9093 205000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!SmithChart!local!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

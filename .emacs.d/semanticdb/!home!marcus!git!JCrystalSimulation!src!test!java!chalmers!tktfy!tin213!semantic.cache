@@ -1,0 +1,40 @@
+;; Object tin213/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tin213/"
+  :tables
+  (list
+    (semanticdb-table "AppTest.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("chalmers.tktfy.tin213" package nil nil [1 31])
+            ("junit.framework.Test" include nil nil [33 61])
+            ("junit.framework.TestCase" include nil nil [62 94])
+            ("junit.framework.TestSuite" include nil nil [95 128])
+            ("AppTest" type
+               (:typemodifiers ("public")
+                :superclasses "TestCase"
+                :members 
+                  ( ("AppTest" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("testName" variable (:type "String") (reparse-symbol formal_parameters) [190 205]))                          )
+                        (reparse-symbol class_member_declaration) [174 246])
+                    ("suite" function
+                       (:typemodifiers ("public" "static")
+                        :type "Test")
+                        (reparse-symbol class_member_declaration) [252 337])
+                    ("testApp" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [343 404]))                  
+                :type "class")
+                nil [130 406]))          
+      :file "AppTest.java"
+      :pointmax 407
+      :fsize 406
+      :lastmodtime '(23311 64752 730242 971000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git!JCrystalSimulation!src!test!java!chalmers!tktfy!tin213!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

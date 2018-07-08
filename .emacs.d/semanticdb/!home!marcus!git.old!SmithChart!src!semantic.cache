@@ -1,0 +1,342 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "SmithChartView.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SmithChartView.hpp" include nil nil [1 30])
+            ("SmithChartModel.hpp" include nil nil [31 61])
+            ("cmath" include (:system-flag t) nil [63 79])
+            ("glibmm-2.4/glibmm/main.h" include (:system-flag t) nil [81 116])
+            ("sc_sqrt" function
+               (:typemodifiers ("inline" "static")
+                :arguments 
+                  ( ("x" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149 160])
+                    ("y" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [161 172]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [118 206])
+            ("SmithChartView" function
+               (:constructor-flag t
+                :parent "SmithChartView"
+                :arguments 
+                  ( ("scm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [239 276])
+                    ("image" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("Bitmap" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [277 307]))                  
+                :type ("SmithChartView" type (:type "class") nil nil))
+                nil [208 393])
+            ("SmithChartView" function
+               (:destructor-flag t
+                :parent "SmithChartView"
+                :type "void")
+                nil [395 472])
+            ("redraw" function
+               (:parent "SmithChartView"
+                :type "void")
+                nil [474 633])
+            ("drawBackground" function
+               (:parent "SmithChartView"
+                :type "void")
+                nil [635 827])
+            ("drawImagCircle" function
+               (:parent "SmithChartView"
+                :arguments 
+                  ( ("v_start" variable (:type "double") (reparse-symbol arg-sub-list) [865 880])
+                    ("v_stop" variable (:type "double") (reparse-symbol arg-sub-list) [881 895])
+                    ("v_step" variable (:type "double") (reparse-symbol arg-sub-list) [896 910])
+                    ("r" variable (:type "double") (reparse-symbol arg-sub-list) [913 922])
+                    ("xverts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [923 951])
+                    ("yverts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [952 980]))                  
+                :type "void")
+                nil [829 1271])
+            ("drawRealCircle" function
+               (:parent "SmithChartView"
+                :arguments 
+                  ( ("v_start" variable (:type "double") (reparse-symbol arg-sub-list) [1309 1324])
+                    ("v_stop" variable (:type "double") (reparse-symbol arg-sub-list) [1325 1339])
+                    ("v_step" variable (:type "double") (reparse-symbol arg-sub-list) [1340 1354])
+                    ("r" variable (:type "double") (reparse-symbol arg-sub-list) [1357 1366])
+                    ("xreal" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1367 1394])
+                    ("yreal" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1395 1422]))                  
+                :type "void")
+                nil [1273 1695])
+            ("drawCircles" function
+               (:parent "SmithChartView"
+                :type "void")
+                nil [1697 2801]))          
+      :file "SmithChartView.cpp"
+      :pointmax 2803
+      :fsize 2802
+      :lastmodtime '(23256 47621 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SmithChartView.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SMITHCHARTVIEW_HPP_" variable (:constant-flag t) nil [37 56])
+            ("memory" include (:system-flag t) nil [58 75])
+            ("gtkmm-3.0/gtkmm/frame.h" include (:system-flag t) nil [77 111])
+            ("rendering/Bitmap.hpp" include nil nil [112 143])
+            ("SmithChartModel.hpp" include nil nil [145 175])
+            ("SmithChartView" type
+               (:superclasses 
+                  ( ("Gtk::Frame" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [220 227])
+                    ("SmithChartView" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("scm" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("SmithChartModel" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [244 281])
+                            ("image" variable (:type ("std::unique_ptr" type
+                                 (:template-specifier 
+                                    ( ("Bitmap" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [282 312]))                          
+                        :type ("SmithChartView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [229 313])
+                    ("SmithChartView" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [315 333])
+                    ("redraw" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [336 350])
+                    ("private" label nil (reparse-symbol classsubparts) [351 359])
+                    ("m_scm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [361 400])
+                    ("m_image" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("Bitmap" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [402 434])
+                    ("drawBackground" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [437 459])
+                    ("drawCircles" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [461 480])
+                    ("drawImagCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v_start" variable (:type "double") (reparse-symbol arg-sub-list) [502 517])
+                            ("v_stop" variable (:type "double") (reparse-symbol arg-sub-list) [518 532])
+                            ("v_step" variable (:type "double") (reparse-symbol arg-sub-list) [533 547])
+                            ("r" variable (:type "double") (reparse-symbol arg-sub-list) [551 560])
+                            ("_ximag" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [561 589])
+                            ("_yimag" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [590 618]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [482 619])
+                    ("drawRealCircle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v_start" variable (:type "double") (reparse-symbol arg-sub-list) [641 656])
+                            ("v_stop" variable (:type "double") (reparse-symbol arg-sub-list) [657 671])
+                            ("v_step" variable (:type "double") (reparse-symbol arg-sub-list) [672 686])
+                            ("r" variable (:type "double") (reparse-symbol arg-sub-list) [690 699])
+                            ("xreal" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [700 727])
+                            ("yreal" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [728 755]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [621 756])
+                    ("xCenter" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [759 823])
+                    ("yCenter" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [825 890])
+                    ("scaleFactor" function
+                       (:typemodifiers ("inline")
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [892 996]))                  
+                :type "class")
+                nil [177 999]))          
+      :file "SmithChartView.hpp"
+      :pointmax 1034
+      :fsize 1033
+      :lastmodtime '(23256 38815 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SMITHCHARTVIEW_HPP_")
+          )
+)
+    (semanticdb-table "SmithChartModel.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "SmithChartModel.hpp"
+      :pointmax 179
+      :fsize 178
+      :lastmodtime '(23254 64386 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SmithChart.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gtkmm-3.0/gtkmm/application.h" include (:system-flag t) nil [1 41])
+            ("gtkmm-3.0/gtkmm/window.h" include (:system-flag t) nil [42 77])
+            ("gtkmm-3.0/gtkmm/button.h" include (:system-flag t) nil [78 113])
+            ("gtkmm-3.0/gtkmm/box.h" include (:system-flag t) nil [114 146])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [147 181])
+            ("gtkmm-3.0/gtkmm/widget.h" include (:system-flag t) nil [182 217])
+            ("glibmm-2.4/glibmm/refptr.h" include (:system-flag t) nil [218 255])
+            ("memory" include (:system-flag t) nil [257 274])
+            ("SmithChartView.hpp" include nil nil [276 305])
+            ("SmithChartControl.hpp" include nil nil [306 338])
+            ("SmithChartModel.hpp" include nil nil [339 369])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [380 389])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [390 402]))                  
+                :type "int")
+                nil [371 946]))          
+      :file "SmithChart.cpp"
+      :pointmax 947
+      :fsize 946
+      :lastmodtime '(23254 65435 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SmithChartControl.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "SmithChartControl.hpp"
+      :pointmax 525
+      :fsize 524
+      :lastmodtime '(23254 64350 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SmithChartControl.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SmithChartControl.hpp" include nil nil [1 33])
+            ("memory" include (:system-flag t) nil [35 52])
+            ("gtkmm-3.0/gtkmm/box.h" include (:system-flag t) nil [54 86])
+            ("gtkmm-3.0/gtkmm/hvbox.h" include (:system-flag t) nil [87 121])
+            ("gtkmm-3.0/gtkmm/widget.h" include (:system-flag t) nil [122 157])
+            ("SmithChartModel.hpp" include nil nil [159 189])
+            ("SmithChartView.hpp" include nil nil [190 219])
+            ("SmithChartControl" function
+               (:constructor-flag t
+                :parent "SmithChartControl"
+                :arguments 
+                  ( ("scm" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartModel" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [258 295])
+                    ("scv" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("SmithChartView" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [298 334]))                  
+                :type ("SmithChartControl" type (:type "class") nil nil))
+                nil [221 395])
+            ("SmithChartControl" function
+               (:destructor-flag t
+                :parent "SmithChartControl"
+                :type "void")
+                nil [397 480]))          
+      :file "SmithChartControl.cpp"
+      :pointmax 482
+      :fsize 481
+      :lastmodtime '(23256 48070 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SmithChartModel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SmithChartModel.hpp" include nil nil [1 31])
+            ("SmithChartModel" function
+               (:constructor-flag t
+                :parent "SmithChartModel"
+                :type ("SmithChartModel" type (:type "class") nil nil))
+                nil [33 113])
+            ("SmithChartModel" function
+               (:destructor-flag t
+                :parent "SmithChartModel"
+                :type "void")
+                nil [115 194]))          
+      :file "SmithChartModel.cpp"
+      :pointmax 196
+      :fsize 195
+      :lastmodtime '(23254 64380 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!git.old!SmithChart!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

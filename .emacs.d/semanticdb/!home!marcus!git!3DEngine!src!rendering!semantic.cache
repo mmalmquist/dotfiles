@@ -4,7 +4,7 @@
   :tables
   (list
     (semanticdb-table "semanticdb-table"
-      :major-mode c++-mode
+      :major-mode 'c++-mode
       :tags 
         '( ("Window.hpp" include nil nil [1 22])
             ("iostream" include (:system-flag t) nil [24 43])
@@ -156,72 +156,1709 @@
                         :type ("std::string" type (:type "class") nil nil))
                         (reparse-symbol arg-sub-list) [984 1009]))                  
                 :type ("Window" type (:type "class") nil nil))
-                nil [946 2540])
+                nil [946 2529])
             ("Window" function
                (:destructor-flag t
                 :parent "Window"
                 :type "void")
-                nil [2542 2614])
+                nil [2531 2603])
             ("update" function
                (:parent "Window"
                 :type "void")
-                nil [2616 2757])
+                nil [2605 2746])
             ("SwapBuffers" function
                (:parent "Window"
                 :type "void")
-                nil [2759 2820])
+                nil [2748 2809])
             ("PollEvents" function
-               (:methodconst-flag t
-                :parent "Window"
+               (:parent "Window"
                 :type "void")
-                nil [2822 2879])
+                nil [2811 2868])
             ("IsCloseRequested" function
-               (:methodconst-flag t
-                :parent "Window"
+               (:parent "Window"
                 :type "bool")
-                nil [2881 2963])
+                nil [2870 2952])
             ("BindAsRenderTarget" function
-               (:methodconst-flag t
-                :parent "Window"
+               (:parent "Window"
                 :type "void")
-                nil [2965 3125])
+                nil [2954 3114])
             ("SetFullScreen" function
                (:parent "Window"
                 :arguments 
-                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [3154 3165]))                  
+                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [3143 3154]))                  
                 :type "void")
-                nil [3127 3233])
+                nil [3116 3222])
             ("FramebufferSizeCallback" function
                (:typemodifiers ("static")
                 :arguments 
                   ( ("window" variable
                        (:pointer 1
                         :type ("GLFWwindow" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [3271 3290])
-                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3291 3301])
-                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3302 3313]))                  
+                        (reparse-symbol arg-sub-list) [3260 3279])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3280 3290])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3291 3302]))                  
                 :type "void")
-                nil [3235 3354])
+                nil [3224 3343])
             ("ErrorCallback" function
                (:typemodifiers ("static")
                 :arguments 
-                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [3382 3392])
+                  ( ("error" variable (:type "int") (reparse-symbol arg-sub-list) [3371 3381])
                     ("description" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [3393 3417]))                  
+                        (reparse-symbol arg-sub-list) [3382 3406]))                  
                 :type "void")
-                nil [3356 3490]))          
+                nil [3345 3479]))          
       :file "Window.cpp"
-      :pointmax 3491
-      :fsize 3490
-      :lastmodtime '(23216 13175 873286 161000)
+      :pointmax 3480
+      :fsize 3479
+      :lastmodtime '(23281 33070 494517 145000)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :file "Window.hpp"
       :fsize 1023
-      :lastmodtime '(23167 20796 0 0)))
+      :lastmodtime '(23167 20796 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("LIGHTING_H" variable (:constant-flag t) nil [28 38])
+            ("glm/glm.hpp" include (:system-flag t) nil [40 62])
+            ("Shader.hpp" include nil nil [64 85])
+            ("../core/EntityComponent.hpp" include nil nil [86 124])
+            ("EngineWindow" type
+               (:prototype t
+                :type "class")
+                nil [126 145])
+            ("ShadowCameraTransform" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [177 184])
+                    ("ShadowCameraTransform" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [208 229])
+                            ("rot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::quat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [230 251]))                          
+                        :type ("ShadowCameraTransform" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [186 283])
+                    ("GetPos" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("glm::vec3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [288 344])
+                    ("GetRot" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("glm::quat" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [346 402])
+                    ("private" label nil (reparse-symbol classsubparts) [403 411])
+                    ("m_pos" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [413 429])
+                    ("m_rot" variable (:type ("glm::quat" type (:type "class") nil nil)) (reparse-symbol classsubparts) [431 447]))                  
+                :type "class")
+                nil [147 450])
+            ("ShadowInfo" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [471 478])
+                    ("ShadowInfo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("projection" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "glm::mat4()"
+                                :type ("glm::mat4" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [491 532])
+                            ("flipFaces" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [534 556])
+                            ("shadowMapSizeAsPowerOf2" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [558 589])
+                            ("shadowSoftness" variable
+                               (:default-value "1.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [591 618])
+                            ("lightBleedReductionAmount" variable
+                               (:default-value "0.2f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [620 658])
+                            ("minVariance" variable
+                               (:default-value "0.00002f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [660 688]))                          
+                        :type ("ShadowInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [480 925])
+                    ("GetProjection" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("glm::mat4" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [930 1005])
+                    ("GetFlipFaces" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1007 1080])
+                    ("GetShadowMapSizeAsPowerOf2" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [1082 1169])
+                    ("GetShadowSoftness" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [1171 1249])
+                    ("GetMinVariance" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [1251 1326])
+                    ("GetLightBleedReductionAmount" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [1328 1417])
+                    ("protected" label nil (reparse-symbol classsubparts) [1418 1428])
+                    ("private" label nil (reparse-symbol classsubparts) [1429 1437])
+                    ("m_projection" variable (:type ("glm::mat4" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1439 1462])
+                    ("m_flipFaces" variable (:type "bool") (reparse-symbol classsubparts) [1464 1481])
+                    ("m_shadowMapSizeAsPowerOf2" variable (:type "int") (reparse-symbol classsubparts) [1483 1513])
+                    ("m_shadowSoftness" variable (:type "float") (reparse-symbol classsubparts) [1515 1538])
+                    ("m_lightBleedReductionAmount" variable (:type "float") (reparse-symbol classsubparts) [1540 1574])
+                    ("m_minVariance" variable (:type "float") (reparse-symbol classsubparts) [1576 1596]))                  
+                :type "class")
+                nil [452 1599])
+            ("BaseLight" type
+               (:superclasses 
+                  ( ("EntityComponent" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1644 1651])
+                    ("BaseLight" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1663 1686])
+                            ("intensity" variable (:type "float") (reparse-symbol arg-sub-list) [1687 1703])
+                            ("shader" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Shader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1704 1725]))                          
+                        :type ("BaseLight" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1653 1823])
+                    ("CalcShadowCameraTransform" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mainCameraPos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1883 1914])
+                            ("mainCameraRot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::quat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1915 1946]))                          
+                        :type ("ShadowCameraTransform" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1827 1953])
+                    ("override" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2021 2036])
+                    ("GetColor" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type ("glm::vec3" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2040 2100])
+                    ("GetIntensity" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [2102 2159])
+                    ("GetShader" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2161 2220])
+                    ("GetShadowInfo" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("ShadowInfo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2222 2293])
+                    ("protected" label nil (reparse-symbol classsubparts) [2294 2304])
+                    ("SetShadowInfo" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("shadowInfo" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ShadowInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2332 2361]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2306 2392])
+                    ("private" label nil (reparse-symbol classsubparts) [2393 2401])
+                    ("m_color" variable (:type ("glm::vec3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2403 2424])
+                    ("m_intensity" variable (:type "float") (reparse-symbol classsubparts) [2426 2450])
+                    ("m_shader" variable (:type ("Shader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2452 2473])
+                    ("m_shadowInfo" variable (:type ("ShadowInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2475 2500]))                  
+                :type "class")
+                nil [1601 2503])
+            ("DirectionalLight" type
+               (:superclasses 
+                  ( ("BaseLight" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2549 2556])
+                    ("DirectionalLight" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "glm::vec3(0, 0, 0)"
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2575 2618])
+                            ("intensity" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2620 2639])
+                            ("shadowMapSizeAsPowerOf2" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2641 2672])
+                            ("shadowArea" variable
+                               (:default-value "80.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2692 2716])
+                            ("shadowSoftness" variable
+                               (:default-value "1.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2718 2745])
+                            ("lightBleedReductionAmount" variable
+                               (:default-value "0.2f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2747 2785])
+                            ("minVariance" variable
+                               (:default-value "0.00002f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [2787 2815]))                          
+                        :type ("DirectionalLight" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2558 2817])
+                    ("CalcShadowCameraTransform" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("mainCameraPos" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2894 2925])
+                            ("mainCameraRot" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::quat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2926 2957]))                          
+                        :type ("ShadowCameraTransform" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2838 2964])
+                    ("GetHalfShadowArea" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [2968 3035])
+                    ("private" label nil (reparse-symbol classsubparts) [3036 3044])
+                    ("m_halfShadowArea" variable (:type "float") (reparse-symbol classsubparts) [3046 3069]))                  
+                :type "class")
+                nil [2505 3072])
+            ("Attenuation" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3094 3101])
+                    ("Attenuation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("constant" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3115 3133])
+                            ("linear" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3135 3151])
+                            ("exponent" variable
+                               (:default-value "1"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3153 3171]))                          
+                        :type ("Attenuation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3103 3244])
+                    ("GetConstant" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [3249 3304])
+                    ("GetLinear" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [3306 3359])
+                    ("GetExponent" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [3361 3416])
+                    ("private" label nil (reparse-symbol classsubparts) [3417 3425])
+                    ("m_constant" variable (:type "float") (reparse-symbol classsubparts) [3427 3444])
+                    ("m_linear" variable (:type "float") (reparse-symbol classsubparts) [3446 3461])
+                    ("m_exponent" variable (:type "float") (reparse-symbol classsubparts) [3463 3480]))                  
+                :type "class")
+                nil [3074 3483])
+            ("PointLight" type
+               (:superclasses 
+                  ( ("BaseLight" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3523 3530])
+                    ("PointLight" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "glm::vec3(0, 0, 0)"
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3543 3586])
+                            ("intensity" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [3588 3607])
+                            ("atten" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Attenuation()"
+                                :type ("Attenuation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3609 3649])
+                            ("shader" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Shader(\"forward-point\")"
+                                :type ("Shader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3663 3709]))                          
+                        :type ("PointLight" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3532 3711])
+                    ("GetAttenuation" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :constant-flag t
+                        :type ("Attenuation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3726 3800])
+                    ("GetRange" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [3802 3851])
+                    ("private" label nil (reparse-symbol classsubparts) [3852 3860])
+                    ("m_attenuation" variable (:type ("Attenuation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3862 3888])
+                    ("m_range" variable (:type "float") (reparse-symbol classsubparts) [3890 3904]))                  
+                :type "class")
+                nil [3485 3907])
+            ("SpotLight" type
+               (:superclasses 
+                  ( ("PointLight" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3947 3954])
+                    ("SpotLight" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "glm::vec3(0, 0, 0)"
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3966 4009])
+                            ("intensity" variable
+                               (:default-value "0"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4011 4030])
+                            ("atten" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Attenuation()"
+                                :type ("Attenuation" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4032 4072])
+                            ("viewAngle" variable
+                               (:default-value "glm::radians(170.0f)"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4074 4112])
+                            ("shadowMapSizeAsPowerOf2" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4119 4150])
+                            ("shadowSoftness" variable
+                               (:default-value "1.0f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4152 4179])
+                            ("lightBleedReductionAmount" variable
+                               (:default-value "0.2f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4181 4219])
+                            ("minVariance" variable
+                               (:default-value "0.00002f"
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [4221 4249]))                          
+                        :type ("SpotLight" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3956 4251])
+                    ("GetCutoff" function
+                       (:methodconst-flag t
+                        :typemodifiers ("inline")
+                        :type "float")
+                        (reparse-symbol classsubparts) [4259 4310])
+                    ("private" label nil (reparse-symbol classsubparts) [4311 4319])
+                    ("m_cutoff" variable (:type "float") (reparse-symbol classsubparts) [4321 4336]))                  
+                :type "class")
+                nil [3909 4339]))          
+      :file "Lighting.hpp"
+      :pointmax 4348
+      :fsize 4347
+      :lastmodtime '(23163 23071 0 0)
+      :unmatched-syntax '((semantic-list 1979 . 2020) (symbol 1968 . 1979) (VOID 1963 . 1967) (VIRTUAL 1955 . 1962))
+      :lexical-table 
+        '(("LIGHTING_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SHADER_H" variable (:constant-flag t) nil [26 34])
+            ("map" include (:system-flag t) nil [36 50])
+            ("vector" include (:system-flag t) nil [51 68])
+            ("string" include (:system-flag t) nil [69 86])
+            ("memory" include (:system-flag t) nil [87 104])
+            ("glm/glm.hpp" include (:system-flag t) nil [105 127])
+            ("../core/Transform.hpp" include nil nil [129 161])
+            ("Camera.hpp" include nil nil [162 183])
+            ("Material.hpp" include nil nil [184 207])
+            ("RenderingEngine" type
+               (:prototype t
+                :type "class")
+                nil [209 231])
+            ("DirectionalLight" type
+               (:prototype t
+                :type "class")
+                nil [232 255])
+            ("PointLight" type
+               (:prototype t
+                :type "class")
+                nil [256 273])
+            ("SpotLight" type
+               (:prototype t
+                :type "class")
+                nil [274 290])
+            ("ShaderData" type
+               (:prototype t
+                :type "class")
+                nil [292 309])
+            ("Shader" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [326 333])
+                    ("Shader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "\"basicShader\""
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [342 385]))                          
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [335 387])
+                    ("Shader" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Shader" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [396 416]))                          
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [389 417])
+                    ("Shader" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [419 437])
+                    ("Bind" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [440 458])
+                    ("UpdateUniforms" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [488 515])
+                            ("material" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Material" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [516 541])
+                            ("renderingEngine" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RenderingEngine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [542 581])
+                            ("camera" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Camera" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [582 603]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [460 610])
+                    ("SetUniformInt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [632 663])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [664 674]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [613 681])
+                    ("SetUniformFloat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [704 735])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [736 748]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [683 755])
+                    ("SetUniformMat4" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [777 808])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::mat4" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [809 832]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [757 839])
+                    ("SetUniformVec3" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [861 892])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("glm::vec3" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [893 916]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [841 923])
+                    ("protected" label nil (reparse-symbol classsubparts) [924 934])
+                    ("private" label nil (reparse-symbol classsubparts) [935 943])
+                    ("m_shaderData" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("ShaderData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [945 986])
+                    ("m_fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1011])
+                    ("SetUniformDirectionalLight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1047 1078])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DirectionalLight" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1079 1109]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1015 1116])
+                    ("SetUniformPointLight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1144 1175])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("PointLight" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1176 1200]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1118 1207])
+                    ("SetUniformSpotLight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1234 1265])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SpotLight" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1266 1289]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1209 1296]))                  
+                :type "class")
+                nil [311 1348]))          
+      :file "Shader.hpp"
+      :pointmax 1357
+      :fsize 1356
+      :lastmodtime '(23167 22619 0 0)
+      :unmatched-syntax '((punctuation 1344 . 1345) (DELETE 1338 . 1344) (punctuation 1336 . 1337) (semantic-list 1314 . 1335) (punctuation 1313 . 1314) (OPERATOR 1305 . 1313) (VOID 1300 . 1304))
+      :lexical-table 
+        '(("SHADER_H")
+          )
+)
+    (semanticdb-table "Texture.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Texture.hpp" include nil nil [1 23])
+            ("iostream" include (:system-flag t) nil [25 44])
+            ("cassert" include (:system-flag t) nil [45 63])
+            ("cstring" include (:system-flag t) nil [64 82])
+            ("memory" include (:system-flag t) nil [83 100])
+            ("map" include (:system-flag t) nil [101 115])
+            ("glm/glm.hpp" include (:system-flag t) nil [116 138])
+            ("SOIL/stb_image_aug.h" include (:system-flag t) nil [139 170])
+            ("../core/Util.hpp" include nil nil [172 199])
+            ("../core/Profiling.hpp" include nil nil [200 232])
+            ("s_resourceMap" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("std::shared_ptr" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [234 307])
+            ("TextureData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [329 336])
+                    ("TextureData" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [350 371])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [372 382])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [383 394])
+                            ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [398 412])
+                            ("filters" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [413 429])
+                            ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 452])
+                            ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [456 470])
+                            ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [471 482])
+                            ("attachments" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [483 502]))                          
+                        :type ("TextureData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [338 503])
+                    ("TextureData" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [505 528])
+                    ("Bind" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [531 607])
+                    ("BindAsRenderTarget" function
+                       (:typemodifiers ("inline")
+                        :type "void")
+                        (reparse-symbol classsubparts) [610 778])
+                    ("GetWidth" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [781 828])
+                    ("GetHeight" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [830 879])
+                    ("private" label nil (reparse-symbol classsubparts) [881 889])
+                    ("m_textureID" variable
+                       (:default-value "0"
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [891 914])
+                    ("m_textureTarget" variable
+                       (:default-value "0"
+                        :type ("GLenum" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [916 943])
+                    ("m_frameBuffer" variable
+                       (:default-value "0"
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [945 970])
+                    ("m_renderBuffer" variable
+                       (:default-value "0"
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [972 998])
+                    ("m_width" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1000 1016])
+                    ("m_height" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1018 1035])
+                    ("InitTextures" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:pointer 1
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1146 1160])
+                            ("filter" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1176])
+                            ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1180 1202])
+                            ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1203 1217])
+                            ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1218 1229]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1128 1230])
+                    ("InitRenderTargets" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("attachments" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1255 1274]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1232 1275]))                  
+                :type "class")
+                nil [309 1279])
+            ("TextureData" function
+               (:constructor-flag t
+                :parent "TextureData"
+                :arguments 
+                  ( ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1306 1327])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1328 1338])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1339 1350])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1353 1367])
+                    ("filters" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1368 1384])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1385 1407])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1410 1424])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1425 1436])
+                    ("attachments" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1437 1456]))                  
+                :type ("TextureData" type (:type "class") nil nil))
+                nil [1281 1627])
+            ("TextureData" function
+               (:destructor-flag t
+                :parent "TextureData"
+                :type "void")
+                nil [1629 1847])
+            ("InitTextures" function
+               (:parent "TextureData"
+                :arguments 
+                  ( ("pixels" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1880 1896])
+                    ("filters" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1897 1913])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1936])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1937 1951])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [1952 1963]))                  
+                :type "void")
+                nil [1849 2992])
+            ("InitRenderTargets" function
+               (:parent "TextureData"
+                :arguments 
+                  ( ("attachments" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3030 3049]))                  
+                :type "void")
+                nil [2994 4052])
+            ("ImageReader" type
+               (:members 
+                  ( ("ImageReader" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4114 4142]))                          
+                        :type ("ImageReader" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [4102 4167])
+                    ("Pixels" function
+                       (:pointer 1
+                        :typemodifiers ("inline")
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4170 4245])
+                    ("Width" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4247 4283])
+                    ("Height" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [4285 4323])
+                    ("ReadImage" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4341 4369]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4326 5666])
+                    ("private" label nil (reparse-symbol classsubparts) [5667 5675])
+                    ("pixels" variable
+                       (:default-value "std::unique_ptr<uint8_t, void(*)(uint8_t *)>(nullptr, [](uint8_t *p) { delete[] p; })"
+                        :type ("std::unique_ptr" type
+                             (:template-specifier 
+                                ( ("uint8_t" type nil nil nil)
+                                  ("void" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5677 5817])
+                    ("width" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [5819 5845])
+                    ("height" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [5819 5845]))                  
+                :type "struct")
+                nil [4054 5848])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5867 5895])
+                    ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5896 5917])
+                    ("filter" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5920 5935])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5936 5958])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5959 5973])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [5976 5987])
+                    ("attachment" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5988 6006]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [5850 6477])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6496 6506])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6507 6518])
+                    ("pixels" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6519 6535])
+                    ("textureTarget" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6538 6559])
+                    ("filter" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6560 6575])
+                    ("internalFormat" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6576 6598])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6601 6615])
+                    ("clamp" variable (:type "bool") (reparse-symbol arg-sub-list) [6616 6627])
+                    ("attachment" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6628 6646]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [6479 6808])
+            ("Texture" function
+               (:constructor-flag t
+                :parent "Texture"
+                :arguments 
+                  ( ("texture" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6827 6850]))                  
+                :type ("Texture" type (:type "class") nil nil))
+                nil [6810 6927])
+            ("Texture" function
+               (:destructor-flag t
+                :parent "Texture"
+                :type "void")
+                nil [6929 7155])
+            ("Bind" function
+               (:parent "Texture"
+                :arguments 
+                  ( ("unit" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7176 7190]))                  
+                :type "void")
+                nil [7157 7282])
+            ("BindAsRenderTarget" function
+               (:parent "Texture"
+                :type "void")
+                nil [7284 7365])
+            ("GetWidth" function
+               (:parent "Texture"
+                :type "int")
+                nil [7366 7433])
+            ("GetHeight" function
+               (:parent "Texture"
+                :type "int")
+                nil [7434 7503]))          
+      :file "Texture.cpp"
+      :pointmax 7504
+      :fsize 7503
+      :lastmodtime '(23167 32048 0 0)
+      :unmatched-syntax '((punctuation 4099 . 4100) (DEFAULT 4092 . 4099) (punctuation 4090 . 4091) (semantic-list 4087 . 4089) (symbol 4076 . 4087) (punctuation 1124 . 1125) (DELETE 1118 . 1124) (punctuation 1116 . 1117) (semantic-list 1095 . 1115) (punctuation 1094 . 1095) (OPERATOR 1086 . 1094) (VOID 1081 . 1085) (punctuation 1078 . 1079) (DELETE 1072 . 1078) (punctuation 1070 . 1071) (semantic-list 1049 . 1069) (symbol 1038 . 1049)))
+    (semanticdb-table "Texture.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("TEXTURE_H" variable (:constant-flag t) nil [27 36])
+            ("GL/glew.h" include (:system-flag t) nil [38 58])
+            ("string" include (:system-flag t) nil [59 76])
+            ("memory" include (:system-flag t) nil [77 94])
+            ("TextureData" type
+               (:prototype t
+                :type "class")
+                nil [96 114])
+            ("Texture" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [132 139])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("fileName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [149 177])
+                            ("textureTarget" variable
+                               (:default-value "GL_TEXTURE_2D"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [178 214])
+                            ("filter" variable
+                               (:default-value "GL_LINEAR_MIPMAP_LINEAR"
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [216 256])
+                            ("internalFormat" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [258 289])
+                            ("format" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [291 314])
+                            ("clamp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [316 334])
+                            ("attachment" variable
+                               (:default-value "GL_NONE"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [336 363]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [141 365])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("width" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [375 388])
+                            ("height" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [390 404])
+                            ("data" variable
+                               (:pointer 1
+                                :default-value "nullptr"
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [406 435])
+                            ("textureTarget" variable
+                               (:default-value "GL_TEXTURE_2D"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [437 473])
+                            ("filter" variable
+                               (:default-value "GL_LINEAR_MIPMAP_LINEAR"
+                                :type ("GLfloat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [475 515])
+                            ("internalFormat" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [517 548])
+                            ("format" variable
+                               (:default-value "GL_RGBA"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [550 573])
+                            ("clamp" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [575 593])
+                            ("attachment" variable
+                               (:default-value "GL_NONE"
+                                :type ("GLenum" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [595 622]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [367 624])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [634 657]))                          
+                        :type ("Texture" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [626 658])
+                    ("Texture" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [660 679])
+                    ("Bind" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("unit" variable
+                               (:default-value "0"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [692 713]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [682 721])
+                    ("BindAsRenderTarget" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [724 756])
+                    ("GetWidth" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [758 779])
+                    ("GetHeight" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [781 803])
+                    ("==" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [829 852]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [806 909])
+                    ("!=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("texture" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Texture" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [934 957]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [911 996])
+                    ("private" label nil (reparse-symbol classsubparts) [999 1007])
+                    ("m_textureData" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("TextureData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1009 1052])
+                    ("m_fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1054 1077]))                  
+                :type "class")
+                nil [116 1080]))          
+      :file "Texture.hpp"
+      :pointmax 1089
+      :fsize 1088
+      :lastmodtime '(23167 31450 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEXTURE_H")
+          )
+)
+    (semanticdb-table "Shader.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Shader.hpp" include nil nil [1 22])
+            ("GL/glew.h" include (:system-flag t) nil [24 44])
+            ("cassert" include (:system-flag t) nil [45 63])
+            ("fstream" include (:system-flag t) nil [64 82])
+            ("sstream" include (:system-flag t) nil [83 101])
+            ("RenderingEngine.hpp" include nil nil [103 133])
+            ("../core/Util.hpp" include nil nil [134 161])
+            ("INVALID_VALUE" variable (:constant-flag t) nil [171 184])
+            ("TypedData" type
+               (:prototype t
+                :type "class")
+                nil [197 213])
+            ("UniformStruct" type
+               (:prototype t
+                :type "class")
+                nil [214 234])
+            ("FindUniformStructName" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("structStartToOpeningBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [277 322]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [236 323])
+            ("FindUniformStructComponents" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("openingBraceToClosingBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [382 428]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("TypedData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [324 429])
+            ("CheckShaderError" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("shader" variable (:type "int") (reparse-symbol arg-sub-list) [459 470])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [471 480])
+                    ("isProgram" variable (:type "bool") (reparse-symbol arg-sub-list) [481 496])
+                    ("errorMessage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [497 529]))                  
+                :type "void")
+                nil [430 530])
+            ("FindUniformStructs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("shaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [584 614]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("UniformStruct" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [531 615])
+            ("LoadShader" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [646 674]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [616 675])
+            ("TypedData" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [698 715])
+                    ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [718 735]))                  
+                :type "struct")
+                nil [677 738])
+            ("UniformStruct" type
+               (:members 
+                  ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [765 782])
+                    ("memberNames" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("TypedData" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [785 820]))                  
+                :type "struct")
+                nil [740 823])
+            ("ShaderData" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [844 851])
+                    ("ShaderData" function
+                       (:arguments 
+                          ( ("fileName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [865 893]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [854 2871])
+                    ("ShaderData" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2875 3029])
+                    ("GetProgram" function
+                       (:typemodifiers ("inline")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3033 3084])
+                    ("shaders" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3087 3155])
+                    ("uniformNames" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3158 3244])
+                    ("uniformTypes" function
+                       (:typemodifiers ("inline")
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3247 3333])
+                    ("uniformMap" function
+                       (:typemodifiers ("inline")
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3336 3429])
+                    ("private" label nil (reparse-symbol classsubparts) [3431 3439])
+                    ("s_supportedOpenGLLevel" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [3442 3476])
+                    ("s_glslVersion" variable
+                       (:typemodifiers ("static")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3479 3512])
+                    ("m_program" variable (:type "int") (reparse-symbol classsubparts) [3515 3529])
+                    ("m_shaders" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3532 3559])
+                    ("m_uniformNames" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3562 3602])
+                    ("m_uniformTypes" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3605 3645])
+                    ("m_uniformMap" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil)
+                              ("unsigned int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3648 3697])
+                    ("AddVertexShader" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3753]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3701 3793])
+                    ("AddGeometryShader" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3826 3850]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3796 3892])
+                    ("AddFragmentShader" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3925 3949]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3895 3991])
+                    ("AddProgram" function
+                       (:arguments 
+                          ( ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4011 4035])
+                            ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4036 4045]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3995 4721])
+                    ("AddAllAttributes" function
+                       (:arguments 
+                          ( ("vertexShaderText" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4747 4783])
+                            ("attributeKeyword" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4784 4820]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4725 5999])
+                    ("AddShaderUniforms" function
+                       (:arguments 
+                          ( ("shaderText" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6026 6056]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6003 7210])
+                    ("AddUniform" function
+                       (:arguments 
+                          ( ("uniformName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7230 7261])
+                            ("uniformType" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7262 7293])
+                            ("structs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("UniformStruct" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7298 7340]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7214 7801])
+                    ("CompileShader" function (:type "void") (reparse-symbol classsubparts) [7805 8074])
+                    ("versionStringFromRaw" function
+                       (:arguments 
+                          ( ("glv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8111 8134]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8078 8287])
+                    ("versionNumberFromString" function
+                       (:arguments 
+                          ( ("glv" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8319 8342]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [8291 8670]))                  
+                :type "class")
+                nil [825 8673])
+            ("s_resourceMap" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("std::string" type nil nil nil)
+                          ("std::shared_ptr" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [8675 8747])
+            ("ShaderData::s_supportedOpenGLLevel" variable
+               (:default-value "0"
+                :type "int")
+                nil [8748 8791])
+            ("ShaderData::s_glslVersion" variable
+               (:default-value "\"\""
+                :type ("std::string" type (:type "class") nil nil))
+                nil [8792 8835])
+            ("Shader" function
+               (:constructor-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8852 8880]))                  
+                :type ("Shader" type (:type "class") nil nil))
+                nil [8837 9202])
+            ("Shader" function
+               (:constructor-flag t
+                :parent "Shader"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Shader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9219 9239]))                  
+                :type ("Shader" type (:type "class") nil nil))
+                nil [9204 9312])
+            ("Shader" function
+               (:destructor-flag t
+                :parent "Shader"
+                :type "void")
+                nil [9314 9536])
+            ("Bind" function
+               (:parent "Shader"
+                :type "void")
+                nil [9538 9611])
+            ("UpdateUniforms" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("transform" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Transform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9641 9668])
+                    ("material" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Material" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9669 9694])
+                    ("renderingEngine" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("RenderingEngine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9702 9741])
+                    ("camera" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Camera" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9742 9763]))                  
+                :type "void")
+                nil [9613 12528])
+            ("SetUniformInt" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12557 12588])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [12589 12599]))                  
+                :type "void")
+                nil [12530 12675])
+            ("SetUniformFloat" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12706 12737])
+                    ("value" variable (:type "float") (reparse-symbol arg-sub-list) [12738 12750]))                  
+                :type "void")
+                nil [12677 12826])
+            ("SetUniformVec3" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12856 12887])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("glm::vec3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12888 12911]))                  
+                :type "void")
+                nil [12828 13007])
+            ("SetUniformMat4" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13037 13068])
+                    ("value" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("glm::mat4" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13069 13092]))                  
+                :type "void")
+                nil [13009 13197])
+            ("SetUniformDirectionalLight" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13239 13270])
+                    ("directionalLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("DirectionalLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13271 13312]))                  
+                :type "void")
+                nil [13199 13606])
+            ("SetUniformPointLight" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13642 13673])
+                    ("pointLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("PointLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13674 13703]))                  
+                :type "void")
+                nil [13608 14301])
+            ("SetUniformSpotLight" function
+               (:parent "Shader"
+                :arguments 
+                  ( ("uniformName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14336 14367])
+                    ("spotLight" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SpotLight" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14368 14395]))                  
+                :type "void")
+                nil [14303 15246])
+            ("CheckShaderError" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("shader" variable (:type "int") (reparse-symbol arg-sub-list) [15277 15288])
+                    ("flag" variable (:type "int") (reparse-symbol arg-sub-list) [15289 15298])
+                    ("isProgram" variable (:type "bool") (reparse-symbol arg-sub-list) [15299 15314])
+                    ("errorMessage" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15315 15347]))                  
+                :type "void")
+                nil [15248 15864])
+            ("LoadShader" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15896 15924]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [15866 16572])
+            ("FindUniformStructComponents" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("openingBraceToClosingBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16632 16678]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("TypedData" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [16574 17523])
+            ("FindUniformStructName" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("structStartToOpeningBrace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17566 17611]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [17525 17694])
+            ("FindUniformStructs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("shaderText" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17749 17779]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("UniformStruct" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [17696 18371]))          
+      :file "Shader.cpp"
+      :pointmax 18372
+      :fsize 18371
+      :lastmodtime '(23303 5088 245634 865000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INVALID_VALUE" . ((number "0xFFFFFFFF" 185 . 195)))
+          )
+)
+    (semanticdb-table "RenderingEngine.hpp"
+      :file "RenderingEngine.hpp"
+      :fsize 2468
+      :lastmodtime '(23226 45932 0 0))
+    (semanticdb-table "Camera.hpp"
+      :file "Camera.hpp"
+      :fsize 2236
+      :lastmodtime '(23226 48585 0 0))
+    (semanticdb-table "Material.hpp"
+      :file "Material.hpp"
+      :fsize 1546
+      :lastmodtime '(23226 44894 0 0)))
   :file "!home!marcus!git!3DEngine!src!rendering!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -1,0 +1,1282 @@
+;; Object cairomm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cairomm/"
+  :tables
+  (list
+    (semanticdb-table "refptr.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_cairo_REFPTR_H" variable (:constant-flag t) nil [48 63])
+            ("utility" include (:system-flag t) nil [926 944])
+            ("Cairo" type
+               (:members 
+                  ( ("RefPtr" type
+                       (:template 
+                          ( ("T_CppObject" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1663 1670])
+                            ("RefPtr" type
+                               (:template 
+                                  ( ("T_CastFrom" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol classsubparts) [1751 1804])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [1940 1949])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2019 2028])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2822 2831])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [2963 2972])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3033 3042])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3182 3191])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3324 3333])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3520 3529])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3804 3813])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [3919 3928])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4126 4135])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4210 4219])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [4372 4381])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4512 4527])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4612 4627])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4792 4807])
+                            ("noexcept" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [5018 5033])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [5158 5167])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [5492 5501])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [5790 5799])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [6112 6121])
+                            ("private" label nil (reparse-symbol classsubparts) [6365 6373])
+                            ("noexcept" variable (:type "int") (reparse-symbol classsubparts) [6389 6398])
+                            ("pCppObject_" variable
+                               (:pointer 1
+                                :type ("T_CppObject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6402 6427])
+                            ("pCppRefcount_" variable
+                               (:pointer 1
+                                :typemodifiers ("mutable")
+                                :type "int")
+                                (reparse-symbol classsubparts) [6430 6457]))                          )
+                        (reparse-symbol namespacesubparts) [1619 6460])
+                    ("pCppRefcount_" function (:type "int") (reparse-symbol namespacesubparts) [6853 6872])
+                    ("pCppRefcount_" function (:type "int") (reparse-symbol namespacesubparts) [7430 7574])
+                    ("pCppRefcount_" function
+                       (:arguments 
+                          ( ("" variable (:type ("refcount" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7770 7779]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7756 7842])
+                    ("pCppRefcount_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8000 8004])
+                            ("" variable (:type ("pCppRefcount_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8004 8018]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [7986 8081])
+                    ("pCppRefcount_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8222 8226])
+                            ("" variable (:type ("pCppRefcount_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8226 8240]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8207 8304])
+                    ("pCppRefcount_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8487 8491])
+                            ("" variable (:type ("pCppRefcount_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8491 8505]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [8472 8569])
+                    ("pCppRefcount_" function
+                       (:arguments 
+                          ( ("" variable (:type ("src" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9145 9149])
+                            ("" variable (:type ("refcount_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9149 9160]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [9131 9224]))                  
+                :type "namespace")
+                nil [946 13519]))          
+      :file "refptr.h"
+      :pointmax 13592
+      :fsize 13591
+      :lastmodtime '(22058 54943 0 0)
+      :unmatched-syntax '((semantic-list 13496 . 13516) (symbol 13487 . 13495) (semantic-list 13434 . 13486) (symbol 13430 . 13434) (VOID 13425 . 13429) (INLINE 13418 . 13424) (punctuation 13416 . 13417) (symbol 13405 . 13416) (CLASS 13399 . 13404) (punctuation 13398 . 13399) (TEMPLATE 13389 . 13397) (semantic-list 13183 . 13324) (symbol 13174 . 13182) (semantic-list 13142 . 13173) (symbol 13132 . 13142) (punctuation 13131 . 13132) (punctuation 13130 . 13131) (punctuation 13129 . 13130) (symbol 13118 . 13129) (punctuation 13117 . 13118) (symbol 13111 . 13117) (punctuation 13109 . 13110) (symbol 13098 . 13109) (punctuation 13097 . 13098) (symbol 13091 . 13097) (INLINE 13084 . 13090) (punctuation 13082 . 13083) (symbol 13072 . 13082) (CLASS 13066 . 13071) (punctuation 13065 . 13066) (TEMPLATE 13056 . 13064) (punctuation 13052 . 13053) (symbol 13041 . 13052) (CLASS 13035 . 13040) (punctuation 13034 . 13035) (TEMPLATE 13025 . 13033) (semantic-list 12881 . 13023) (symbol 12872 . 12880) (semantic-list 12840 . 12871) (symbol 12829 . 12840) (punctuation 12828 . 12829) (punctuation 12827 . 12828) (punctuation 12826 . 12827) (symbol 12815 . 12826) (punctuation 12814 . 12815) (symbol 12808 . 12814) (punctuation 12806 . 12807) (symbol 12795 . 12806) (punctuation 12794 . 12795) (symbol 12788 . 12794) (INLINE 12781 . 12787) (punctuation 12779 . 12780) (symbol 12769 . 12779) (CLASS 12763 . 12768) (punctuation 12762 . 12763) (TEMPLATE 12753 . 12761) (punctuation 12749 . 12750) (symbol 12738 . 12749) (CLASS 12732 . 12737) (punctuation 12731 . 12732) (TEMPLATE 12722 . 12730) (semantic-list 12423 . 12720) (symbol 12414 . 12422) (semantic-list 12382 . 12413) (symbol 12370 . 12382) (punctuation 12369 . 12370) (punctuation 12368 . 12369) (punctuation 12367 . 12368) (symbol 12356 . 12367) (punctuation 12355 . 12356) (symbol 12349 . 12355) (punctuation 12347 . 12348) (symbol 12336 . 12347) (punctuation 12335 . 12336) (symbol 12329 . 12335) (INLINE 12322 . 12328) (punctuation 12320 . 12321) (symbol 12310 . 12320) (CLASS 12304 . 12309) (punctuation 12303 . 12304) (TEMPLATE 12294 . 12302) (punctuation 12290 . 12291) (symbol 12279 . 12290) (CLASS 12273 . 12278) (punctuation 12272 . 12273) (TEMPLATE 12263 . 12271) (semantic-list 12164 . 12261) (symbol 12155 . 12163) (semantic-list 12152 . 12154) (symbol 12147 . 12152) (punctuation 12146 . 12147) (punctuation 12145 . 12146) (punctuation 12144 . 12145) (symbol 12133 . 12144) (punctuation 12132 . 12133) (symbol 12126 . 12132) (VOID 12121 . 12125) (INLINE 12114 . 12120) (punctuation 12112 . 12113) (symbol 12101 . 12112) (CLASS 12095 . 12100) (punctuation 12094 . 12095) (TEMPLATE 12085 . 12093) (semantic-list 12051 . 12083) (symbol 12042 . 12050) (CONST 12036 . 12041) (semantic-list 12033 . 12035) (BOOL 12029 . 12033) (OPERATOR 12020 . 12028) (punctuation 12019 . 12020) (punctuation 12018 . 12019) (punctuation 12017 . 12018) (symbol 12006 . 12017) (punctuation 12005 . 12006) (symbol 11999 . 12005) (INLINE 11992 . 11998) (punctuation 11990 . 11991) (symbol 11979 . 11990) (CLASS 11973 . 11978) (punctuation 11972 . 11973) (TEMPLATE 11963 . 11971) (semantic-list 11915 . 11961) (symbol 11906 . 11914) (CONST 11900 . 11905) (semantic-list 11867 . 11899) (punctuation 11866 . 11867) (punctuation 11865 . 11866) (OPERATOR 11857 . 11865) (punctuation 11856 . 11857) (punctuation 11855 . 11856) (punctuation 11854 . 11855) (symbol 11843 . 11854) (punctuation 11842 . 11843) (symbol 11836 . 11842) (BOOL 11831 . 11835) (INLINE 11824 . 11830) (punctuation 11822 . 11823) (symbol 11811 . 11822) (CLASS 11805 . 11810) (punctuation 11804 . 11805) (TEMPLATE 11795 . 11803) (semantic-list 11747 . 11793) (symbol 11738 . 11746) (CONST 11732 . 11737) (semantic-list 11699 . 11731) (punctuation 11698 . 11699) (punctuation 11697 . 11698) (OPERATOR 11689 . 11697) (punctuation 11688 . 11689) (punctuation 11687 . 11688) (punctuation 11686 . 11687) (symbol 11675 . 11686) (punctuation 11674 . 11675) (symbol 11668 . 11674) (BOOL 11663 . 11667) (INLINE 11656 . 11662) (punctuation 11654 . 11655) (symbol 11643 . 11654) (CLASS 11637 . 11642) (punctuation 11636 . 11637) (TEMPLATE 11627 . 11635) (semantic-list 11552 . 11625) (symbol 11543 . 11551) (semantic-list 11511 . 11542) (punctuation 11510 . 11511) (OPERATOR 11502 . 11510) (punctuation 11501 . 11502) (punctuation 11500 . 11501) (punctuation 11499 . 11500) (symbol 11488 . 11499) (punctuation 11487 . 11488) (symbol 11481 . 11487) (punctuation 11479 . 11480) (punctuation 11478 . 11479) (symbol 11467 . 11478) (punctuation 11466 . 11467) (symbol 11460 . 11466) (INLINE 11453 . 11459) (punctuation 11451 . 11452) (symbol 11441 . 11451) (CLASS 11435 . 11440) (punctuation 11434 . 11435) (TEMPLATE 11425 . 11433) (punctuation 11421 . 11422) (symbol 11410 . 11421) (CLASS 11404 . 11409) (punctuation 11403 . 11404) (TEMPLATE 11394 . 11402) (semantic-list 11247 . 11392) (symbol 11238 . 11246) (semantic-list 11211 . 11237) (punctuation 11210 . 11211) (OPERATOR 11202 . 11210) (punctuation 11231 . 11232) (punctuation 11201 . 11202) (punctuation 11200 . 11201) (punctuation 11199 . 11200) (symbol 11188 . 11199) (punctuation 11187 . 11188) (symbol 11181 . 11187) (punctuation 11231 . 11232) (punctuation 11179 . 11180) (punctuation 11178 . 11179) (symbol 11167 . 11178) (punctuation 11166 . 11167) (symbol 11160 . 11166) (punctuation 11231 . 11232) (INLINE 11153 . 11159) (punctuation 11231 . 11232) (punctuation 11151 . 11152) (symbol 11141 . 11151) (CLASS 11135 . 11140) (punctuation 11134 . 11135) (TEMPLATE 11125 . 11133) (punctuation 11231 . 11232) (punctuation 11121 . 11122) (symbol 11110 . 11121) (CLASS 11104 . 11109) (punctuation 11103 . 11104) (TEMPLATE 11094 . 11102) (semantic-list 10947 . 11092) (symbol 10938 . 10946) (semantic-list 10923 . 10937) (punctuation 10922 . 10923) (OPERATOR 10914 . 10922) (punctuation 10931 . 10932) (punctuation 10913 . 10914) (punctuation 10912 . 10913) (punctuation 10911 . 10912) (symbol 10900 . 10911) (punctuation 10899 . 10900) (symbol 10893 . 10899) (punctuation 10931 . 10932) (punctuation 10891 . 10892) (punctuation 10890 . 10891) (symbol 10879 . 10890) (punctuation 10878 . 10879) (symbol 10872 . 10878) (punctuation 10931 . 10932) (INLINE 10865 . 10871) (punctuation 10931 . 10932) (punctuation 10863 . 10864) (symbol 10852 . 10863) (CLASS 10846 . 10851) (punctuation 10845 . 10846) (TEMPLATE 10836 . 10844) (punctuation 10931 . 10932) (semantic-list 9681 . 10834) (symbol 9672 . 9680) (semantic-list 9639 . 9671) (punctuation 9638 . 9639) (OPERATOR 9630 . 9638) (punctuation 9629 . 9630) (punctuation 9628 . 9629) (punctuation 9627 . 9628) (symbol 9616 . 9627) (punctuation 9615 . 9616) (symbol 9609 . 9615) (punctuation 9607 . 9608) (punctuation 9606 . 9607) (symbol 9595 . 9606) (punctuation 9594 . 9595) (symbol 9588 . 9594) (INLINE 9581 . 9587) (punctuation 9579 . 9580) (symbol 9568 . 9579) (CLASS 9562 . 9567) (punctuation 9561 . 9562) (TEMPLATE 9552 . 9560) (semantic-list 9330 . 9550) (symbol 9321 . 9329) (semantic-list 9292 . 9320) (symbol 9288 . 9292) (punctuation 9287 . 9288) (punctuation 9286 . 9287) (punctuation 9285 . 9286) (symbol 9274 . 9285) (punctuation 9273 . 9274) (symbol 9267 . 9273) (VOID 9262 . 9266) (INLINE 9255 . 9261) (punctuation 9253 . 9254) (symbol 9242 . 9253) (CLASS 9236 . 9241) (punctuation 9235 . 9236) (TEMPLATE 9226 . 9234) (semantic-list 9158 . 9160) (punctuation 9148 . 9149) (punctuation 9127 . 9128) (semantic-list 9109 . 9127) (symbol 9097 . 9108) (semantic-list 9124 . 9126) (punctuation 9123 . 9124) (punctuation 9122 . 9123) (OPERATOR 9114 . 9122) (punctuation 9113 . 9114) (punctuation 8842 . 8843) (symbol 8833 . 8841) (semantic-list 8801 . 8832) (symbol 8795 . 8801) (punctuation 8794 . 8795) (punctuation 8793 . 8794) (punctuation 8792 . 8793) (symbol 8781 . 8792) (punctuation 8780 . 8781) (symbol 8774 . 8780) (INLINE 8767 . 8773) (punctuation 8765 . 8766) (symbol 8755 . 8765) (CLASS 8749 . 8754) (punctuation 8748 . 8749) (TEMPLATE 8739 . 8747) (punctuation 8735 . 8736) (symbol 8724 . 8735) (CLASS 8718 . 8723) (punctuation 8717 . 8718) (TEMPLATE 8708 . 8716) (punctuation 8490 . 8491) (punctuation 8468 . 8469) (semantic-list 8451 . 8468) (symbol 8439 . 8450) (punctuation 8455 . 8456) (punctuation 8435 . 8436) (symbol 8426 . 8434) (semantic-list 8399 . 8425) (symbol 8393 . 8399) (punctuation 8419 . 8420) (punctuation 8392 . 8393) (punctuation 8391 . 8392) (punctuation 8390 . 8391) (symbol 8379 . 8390) (punctuation 8378 . 8379) (symbol 8372 . 8378) (punctuation 8419 . 8420) (INLINE 8365 . 8371) (punctuation 8419 . 8420) (punctuation 8363 . 8364) (symbol 8353 . 8363) (CLASS 8347 . 8352) (punctuation 8346 . 8347) (TEMPLATE 8337 . 8345) (punctuation 8419 . 8420) (punctuation 8333 . 8334) (symbol 8322 . 8333) (CLASS 8316 . 8321) (punctuation 8315 . 8316) (TEMPLATE 8306 . 8314) (punctuation 8225 . 8226) (punctuation 8203 . 8204) (semantic-list 8186 . 8203) (symbol 8174 . 8185) (punctuation 8190 . 8191) (punctuation 8170 . 8171) (symbol 8161 . 8169) (semantic-list 8146 . 8160) (symbol 8140 . 8146) (punctuation 8154 . 8155) (punctuation 8139 . 8140) (punctuation 8138 . 8139) (punctuation 8137 . 8138) (symbol 8126 . 8137) (punctuation 8125 . 8126) (symbol 8119 . 8125) (punctuation 8154 . 8155) (INLINE 8112 . 8118) (punctuation 8154 . 8155) (punctuation 8110 . 8111) (symbol 8099 . 8110) (CLASS 8093 . 8098) (punctuation 8092 . 8093) (TEMPLATE 8083 . 8091) (punctuation 8154 . 8155) (punctuation 8003 . 8004) (punctuation 7982 . 7983) (semantic-list 7965 . 7982) (symbol 7953 . 7964) (punctuation 7969 . 7970) (punctuation 7949 . 7950) (symbol 7940 . 7948) (semantic-list 7907 . 7939) (symbol 7901 . 7907) (punctuation 7900 . 7901) (punctuation 7899 . 7900) (punctuation 7898 . 7899) (symbol 7887 . 7898) (punctuation 7886 . 7887) (symbol 7880 . 7886) (INLINE 7873 . 7879) (punctuation 7871 . 7872) (symbol 7860 . 7871) (CLASS 7854 . 7859) (punctuation 7853 . 7854) (TEMPLATE 7844 . 7852) (punctuation 7752 . 7753) (semantic-list 7740 . 7752) (symbol 7729 . 7740) (punctuation 7725 . 7726) (symbol 7716 . 7724) (semantic-list 7675 . 7715) (symbol 7669 . 7675) (punctuation 7668 . 7669) (punctuation 7667 . 7668) (punctuation 7666 . 7667) (symbol 7655 . 7666) (punctuation 7654 . 7655) (symbol 7648 . 7654) (INLINE 7641 . 7647) (punctuation 7639 . 7640) (symbol 7628 . 7639) (CLASS 7622 . 7627) (punctuation 7621 . 7622) (TEMPLATE 7612 . 7620) (number 7444 . 7445) (punctuation 7426 . 7427) (semantic-list 7414 . 7426) (symbol 7403 . 7414) (punctuation 7399 . 7400) (symbol 7390 . 7398) (semantic-list 7364 . 7389) (symbol 7358 . 7364) (punctuation 7357 . 7358) (punctuation 7356 . 7357) (punctuation 7355 . 7356) (symbol 7344 . 7355) (punctuation 7343 . 7344) (symbol 7337 . 7343) (INLINE 7330 . 7336) (punctuation 7328 . 7329) (symbol 7317 . 7328) (CLASS 7311 . 7316) (punctuation 7310 . 7311) (TEMPLATE 7301 . 7309) (semantic-list 7045 . 7298) (symbol 7036 . 7044) (semantic-list 7033 . 7035) (symbol 7028 . 7033) (punctuation 7027 . 7028) (punctuation 7026 . 7027) (punctuation 7025 . 7026) (symbol 7014 . 7025) (punctuation 7013 . 7014) (symbol 7007 . 7013) (VOID 7002 . 7006) (INLINE 6995 . 7001) (punctuation 6993 . 6994) (symbol 6982 . 6993) (CLASS 6976 . 6981) (punctuation 6975 . 6976) (TEMPLATE 6966 . 6974) (semantic-list 6950 . 6964) (symbol 6941 . 6949) (semantic-list 6938 . 6940) (symbol 6932 . 6938) (punctuation 6931 . 6932) (punctuation 6930 . 6931) (punctuation 6929 . 6930) (punctuation 6928 . 6929) (symbol 6917 . 6928) (punctuation 6916 . 6917) (symbol 6910 . 6916) (INLINE 6903 . 6909) (punctuation 6901 . 6902) (symbol 6890 . 6901) (CLASS 6884 . 6889) (punctuation 6883 . 6884) (TEMPLATE 6874 . 6882) (number 6867 . 6868) (punctuation 6849 . 6850) (semantic-list 6840 . 6849) (symbol 6829 . 6840) (punctuation 6825 . 6826) (symbol 6816 . 6824) (semantic-list 6813 . 6815) (symbol 6807 . 6813) (punctuation 6806 . 6807) (punctuation 6805 . 6806) (punctuation 6804 . 6805) (symbol 6793 . 6804) (punctuation 6792 . 6793) (symbol 6786 . 6792) (INLINE 6779 . 6785) (punctuation 6777 . 6778) (symbol 6766 . 6777) (CLASS 6760 . 6765) (punctuation 6759 . 6760) (TEMPLATE 6750 . 6758) (semantic-list 6723 . 6748) (symbol 6714 . 6722) (CONST 6708 . 6713) (semantic-list 6705 . 6707) (punctuation 6704 . 6705) (punctuation 6703 . 6704) (OPERATOR 6695 . 6703) (punctuation 6694 . 6695) (punctuation 6693 . 6694) (punctuation 6692 . 6693) (symbol 6681 . 6692) (punctuation 6680 . 6681) (symbol 6674 . 6680) (punctuation 6672 . 6673) (symbol 6661 . 6672) (INLINE 6654 . 6660) (punctuation 6652 . 6653) (symbol 6641 . 6652) (CLASS 6635 . 6640) (punctuation 6634 . 6635) (TEMPLATE 6625 . 6633) (semantic-list 6386 . 6388) (symbol 6381 . 6386) (VOID 6376 . 6380) (semantic-list 6307 . 6332) (symbol 6298 . 6306) (CONST 6292 . 6297) (semantic-list 6289 . 6291) (symbol 6280 . 6289) (punctuation 6278 . 6279) (INT 6275 . 6278) (INLINE 6268 . 6274) (semantic-list 6080 . 6111) (symbol 6070 . 6080) (punctuation 6068 . 6069) (symbol 6057 . 6068) (punctuation 6056 . 6057) (symbol 6050 . 6056) (INLINE 6043 . 6049) (STATIC 6036 . 6042) (punctuation 6032 . 6033) (symbol 6022 . 6032) (CLASS 6016 . 6021) (punctuation 6015 . 6016) (TEMPLATE 6006 . 6014) (semantic-list 5758 . 5789) (symbol 5747 . 5758) (punctuation 5745 . 5746) (symbol 5734 . 5745) (punctuation 5733 . 5734) (symbol 5727 . 5733) (INLINE 5720 . 5726) (STATIC 5713 . 5719) (punctuation 5709 . 5710) (symbol 5699 . 5709) (CLASS 5693 . 5698) (punctuation 5692 . 5693) (TEMPLATE 5683 . 5691) (semantic-list 5460 . 5491) (symbol 5448 . 5460) (punctuation 5446 . 5447) (symbol 5435 . 5446) (punctuation 5434 . 5435) (symbol 5428 . 5434) (INLINE 5421 . 5427) (STATIC 5414 . 5420) (punctuation 5410 . 5411) (symbol 5400 . 5410) (CLASS 5394 . 5399) (punctuation 5393 . 5394) (TEMPLATE 5384 . 5392) (semantic-list 5155 . 5157) (symbol 5150 . 5155) (VOID 5145 . 5149) (INLINE 5138 . 5144) (semantic-list 5015 . 5017) (BOOL 5011 . 5015) (OPERATOR 5002 . 5010) (INLINE 4995 . 5001) (semantic-list 4789 . 4791) (punctuation 4788 . 4789) (punctuation 4787 . 4788) (OPERATOR 4779 . 4787) (punctuation 4777 . 4778) (symbol 4766 . 4777) (INLINE 4759 . 4765) (semantic-list 4579 . 4611) (punctuation 4578 . 4579) (punctuation 4577 . 4578) (OPERATOR 4569 . 4577) (BOOL 4564 . 4568) (INLINE 4557 . 4563) (semantic-list 4479 . 4511) (punctuation 4478 . 4479) (punctuation 4477 . 4478) (OPERATOR 4469 . 4477) (BOOL 4464 . 4468) (INLINE 4457 . 4463) (semantic-list 4345 . 4371) (punctuation 4344 . 4345) (OPERATOR 4336 . 4344) (punctuation 4365 . 4366) (punctuation 4334 . 4335) (symbol 4328 . 4334) (punctuation 4365 . 4366) (INLINE 4321 . 4327) (punctuation 4365 . 4366) (punctuation 4317 . 4318) (symbol 4307 . 4317) (CLASS 4301 . 4306) (punctuation 4300 . 4301) (TEMPLATE 4291 . 4299) (punctuation 4365 . 4366) (semantic-list 4195 . 4209) (punctuation 4194 . 4195) (OPERATOR 4186 . 4194) (punctuation 4203 . 4204) (punctuation 4184 . 4185) (symbol 4178 . 4184) (punctuation 4203 . 4204) (INLINE 4171 . 4177) (punctuation 4203 . 4204) (semantic-list 4094 . 4125) (punctuation 4093 . 4094) (OPERATOR 4085 . 4093) (punctuation 4083 . 4084) (punctuation 4082 . 4083) (symbol 4071 . 4082) (punctuation 4070 . 4071) (symbol 4064 . 4070) (INLINE 4057 . 4063) (punctuation 4053 . 4054) (symbol 4043 . 4053) (CLASS 4037 . 4042) (punctuation 4036 . 4037) (TEMPLATE 4027 . 4035) (semantic-list 3886 . 3918) (punctuation 3885 . 3886) (OPERATOR 3877 . 3885) (punctuation 3875 . 3876) (punctuation 3874 . 3875) (symbol 3863 . 3874) (punctuation 3862 . 3863) (symbol 3856 . 3862) (INLINE 3849 . 3855) (semantic-list 3775 . 3803) (symbol 3771 . 3775) (VOID 3766 . 3770) (INLINE 3759 . 3765) (semantic-list 3488 . 3519) (symbol 3482 . 3488) (INLINE 3475 . 3481) (punctuation 3471 . 3472) (symbol 3461 . 3471) (CLASS 3455 . 3460) (punctuation 3454 . 3455) (TEMPLATE 3445 . 3453) (semantic-list 3291 . 3323) (symbol 3285 . 3291) (INLINE 3278 . 3284) (semantic-list 3155 . 3181) (symbol 3149 . 3155) (punctuation 3175 . 3176) (INLINE 3142 . 3148) (punctuation 3175 . 3176) (punctuation 3138 . 3139) (symbol 3128 . 3138) (CLASS 3122 . 3127) (punctuation 3121 . 3122) (TEMPLATE 3112 . 3120) (punctuation 3175 . 3176) (semantic-list 3018 . 3032) (symbol 3012 . 3018) (punctuation 3026 . 3027) (INLINE 3005 . 3011) (punctuation 3026 . 3027) (semantic-list 2922 . 2962) (symbol 2916 . 2922) (INLINE 2909 . 2915) (EXPLICIT 2900 . 2908) (semantic-list 2796 . 2821) (symbol 2790 . 2796) (INLINE 2783 . 2789) (EXPLICIT 2774 . 2782) (semantic-list 2016 . 2018) (symbol 2010 . 2016) (punctuation 2009 . 2010) (INLINE 2002 . 2008) (semantic-list 1937 . 1939) (symbol 1931 . 1937) (INLINE 1924 . 1930))
+      :lexical-table 
+        '(("_cairo_REFPTR_H")
+          )
+)
+    (semanticdb-table "context.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__CAIROMM_CONTEXT_H" variable (:constant-flag t) nil [841 860])
+            ("vector" include (:system-flag t) nil [862 879])
+            ("utility" include (:system-flag t) nil [880 898])
+            ("cairomm/surface.h" include (:system-flag t) nil [899 927])
+            ("cairomm/fontface.h" include (:system-flag t) nil [928 957])
+            ("cairomm/matrix.h" include (:system-flag t) nil [958 985])
+            ("cairomm/pattern.h" include (:system-flag t) nil [986 1014])
+            ("cairomm/path.h" include (:system-flag t) nil [1015 1040])
+            ("cairomm/scaledfont.h" include (:system-flag t) nil [1041 1072])
+            ("cairomm/types.h" include (:system-flag t) nil [1073 1099])
+            ("valarray" include (:system-flag t) nil [1100 1119])
+            ("vector" include (:system-flag t) nil [1120 1137])
+            ("cairo.h" include (:system-flag t) nil [1138 1156])
+            ("Cairo" type
+               (:members 
+                  ( ("Context" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1719 1729])
+                            ("Context" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("target" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Surface" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1749 1779]))                                  
+                                :type ("Context" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1741 1780])
+                            ("public" label nil (reparse-symbol classsubparts) [1782 1789])
+                            ("Context" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cobject" variable
+                                       (:pointer 1
+                                        :type ("cairo_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2086 2103])
+                                    ("has_reference" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [2104 2130]))                                  
+                                :type ("Context" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2078 2132])
+                            ("create" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("target" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Surface" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2250 2280]))                                  
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Context" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2220 2281])
+                            ("Context" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2285 2304])
+                            ("save" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2808 2820])
+                            ("restore" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2978 2993])
+                            ("set_operator" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("op" variable (:type ("Operator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3256 3268]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3238 3269])
+                            ("set_source" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("source" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Pattern" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3978 4014]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3962 4015])
+                            ("set_source_rgb" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("red" variable (:type "double") (reparse-symbol arg-sub-list) [4568 4579])
+                                    ("green" variable (:type "double") (reparse-symbol arg-sub-list) [4580 4593])
+                                    ("blue" variable (:type "double") (reparse-symbol arg-sub-list) [4594 4606]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4548 4607])
+                            ("set_source_rgba" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("red" variable (:type "double") (reparse-symbol arg-sub-list) [5215 5226])
+                                    ("green" variable (:type "double") (reparse-symbol arg-sub-list) [5227 5240])
+                                    ("blue" variable (:type "double") (reparse-symbol arg-sub-list) [5241 5253])
+                                    ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [5254 5267]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5194 5268])
+                            ("set_source" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("surface" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Surface" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6317 6348])
+                                    ("x" variable (:type "double") (reparse-symbol arg-sub-list) [6349 6358])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [6359 6368]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6301 6369])
+                            ("set_tolerance" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [7132 7149]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7113 7150])
+                            ("set_antialias" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("antialias" variable (:type ("Antialias" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7611 7631]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7592 7632])
+                            ("set_fill_rule" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("fill_rule" variable (:type ("FillRule" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8109 8128]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [8090 8129])
+                            ("set_line_width" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("width" variable (:type "double") (reparse-symbol arg-sub-list) [9237 9250]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9217 9251])
+                            ("set_line_cap" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("line_cap" variable (:type ("LineCap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9747 9764]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9729 9765])
+                            ("set_line_join" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("line_join" variable (:type ("LineJoin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10272 10291]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10253 10292])
+                            ("set_dash" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dashes" variable
+                                       (:reference 1
+                                        :type ("std::valarray" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10563 10593])
+                                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [10594 10608]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10549 10609])
+                            ("set_dash" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dashes" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11566 11594])
+                                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [11595 11609]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11552 11610])
+                            ("set_dash" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dashes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::valarray" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11799 11835])
+                                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [11836 11850]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11785 11851])
+                            ("set_dash" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dashes" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13181 13215])
+                                    ("offset" variable (:type "double") (reparse-symbol arg-sub-list) [13216 13230]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13167 13231])
+                            ("unset_dash" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [13314 13332])
+                            ("set_miter_limit" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("limit" variable (:type "double") (reparse-symbol arg-sub-list) [14432 14445]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14411 14446])
+                            ("translate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("tx" variable (:type "double") (reparse-symbol arg-sub-list) [14931 14941])
+                                    ("ty" variable (:type "double") (reparse-symbol arg-sub-list) [14942 14952]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [14916 14953])
+                            ("scale" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("sx" variable (:type "double") (reparse-symbol arg-sub-list) [15291 15301])
+                                    ("sy" variable (:type "double") (reparse-symbol arg-sub-list) [15302 15312]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15280 15313])
+                            ("rotate" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("angle_radians" variable (:type "double") (reparse-symbol arg-sub-list) [15738 15759]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15726 15760])
+                            ("rotate_degrees" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("angle_degres" variable (:type "double") (reparse-symbol arg-sub-list) [15967 15987]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [15947 15988])
+                            ("transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16292 16313]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16277 16314])
+                            ("transform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cairo_matrix_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16360 16389]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16345 16390])
+                            ("set_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16587 16608]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16571 16609])
+                            ("set_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cairo_matrix_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16656 16685]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [16640 16686])
+                            ("set_identity_matrix" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [16930 16957])
+                            ("user_to_device" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [17323 17333])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [17334 17344]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17303 17345])
+                            ("user_to_device_distance" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [17783 17794])
+                                    ("dy" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [17795 17806]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17754 17807])
+                            ("device_to_user" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18153 18163])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18164 18174]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18133 18175])
+                            ("device_to_user_distance" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18621 18632])
+                                    ("dy" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18633 18644]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18592 18645])
+                            ("user_to_device" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18967 18977])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [18978 18988]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [18947 18995])
+                            ("user_to_device_distance" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [19388 19399])
+                                    ("dy" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [19400 19411]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19359 19418])
+                            ("device_to_user" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [19719 19729])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [19730 19740]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19699 19747])
+                            ("device_to_user_distance" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [20148 20159])
+                                    ("dy" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [20160 20171]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [20119 20178])
+                            ("begin_new_path" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [20267 20289])
+                            ("begin_new_sub_path" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [20823 20849])
+                            ("move_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [21098 21107])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [21108 21117]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21085 21118])
+                            ("line_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [21534 21543])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [21544 21553]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [21521 21554])
+                            ("curve_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x1" variable (:type "double") (reparse-symbol arg-sub-list) [22313 22323])
+                                    ("y1" variable (:type "double") (reparse-symbol arg-sub-list) [22324 22334])
+                                    ("x2" variable (:type "double") (reparse-symbol arg-sub-list) [22335 22345])
+                                    ("y2" variable (:type "double") (reparse-symbol arg-sub-list) [22346 22356])
+                                    ("x3" variable (:type "double") (reparse-symbol arg-sub-list) [22357 22367])
+                                    ("y3" variable (:type "double") (reparse-symbol arg-sub-list) [22368 22378]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [22299 22379])
+                            ("arc" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [24350 24360])
+                                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [24361 24371])
+                                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [24372 24386])
+                                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [24387 24401])
+                                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [24402 24416]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [24341 24417])
+                            ("arc_negative" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [25143 25153])
+                                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [25154 25164])
+                                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [25165 25179])
+                                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [25180 25194])
+                                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [25195 25209]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25125 25210])
+                            ("rel_move_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable (:type "double") (reparse-symbol arg-sub-list) [25806 25816])
+                                    ("dy" variable (:type "double") (reparse-symbol arg-sub-list) [25817 25827]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [25789 25828])
+                            ("rel_line_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx" variable (:type "double") (reparse-symbol arg-sub-list) [26601 26611])
+                                    ("dy" variable (:type "double") (reparse-symbol arg-sub-list) [26612 26622]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [26584 26623])
+                            ("rel_curve_to" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dx1" variable (:type "double") (reparse-symbol arg-sub-list) [27804 27815])
+                                    ("dy1" variable (:type "double") (reparse-symbol arg-sub-list) [27816 27827])
+                                    ("dx2" variable (:type "double") (reparse-symbol arg-sub-list) [27828 27839])
+                                    ("dy2" variable (:type "double") (reparse-symbol arg-sub-list) [27840 27851])
+                                    ("dx3" variable (:type "double") (reparse-symbol arg-sub-list) [27852 27863])
+                                    ("dy3" variable (:type "double") (reparse-symbol arg-sub-list) [27864 27875]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [27786 27876])
+                            ("rectangle" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [28519 28528])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [28529 28538])
+                                    ("width" variable (:type "double") (reparse-symbol arg-sub-list) [28539 28552])
+                                    ("height" variable (:type "double") (reparse-symbol arg-sub-list) [28553 28567]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [28504 28568])
+                            ("close_path" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [29292 29310])
+                            ("paint" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [29424 29437])
+                            ("paint_with_alpha" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [29790 29803]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [29768 29804])
+                            ("mask" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("pattern" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Pattern" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [30058 30095]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30048 30096])
+                            ("mask" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("surface" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("Surface" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [30503 30540])
+                                    ("surface_x" variable (:type "double") (reparse-symbol arg-sub-list) [30541 30558])
+                                    ("surface_y" variable (:type "double") (reparse-symbol arg-sub-list) [30559 30576]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [30493 30577])
+                            ("stroke" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [32005 32019])
+                            ("stroke_preserve" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [32379 32402])
+                            ("fill" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [32695 32707])
+                            ("fill_preserve" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [33002 33023])
+                            ("copy_page" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [33399 33416])
+                            ("show_page" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [33678 33695])
+                            ("in_stroke" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [34279 34288])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [34289 34298]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34264 34305])
+                            ("in_fill" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [34802 34811])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [34812 34821]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [34789 34828])
+                            ("in_clip" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [35282 35291])
+                                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [35292 35301]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [35269 35308])
+                            ("get_stroke_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [36509 36520])
+                                    ("y1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [36521 36532])
+                                    ("x2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [36533 36544])
+                                    ("y2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [36545 36556]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [36485 36563])
+                            ("get_fill_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [37603 37614])
+                                    ("y1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [37615 37626])
+                                    ("x2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [37627 37638])
+                                    ("y2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [37639 37650]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [37581 37657])
+                            ("reset_clip" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [38263 38281])
+                            ("clip" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [39096 39108])
+                            ("clip_preserve" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [39433 39454])
+                            ("get_clip_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [39798 39809])
+                                    ("y1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [39810 39821])
+                                    ("x2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [39822 39833])
+                                    ("y2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [39834 39845]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [39776 39852])
+                            ("copy_clip_rectangle_list" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("rectangles" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Rectangle" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [40218 40253]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [40188 40260])
+                            ("select_font_face" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("family" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [42631 42657])
+                                    ("slant" variable (:type ("FontSlant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42658 42674])
+                                    ("weight" variable (:type ("FontWeight" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42675 42693]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [42609 42694])
+                            ("set_font_size" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("size" variable (:type "double") (reparse-symbol arg-sub-list) [43279 43291]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43260 43292])
+                            ("set_font_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [43797 43818]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43776 43819])
+                            ("get_font_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44005 44020]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [43984 44027])
+                            ("set_font_options" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("options" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("FontOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44401 44428]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [44379 44429])
+                            ("set_font_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cairo_matrix_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44481 44510]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [44460 44511])
+                            ("get_font_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :type ("cairo_matrix_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44535 44558]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [44514 44565])
+                            ("get_font_options" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("options" variable
+                                       (:reference 1
+                                        :type ("FontOptions" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [44984 45005]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [44962 45012])
+                            ("set_scaled_font" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("scaled_font" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("ScaledFont" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [45418 45462]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [45397 45463])
+                            ("get_scaled_font" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("ScaledFont" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [45531 45568])
+                            ("show_text" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("utf8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [46791 46815]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [46776 46816])
+                            ("show_glyphs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("glyphs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Glyph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [47119 47152]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [47102 47153])
+                            ("show_text_glyphs" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("utf8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [48526 48550])
+                                    ("glyphs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Glyph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [48575 48608])
+                                    ("clusters" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("TextCluster" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [48633 48674])
+                                    ("cluster_flags" variable (:type ("TextClusterFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48699 48730]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [48504 48731])
+                            ("get_font_face" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("FontFace" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [48783 48816])
+                            ("get_font_face" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("FontFace" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [48819 48864])
+                            ("get_font_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("extents" variable
+                                       (:reference 1
+                                        :type ("FontExtents" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [49024 49045]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [49002 49052])
+                            ("set_font_face" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("font_face" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("RefPtr" type
+                                             (:template-specifier 
+                                                ( ("FontFace" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [49400 49440]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [49381 49441])
+                            ("get_text_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("utf8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [50302 50326])
+                                    ("extents" variable
+                                       (:reference 1
+                                        :type ("TextExtents" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [50327 50348]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [50280 50355])
+                            ("get_glyph_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("glyphs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Glyph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [50938 50971])
+                                    ("extents" variable
+                                       (:reference 1
+                                        :type ("TextExtents" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [50972 50993]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [50915 51000])
+                            ("text_path" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("utf8" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [51982 52006]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [51967 52007])
+                            ("glyph_path" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("glyphs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Glyph" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [52224 52257]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [52208 52258])
+                            ("get_operator" function
+                               (:prototype-flag t
+                                :type ("Operator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [52332 52362])
+                            ("get_source" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Pattern" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [52435 52464])
+                            ("get_source" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Pattern" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [52467 52508])
+                            ("get_tolerance" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [52593 52622])
+                            ("get_antialias" function
+                               (:prototype-flag t
+                                :type ("Antialias" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [52706 52738])
+                            ("get_current_point" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [53785 53795])
+                                    ("y" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [53796 53806]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [53761 53813])
+                            ("has_current_point" function
+                               (:prototype-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [54020 54051])
+                            ("get_fill_rule" function
+                               (:prototype-flag t
+                                :type ("FillRule" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [54122 54153])
+                            ("get_line_width" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [54362 54392])
+                            ("get_line_cap" function
+                               (:prototype-flag t
+                                :type ("LineCap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [54466 54495])
+                            ("get_line_join" function
+                               (:prototype-flag t
+                                :type ("LineJoin" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [54571 54602])
+                            ("get_miter_limit" function
+                               (:prototype-flag t
+                                :type "double")
+                                (reparse-symbol classsubparts) [54676 54707])
+                            ("get_dash" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("dashes" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [54922 54950])
+                                    ("offset" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [54951 54966]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [54908 54973])
+                            ("get_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :type ("Matrix" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55118 55133]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [55102 55134])
+                            ("get_matrix" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("matrix" variable
+                                       (:reference 1
+                                        :type ("cairo_matrix_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [55181 55204]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [55165 55205])
+                            ("get_matrix" function
+                               (:prototype-flag t
+                                :type ("Matrix" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [55290 55316])
+                            ("get_target" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Surface" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [55416 55445])
+                            ("get_target" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Surface" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [55448 55489])
+                            ("copy_path" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [55919 55943])
+                            ("get_path_extents" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("x1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [57223 57234])
+                                    ("y1" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [57235 57246])
+                                    ("x2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [57247 57258])
+                                    ("y2" variable
+                                       (:reference 1
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [57259 57270]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [57201 57277])
+                            ("copy_path_flat" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :type ("Path" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [57981 58010])
+                            ("append_path" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("path" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Path" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [58253 58270]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [58236 58271])
+                            ("push_group" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [59879 59897])
+                            ("push_group_with_content" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("content" variable (:type ("Content" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60619 60635]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [60590 60636])
+                            ("pop_group" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Pattern" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [61192 61220])
+                            ("pop_group_to_source" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [61957 61984])
+                            ("get_group_target" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Surface" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [62364 62399])
+                            ("get_group_target" function
+                               (:prototype-flag t
+                                :type ("RefPtr" type
+                                     (:template-specifier 
+                                        ( ("Surface" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [62509 62556])
+                            ("cobject" type
+                               (:typedef ("cairo_t" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [62628 62652])
+                            ("cobj" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :type ("cobject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [62733 62777])
+                            ("cobj" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("cobject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [62858 62914])
+                            ("get_status" function
+                               (:typemodifiers ("inline")
+                                :type ("ErrorStatus" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [62995 63089])
+                            ("reference" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [63093 63116])
+                            ("unreference" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [63119 63144])
+                            ("protected" label nil (reparse-symbol classsubparts) [63175 63185])
+                            ("m_cobject" variable
+                               (:pointer 1
+                                :type ("cobject" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [63188 63207]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1703 63210]))                  
+                :type "namespace")
+                nil [1159 63213]))          
+      :file "context.h"
+      :pointmax 63285
+      :fsize 63284
+      :lastmodtime '(22058 54943 0 0)
+      :unmatched-syntax '((punctuation 2215 . 2216) (DELETE 2209 . 2215) (punctuation 2207 . 2208) (semantic-list 2190 . 2206) (punctuation 2189 . 2190) (OPERATOR 2181 . 2189) (punctuation 2179 . 2180) (symbol 2172 . 2179) (punctuation 2168 . 2169) (DELETE 2162 . 2168) (punctuation 2160 . 2161) (semantic-list 2143 . 2159) (symbol 2136 . 2143) (EXPLICIT 2069 . 2077) (EXPLICIT 1732 . 1740))
+      :lexical-table 
+        '(("__CAIROMM_CONTEXT_H")
+          )
+))
+  :file "!usr!include!cairomm-1.0!cairomm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

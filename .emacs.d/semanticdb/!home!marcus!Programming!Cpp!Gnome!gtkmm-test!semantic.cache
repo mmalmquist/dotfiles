@@ -1,0 +1,20 @@
+;; Object gtkmm-test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtkmm-test/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("debug")) nil [1 12])
+            ("debug" function nil nil [12 45])
+            ("release" function nil nil [45 82])
+            ("clean" function nil nil [82 109]))          
+      :file "Makefile"
+      :pointmax 109
+      :fsize 108
+      :lastmodtime '(23281 35262 654087 862000)
+      :unmatched-syntax '((shell-command 90 . 108) (bol 89 . 89))))
+  :file "!home!marcus!Programming!Cpp!Gnome!gtkmm-test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

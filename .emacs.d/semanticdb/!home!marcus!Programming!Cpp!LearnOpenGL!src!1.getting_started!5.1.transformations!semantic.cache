@@ -1,0 +1,74 @@
+;; Object 5.1.transformations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "5.1.transformations/"
+  :tables
+  (list
+    (semanticdb-table "transformations.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("glad/glad.h" include (:system-flag t) nil [1 23])
+            ("GLFW/glfw3.h" include (:system-flag t) nil [24 47])
+            ("stb_image.h" include (:system-flag t) nil [48 70])
+            ("glm/glm.hpp" include (:system-flag t) nil [72 94])
+            ("glm/gtc/matrix_transform.hpp" include (:system-flag t) nil [95 134])
+            ("glm/gtc/type_ptr.hpp" include (:system-flag t) nil [135 166])
+            ("learnopengl/filesystem.h" include (:system-flag t) nil [168 203])
+            ("learnopengl/shader_s.h" include (:system-flag t) nil [204 237])
+            ("iostream" include (:system-flag t) nil [239 258])
+            ("framebuffer_size_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [291 310])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [311 321])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [322 333]))                  
+                :type "void")
+                nil [260 334])
+            ("processInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [353 372]))                  
+                :type "void")
+                nil [335 373])
+            ("SCR_WIDTH" variable
+               (:constant-flag t
+                :default-value "800"
+                :type "unsigned int")
+                nil [387 422])
+            ("SCR_HEIGHT" variable
+               (:constant-flag t
+                :default-value "600"
+                :type "unsigned int")
+                nil [423 459])
+            ("main" function (:type "int") nil [461 7277])
+            ("processInput" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7515 7534]))                  
+                :type "void")
+                nil [7497 7645])
+            ("framebuffer_size_callback" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GLFWwindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7872 7891])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7892 7902])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7903 7914]))                  
+                :type "void")
+                nil [7841 8119]))          
+      :file "transformations.cpp"
+      :pointmax 8119
+      :fsize 8118
+      :lastmodtime '(23142 10559 0 0)
+      :unmatched-syntax nil))
+  :file "!home!marcus!Programming!Cpp!LearnOpenGL!src!1.getting_started!5.1.transformations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
