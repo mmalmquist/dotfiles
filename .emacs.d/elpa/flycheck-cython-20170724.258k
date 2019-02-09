@@ -1,84 +1,0 @@
-Leaving directory `/home/marcus/.emacs.d/elpa/dumb-jump-20180507.2133'
-
-Compiling file /home/marcus/.emacs.d/elpa/dumb-jump-20180507.2133/dumb-jump-pkg.el at Tue May  8 13:58:07 2018
-Entering directory `/home/marcus/.emacs.d/elpa/dumb-jump-20180507.2133/'
-
-Compiling file /home/marcus/.emacs.d/elpa/dumb-jump-20180507.2133/dumb-jump.el at Tue May  8 13:58:07 2018
-dumb-jump.el:34:1:Error: Symbol's function definition is void: cl-struct-define
-
-Compiling no file at Tue May  8 13:58:08 2018
-Leaving directory `/home/marcus/.emacs.d/elpa/company-20180501.11'
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-abbrev.el at Tue May  8 13:58:08 2018
-Entering directory `/home/marcus/.emacs.d/elpa/company-20180501.11/'
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-bbdb.el at Tue May  8 13:58:08 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-capf.el at Tue May  8 13:58:08 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-clang.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-cmake.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-css.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-dabbrev-code.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-dabbrev.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-eclim.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-elisp.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-etags.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-files.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-gtags.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-ispell.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-keywords.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-nxml.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-oddmuse.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-semantic.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-template.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-tempo.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-tng.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-xcode.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company-yasnippet.el at Tue May  8 13:58:09 2018
-
-Compiling file /home/marcus/.emacs.d/elpa/company-20180501.11/company.el at Tue May  8 13:58:09 2018
-company.el:1425:1:Warning: Unused lexical argument `err'
-
-Compiling no file at Tue May  8 13:58:31 2018
-Leaving directory `/home/marcus/.emacs.d/elpa/let-alist-1.0.5'
-
-Compiling file /home/marcus/.emacs.d/elpa/let-alist-1.0.5/let-alist-pkg.el at Tue May  8 13:58:31 2018
-Entering directory `/home/marcus/.emacs.d/elpa/let-alist-1.0.5/'
-
-Compiling file /home/marcus/.emacs.d/elpa/let-alist-1.0.5/let-alist.el at Tue May  8 13:58:31 2018
-
-Compiling no file at Tue May  8 13:58:32 2018
-Leaving directory `/home/marcus/.emacs.d/elpa/flycheck-20180422.2106'
-
-Compiling file /home/marcus/.emacs.d/elpa/flycheck-20180422.2106/flycheck-ert.el at Tue May  8 13:58:32 2018
-Entering directory `/home/marcus/.emacs.d/elpa/flycheck-20180422.2106/'
-
-Compiling file /home/marcus/.emacs.d/elpa/flycheck-20180422.2106/flycheck.el at Tue May  8 13:58:33 2018
-
-Compiling no file at Tue May  8 13:58:34 2018
-Leaving directory `/home/marcus/.emacs.d/elpa/flycheck-cython-20170724.258'
-
-Compiling file /home/marcus/.emacs.d/elpa/flycheck-cython-20170724.258/flycheck-cython-pkg.el at Tue May  8 13:58:34 2018
-Entering directory `/home/marcus/.emacs.d/elpa/flycheck-cython-20170724.258/'
-
-Compiling file /home/marcus/.emacs.d/elpa/flycheck-cython-20170724.258/flycheck-cython.el at Tue May  8 13:58:34 2018

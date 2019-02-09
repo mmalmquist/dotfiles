@@ -18,45 +18,80 @@
 (require 'opencl-mode)
 (add-to-list 'auto-mode-alist '("\\.cl\\'" . opencl-mode))
 
-(defun programming-general ()
-  "General settings for programming major mode."
-  (linum-mode t); Line numbers on
-  (flycheck-mode t); on-the-fly syntax checking
-  (company-mode t); auto-complete
-  (semantic-mode t); semantic
-  (global-ede-mode 1)
-  (tabbar-mode 1)
-  (font-lock-mode 1))
+(require 'helm-gtags)
+(setq
+ helm-gtags-ignore-case t
+ helm-gtags-auto-update t
+ helm-gtags-use-input-at-cursor t
+ helm-gtags-pulse-at-cursor t
+ helm-gtags-prefix-key "\C-cg"
+ helm-gtags-suggested-key-mapping t)
+(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
+(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
+(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
+;;(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
+;;(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+
+(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
 
 ;; TeX
 (require 'tex)
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
 	    (linum-mode t)))
+
+(require 'ecb)
+(defun programming-general ()
+  "General settings for programming major mode."
+  (linum-mode t)			; Line numbers on
+  (flycheck-mode t)			; on-the-fly syntax checking
+  (company-mode t)			; auto-complete
+  (semantic-mode t)			; semantic
+  (global-ede-mode t)
+  (tabbar-mode t)
+  (font-lock-mode t)
+  (show-paren-mode t)
+;;  (highlight-indentation-mode t)
+  (helm-gtags-mode t))
+
+;; org
+(add-hook 'org-mode-hook
+	  (lambda ()
+	    (org-indent-mode t)))
+
 ;; Emacs Lisp
 (add-hook 'emacs-lisp-mode-hook
 	  (lambda ()
 	    (programming-general)))
-;; c
+
+;; C
 (add-hook 'c-mode-hook
 	  (lambda ()
-	    (programming-general)))
-;; c++
+	    (programming-general)
+	    (setq flycheck-clang-language-standard "gnu11")
+	    (setq flycheck-gcc-language-standard "gnu11")))
+
+;; C++
 (add-hook 'c++-mode-hook
 	  (lambda ()
-	    (programming-general)))
-;; java
+	    (programming-general)
+	    (setq flycheck-clang-language-standard "gnu++14")
+	    (setq flycheck-gcc-language-standard "gnu++14")))
+
+;; Java
 (add-hook 'java-mode-hook
 	  (lambda ()
 	    (programming-general)))
-;; python
+
+;; Python
 (add-hook 'python-mode-hook
 	  (lambda ()
-	    (programming-general)
-	    (elpy-enable)
-	    (pyvenv-workon 'venv)))
+	    (elpy-mode 1)
+;;	    (pyvenv-workon 'venv)
+	    (programming-general)))
 
-;; cython
+;; Cython
 (add-hook 'cython-mode-hook
 	  (lambda ()
 	    (programming-general)))
@@ -72,11 +107,6 @@
  '(c-mode-common-hook nil)
  '(company-auto-complete t)
  '(company-auto-complete-chars (quote (40 41 34 36 60 62 47)))
- '(company-backends
-   (quote
-    (company-bbdb company-nxml company-css company-eclim company-semantic company-xcode company-cmake company-capf company-files
-		  (company-dabbrev-code company-gtags company-etags company-keywords)
-		  company-oddmuse company-dabbrev)))
  '(company-quickhelp-max-lines 50)
  '(company-quickhelp-mode t)
  '(company-quickhelp-use-propertized-text t)
@@ -84,7 +114,7 @@
  '(custom-enabled-themes (quote (zenburn)))
  '(custom-safe-themes
    (quote
-    ("3f44e2d33b9deb2da947523e2169031d3707eec0426e78c7b8a646ef773a2077" "190a9882bef28d7e944aa610aa68fe1ee34ecea6127239178c7ac848754992df" "e11569fd7e31321a33358ee4b232c2d3cf05caccd90f896e1df6cab228191109" default)))
+    ("ec5f697561eaf87b1d3b087dd28e61a2fc9860e4c862ea8e6b0b77bd4967d0ba" "3f44e2d33b9deb2da947523e2169031d3707eec0426e78c7b8a646ef773a2077" "190a9882bef28d7e944aa610aa68fe1ee34ecea6127239178c7ac848754992df" "e11569fd7e31321a33358ee4b232c2d3cf05caccd90f896e1df6cab228191109" default)))
  '(ecb-auto-activate t)
  '(ecb-major-modes-show-or-hide
    (quote
@@ -98,7 +128,8 @@
  '(global-font-lock-mode t)
  '(package-archives
    (quote
-    (("melpa" . "http://melpa.org/packages/")
+    (("melpa-stable" . "http://stable.melpa.org/packages/")
+     ("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
@@ -114,7 +145,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 143 :width normal :foundry "CTDB" :family "DejaVu-mono"))))
+ '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 128 :width normal :foundry "PfEd" :family "DejaVu Sans Mono"))))
  '(ecb-default-highlight-face ((t (:background "black")))))
 
 (provide (quote .emacs))
