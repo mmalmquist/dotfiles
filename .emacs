@@ -16,42 +16,42 @@
 (global-set-key (kbd "C-x b") #'helm-buffers-list)
 (helm-mode t)
 
-(require 'opencl-mode)
-(add-to-list 'auto-mode-alist '("\\.cl\\'" . opencl-mode))
+(require 'opencl-c-mode)
+(add-to-list 'auto-mode-alist '("\\.cl\\'" . opencl-c-mode))
 
-;(require 'helm-gtags)
-;(setq
-; helm-gtags-ignore-case t
-; helm-gtags-auto-update t
-; helm-gtags-use-input-at-cursor t
-; helm-gtags-pulse-at-cursor t
-; helm-gtags-prefix-key "\C-cg"
-; helm-gtags-suggested-key-mapping t)
-;(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-;(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-;(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-;(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-;;(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-;;(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+(require 'helm-gtags)
+(setq
+ helm-gtags-ignore-case t
+ helm-gtags-auto-update t
+ helm-gtags-use-input-at-cursor t
+ helm-gtags-pulse-at-cursor t
+ helm-gtags-prefix-key "\C-cg"
+ helm-gtags-suggested-key-mapping t)
+(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
+(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
+(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
+;(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
+;(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
 ;; Edit files over network
 (require 'tramp)
 
 ;(setq-local imenu-create-index-function #'ggtags-build-imenu-index)
 
-;; TeX
-(require 'tex)
-(add-hook 'LaTeX-mode-hook
-	  (lambda ()
-	    (linum-mode t)))
+;;; TeX
+;(require 'tex)
+;(add-hook 'LaTeX-mode-hook
+;	  (lambda ()
+;	    (linum-mode t)))
 
 ;(require 'ecb)
 (defun programming-general ()
   "General settings for programming major mode."
   (linum-mode t)			; Line numbers on
-;  (flycheck-mode t)			; on-the-fly syntax checking
-;  (company-mode t)			; auto-complete
-;  (semantic-mode t)			; semantic
+  (flycheck-mode t)			; on-the-fly syntax checking
+  (company-mode t)			; auto-complete
+  (semantic-mode t)			; semantic
   (global-ede-mode t)
   (tabbar-mode t)
   (font-lock-mode t)
@@ -136,7 +136,7 @@
  '(company-tooltip-offset-display 'scrollbar)
  '(custom-enabled-themes '(zenburn))
  '(custom-safe-themes
-   '("18cf5d20a45ea1dff2e2ffd6fbcd15082f9aa9705011a3929e77129a971d1cb3" default))
+   '("09b833239444ac3230f591e35e3c28a4d78f1556b107bafe0eb32b5977204d93" "18cf5d20a45ea1dff2e2ffd6fbcd15082f9aa9705011a3929e77129a971d1cb3" default))
  '(ecb-major-modes-show-or-hide
    '((python-mode vhdl-mode c-mode c++-mode java-mode javascript-mode emacs-lisp-mode cython-mode)
      text-mode fundamental-mode Custom-mode Info-mode))
@@ -153,7 +153,7 @@
      ("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/")))
  '(package-selected-packages
-   '(bitbake dts-mode helm magit markdown-mode markdown-mode+ tabbar ecb opencl-mode cmake-mode flycheck-cython flycheck dumb-jump cython-mode iedit company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy))
+   '(helm-gtags opencl-c-mode bitbake dts-mode helm magit markdown-mode markdown-mode+ tabbar ecb opencl-mode cmake-mode flycheck-cython flycheck dumb-jump cython-mode iedit company-c-headers zenburn-theme auctex company-auctex company-quickhelp elpy))
  '(python-check-command "flake8")
  '(python-shell-completion-native-enable nil)
  '(python-shell-virtualenv-root "/home/marcus/.virtualenvs/venv")
